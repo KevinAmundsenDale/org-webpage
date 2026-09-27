@@ -1,0 +1,742 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Organisasjonsfaglig temadatasett",
+  "description": "Validerer struktur. Referanseintegritet, ID-unikhet og filer kontrolleres i tillegg separat.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.1.0"
+    },
+    "dataset_id": {
+      "type": "string"
+    },
+    "dataset_revision": {
+      "type": "integer"
+    },
+    "language": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "course": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "relationship_context": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "relationship_context"
+      ],
+      "additionalProperties": false
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "order": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "order"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "relationship_contract": {
+      "type": "object",
+      "properties": {
+        "matrix_status": {
+          "type": "string"
+        },
+        "weight_semantics": {
+          "type": "string"
+        },
+        "symmetric": {
+          "type": "boolean"
+        },
+        "distinct_pair_weight_min_exclusive": {
+          "type": "integer"
+        },
+        "distinct_pair_weight_max_inclusive": {
+          "type": "integer"
+        },
+        "diagonal": {
+          "type": "null"
+        },
+        "missing_pair_meaning": {
+          "type": "string"
+        },
+        "absence_of_hint_means_zero": {
+          "type": "boolean"
+        },
+        "assessment_dimensions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "node_key": {
+          "type": "string"
+        },
+        "revision_key": {
+          "type": "string"
+        },
+        "update_policy": {
+          "type": "string"
+        },
+        "hint_policy": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "matrix_status",
+        "weight_semantics",
+        "symmetric",
+        "distinct_pair_weight_min_exclusive",
+        "distinct_pair_weight_max_inclusive",
+        "diagonal",
+        "missing_pair_meaning",
+        "absence_of_hint_means_zero",
+        "assessment_dimensions",
+        "node_key",
+        "revision_key",
+        "update_policy",
+        "hint_policy"
+      ],
+      "additionalProperties": false
+    },
+    "editorial_policy": {
+      "type": "object",
+      "properties": {
+        "language": {
+          "type": "string"
+        },
+        "source_scope": {
+          "type": "string"
+        },
+        "analysis_scope": {
+          "type": "string"
+        },
+        "attribution_scope": {
+          "type": "string"
+        },
+        "sparse_sections": {
+          "type": "string"
+        },
+        "figures": {
+          "type": "string"
+        },
+        "extension_policy": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "language",
+        "source_scope",
+        "analysis_scope",
+        "attribution_scope",
+        "sparse_sections",
+        "figures",
+        "extension_policy"
+      ],
+      "additionalProperties": false
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/topic"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "figure_registry": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/figure"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "dataset_id",
+    "dataset_revision",
+    "language",
+    "created_at",
+    "course",
+    "categories",
+    "relationship_contract",
+    "editorial_policy",
+    "topics",
+    "sources",
+    "figure_registry"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "source_ref": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string"
+        },
+        "locator": {
+          "type": "string"
+        },
+        "paragraph_start": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "paragraph_end": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "pages": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      },
+      "required": [
+        "source_id",
+        "locator",
+        "paragraph_start",
+        "paragraph_end",
+        "pages"
+      ],
+      "additionalProperties": false
+    },
+    "figure": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "src": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "alt": {
+          "type": "string"
+        },
+        "caption": {
+          "type": "string"
+        },
+        "credit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source_ref"
+          }
+        },
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "source_issue",
+            "visually_checked",
+            "replacement_needed"
+          ]
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "src",
+        "alt",
+        "caption",
+        "credit",
+        "source_refs",
+        "review_status",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "example": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "basis": {
+          "type": "string",
+          "enum": [
+            "source_paraphrase",
+            "editorial_example"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source_ref"
+          }
+        }
+      },
+      "required": [
+        "title",
+        "text",
+        "basis",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "expression": {
+      "type": "object",
+      "properties": {
+        "latex": {
+          "type": "string"
+        },
+        "explanation": {
+          "type": "string"
+        },
+        "basis": {
+          "type": "string"
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source_ref"
+          }
+        }
+      },
+      "required": [
+        "latex",
+        "explanation",
+        "basis",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "hint": {
+      "type": "object",
+      "properties": {
+        "target_topic_id": {
+          "type": "string"
+        },
+        "relationship_type": {
+          "type": "string"
+        },
+        "bridge": {
+          "type": "string"
+        },
+        "basis": {
+          "type": "string",
+          "enum": [
+            "source_explicit",
+            "editorial_inference"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source_ref"
+          }
+        }
+      },
+      "required": [
+        "target_topic_id",
+        "relationship_type",
+        "bridge",
+        "basis",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "topic": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "content_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "title": {
+          "type": "string"
+        },
+        "short_label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "concept",
+            "theory",
+            "model",
+            "framework"
+          ]
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "attribution": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
+              },
+              "basis": {
+                "type": "string",
+                "enum": [
+                  "source_explicit"
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "role",
+              "basis"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "category_id": {
+          "type": "string"
+        },
+        "parent_topic_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "granularity": {
+          "type": "string",
+          "enum": [
+            "overview",
+            "topic",
+            "subtopic"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "content": {
+          "type": "object",
+          "properties": {
+            "short_definition": {
+              "type": "string"
+            },
+            "explanation": {
+              "type": "string"
+            },
+            "key_points": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "examples": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/example"
+              }
+            },
+            "expressions": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/expression"
+              }
+            }
+          },
+          "required": [
+            "short_definition",
+            "explanation",
+            "key_points",
+            "examples",
+            "expressions"
+          ],
+          "additionalProperties": false
+        },
+        "analysis": {
+          "type": "object",
+          "properties": {
+            "basis": {
+              "type": "string",
+              "enum": [
+                "editorial_inference"
+              ]
+            },
+            "central_questions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "mechanisms": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "level_of_analysis": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "individual",
+                  "group",
+                  "organization",
+                  "interorganizational"
+                ]
+              }
+            },
+            "writing_uses": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "limitations_and_tensions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "basis",
+            "central_questions",
+            "mechanisms",
+            "level_of_analysis",
+            "writing_uses",
+            "limitations_and_tensions"
+          ],
+          "additionalProperties": false
+        },
+        "connection_hints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/hint"
+          }
+        },
+        "figures": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/figure"
+          }
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source_ref"
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "properties": {
+            "content_basis": {
+              "type": "string",
+              "enum": [
+                "source_paraphrase",
+                "source_figure_paraphrase",
+                "editorial_working_definition"
+              ]
+            },
+            "analysis_basis": {
+              "type": "string",
+              "enum": [
+                "editorial_inference"
+              ]
+            },
+            "external_verification": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "content_basis",
+            "analysis_basis",
+            "external_verification"
+          ],
+          "additionalProperties": false
+        },
+        "review": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "source_checked",
+                "source_issue",
+                "limited_source",
+                "needs_source_expansion"
+              ]
+            },
+            "notes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "status",
+            "notes"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "content_hash",
+        "title",
+        "short_label",
+        "kind",
+        "aliases",
+        "attribution",
+        "category_id",
+        "parent_topic_id",
+        "granularity",
+        "tags",
+        "content",
+        "analysis",
+        "connection_hints",
+        "figures",
+        "source_refs",
+        "provenance",
+        "review"
+      ],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "book",
+            "summary",
+            "article",
+            "chapter",
+            "webpage",
+            "notes"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "edition": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "access": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "filename": {
+          "type": "string"
+        },
+        "based_on_source_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_map": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "doi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "title"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

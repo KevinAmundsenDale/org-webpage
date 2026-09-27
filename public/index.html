@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sammenheng · Organisasjon, ledelse og etikk</title>
+  <meta name="description" content="Utforsk og rediger fagkartet for organisasjon, ledelse og etikk.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<header>
+  <div class="masthead"><div class="brand"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 8 24 12 13 25Z"/><circle cx="8" cy="8" r="4"/><circle cx="24" cy="12" r="4"/><circle cx="13" cy="25" r="4"/></svg><span>Sammenheng<span class="brand-dot">.</span></span></div><span class="course">Organisasjon, ledelse og etikk</span><span class="local-tag">Ditt fagkart</span></div>
+  <div class="toolbar">
+    <div class="search-control"><label for="search">FINN ET TEMA</label><div class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-results" placeholder="Søk etter tema eller teoretiker…" autocomplete="off"><kbd>/</kbd></div><div id="search-results" role="listbox" hidden></div></div>
+    <div class="focus-control"><label for="focus">TEMA I FOKUS</label><div class="focus-row"><select id="focus"><option value="">Hele fagkartet</option></select><button id="clear-focus" class="icon-button" aria-label="Fjern fokus" title="Vis alle temaer" hidden>×</button></div></div>
+    <div class="threshold-control"><div class="control-label"><label for="threshold">MINSTE RELASJONSVEKT</label><input id="threshold-value" aria-label="Terskelverdi" type="number" min="0.01" max="1" step="0.01" value="0.88"></div><div class="range-row"><span>1</span><input id="threshold" type="range" min="0.01" max="1" step="0.01" value="0.88" dir="rtl"><span>0,01</span></div></div>
+    <fieldset class="layout-control"><legend>GRAFENS BEVEGELSE</legend><div class="segmented"><button id="dynamic" aria-pressed="true"><span class="motion-icon">⌁</span> Dynamisk</button><button id="static" aria-pressed="false"><span>Ⅱ</span> Statisk</button></div></fieldset>
+  </div>
+</header>
+<main>
+  <section class="graph-area" aria-label="Interaktivt fagkart">
+    <canvas id="graph" tabindex="0" aria-label="Fagkart. Dra for å flytte, rull for å zoome. Finn og åpne temaer med søket. Piltaster panorerer, pluss og minus zoomer."></canvas>
+    <div class="view-summary"><span class="eyebrow">UTFORSK SAMMENHENGENE</span><h1 id="view-title">Hele fagkartet</h1><p id="graph-count" aria-live="polite">Laster 132 temaer…</p><span id="focus-note" hidden>Viser alle temaer med en sti til fokusnoden.</span></div>
+    <div id="graph-loading" class="loading">Henter fagkartet…</div>
+    <div id="edge-tooltip" role="tooltip" hidden></div>
+    <div id="density-note" hidden>Et tett nettverk. Zoom inn eller øk terskelen for bedre oversikt.</div>
+    <div class="graph-bottom"><div class="navigation-tools"><button id="zoom-in" aria-label="Zoom inn" title="Zoom inn">+</button><button id="zoom-out" aria-label="Zoom ut" title="Zoom ut">−</button><span id="zoom-level">100 %</span><button id="fit" aria-label="Tilpass hele grafen" title="Tilpass hele grafen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/></svg></button></div><span class="graph-instructions">Dra for å flytte · Rull for å zoome · Høyreklikk for detaljer</span><button id="chapters-toggle" class="chapter-button" aria-expanded="false">Fagområder <span>12</span></button></div>
+    <div id="chapter-legend" hidden></div>
+  </section>
+  <aside id="sidebar" aria-label="Temadetaljer" hidden><div id="sidebar-content"></div></aside>
+</main>
+<div id="toast" role="status" hidden></div>
+<script type="module" src="/app.js"></script>
+</body>
+</html>
