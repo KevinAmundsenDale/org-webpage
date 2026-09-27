@@ -1,3 +1,8 @@
+// GitHub supplies unset secrets as empty strings. electron-builder interprets
+// an empty certificate link as the project directory, so omit these values.
+for(const key of ['CSC_LINK','WIN_CSC_LINK','CSC_INSTALLER_LINK']){
+  if(process.env[key]==='')delete process.env[key];
+}
 const config=require('./distribution.json');
 const [owner,repo]=config.releaseRepository.split('/');
 module.exports={
