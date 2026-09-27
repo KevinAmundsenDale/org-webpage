@@ -1,18 +1,19 @@
 import {chromium} from '@playwright/test';
 import assert from 'node:assert/strict';
-import {mkdtemp,rm} from 'node:fs/promises';
+import {mkdtemp,rm,readFile} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join,resolve,sep} from 'node:path';
 import {createAppServer} from '../server.mjs';
 import {buildContentBundle,sha} from '../lib/content.mjs';
 import {encodeBundle} from '../lib/github.mjs';
-const bundle=await buildContentBundle(resolve('.'),{version:2,min_app_version:'1.1.0',notes:'En kontrollert testoppdatering.'});
+const contentVersion=JSON.parse(await readFile('data/content-version.json','utf8'));
+const bundle=await buildContentBundle(resolve('.'),{...contentVersion,version:contentVersion.version+1,notes:'En kontrollert testoppdatering.'});
 const json=name=>JSON.parse(Buffer.from(bundle.files.find(f=>f.path==='data/'+name).data,'base64'));
 const topics=json('topics.json'),relations=json('relationships.json'),analysis=json('relationship-analysis.json'),matrix=json('relationship-matrix.json');
 const target=topics.topics.find(t=>t.id==='organisasjon');target.title='Ny felles tittel';target.content.explanation='Ny felles forklaring';target.revision++;const{content_hash,...body}=target;target.content_hash=sha(body);
 const manifest=topics.topics.map(t=>({id:t.id,revision:t.revision,content_hash:t.content_hash})).sort((a,b)=>a.id<b.id?-1:1);for(const d of [relations,matrix]){d.topic_manifest=manifest;d.topics_fingerprint=sha(manifest);}analysis.topics_fingerprint=sha(manifest);
 for(const[name,v]of [['topics.json',topics],['relationships.json',relations],['relationship-analysis.json',analysis],['relationship-matrix.json',matrix]]){const file=bundle.files.find(f=>f.path==='data/'+name),bytes=Buffer.from(JSON.stringify(v));file.data=bytes.toString('base64');file.sha256=sha(bytes);}
-const encoded=encodeBundle(bundle),fetcher=async url=>new Response(url.includes('/releases?')?JSON.stringify([{tag_name:'content-v2',draft:false,prerelease:false}]):url.endsWith('content-manifest.json')?JSON.stringify(encoded.manifest):encoded.bytes);
+const encoded=encodeBundle(bundle),fetcher=async url=>new Response(url.includes('/releases?')?JSON.stringify([{tag_name:`content-v${bundle.version}`,draft:false,prerelease:false}]):url.endsWith('content-manifest.json')?JSON.stringify(encoded.manifest):encoded.bytes);
 const dir=await mkdtemp(join(tmpdir(),'sammenheng-sync-ui-'));let service,browser;
 try{
   service=await createAppServer({profileDir:dir,port:0,fetcher});browser=await chromium.launch({channel:'msedge',headless:true});const page=await browser.newPage({viewport:{width:1400,height:950}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -21,7 +22,7 @@ try{
   await page.evaluate(()=>window.open=url=>window.testProposedURL=url);await page.locator('#proposal-open').click();assert.ok((await page.evaluate(()=>window.testProposedURL)).startsWith('https://github.com/KevinAmundsenDale/org-webpage/issues/new?'));assert.ok(await page.getByText('Fullfør innsendingen på GitHub.',{exact:false}).isVisible());await page.locator('#sync-close').click();
   await page.locator('#updates-button').click();const downloadPromise=page.waitForEvent('download');await page.locator('#backup-export').click();const download=await downloadPromise;assert.equal(download.suggestedFilename(),'Sammenheng-sikkerhetskopi.json');
   await page.locator('#content-check').click();await page.locator('#content-preview').click();await page.locator('#conflict-form').waitFor();assert.equal(await page.locator('.conflict').count(),1);await page.screenshot({path:join(dir,'conflict.png')});await page.locator('input[value=local]').check();await page.locator('#conflict-form button[type=submit]').click();await page.waitForFunction(()=>orgGraph.topic('organisasjon').content.explanation==='Ny felles forklaring');assert.equal(await page.evaluate(()=>orgGraph.topic('organisasjon').title),'Min lokale tittel');assert.equal(await page.evaluate(()=>orgGraph.topic('organisasjon')._edit.notes),'HEMMELIG-NOTAT');
-  await page.locator('#updates-button').click();assert.ok((await page.locator('.sync-version').textContent()).includes('Faginnhold 2'));await page.locator('#content-check').click();await page.getByText('Du har det nyeste tilgjengelige faginnholdet.').waitFor();
+  await page.locator('#updates-button').click();assert.ok((await page.locator('.sync-version').textContent()).includes(`Faginnhold ${bundle.version}`));await page.locator('#content-check').click();await page.getByText('Du har det nyeste tilgjengelige faginnholdet.').waitFor();
   const backup=service.store.exportBackup();backup.topics.organisasjon.notes='Fra sikkerhetskopi';await page.locator('#backup-file').setInputFiles({name:'backup.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(backup))});await page.locator('#conflict-form').waitFor();await page.locator('input[value=local]').check();await page.locator('#conflict-form button[type=submit]').click();await page.waitForFunction(()=>orgGraph.topic('organisasjon')._edit.notes==='Fra sikkerhetskopi');
   assert.deepEqual(errors,[]);console.log('PASS: real UI proposal preview/private-note exclusion, GitHub draft URL (not submitted), backup download/import, content check/download/preview/conflict resolution and reload.');
 }finally{if(browser)await browser.close();if(service)await service.close();assert.ok(resolve(dir).startsWith(resolve(tmpdir())+sep+'sammenheng-sync-ui-'));await rm(dir,{recursive:true,force:true});}

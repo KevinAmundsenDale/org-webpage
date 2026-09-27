@@ -8,9 +8,10 @@ import {Store} from '../lib/store.mjs';
 import {sha,editable,mergeFields,buildContentBundle,unpackBundle,validateTopicFactory} from '../lib/content.mjs';
 import {findContent,fetchContent,encodeBundle} from '../lib/github.mjs';
 const root=resolve('.'),schema=JSON.parse(await readFile('data/topics.schema.json','utf8'));
-const check=validateTopicFactory(schema),bundle=await buildContentBundle(root,{format:1,version:1,min_app_version:'1.1.0',notes:'Test'});
+const contentVersion=JSON.parse(await readFile('data/content-version.json','utf8'));
+const check=validateTopicFactory(schema),bundle=await buildContentBundle(root,{...contentVersion,notes:'Test'});
 async function fixture(fn){const dir=await mkdtemp(join(tmpdir(),'sammenheng-test-'));try{const store=await new Store({root,profileDir:dir,bundleDataDir:join(root,'data')}).init();await fn(store,dir);}finally{assert.ok(resolve(dir).startsWith(resolve(tmpdir())+sep+'sammenheng-test-'));await rm(dir,{recursive:true,force:true});}}
-function nextBundle(mutator,version=2){const b=structuredClone(bundle);b.version=version;const json=name=>JSON.parse(Buffer.from(b.files.find(f=>f.path==='data/'+name).data,'base64'));const topics=json('topics.json'),relations=json('relationships.json'),analysis=json('relationship-analysis.json'),matrix=json('relationship-matrix.json');mutator(topics,relations,analysis,matrix);
+function nextBundle(mutator,version=bundle.version+1){const b=structuredClone(bundle);b.version=version;const json=name=>JSON.parse(Buffer.from(b.files.find(f=>f.path==='data/'+name).data,'base64'));const topics=json('topics.json'),relations=json('relationships.json'),analysis=json('relationship-analysis.json'),matrix=json('relationship-matrix.json');mutator(topics,relations,analysis,matrix);
   for(const t of topics.topics){const{content_hash,...body}=t;t.content_hash=sha(body);}
   const manifest=topics.topics.map(t=>({id:t.id,revision:t.revision,content_hash:t.content_hash})).sort((a,b)=>a.id<b.id?-1:1);for(const d of [relations,matrix]){d.topic_manifest=manifest;d.topics_fingerprint=sha(manifest);}analysis.topics_fingerprint=sha(manifest);
   for(const[name,v]of [['topics.json',topics],['relationships.json',relations],['relationship-analysis.json',analysis],['relationship-matrix.json',matrix]]){const file=b.files.find(f=>f.path==='data/'+name),bytes=Buffer.from(JSON.stringify(v));file.data=bytes.toString('base64');file.sha256=sha(bytes);}return b;
@@ -34,8 +35,8 @@ test('content update keeps private edits and notes, resolves conflicts and survi
   await assert.rejects(store.applyUpdate(plan.id,{}));
   await store.applyUpdate(plan.id,{[plan.conflicts[0].key]:'local'});
   assert.equal(store.topic('organisasjon').title,'My title');assert.equal(store.topic('organisasjon').content.explanation,'Shared correction');assert.equal(store.topic('organisasjon')._edit.notes,'private');
-  const restarted=await new Store({root,profileDir:dir,bundleDataDir:join(root,'data')}).init();assert.equal(restarted.status().content_version,2);assert.equal(restarted.topic('organisasjon').title,'My title');
-  const next=await restarted.prepareUpdate(nextBundle(t=>{t.topics.find(t=>t.id==='organisasjon').title='Third title';},3));await save(restarted,'produksjonssystem',{title:'Concurrent edit'});await assert.rejects(restarted.applyUpdate(next.id,{}),/utdatert/);
+  const restarted=await new Store({root,profileDir:dir,bundleDataDir:join(root,'data')}).init();assert.equal(restarted.status().content_version,b.version);assert.equal(restarted.topic('organisasjon').title,'My title');
+  const next=await restarted.prepareUpdate(nextBundle(t=>{t.topics.find(t=>t.id==='organisasjon').title='Third title';},b.version+1));await save(restarted,'produksjonssystem',{title:'Concurrent edit'});await assert.rejects(restarted.applyUpdate(next.id,{}),/utdatert/);
 }));
 test('choosing shared text removes the private override; notes still never enter proposals',()=>fixture(async store=>{
   await save(store,'organisasjon',{title:'Private title'},'SECRET-NOTE');
@@ -52,10 +53,10 @@ test('backup import previews conflicts and restores notes without silently overw
 }));
 test('GitHub update path chooses content releases and verifies download integrity',async()=>{
   const {bytes,manifest}=encodeBundle(nextBundle(()=>{}));const fetcher=async url=>{
-    if(url.includes('/releases?'))return new Response(JSON.stringify([{tag_name:'v9.0.0',draft:false,prerelease:false},{tag_name:'content-v2',draft:false,prerelease:false}]));
+    if(url.includes('/releases?'))return new Response(JSON.stringify([{tag_name:'v9.0.0',draft:false,prerelease:false},{tag_name:`content-v${manifest.version}`,draft:false,prerelease:false}]));
     if(url.endsWith('content-manifest.json'))return new Response(JSON.stringify(manifest));return new Response(bytes);
   };
-  const update=await findContent('owner/repo',fetcher);assert.equal(update.version,2);assert.equal((await fetchContent(update,fetcher)).version,2);
+  const update=await findContent('owner/repo',fetcher);assert.equal(update.version,bundle.version+1);assert.equal((await fetchContent(update,fetcher)).version,bundle.version+1);
   await assert.rejects(fetchContent({...update,sha256:'0'.repeat(64)},fetcher));
 });
 test('removed topics retain private text and notes in an accessible archive',()=>fixture(async store=>{
