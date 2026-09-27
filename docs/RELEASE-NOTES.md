@@ -15,4 +15,4 @@ Sammenheng 1.1.2
 
 Windows: last ned .exe-installasjonsfilen. Mac: last ned .dmg og dra appen til Programmer. .zip-, .yml- og .blockmap-filene er for oppdateringssystemet.
 
-Vedlikeholder: kontroller signering, notarisation og testing før du publiserer denne utgaven for vanlige brukere. Fjern denne siste merknaden når kontrollen er fullført.
+Installasjonsfilene er foreløpig usignerte. Windows og macOS kan derfor vise sikkerhetsvarsler. Automatisk appoppdatering på Mac krever en signert utgave; denne Mac-utgaven oppdateres ved å laste ned en ny .dmg. Oppdatering av faginnhold fungerer separat i appen.
