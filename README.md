@@ -17,7 +17,8 @@ Dobbeltklikk **Start.cmd** og åpne **http://localhost:4317** i nettleseren. Beh
 ## Slik bruker du kartet
 
 - **Søk** etter tema, navn eller stikkord. Velg et treff for å sentrere det. Søket fjerner ikke andre temaer. Hvis treffet ligger utenfor et aktivt fokusområde, flyttes fokus til treffet.
-- **Tema i fokus** beholder hele den sammenhengende komponenten: alle temaer som kan nås via én eller flere forbindelser som oppfyller terskelen. Dette inkluderer indirekte stier. Ved høy terskel kan fokusnoden stå alene. Velg «Hele fagkartet» eller × for å fjerne fokus.
+- **Tema i fokus** viser temaer som kan nås innen valgt avstand langs forbindelser som oppfyller terskelen. Ved høy terskel kan fokusnoden stå alene. Velg «Hele fagkartet» eller × for å fjerne fokus.
+- **Maks steg fra fokus** i verktøylinjen begrenser avstanden til 1–5 forbindelser, målt langs den korteste stien. Fokus er steg 0; 1 viser direkte naboer, og 5 inkluderer temaer fem forbindelser unna. Standard er 2. Valget beholdes når du bytter fokus i samme økt. Knappene er inaktive når hele kartet vises. Avstanden beregnes på nytt når fokus eller terskel endres.
 - **Terskelen** går fra 1 til 0,01 i trinn på 0,01. En forbindelse vises når vekten er større enn eller lik terskelen. Startverdien er 0,88. Feltet ved siden av slideren kan også redigeres.
 - **Dynamisk** bruker fjærkrefter, frastøting og kollisjonsunngåelse. **Statisk** fryser posisjonene. Du kan dra i begge modusene. I dynamisk modus frigjøres en dratt node og får elastisk bevegelse igjen, også fokusnoden. I statisk modus blir den der du slipper den.
 - **Rull eller knip** for å zoome, dra bakgrunnen for å panorere. Knappen med fire hjørner viser hele grafen. Startvisningen er zoomet inn for å gjøre navnene lesbare; alle temaer er fortsatt med.

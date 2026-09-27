@@ -5,7 +5,7 @@ import {setupSync} from './sync-ui.js';
 
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const state={topics:[],edges:[],threshold:.88,focus:null,selected:null,editing:false,dirty:false,detailId:null};
+const state={topics:[],edges:[],threshold:.88,focus:null,maxDistance:2,selected:null,editing:false,dirty:false,detailId:null};
 let dataset,graph,searchResults=[],searchIndex=-1,toastTimer,filterTimer;
 const sync=setupSync({canLeave:()=>{const editing=state.editing;if(!canLeave())return false;if(editing&&state.detailId)renderDetail(state.detailId);return true;},reload:reloadData,toast});
 const category=id=>dataset.categories.find(c=>c.id===id);
@@ -16,13 +16,17 @@ async function api(path,options){const response=await fetch(path,options);const 
 function canLeave(){if(!state.dirty)return true;if(!confirm('Du har ulagrede endringer. Vil du forkaste dem?'))return false;state.dirty=false;state.editing=false;return true;}
 function focusOptions(){const control=$('#focus');control.innerHTML='<option value="">Hele fagkartet</option>'+dataset.categories.map(c=>`<optgroup label="${esc(c.title)}">${state.topics.filter(t=>t.category_id===c.id).sort((a,b)=>a.short_label.localeCompare(b.short_label,'nb')).map(t=>`<option value="${esc(t.id)}">${esc(t.short_label)}</option>`).join('')}</optgroup>`).join('');control.value=state.focus||'';}
 function updateGraph(center=false){
-  const filtered=filterGraph(state.topics,state.edges,state.threshold,state.focus);
+  const filtered=filterGraph(state.topics,state.edges,state.threshold,state.focus,state.maxDistance);
   graph.update(filtered.nodes,filtered.links,state.focus);
   if(state.selected&&!filtered.nodes.some(t=>t.id===state.selected)){state.selected=state.focus;graph.selected=state.focus;}
   const cross=filtered.links.filter(e=>topic(e.source).category_id!==topic(e.target).category_id).length;
   $('#graph-count').textContent=`${filtered.nodes.length} av ${state.topics.length} temaer · ${filtered.links.length.toLocaleString('nb-NO')} forbindelser · ${cross.toLocaleString('nb-NO')} på tvers`;
   $('#view-title').textContent=state.focus?topic(state.focus).short_label:'Hele fagkartet';
   $('#focus-note').hidden=!state.focus;$('#clear-focus').hidden=!state.focus;
+  $('#focus-note').textContent=`Viser temaer innen ${state.maxDistance} steg fra fokus, langs forbindelser som oppfyller terskelen.`;
+  $('#distance-control').disabled=!state.focus;
+  $('#distance-control').title=state.focus?'1 steg = en direkte forbindelse. Fokus er steg 0.':'Velg et tema i fokus for å begrense avstanden.';
+  document.querySelectorAll('[data-distance]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.distance)===state.maxDistance)));
   $('#density-note').hidden=filtered.links.length<700;
   if(center&&state.focus){graph.selected=state.focus;graph.center(state.focus);}
   else if(center){graph.fit();}
@@ -30,6 +34,7 @@ function updateGraph(center=false){
 }
 function setThreshold(value){if(!Number.isFinite(value)||value<.01||value>1)return;state.threshold=Math.round(value*100)/100;$('#threshold').value=state.threshold;$('#threshold-value').value=state.threshold.toFixed(2);clearTimeout(filterTimer);filterTimer=setTimeout(()=>updateGraph(Boolean(state.focus)),65);}
 function setFocus(id){if(id&&!topic(id))throw new Error('Ukjent tema.');state.focus=id||null;$('#focus').value=id||'';if(id)state.selected=id;updateGraph(true);}
+function setDistance(value){if(!Number.isInteger(value)||value<1||value>5)throw new Error('Ugyldig fokusavstand.');state.maxDistance=value;clearTimeout(filterTimer);updateGraph(Boolean(state.focus));}
 function chooseTopic(id){
   if(state.focus&&!graph.nodes.some(n=>n.id===id)){setFocus(id);toast('Fokus flyttet til søketreffet.');}
   state.selected=id;graph.select(id);$('#search').value='';closeSearch();
@@ -88,6 +93,7 @@ async function start(){
   });
   document.addEventListener('pointerdown',e=>{if(!e.target.closest('.search-control'))closeSearch();});
   $('#focus').onchange=e=>setFocus(e.target.value);$('#clear-focus').onclick=()=>setFocus(null);
+  $('#distance-control').onclick=e=>{const button=e.target.closest('[data-distance]');if(button)setDistance(Number(button.dataset.distance));};
   $('#threshold').oninput=e=>setThreshold(Number(e.target.value));$('#threshold-value').onchange=e=>{if(!e.target.checkValidity()){e.target.value=state.threshold.toFixed(2);return;}setThreshold(Number(e.target.value));};
   function mode(dynamic){graph.setDynamic(dynamic);$('#dynamic').setAttribute('aria-pressed',String(dynamic));$('#static').setAttribute('aria-pressed',String(!dynamic));}
   mode(graph.dynamic);$('#dynamic').onclick=()=>mode(true);$('#static').onclick=()=>mode(false);
@@ -96,10 +102,20 @@ async function start(){
   document.addEventListener('keydown',e=>{if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();$('#search').focus();}if(e.key==='Escape'&&!$('#search-results').hidden)closeSearch();});
   addEventListener('beforeunload',e=>{if(state.dirty){e.preventDefault();e.returnValue='';}});
   // Read-only diagnostics also make canvas behavior accessible to browser checks.
-  window.orgGraph={snapshot:()=>({...graph.snapshot(),threshold:state.threshold,focus:state.focus,detailId:state.detailId}),topic:id=>structuredClone(topic(id))};
+  window.orgGraph={snapshot:()=>({...graph.snapshot(),threshold:state.threshold,focus:state.focus,maxDistance:state.maxDistance,detailId:state.detailId}),topic:id=>structuredClone(topic(id))};
   const registry=document.modelContext;
   if(registry?.registerTool){const lifecycle=new AbortController();addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
-    const specs=[{name:'read_graph_state',description:'Read current visible topic IDs, threshold, focus and edge count.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true},execute:()=>({threshold:state.threshold,focus:state.focus,node_ids:graph.nodes.map(n=>n.id),edge_count:graph.links.length})},{name:'configure_graph_view',description:'Set the visible relevance threshold and optional focus topic. Does not edit topic content.',inputSchema:{type:'object',properties:{threshold:{type:'number',minimum:.01,maximum:1},focus_id:{type:['string','null']}},required:['threshold'],additionalProperties:false},annotations:{readOnlyHint:false},execute:async input=>{if(!input||!Number.isFinite(input.threshold)||input.threshold<.01||input.threshold>1||('focus_id'in input&&input.focus_id!==null&&!topic(input.focus_id)))throw new Error('Invalid graph view');setThreshold(input.threshold);clearTimeout(filterTimer);if('focus_id'in input)setFocus(input.focus_id);else updateGraph();await new Promise(requestAnimationFrame);return {threshold:state.threshold,focus:state.focus,node_count:graph.nodes.length,edge_count:graph.links.length};}}];
+    const specs=[
+      {name:'read_graph_state',description:'Read current visible topic IDs, threshold, focus, maximum distance and edge count.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true},execute:()=>({threshold:state.threshold,focus:state.focus,max_distance:state.maxDistance,node_ids:graph.nodes.map(n=>n.id),edge_count:graph.links.length})},
+      {name:'configure_graph_view',description:'Set the relevance threshold, optional focus topic and maximum distance (1–5 edges from focus). Does not edit topic content.',inputSchema:{type:'object',properties:{threshold:{type:'number',minimum:.01,maximum:1},focus_id:{type:['string','null']},max_distance:{type:'integer',minimum:1,maximum:5}},required:['threshold'],additionalProperties:false},annotations:{readOnlyHint:false},execute:async input=>{
+        if(!input||!Number.isFinite(input.threshold)||input.threshold<.01||input.threshold>1||('focus_id'in input&&input.focus_id!==null&&!topic(input.focus_id))||('max_distance'in input&&(!Number.isInteger(input.max_distance)||input.max_distance<1||input.max_distance>5)))throw new Error('Invalid graph view');
+        setThreshold(input.threshold);clearTimeout(filterTimer);
+        if('max_distance'in input)state.maxDistance=input.max_distance;
+        if('focus_id'in input)setFocus(input.focus_id);else updateGraph(Boolean(state.focus));
+        await new Promise(requestAnimationFrame);
+        return {threshold:state.threshold,focus:state.focus,max_distance:state.maxDistance,node_count:graph.nodes.length,edge_count:graph.links.length};
+      }}
+    ];
     for(const spec of specs)try{Promise.resolve(registry.registerTool(spec,{signal:lifecycle.signal})).catch(()=>{});}catch{}
   }
 }

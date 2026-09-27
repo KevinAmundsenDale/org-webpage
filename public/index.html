@@ -12,6 +12,16 @@
   <div class="toolbar">
     <div class="search-control"><label for="search">FINN ET TEMA</label><div class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-results" placeholder="Søk etter tema eller teoretiker…" autocomplete="off"><kbd>/</kbd></div><div id="search-results" role="listbox" hidden></div></div>
     <div class="focus-control"><label for="focus">TEMA I FOKUS</label><div class="focus-row"><select id="focus"><option value="">Hele fagkartet</option></select><button id="clear-focus" class="icon-button" aria-label="Fjern fokus" title="Vis alle temaer" hidden>×</button></div></div>
+    <fieldset class="distance-control" id="distance-control" disabled title="Velg et tema i fokus for å begrense avstanden.">
+      <legend>MAKS STEG FRA FOKUS</legend>
+      <div class="segmented">
+        <button type="button" data-distance="1" aria-pressed="false" aria-label="Maksimalt 1 steg fra fokus">1</button>
+        <button type="button" data-distance="2" aria-pressed="true" aria-label="Maksimalt 2 steg fra fokus">2</button>
+        <button type="button" data-distance="3" aria-pressed="false" aria-label="Maksimalt 3 steg fra fokus">3</button>
+        <button type="button" data-distance="4" aria-pressed="false" aria-label="Maksimalt 4 steg fra fokus">4</button>
+        <button type="button" data-distance="5" aria-pressed="false" aria-label="Maksimalt 5 steg fra fokus">5</button>
+      </div>
+    </fieldset>
     <div class="threshold-control"><div class="control-label"><label for="threshold">MINSTE RELASJONSVEKT</label><input id="threshold-value" aria-label="Terskelverdi" type="number" min="0.01" max="1" step="0.01" value="0.88"></div><div class="range-row"><span>1</span><input id="threshold" type="range" min="0.01" max="1" step="0.01" value="0.88" dir="rtl"><span>0,01</span></div></div>
     <fieldset class="layout-control"><legend>GRAFENS BEVEGELSE</legend><div class="segmented"><button id="dynamic" aria-pressed="true"><span class="motion-icon">⌁</span> Dynamisk</button><button id="static" aria-pressed="false"><span>Ⅱ</span> Statisk</button></div></fieldset>
   </div>
@@ -19,7 +29,7 @@
 <main>
   <section class="graph-area" aria-label="Interaktivt fagkart">
     <canvas id="graph" tabindex="0" aria-label="Fagkart. Dra for å flytte, rull for å zoome. Finn og åpne temaer med søket. Piltaster panorerer, pluss og minus zoomer."></canvas>
-    <div class="view-summary"><span class="eyebrow">UTFORSK SAMMENHENGENE</span><h1 id="view-title">Hele fagkartet</h1><p id="graph-count" aria-live="polite">Laster 132 temaer…</p><span id="focus-note" hidden>Viser alle temaer med en sti til fokusnoden.</span></div>
+    <div class="view-summary"><span class="eyebrow">UTFORSK SAMMENHENGENE</span><h1 id="view-title">Hele fagkartet</h1><p id="graph-count" aria-live="polite">Laster 132 temaer…</p><span id="focus-note" hidden></span></div>
     <div id="graph-loading" class="loading">Henter fagkartet…</div>
     <div id="edge-tooltip" role="tooltip" hidden></div>
     <div id="density-note" hidden>Et tett nettverk. Zoom inn eller øk terskelen for bedre oversikt.</div>
