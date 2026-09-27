@@ -1,4 +1,8 @@
-Sammenheng 1.1.1
+Sammenheng 1.1.2
+
+- Retter «Kunne ikke laste ned fra GitHub» ved søk etter nytt faginnhold. Appen bruker nå riktig forespørselstype for GitHubs utgaveliste.
+- Faginnhold 2 er inkludert, med den godkjente rettelsen av Scheins kulturnivåer.
+- Nedlastingsfeil viser HTTP-status og vert, slik at eventuelle senere problemer er lettere å finne.
 
 - Windows-installasjonen kontrollerer ledig plass før den pakker ut eller erstatter filer. Ved for lite plass vises en tydelig forklaring i stedet for en misvisende melding om at appen ikke kan lukkes.
 

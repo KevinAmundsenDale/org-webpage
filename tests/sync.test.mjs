@@ -6,7 +6,7 @@ import {tmpdir} from 'node:os';
 import {join,resolve,sep} from 'node:path';
 import {Store} from '../lib/store.mjs';
 import {sha,editable,mergeFields,buildContentBundle,unpackBundle,validateTopicFactory} from '../lib/content.mjs';
-import {findContent,fetchContent,encodeBundle} from '../lib/github.mjs';
+import {download,findContent,fetchContent,encodeBundle} from '../lib/github.mjs';
 const root=resolve('.'),schema=JSON.parse(await readFile('data/topics.schema.json','utf8'));
 const contentVersion=JSON.parse(await readFile('data/content-version.json','utf8'));
 const check=validateTopicFactory(schema),bundle=await buildContentBundle(root,{...contentVersion,notes:'Test'});
@@ -52,12 +52,20 @@ test('backup import previews conflicts and restores notes without silently overw
   assert.equal(store.topic('organisasjon').title,'First title');assert.equal(store.topic('organisasjon')._edit.notes,'First notes');
 }));
 test('GitHub update path chooses content releases and verifies download integrity',async()=>{
-  const {bytes,manifest}=encodeBundle(nextBundle(()=>{}));const fetcher=async url=>{
-    if(url.includes('/releases?'))return new Response(JSON.stringify([{tag_name:'v9.0.0',draft:false,prerelease:false},{tag_name:`content-v${manifest.version}`,draft:false,prerelease:false}]));
+  const {bytes,manifest}=encodeBundle(nextBundle(()=>{}));const fetcher=async (url,options)=>{
+    if(url.includes('/releases?')){
+      // The real releases API rejects the binary download header with HTTP 415.
+      if(options.headers.Accept!=='application/vnd.github+json')return new Response('Unsupported Accept header',{status:415});
+      return new Response(JSON.stringify([{tag_name:'v9.0.0',draft:false,prerelease:false},{tag_name:`content-v${manifest.version}`,draft:false,prerelease:false}]));
+    }
+    assert.equal(options.headers.Accept,'application/octet-stream');
     if(url.endsWith('content-manifest.json'))return new Response(JSON.stringify(manifest));return new Response(bytes);
   };
   const update=await findContent('owner/repo',fetcher);assert.equal(update.version,bundle.version+1);assert.equal((await fetchContent(update,fetcher)).version,bundle.version+1);
   await assert.rejects(fetchContent({...update,sha256:'0'.repeat(64)},fetcher));
+});
+test('GitHub download errors identify the HTTP status and host',async()=>{
+  await assert.rejects(download('https://api.github.com/repos/owner/repo/releases',1000,async()=>new Response('',{status:415})),/HTTP 415, api\.github\.com/);
 });
 test('removed topics retain private text and notes in an accessible archive',()=>fixture(async store=>{
   await save(store,'organisasjon',{title:'Archived private title'},'Archived private notes');
