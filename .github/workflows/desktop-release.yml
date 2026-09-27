@@ -30,6 +30,12 @@ jobs:
           APPLE_APP_SPECIFIC_PASSWORD: ${{ runner.os == 'macOS' && secrets.APPLE_APP_SPECIFIC_PASSWORD || '' }}
           APPLE_TEAM_ID: ${{ runner.os == 'macOS' && secrets.APPLE_TEAM_ID || '' }}
           CSC_IDENTITY_AUTO_DISCOVERY: ${{ secrets.CSC_LINK != '' && 'true' || 'false' }}
+      - name: Test Windows installation and replacement
+        if: runner.os == 'Windows'
+        run: node tests/install-windows.mjs
+      - name: Test packaged Mac application
+        if: runner.os == 'macOS'
+        run: node tests/desktop.mjs --executable=release/mac-universal/Sammenheng.app/Contents/MacOS/Sammenheng
       - uses: actions/upload-artifact@v7
         with:
           name: desktop-${{ matrix.os }}

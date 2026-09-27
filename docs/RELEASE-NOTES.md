@@ -1,4 +1,6 @@
-Sammenheng 1.1.0
+Sammenheng 1.1.1
+
+- Windows-installasjonen kontrollerer ledig plass før den pakker ut eller erstatter filer. Ved for lite plass vises en tydelig forklaring i stedet for en misvisende melding om at appen ikke kan lukkes.
 
 - Skrivebordsapp med innebygd kjøring: ingen Node.js eller terminal nødvendig for brukere.
 - Oppdateringer av appen og faginnholdet håndteres hver for seg.

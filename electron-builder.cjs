@@ -11,7 +11,7 @@ module.exports={
   asar:true,artifactName:'Sammenheng-${version}-${os}-${arch}.${ext}',
   publish:[{provider:'github',owner,repo,releaseType:'draft'}],
   win:{target:[{target:'nsis',arch:['x64']}],icon:'build/icon.ico'},
-  nsis:{oneClick:true,perMachine:false,allowElevation:false,deleteAppDataOnUninstall:false,createDesktopShortcut:true,createStartMenuShortcut:true},
+  nsis:{oneClick:true,perMachine:false,allowElevation:false,deleteAppDataOnUninstall:false,createDesktopShortcut:true,createStartMenuShortcut:true,include:'build/installer.nsh'},
   mac:{target:[{target:'dmg',arch:['universal']},{target:'zip',arch:['universal']}],category:'public.app-category.education',icon:'build/icon.icns',hardenedRuntime:true,entitlements:'desktop/entitlements.mac.plist'},
   dmg:{title:'Sammenheng ${version}'}
 };

@@ -133,6 +133,12 @@ Each person has an independent local copy. Suggestions are reviewed contribution
 
 ## Storage and recovery
 
+### Windows reports "cannot be closed" or "error writing to file"
+
+Check free disk space before retrying. The older 1.1.0 installer also used "cannot be closed" for file-copy failures caused by a full drive. It can leave incomplete files even when no Sammenheng process is running. The temporary-files drive (usually C:) needs room for the compressed package and an expanded copy, in addition to the final installation. Free about 2 GB on that drive and the installation drive, then run the installer again. Saved notes live separately from the program files.
+
+Starting with 1.1.1, the installer checks available space before it removes or replaces an existing app. Release builds also test an actual Windows installation, replacement while the app is running, note persistence and uninstall. The Mac build runs a separate packaged-app launch test; it does not use the Windows installer.
+
 The desktop app stores its profile in the operating system's per-user app-data directory, under `Sammenheng/profile` (normally `%APPDATA%/Sammenheng/profile` on Windows and `~/Library/Application Support/Sammenheng/profile` on Mac). The development/browser version uses the project `data/` folder.
 
 `edits.json` contains personal edits, baseline information and the active content snapshot pointer. It is committed by atomic file replacement, so a content update and its resolved personal edits become active together. `.content/` stores complete content snapshots. `backups/` keeps the most recent 20 prior state files. Do not manually delete snapshot folders that a state file references.
