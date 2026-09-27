@@ -2,7 +2,15 @@
 
 Et lokalt, interaktivt fagkart for **Organisasjon, ledelse og etikk**. Inneholder 132 temaer, 8 646 vektede forbindelser og figurene fra sammendraget.
 
-## Åpne nettsiden
+## Skrivebordsapp, oppdateringer og deling
+
+Versjon 1.1.0 kan pakkes som en Windows- og Mac-app. Brukere av appen trenger ingen programmeringsverktøy. Den har oppdatering av faginnhold, konfliktvalg ved egne rettelser, eksport/import av egne data og forslag til GitHub.
+
+Se **[Sharing and updates](docs/SHARING-AND-UPDATES.md)** for oppsett, signering, publisering og godkjenning av forslag. Windows-installasjonsfilen bygges i `release/`; lokale testutgaver er usignerte.
+
+Knappen **Oppdateringer og backup** åpner de nye funksjonene. Eksisterende nettleserbrukere kan eksportere egne data her og importere dem i skrivebordsappen.
+
+## Åpne den lokale nettsiden
 
 Dobbeltklikk **Start.cmd** og åpne **http://localhost:4317** i nettleseren. Behold terminalvinduet åpent; Ctrl+C stopper serveren. Hvis siden allerede kjører, åpner du bare adressen. Du kan også kjøre `npm start` fra denne mappen. Node.js må være installert; avhengighetene er installert på denne maskinen.
 
@@ -24,7 +32,7 @@ Vektene er faglige vurderinger av relevans i en drøfting, ikke statistiske korr
 ## Hvor endringene lagres
 
 - `data/topics.json`: opprinnelige temaer. Denne filen overskrives ikke av redigering.
-- `data/edits.json`: dine lagrede endringer og notater, brukt av alle nettlesere som åpner denne lokale serveren. Filen opprettes ved første lagring.
+- `data/edits.json`: dine lagrede endringer og notater, brukt av alle nettlesere som åpner denne lokale serveren. Filen opprettes ved første oppstart.
 - `data/backups/`: de siste 20 kopiene av tidligere redigeringsfiler.
 - `data/relationships.json`: den komplette kantlisten som nettsiden bruker.
 - `data/relationship-matrix.json`: samme vekter som en matrise, for senere viderebruk.
@@ -34,7 +42,7 @@ Vektene er faglige vurderinger av relevans i en drøfting, ikke statistiske korr
 
 Lagring gjøres på serveren med en midlertidig fil og atomisk filbytte. Samtidige endringer i samme tema oppdages og avvises med en forklaring, slik at de ikke stille overskriver hverandre. Ved feil blir teksten værende i skjemaet. Lag gjerne en ekstra kopi av hele `data/`-mappen som din egen sikkerhetskopi.
 
-Originale innholdshasher og revisjoner beskriver fortsatt grunnlaget som vektene ble laget fra. API-et legger redigerte felt oppå originalen og merker dem med `_edit.relationships_need_review`. Nye faglige formuleringer beregner ikke nye vekter automatisk. Ved en senere relasjonsrevisjon må endringene flettes inn i hoveddatasettet og vurderes mot scoringmaterialet fra den opprinnelige arbeidsmappen.
+Originale innholdshasher og revisjoner beskriver fortsatt grunnlaget som vektene ble laget fra. I versjon 1.1.0 brukes en aktiv, versjonert kopi av fellesinnholdet under `data/.content/` for nettleserutgaven. Direkte endringer i de opprinnelige filene blir tilgjengelige for brukerne gjennom en ny innholdsutgave, ikke ved å overskrive den aktive kopien. API-et legger redigerte felt oppå originalen og merker dem med `_edit.relationships_need_review`. Nye faglige formuleringer beregner ikke nye vekter automatisk. Ved en senere relasjonsrevisjon må endringene flettes inn i hoveddatasettet og vurderes mot scoringmaterialet fra den opprinnelige arbeidsmappen.
 
 ## Prosjekt og videreutvikling
 
@@ -54,4 +62,4 @@ Kjør `npm run build` etter endringer i kildekoden. `npm run dev` overvåker Jav
 
 For å gi noen sin egen lokale kopi: kopier prosjektmappen, inkludert `data/` og `public/`, men utelat `node_modules/`; mottakeren kjører `npm ci`, `npm run build`, `npm start`. Ta med `data/edits.json` hvis du vil dele dine endringer. Bare du avgjør hvilke egne notater du deler.
 
-Serveren lytter på maskinens lokale adresse. En felles nettutgave eller Docker-oppsett er et senere steg; da må blant annet den vedvarende datamappen og redigeringstilgang settes opp. Det er ikke publisert noen nettkopi nå.
+For vanlige brukere anbefales nå skrivebordsinstallasjonsfilene. Se [veiledningen](docs/SHARING-AND-UPDATES.md) for GitHub-utgaver og oppdateringer. Ingen utgaver er publisert automatisk ved den lokale byggingen. Serveren lytter fortsatt bare lokalt.

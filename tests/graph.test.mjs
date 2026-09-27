@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {filterGraph,searchTopics} from '../src/graph-data.js';
+import {Graph} from '../src/graph.js';
 const {topics}=JSON.parse(await readFile(new URL('../data/topics.json',import.meta.url)));
 const {edges}=JSON.parse(await readFile(new URL('../data/relationships.json',import.meta.url)));
 test('complete graph, inclusive thresholds and isolated focus',()=>{
@@ -20,4 +21,8 @@ test('focus follows every reachable hop, excludes other components and never inv
 test('search understands Norwegian characters, aliases and names',()=>{
   assert.ok(searchTopics(topics,'malforskyvning').some(t=>t.id==='maalforskyvning'));
   assert.ok(searchTopics(topics,'Mintzberg').length>=5);
+});
+test('a selected overlapping node remains the drag target when a layout is frozen',()=>{
+  const selected={id:'a',x:0,y:0},overlap={id:'b',x:2,y:2};
+  assert.equal(Graph.prototype.hitNode.call({nodes:[selected,overlap],selected:'a',world:(x,y)=>[x,y]},0,0),selected);
 });

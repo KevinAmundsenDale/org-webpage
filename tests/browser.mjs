@@ -5,7 +5,7 @@ import {mkdtemp,cp,readFile,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join,resolve,sep} from 'node:path';
 const data=await mkdtemp(join(tmpdir(),'org-webpage-test-'));
-for(const name of ['topics.json','relationships.json','relationship-analysis.json'])await cp('data/'+name,join(data,name));
+for(const name of ['topics.json','relationships.json','relationship-analysis.json','relationship-matrix.json','source-map.json'])await cp('data/'+name,join(data,name));
 let server,browser;
 const errors=[];
 async function startServer(){server=spawn(process.execPath,['server.mjs'],{cwd:resolve('.'),env:{...process.env,PORT:'4318',ORG_DATA_DIR:data},stdio:['ignore','pipe','pipe']});await new Promise((yes,no)=>{server.stdout.on('data',v=>{if(v.toString().includes('http://'))yes();});server.stderr.on('data',v=>no(new Error(v.toString())));server.on('error',no);});}
@@ -47,5 +47,6 @@ try {
   await page.locator('#search').fill('organisasjon');await page.locator('.result[data-id="organisasjon"]').click();await page.locator('canvas').press('Enter');assert.equal(await page.locator('#sidebar').isVisible(),true);
   assert.ok((await page.locator('#edit-topic').boundingBox()).x>=0);
   assert.deepEqual(errors,[]);
+  await page.locator('#close-sidebar').click();await page.locator('#updates-button').click();await page.locator('#content-check').waitFor();assert.ok(await page.locator('#backup-export').isVisible());await page.locator('#sync-close').click();
   console.log('PASS: browser load, search centering, right-click, saved edits, restart persistence, stale-write protection, focus reachability, threshold extremes, static drag, elasticity, zoom, mobile, keyboard, WebMCP valid/invalid inputs; no browser errors.');
 } finally {if(browser)await browser.close();if(server&&server.exitCode===null){const done=new Promise(r=>server.once('exit',r));server.kill();await done;}assert.ok(resolve(data).startsWith(resolve(tmpdir())+sep+'org-webpage-test-'));await rm(data,{recursive:true,force:true});}

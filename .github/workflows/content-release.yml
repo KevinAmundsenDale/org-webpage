@@ -1,0 +1,30 @@
+name: Build shared content release
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  content:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run content:build
+      - name: Create draft content release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.DISTRIBUTION_TOKEN || github.token }}
+        run: |
+          VERSION=$(node -p "require('./data/content-version.json').version")
+          REPO=$(node -p "require('./distribution.json').contentRepository")
+          node -e "require('node:fs').writeFileSync('content-notes.txt', require('./data/content-version.json').notes)"
+          TARGET=()
+          if [ "$REPO" = "$GITHUB_REPOSITORY" ]; then TARGET=(--target "$GITHUB_SHA"); fi
+          gh release create "content-v$VERSION" --repo "$REPO" "${TARGET[@]}" --draft --latest=false --title "Faginnhold $VERSION" --notes-file content-notes.txt release/content/content-manifest.json release/content/content.json.gz

@@ -1,0 +1,10 @@
+import {readFile,mkdir,writeFile} from 'node:fs/promises';
+import {resolve,join} from 'node:path';
+import {buildContentBundle,unpackBundle,validateTopicFactory} from '../lib/content.mjs';
+import {encodeBundle} from '../lib/github.mjs';
+const root=resolve('.'),info=JSON.parse(await readFile('data/content-version.json','utf8'));
+const schema=JSON.parse(await readFile('data/topics.schema.json','utf8'));
+const bundle=await buildContentBundle(root,info);unpackBundle(bundle,validateTopicFactory(schema));
+const {bytes,manifest}=encodeBundle(bundle);await mkdir('release/content',{recursive:true});
+await writeFile('release/content/content.json.gz',bytes);await writeFile('release/content/content-manifest.json',JSON.stringify(manifest,null,2)+'\n');
+console.log(`Validated content-v${info.version}: ${bytes.length} bytes, all topics, relationships and figures.`);

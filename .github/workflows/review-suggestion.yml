@@ -1,0 +1,55 @@
+name: Prepare a topic suggestion for review
+on:
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Issue number in the suggestions repository'
+        required: true
+        type: number
+      weights_reviewed:
+        description: 'I reviewed the suggestion and confirmed existing relationship weights still fit'
+        required: true
+        default: false
+        type: boolean
+permissions:
+  contents: write
+  issues: read
+  pull-requests: write
+jobs:
+  prepare:
+    if: ${{ inputs.weights_reviewed }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Read only the proposal data
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.DISTRIBUTION_TOKEN || github.token }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+        run: |
+          REPO=$(node -p "require('./distribution.json').suggestionsRepository")
+          gh api "repos/$REPO/issues/$ISSUE_NUMBER" > issue.json
+          node scripts/proposal-from-issue.mjs issue.json proposal.json
+          npm run proposal:apply -- proposal.json --apply --weights-reviewed
+          node -e "const fs=require('node:fs');const p=require('./data/content-version.json');p.version++;p.notes='Godkjenningsklar rettelse fra fagforslag #' + process.env.ISSUE_NUMBER;fs.writeFileSync('data/content-version.json',JSON.stringify(p,null,2)+'\n');"
+      - run: npm run content:build
+      - name: Open a reviewable pull request
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+        run: |
+          BRANCH="proposal/issue-$ISSUE_NUMBER-$GITHUB_RUN_ID"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -b "$BRANCH"
+          git add data/topics.json data/relationships.json data/relationship-analysis.json data/relationship-matrix.json data/content-version.json
+          git commit -m "Prepare topic suggestion #$ISSUE_NUMBER"
+          git push origin "$BRANCH"
+          node -e "const fs=require('node:fs');const c=require('./distribution.json');fs.writeFileSync('pr-body.md','Review the topic changes before merging. Existing weights were explicitly marked as reviewed when this workflow was started.\n\nSource proposal: https://github.com/'+c.suggestionsRepository+'/issues/'+process.env.ISSUE_NUMBER+'\n\nValidation: complete content bundle, matching topic hashes, complete edge coverage and matrix consistency. After merging, run Build shared content release and review the release draft.\n');"
+          gh pr create --repo "$GITHUB_REPOSITORY" --base "${{ github.event.repository.default_branch }}" --head "$BRANCH" --title "Review topic suggestion #$ISSUE_NUMBER" --body-file pr-body.md

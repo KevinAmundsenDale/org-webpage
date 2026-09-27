@@ -1,11 +1,13 @@
 import './style.css';
 import {Graph,PALETTE} from './graph.js';
 import {filterGraph,searchTopics} from './graph-data.js';
+import {setupSync} from './sync-ui.js';
 
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const state={topics:[],edges:[],threshold:.88,focus:null,selected:null,editing:false,dirty:false,detailId:null};
 let dataset,graph,searchResults=[],searchIndex=-1,toastTimer,filterTimer;
+const sync=setupSync({canLeave:()=>{const editing=state.editing;if(!canLeave())return false;if(editing&&state.detailId)renderDetail(state.detailId);return true;},reload:reloadData,toast});
 const category=id=>dataset.categories.find(c=>c.id===id);
 const color=id=>PALETTE[dataset.categories.findIndex(c=>c.id===id)%PALETTE.length];
 const topic=id=>state.topics.find(t=>t.id===id);
@@ -45,6 +47,7 @@ function renderDetail(id){
   state.detailId=id;state.editing=false;$('#sidebar').hidden=false;
   const neighbors=state.edges.filter(e=>(e.source===id||e.target===id)&&e.weight>=state.threshold).slice(0,10);
   $('#sidebar-content').innerHTML=panelTop()+`<div class="panel-body"><div class="category-tag"><span class="swatch" style="background:${color(t.category_id)}"></span>${esc(category(t.category_id).title)}</div><h2>${esc(t.title)}</h2>${t.attribution.length?`<div class="attribution">${t.attribution.map(a=>esc(a.name)).join(' · ')}</div>`:''}<p class="definition">${esc(t.content.short_definition)}</p><button class="focus-topic" id="focus-topic">${state.focus===id?'Fjern fokus og vis hele kartet':'Sett dette temaet i fokus'}</button>${t._edit?.version?'<p class="review-note">Endret av deg. Relasjonsvektene bygger fortsatt på den opprinnelige teksten.</p>':''}<h3>Forklaring</h3><p>${esc(t.content.explanation)}</p>${section('Hovedpunkter',t.content.key_points)}${section('Bruk i en drøfting',t.analysis.writing_uses)}${section('Begrensninger og spenninger',t.analysis.limitations_and_tensions)}${t.content.examples.length?'<h3>Eksempler</h3>'+t.content.examples.map(e=>`<p><strong>${esc(e.title)}</strong><br>${esc(e.text)}</p>`).join(''):''}${t.content.expressions.length?'<h3>Uttrykk</h3>'+t.content.expressions.map(e=>`<p><code>${esc(e.latex)}</code><br>${esc(e.explanation)}</p>`).join(''):''}${t.figures.map(f=>f.src?`<figure><a href="/${esc(f.src)}" target="_blank" rel="noopener"><img src="/${esc(f.src)}" alt="${esc(f.alt)}" loading="lazy"></a><figcaption>${esc(f.caption)}${f.notes?.length?'<br>'+f.notes.map(esc).join(' '):''}</figcaption></figure>`:`<p class="muted">${esc(f.caption)} ${f.notes?.map(esc).join(' ')||''}</p>`).join('')}${t._edit?.notes?`<h3>Egne notater</h3><p class="notes">${esc(t._edit.notes)}</p>`:''}<h3>Nære forbindelser ≥ ${state.threshold.toFixed(2)}</h3>${neighbors.length?neighbors.map(e=>{const other=topic(e.source===id?e.target:e.source);return `<div><button class="related-row" data-edge="${esc(e.id)}"><span>${esc(other.short_label)}</span><span class="weight-chip">${e.weight.toFixed(2)}</span><span>＋</span></button><div class="reason-slot" hidden></div></div>`;}).join(''):'<p class="muted">Ingen forbindelser ved denne terskelen. Senk terskelen for å se flere.</p>'}<details><summary class="muted" style="font-size:13px;margin-top:25px;cursor:pointer">Faglig analyse og kildegrunnlag</summary>${section('Sentrale spørsmål',t.analysis.central_questions)}${section('Mekanismer',t.analysis.mechanisms)}${t.review.notes.length?`<p class="review-note">${t.review.notes.map(esc).join(' ')}</p>`:''}<h3>Kilder</h3>${t.source_refs.map(r=>`<p class="sources">${esc(dataset.sources.find(s=>s.id===r.source_id)?.title||r.source_id)}<br>${esc(r.locator)}${r.pages?.length?' · s. '+r.pages.join(', '):''}</p>`).join('')}</details></div>`;
+  const suggest=document.createElement('button');suggest.className='small-button suggest-topic';suggest.id='suggest-topic';suggest.textContent='Foreslå endring til felles kart';$('#focus-topic').after(suggest);suggest.onclick=()=>sync.propose(id);
   wirePanel();$('#focus-topic').onclick=()=>setFocus(state.focus===id?null:id);
   document.querySelectorAll('[data-edge]').forEach(button=>button.onclick=async()=>{const slot=button.nextElementSibling;if(!slot.hidden){slot.hidden=true;return;}slot.hidden=false;slot.textContent='Henter forklaring…';try{const edge=await api('/api/relationships/'+encodeURIComponent(button.dataset.edge));slot.innerHTML=`<p class="related-reason">${esc(edge.reason)}</p>`;}catch(e){slot.textContent=e.message;}});
 }
@@ -63,7 +66,7 @@ function renderEditor(id){
       if(!extra||typeof extra!=='object'||Array.isArray(extra))throw new Error('De øvrige feltene må være et JSON-objekt.');
       const fields={title:String(fd.get('title')).trim(),short_label:String(fd.get('short_label')).trim(),aliases:extra.aliases,attribution:extra.attribution,tags:extra.tags,content:{...t.content,short_definition:String(fd.get('short_definition')),explanation:String(fd.get('explanation')),key_points:lines('key_points'),examples:extra.examples,expressions:extra.expressions},analysis:{...extra.analysis,writing_uses:lines('writing_uses'),limitations_and_tensions:lines('limitations')},figures:extra.figures,source_refs:extra.source_refs};
       form.querySelector('[type=submit]').disabled=true;$('#edit-topic').disabled=true;
-      const result=await api('/api/topics/'+encodeURIComponent(id),{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({version:t._edit?.version||0,fields,notes:String(fd.get('notes'))})});
+      const result=await api('/api/topics/'+encodeURIComponent(id),{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({version:t._edit?.version||0,base_content_hash:t.content_hash,fields,notes:String(fd.get('notes'))})});
       state.topics=state.topics.map(x=>x.id===id?result.topic:x);state.dirty=false;state.editing=false;focusOptions();updateGraph();renderDetail(id);toast('Endringene er lagret.');
     }catch(e){error.textContent=e instanceof SyntaxError?'Kontroller JSON-feltene. Teksten din er beholdt.':e.message;error.hidden=false;error.scrollIntoView({block:'nearest'});form.querySelector('[type=submit]').disabled=false;$('#edit-topic').disabled=false;}
   };
@@ -99,6 +102,15 @@ async function start(){
     const specs=[{name:'read_graph_state',description:'Read current visible topic IDs, threshold, focus and edge count.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true},execute:()=>({threshold:state.threshold,focus:state.focus,node_ids:graph.nodes.map(n=>n.id),edge_count:graph.links.length})},{name:'configure_graph_view',description:'Set the visible relevance threshold and optional focus topic. Does not edit topic content.',inputSchema:{type:'object',properties:{threshold:{type:'number',minimum:.01,maximum:1},focus_id:{type:['string','null']}},required:['threshold'],additionalProperties:false},annotations:{readOnlyHint:false},execute:async input=>{if(!input||!Number.isFinite(input.threshold)||input.threshold<.01||input.threshold>1||('focus_id'in input&&input.focus_id!==null&&!topic(input.focus_id)))throw new Error('Invalid graph view');setThreshold(input.threshold);clearTimeout(filterTimer);if('focus_id'in input)setFocus(input.focus_id);else updateGraph();await new Promise(requestAnimationFrame);return {threshold:state.threshold,focus:state.focus,node_count:graph.nodes.length,edge_count:graph.links.length};}}];
     for(const spec of specs)try{Promise.resolve(registry.registerTool(spec,{signal:lifecycle.signal})).catch(()=>{});}catch{}
   }
+}
+async function reloadData(){
+  [dataset,{edges:state.edges}]=await Promise.all([api('/api/topics'),api('/api/relationships')]);state.topics=dataset.topics;state.editing=false;state.dirty=false;
+  if(state.focus&&!topic(state.focus))state.focus=null;
+  if(state.detailId&&!topic(state.detailId)){state.detailId=null;$('#sidebar').hidden=true;}
+  graph.categories=dataset.categories;graph.colors=new Map(dataset.categories.map((c,i)=>[c.id,PALETTE[i%PALETTE.length]]));
+  focusOptions();updateGraph(true);
+  $('#chapter-legend').innerHTML=dataset.categories.map(c=>`<div class="legend-item"><span class="swatch" style="background:${color(c.id)}"></span>${esc(c.title)}</div>`).join('');
+  $('#chapters-toggle span').textContent=dataset.categories.length;
 }
 // Header height can change with viewport size or browser text enlargement.
 new ResizeObserver(()=>{const h=$('header').getBoundingClientRect().height;$('main').style.height=`calc(100dvh - ${h}px)`;if(innerWidth<=700)$('#sidebar').style.top=h+'px';else $('#sidebar').style.top='';}).observe($('header'));

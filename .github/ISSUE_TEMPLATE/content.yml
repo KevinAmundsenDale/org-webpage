@@ -1,0 +1,30 @@
+name: Foreslå en faglig rettelse
+description: Foreslå en bedre tittel, definisjon eller forklaring i fagkartet.
+title: 'Fagforslag: '
+body:
+  - type: markdown
+    attributes:
+      value: 'Send bare tekst du vil dele med andre. Egne private notater skal ikke legges ved. Du kan også bruke «Foreslå endring» i appen.'
+  - type: input
+    id: topic
+    attributes:
+      label: Tema
+      description: Navn eller ID på noden.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Foreslått tekst
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Begrunnelse og eventuell kilde
+  - type: textarea
+    id: data
+    attributes:
+      label: Forslagsdata fra appen (valgfritt)
+      description: Lim inn forslags-JSON, eller legg ved forslagsfilen. Ikke legg ved en privat sikkerhetskopi.
+      render: json

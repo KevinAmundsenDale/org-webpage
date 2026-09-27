@@ -4,3 +4,7 @@ data/edits.json
 data/backups/
 data/*.tmp
 .runtime/
+data/.content/
+release/
+.maintainer-backups/
+test-results/
