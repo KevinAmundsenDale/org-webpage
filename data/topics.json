@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
   "dataset_id": "organisasjon-ledelse-etikk",
-  "dataset_revision": 2,
+  "dataset_revision": 3,
   "language": "nb",
   "created_at": "2026-09-25",
   "course": {
@@ -3899,8 +3899,8 @@
     },
     {
       "id": "schein-kulturnivaaer",
-      "revision": 1,
-      "content_hash": "cdf48a0175b41a3bc024ea0183fdb570e123e810ebe9e63c1af9ae3322de9d4c",
+      "revision": 2,
+      "content_hash": "9cb3675c50afd8db00299e38582dff0056993e0713e09221f2697ec9f02573d1",
       "title": "Scheins kulturnivåer",
       "short_label": "Scheins kulturnivåer",
       "kind": "model",
@@ -3923,7 +3923,7 @@
       ],
       "content": {
         "short_definition": "Schein skiller mellom artefakter, verdier og normer og grunnleggende antakelser.",
-        "explanation": "Figuren viser tre nivåer som påvirker hverandre. Synlige uttrykk kan undersøkes sammen med uttalte verdier og dypere antakelser for å forstå kulturen.",
+        "explanation": "Figuren viser tre nivåer som påvirker hverandre. Synlige uttrykk kan undersøkes sammen med uttalte verdier og dypere antakelser for å forstå kulturen.\n\nArtefakter er synlige symboler, utalelser eller fysiske manifestasjoner som fremviser kultur.\n\nVerdier og normer er holdninger som forteller os om hva som blir ansett til å være korrekt, normalt og ønskelig.\n\nGrunnleggende antakelser er en oppfatning eller mening som er felles for alle og ligger dypt, ofte ubevisst.",
         "key_points": [
           "Artefakter.",
           "Verdier og normer.",
