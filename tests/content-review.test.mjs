@@ -36,6 +36,7 @@ test('reviewed scoring inputs match distributed fingerprints and every new topic
  assert.equal(sha(profiles),relations.semantic_profiles_fingerprint);
  assert.equal(sha(pairs.reviews),relations.pair_reviews_fingerprint);
  const byPair=new Map(relations.edges.map(e=>[e.id,e]));
+ for(const edge of relations.edges)assert.ok(['pair_review','mediated_path','semantic_profile'].includes(edge.assessment_method),'Keep labels compatible with installed apps');
  for(const p of pairs.reviews)assert.equal(byPair.get([p.source,p.target].sort().join('--')).weight,p.weight);
  for(const t of report.added_nodes){const links=relations.edges.filter(e=>(e.source===t.id||e.target===t.id)&&e.assessment_method==='pair_review'&&e.weight>=.65);assert.ok(links.length>=2,`Missing direct bridges: ${t.id}`);}
  assert.equal(relations.node_count,data.topics.length);assert.equal(relations.edge_count,data.topics.length*(data.topics.length-1)/2);

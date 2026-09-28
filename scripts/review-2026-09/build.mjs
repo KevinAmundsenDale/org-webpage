@@ -102,7 +102,7 @@ for(let i=0;i<ids.length;i++)for(let j=i+1;j<ids.length;j++){
  const usePath=!direct&&path&&path.weight>est.weight;
  const weight=direct?.weight??Math.max(est.weight,path?.weight??0);
  const weak=[a,b].some(t=>t.review.status==='needs_source_expansion'),limited=[a,b].some(t=>t.review.status!=='source_checked');
- const method=direct?'pair_review':usePath?'reviewed_path_inference':'semantic_profile_estimate';
+ const method=direct?'pair_review':usePath?'mediated_path':'semantic_profile';
  const sharedTerms=dimensions.flatMap(k=>est.shared[k].map(f=>profileDoc.feature_registries[k][f]));
  let reason=direct?.reason??(usePath?`Mulig indirekte skrivevei: ${path.node_ids.map(id=>byId.get(id).short_label).join(' → ')}. Hvert trinn er særskilt vurdert; dette er ikke bevis på direkte likhet eller årsakssammenheng.`:sharedTerms.length?`Redaksjonelt profilestimat. Temaene møtes særlig gjennom ${sharedTerms.slice(0,5).join(', ')}. Forklar forbindelsen i lys av oppgaven; scoren er ikke målt korrelasjon.`:`Perifer, men positiv forbindelse i kursets brede tema. Profilene har ingen kodet overlapp; en faglig overgang krever ekstra begrunnelse og kontekst.`);
  edges.push({id,source,target,weight,confidence:weak?'low':direct&&!limited?'high':'medium',assessment_method:method,relationship_type:oldEdges.get(id)?.relationship_type??'related_to'});
