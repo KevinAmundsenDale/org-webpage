@@ -4,7 +4,7 @@ Et lokalt, interaktivt fagkart for **Organisasjon, ledelse og etikk**. Inneholde
 
 ## Skrivebordsapp, oppdateringer og deling
 
-Versjon 1.1.0 kan pakkes som en Windows- og Mac-app. Brukere av appen trenger ingen programmeringsverktøy. Den har oppdatering av faginnhold, konfliktvalg ved egne rettelser, eksport/import av egne data og forslag til GitHub.
+Versjon 1.3.0 kan pakkes som en Windows- og Mac-app. Brukere av appen trenger ingen programmeringsverktøy. Den har oppdatering av faginnhold, konfliktvalg ved egne rettelser, eksport/import av egne data og forslag til GitHub.
 
 Se **[Sharing and updates](docs/SHARING-AND-UPDATES.md)** for oppsett, signering, publisering og godkjenning av forslag. Windows-installasjonsfilen bygges i `release/`; lokale testutgaver er usignerte.
 
@@ -16,19 +16,21 @@ Dobbeltklikk **Start.cmd** og åpne **http://localhost:4317** i nettleseren. Beh
 
 ## Slik bruker du kartet
 
-- **Søk** etter tema, navn eller stikkord. Velg et treff for å sentrere det. Søket fjerner ikke andre temaer. Hvis treffet ligger utenfor et aktivt fokusområde, flyttes fokus til treffet.
-- **Tema i fokus** viser temaer som kan nås innen valgt avstand langs forbindelser som oppfyller terskelen. Ved høy terskel kan fokusnoden stå alene. Velg «Hele fagkartet» eller × for å fjerne fokus.
+- **Søk** i navn, teoretikere og fagtekst, inkludert eksempler og egne lagrede notater. Navnetreff kommer først; teksttreff sorteres etter antall forekomster. Velg et treff for å sette temaet i fokus og sentrere det. Ligger treffet utenfor valgt fagområde, fjernes fagområdefilteret.
+- **Tema i fokus** viser temaer som kan nås innen valgt avstand langs forbindelser som oppfyller terskelen. Ved høy terskel kan fokusnoden stå alene. Velg første alternativ eller × for å fjerne temafokus. Et valgt fagområde beholdes.
+- **Fagområde i fokus** viser bare noder fra valgt kategori, også noder uten synlige forbindelser. Velg et tema i tillegg for å begrense avstanden innenfor kategorien. Velg «Alle fagområder» for å fjerne kategorifilteret.
 - **Maks steg fra fokus** i verktøylinjen begrenser avstanden til 1–5 forbindelser, målt langs den korteste stien. Fokus er steg 0; 1 viser direkte naboer, og 5 inkluderer temaer fem forbindelser unna. Standard er 2. Valget beholdes når du bytter fokus i samme økt. Knappene er inaktive når hele kartet vises. Avstanden beregnes på nytt når fokus eller terskel endres.
 - **Terskelen** går fra 1 til 0,01 i trinn på 0,01. En forbindelse vises når vekten er større enn eller lik terskelen. Startverdien er 0,88. Feltet ved siden av slideren kan også redigeres.
 - **Dynamisk** bruker fjærkrefter, frastøting og kollisjonsunngåelse. **Statisk** fryser posisjonene. Du kan dra i begge modusene. I dynamisk modus frigjøres en dratt node og får elastisk bevegelse igjen, også fokusnoden. I statisk modus blir den der du slipper den.
 - **Rull eller knip** for å zoome, dra bakgrunnen for å panorere. Knappen med fire hjørner viser hele grafen. Startvisningen er zoomet inn for å gjøre navnene lesbare; alle temaer er fortsatt med.
-- **Høyreklikk eller dobbeltklikk** på en node for detaljer. På berøringsskjerm kan du dobbelttrykke eller bruke søk og tastatur. **Klikk på en forbindelse** for forklaringen bak vekten. Enkeltklikk på en node sentrerer og fremhever den.
+- **Høyreklikk eller dobbeltklikk** på en node for å sette den i fokus og åpne detaljer. På berøringsskjerm kan du dobbelttrykke eller bruke søk og tastatur. **Klikk på en forbindelse** for forklaringen bak vekten. Enkeltklikk på en node sentrerer og fremhever den.
+- **Nære forbindelser** har en **Fokus →**-knapp som åpner nabotemaet og setter det i fokus. Trykk på navnet/vekten for å lese begrunnelsen for forbindelsen.
 - **Rediger** øverst til høyre i detaljpanelet åpner redigeringen. Klikk **Lagre** når du er ferdig. Du kan endre navn, tekst, hovedpunkter, egne notater og, under «Flere fagfelt», eksempler, analyse, figurtekster og kildehenvisninger. Tomme punktfelt fjerner punktene.
 - **Fagområder** viser fargeforklaringen. Alle noder har lik størrelse; størrelse og farge betyr ikke høyere vekt.
 
 Tastatur: `/` åpner søket; pil ned/opp velger treff; Enter sentrerer. Med kartet i fokus åpner Enter detaljene til valgt node, piltastene panorerer, `+`/`−` zoomer og `0` viser hele kartet. Ved redusert bevegelse i systeminnstillingene starter kartet statisk.
 
-Vektene er faglige vurderinger av relevans i en drøfting, ikke statistiske korrelasjoner. Vektetikettene søker ledig plass langs linjene, men et komplett nettverk med 8 646 forbindelser kan ikke vises uten overlapp på én skjerm. Fokus, terskel og zoom gjør det mulig å undersøke utsnitt. Hold pekeren over en linje for å lese den eksakte vekten også i tette områder. Kraftoppsettet reduserer klynger og nodeoverlapp; det er ingen garanti for et minimum av kryssende linjer.
+Vektene er faglige vurderinger av relevans i en drøfting, ikke statistiske korrelasjoner. Vektetikettene søker ledig plass langs linjene, men et komplett nettverk med 12 246 forbindelser kan ikke vises uten overlapp på én skjerm. Fokus, terskel og zoom gjør det mulig å undersøke utsnitt. Hold pekeren over en linje for å lese den eksakte vekten også i tette områder. Kraftoppsettet reduserer klynger og nodeoverlapp; det er ingen garanti for et minimum av kryssende linjer.
 
 ## Hvor endringene lagres
 

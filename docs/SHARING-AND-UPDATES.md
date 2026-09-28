@@ -162,3 +162,5 @@ node tests/desktop.mjs --packaged
 ```
 
 The browser tests currently use Microsoft Edge on Windows. The desktop test can launch the development app on either platform; the `--packaged` test path is Windows-specific. Test data is isolated from personal profiles.
+
+For enrollment and verification steps, see [Signing setup](SIGNING-SETUP.md). Version 1.3.0 remains unsigned until verified signing identities are configured.

@@ -1,11 +1,11 @@
 import './style.css';
 import {Graph,PALETTE} from './graph.js';
-import {filterGraph,searchTopics} from './graph-data.js';
+import {filterGraph,searchTopicMatches} from './graph-data.js';
 import {setupSync} from './sync-ui.js';
 
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const state={topics:[],edges:[],threshold:.88,focus:null,maxDistance:2,selected:null,editing:false,dirty:false,detailId:null};
+const state={topics:[],edges:[],threshold:.88,focus:null,category:null,maxDistance:2,selected:null,editing:false,dirty:false,detailId:null};
 let dataset,graph,searchResults=[],searchIndex=-1,toastTimer,filterTimer;
 const sync=setupSync({canLeave:()=>{const editing=state.editing;if(!canLeave())return false;if(editing&&state.detailId)renderDetail(state.detailId);return true;},reload:reloadData,toast});
 const category=id=>dataset.categories.find(c=>c.id===id);
@@ -14,16 +14,16 @@ const topic=id=>state.topics.find(t=>t.id===id);
 function toast(text){$('#toast').textContent=text;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,4500);}
 async function api(path,options){const response=await fetch(path,options);const value=await response.json();if(!response.ok)throw new Error(value.error||'Kunne ikke hente data.');return value;}
 function canLeave(){if(!state.dirty)return true;if(!confirm('Du har ulagrede endringer. Vil du forkaste dem?'))return false;state.dirty=false;state.editing=false;return true;}
-function focusOptions(){const control=$('#focus');control.innerHTML='<option value="">Hele fagkartet</option>'+dataset.categories.map(c=>`<optgroup label="${esc(c.title)}">${state.topics.filter(t=>t.category_id===c.id).sort((a,b)=>a.short_label.localeCompare(b.short_label,'nb')).map(t=>`<option value="${esc(t.id)}">${esc(t.short_label)}</option>`).join('')}</optgroup>`).join('');control.value=state.focus||'';}
+function focusOptions(){const control=$('#focus');control.innerHTML=`<option value="">${state.category?'Alle temaer i fagområdet':'Hele fagkartet'}</option>`+dataset.categories.filter(c=>!state.category||c.id===state.category).map(c=>`<optgroup label="${esc(c.title)}">${state.topics.filter(t=>t.category_id===c.id).sort((a,b)=>a.short_label.localeCompare(b.short_label,'nb')).map(t=>`<option value="${esc(t.id)}">${esc(t.short_label)}</option>`).join('')}</optgroup>`).join('');control.value=state.focus||'';$('#category').innerHTML='<option value="">Alle fagområder</option>'+dataset.categories.map(c=>`<option value="${esc(c.id)}">${esc(c.title)}</option>`).join('');$('#category').value=state.category||'';}
 function updateGraph(center=false){
-  const filtered=filterGraph(state.topics,state.edges,state.threshold,state.focus,state.maxDistance);
+  const filtered=filterGraph(state.topics,state.edges,state.threshold,state.focus,state.maxDistance,state.category);
   graph.update(filtered.nodes,filtered.links,state.focus);
   if(state.selected&&!filtered.nodes.some(t=>t.id===state.selected)){state.selected=state.focus;graph.selected=state.focus;}
   const cross=filtered.links.filter(e=>topic(e.source).category_id!==topic(e.target).category_id).length;
   $('#graph-count').textContent=`${filtered.nodes.length} av ${state.topics.length} temaer · ${filtered.links.length.toLocaleString('nb-NO')} forbindelser · ${cross.toLocaleString('nb-NO')} på tvers`;
-  $('#view-title').textContent=state.focus?topic(state.focus).short_label:'Hele fagkartet';
+  $('#view-title').textContent=state.focus?topic(state.focus).short_label:state.category?category(state.category).title:'Hele fagkartet';
   $('#focus-note').hidden=!state.focus;$('#clear-focus').hidden=!state.focus;
-  $('#focus-note').textContent=`Viser temaer innen ${state.maxDistance} steg fra fokus, langs forbindelser som oppfyller terskelen.`;
+  $('#focus-note').textContent=`Viser temaer innen ${state.maxDistance} steg fra fokus${state.category?' i '+category(state.category).title:''}, langs forbindelser som oppfyller terskelen.`;
   $('#distance-control').disabled=!state.focus;
   $('#distance-control').title=state.focus?'1 steg = en direkte forbindelse. Fokus er steg 0.':'Velg et tema i fokus for å begrense avstanden.';
   document.querySelectorAll('[data-distance]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.distance)===state.maxDistance)));
@@ -33,14 +33,15 @@ function updateGraph(center=false){
   if(state.detailId&&!state.editing)renderDetail(state.detailId);
 }
 function setThreshold(value){if(!Number.isFinite(value)||value<.01||value>1)return;state.threshold=Math.round(value*100)/100;$('#threshold').value=state.threshold;$('#threshold-value').value=state.threshold.toFixed(2);clearTimeout(filterTimer);filterTimer=setTimeout(()=>updateGraph(Boolean(state.focus)),65);}
-function setFocus(id){if(id&&!topic(id))throw new Error('Ukjent tema.');state.focus=id||null;$('#focus').value=id||'';if(id)state.selected=id;updateGraph(true);}
+function setFocus(id){if(id&&!topic(id))throw new Error('Ukjent tema.');if(!canLeave()){focusOptions();return false;}state.editing=false;if(id&&state.category&&topic(id).category_id!==state.category){state.category=null;toast('Fagområdefilteret er fjernet for å vise det valgte temaet.');}state.focus=id||null;focusOptions();if(id)state.selected=id;updateGraph(true);return true;}
+function setCategory(id){if(id&&!category(id))throw new Error('Ukjent fagområde.');if(!canLeave()){focusOptions();return false;}state.category=id||null;state.focus=null;state.selected=null;state.detailId=null;state.editing=false;$('#sidebar').hidden=true;focusOptions();updateGraph(true);return true;}
 function setDistance(value){if(!Number.isInteger(value)||value<1||value>5)throw new Error('Ugyldig fokusavstand.');state.maxDistance=value;clearTimeout(filterTimer);updateGraph(Boolean(state.focus));}
 function chooseTopic(id){
-  if(state.focus&&!graph.nodes.some(n=>n.id===id)){setFocus(id);toast('Fokus flyttet til søketreffet.');}
-  state.selected=id;graph.select(id);$('#search').value='';closeSearch();
+  if(!setFocus(id))return false;
+  state.selected=id;graph.select(id);if(!$('#sidebar').hidden)renderDetail(id);$('#search').value='';closeSearch();return true;
 }
 function closeSearch(){$('#search-results').hidden=true;$('#search').setAttribute('aria-expanded','false');$('#search').removeAttribute('aria-activedescendant');searchIndex=-1;}
-function showSearch(){const query=$('#search').value;searchResults=searchTopics(state.topics,query);searchIndex=-1;$('#search-results').innerHTML=searchResults.length?searchResults.slice(0,40).map((t,i)=>`<button class="result" role="option" aria-selected="false" tabindex="-1" id="result-${i}" data-id="${esc(t.id)}"><strong>${esc(t.short_label)}</strong><small>${esc(category(t.category_id).title)}</small></button>`).join(''):'<div class="empty-result">Ingen temaer funnet. Prøv et annet ord.</div>';$('#search-results').hidden=false;$('#search').setAttribute('aria-expanded','true');}
+function showSearch(){const query=$('#search').value,matches=searchTopicMatches(state.topics,query);searchResults=matches.map(m=>m.topic);searchIndex=-1;$('#search-results').innerHTML=matches.length?matches.slice(0,40).map(({topic:t,matchKind,count},i)=>`<button class="result" role="option" aria-selected="false" tabindex="-1" id="result-${i}" data-id="${esc(t.id)}" data-match="${matchKind}"><strong>${esc(t.short_label)}</strong><small>${esc(category(t.category_id).title)}</small>${query.trim()?`<small class="match-kind">${matchKind==='name'?'Treff i navn / teoretiker':`Teksttreff · ${count} forekomst${count===1?'':'er'}`}</small>`:''}</button>`).join(''):'<div class="empty-result">Ingen temaer funnet. Prøv et annet ord.</div>';$('#search-results').hidden=false;$('#search').setAttribute('aria-expanded','true');}
 function section(title,items){return items?.length?`<h3>${title}</h3><ul>${items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';}
 function panelTop(edit=false){return `<div class="panel-top"><span class="eyebrow">${edit?'REDIGER TEMA':'TEMANOTAT'}</span><button class="small-button" id="edit-topic">${edit?'Lagre':'✎ Rediger'}</button><button class="close-button" id="close-sidebar" aria-label="Lukk temadetaljer">×</button></div>`;}
 function wirePanel(){
@@ -51,12 +52,13 @@ function renderDetail(id){
   const t=topic(id);if(!t)return;
   state.detailId=id;state.editing=false;$('#sidebar').hidden=false;
   const neighbors=state.edges.filter(e=>(e.source===id||e.target===id)&&e.weight>=state.threshold).slice(0,10);
-  $('#sidebar-content').innerHTML=panelTop()+`<div class="panel-body"><div class="category-tag"><span class="swatch" style="background:${color(t.category_id)}"></span>${esc(category(t.category_id).title)}</div><h2>${esc(t.title)}</h2>${t.attribution.length?`<div class="attribution">${t.attribution.map(a=>esc(a.name)).join(' · ')}</div>`:''}<p class="definition">${esc(t.content.short_definition)}</p><button class="focus-topic" id="focus-topic">${state.focus===id?'Fjern fokus og vis hele kartet':'Sett dette temaet i fokus'}</button>${t._edit?.version?'<p class="review-note">Endret av deg. Relasjonsvektene bygger fortsatt på den opprinnelige teksten.</p>':''}<h3>Forklaring</h3><p>${esc(t.content.explanation)}</p>${section('Hovedpunkter',t.content.key_points)}${section('Bruk i en drøfting',t.analysis.writing_uses)}${section('Begrensninger og spenninger',t.analysis.limitations_and_tensions)}${t.content.examples.length?'<h3>Eksempler</h3>'+t.content.examples.map(e=>`<p><strong>${esc(e.title)}</strong><br>${esc(e.text)}</p>`).join(''):''}${t.content.expressions.length?'<h3>Uttrykk</h3>'+t.content.expressions.map(e=>`<p><code>${esc(e.latex)}</code><br>${esc(e.explanation)}</p>`).join(''):''}${t.figures.map(f=>f.src?`<figure><a href="/${esc(f.src)}" target="_blank" rel="noopener"><img src="/${esc(f.src)}" alt="${esc(f.alt)}" loading="lazy"></a><figcaption>${esc(f.caption)}${f.notes?.length?'<br>'+f.notes.map(esc).join(' '):''}</figcaption></figure>`:`<p class="muted">${esc(f.caption)} ${f.notes?.map(esc).join(' ')||''}</p>`).join('')}${t._edit?.notes?`<h3>Egne notater</h3><p class="notes">${esc(t._edit.notes)}</p>`:''}<h3>Nære forbindelser ≥ ${state.threshold.toFixed(2)}</h3>${neighbors.length?neighbors.map(e=>{const other=topic(e.source===id?e.target:e.source);return `<div><button class="related-row" data-edge="${esc(e.id)}"><span>${esc(other.short_label)}</span><span class="weight-chip">${e.weight.toFixed(2)}</span><span>＋</span></button><div class="reason-slot" hidden></div></div>`;}).join(''):'<p class="muted">Ingen forbindelser ved denne terskelen. Senk terskelen for å se flere.</p>'}<details><summary class="muted" style="font-size:13px;margin-top:25px;cursor:pointer">Faglig analyse og kildegrunnlag</summary>${section('Sentrale spørsmål',t.analysis.central_questions)}${section('Mekanismer',t.analysis.mechanisms)}${t.review.notes.length?`<p class="review-note">${t.review.notes.map(esc).join(' ')}</p>`:''}<h3>Kilder</h3>${t.source_refs.map(r=>`<p class="sources">${esc(dataset.sources.find(s=>s.id===r.source_id)?.title||r.source_id)}<br>${esc(r.locator)}${r.pages?.length?' · s. '+r.pages.join(', '):''}</p>`).join('')}</details></div>`;
+  $('#sidebar-content').innerHTML=panelTop()+`<div class="panel-body"><div class="category-tag"><span class="swatch" style="background:${color(t.category_id)}"></span>${esc(category(t.category_id).title)}</div><h2>${esc(t.title)}</h2>${t.attribution.length?`<div class="attribution">${t.attribution.map(a=>esc(a.name)).join(' · ')}</div>`:''}<p class="definition">${esc(t.content.short_definition)}</p><button class="focus-topic" id="focus-topic">${state.focus===id?'Fjern temafokus':'Sett dette temaet i fokus'}</button>${t._edit?.version?'<p class="review-note">Endret av deg. Relasjonsvektene bygger fortsatt på den opprinnelige teksten.</p>':''}<h3>Forklaring</h3><p>${esc(t.content.explanation)}</p>${section('Hovedpunkter',t.content.key_points)}${section('Bruk i en drøfting',t.analysis.writing_uses)}${section('Begrensninger og spenninger',t.analysis.limitations_and_tensions)}${t.content.examples.length?'<h3>Eksempler</h3>'+t.content.examples.map(e=>`<p><strong>${esc(e.title)}</strong><br>${esc(e.text)}</p>`).join(''):''}${t.content.expressions.length?'<h3>Uttrykk</h3>'+t.content.expressions.map(e=>`<p><code>${esc(e.latex)}</code><br>${esc(e.explanation)}</p>`).join(''):''}${t.figures.map(f=>f.src?`<figure><a href="/${esc(f.src)}" target="_blank" rel="noopener"><img src="/${esc(f.src)}" alt="${esc(f.alt)}" loading="lazy"></a><figcaption>${esc(f.caption)}${f.notes?.length?'<br>'+f.notes.map(esc).join(' '):''}</figcaption></figure>`:`<p class="muted">${esc(f.caption)} ${f.notes?.map(esc).join(' ')||''}</p>`).join('')}${t._edit?.notes?`<h3>Egne notater</h3><p class="notes">${esc(t._edit.notes)}</p>`:''}<h3>Nære forbindelser ≥ ${state.threshold.toFixed(2)}</h3>${neighbors.length?neighbors.map(e=>{const other=topic(e.source===id?e.target:e.source);return `<div class="related-entry"><div class="related-actions"><button class="related-row" data-edge="${esc(e.id)}"><span>${esc(other.short_label)}</span><span class="weight-chip">${e.weight.toFixed(2)}</span><span>＋</span></button><button class="small-button related-focus" data-focus-id="${esc(other.id)}" aria-label="Sett ${esc(other.short_label)} i fokus">Fokus →</button></div><div class="reason-slot" hidden></div></div>`;}).join(''):'<p class="muted">Ingen forbindelser ved denne terskelen. Senk terskelen for å se flere.</p>'}<details><summary class="muted" style="font-size:13px;margin-top:25px;cursor:pointer">Faglig analyse og kildegrunnlag</summary>${section('Sentrale spørsmål',t.analysis.central_questions)}${section('Mekanismer',t.analysis.mechanisms)}${t.review.notes.length?`<p class="review-note">${t.review.notes.map(esc).join(' ')}</p>`:''}<h3>Kilder</h3>${t.source_refs.map(r=>`<p class="sources">${esc(dataset.sources.find(s=>s.id===r.source_id)?.title||r.source_id)}<br>${esc(r.locator)}${r.pages?.length?' · s. '+r.pages.join(', '):''}</p>`).join('')}</details></div>`;
   const suggest=document.createElement('button');suggest.className='small-button suggest-topic';suggest.id='suggest-topic';suggest.textContent='Foreslå endring til felles kart';$('#focus-topic').after(suggest);suggest.onclick=()=>sync.propose(id);
   wirePanel();$('#focus-topic').onclick=()=>setFocus(state.focus===id?null:id);
-  document.querySelectorAll('[data-edge]').forEach(button=>button.onclick=async()=>{const slot=button.nextElementSibling;if(!slot.hidden){slot.hidden=true;return;}slot.hidden=false;slot.textContent='Henter forklaring…';try{const edge=await api('/api/relationships/'+encodeURIComponent(button.dataset.edge));slot.innerHTML=`<p class="related-reason">${esc(edge.reason)}</p>`;}catch(e){slot.textContent=e.message;}});
+  document.querySelectorAll('[data-focus-id]').forEach(button=>button.onclick=()=>openDetail(button.dataset.focusId));
+  document.querySelectorAll('[data-edge]').forEach(button=>button.onclick=async()=>{const slot=button.closest('.related-entry').querySelector('.reason-slot');if(!slot.hidden){slot.hidden=true;return;}slot.hidden=false;slot.textContent='Henter forklaring…';try{const edge=await api('/api/relationships/'+encodeURIComponent(button.dataset.edge));slot.innerHTML=`<p class="related-reason">${esc(edge.reason)}</p>`;}catch(e){slot.textContent=e.message;}});
 }
-function openDetail(id){if(!canLeave())return;chooseTopic(id);renderDetail(id);requestAnimationFrame(()=>graph.center(id,false));}
+function openDetail(id){if(!chooseTopic(id))return;renderDetail(id);$('#sidebar').scrollTop=0;requestAnimationFrame(()=>graph.center(id,false));}
 function renderEditor(id){
   const t=topic(id);state.editing=true;state.dirty=false;
   const extra={aliases:t.aliases,attribution:t.attribution,tags:t.tags,examples:t.content.examples,expressions:t.content.expressions,analysis:{basis:t.analysis.basis,central_questions:t.analysis.central_questions,mechanisms:t.analysis.mechanisms,level_of_analysis:t.analysis.level_of_analysis},figures:t.figures,source_refs:t.source_refs};
@@ -92,7 +94,7 @@ async function start(){
     else if(e.key==='Escape')closeSearch();
   });
   document.addEventListener('pointerdown',e=>{if(!e.target.closest('.search-control'))closeSearch();});
-  $('#focus').onchange=e=>setFocus(e.target.value);$('#clear-focus').onclick=()=>setFocus(null);
+  $('#focus').onchange=e=>setFocus(e.target.value);$('#clear-focus').onclick=()=>setFocus(null);$('#category').onchange=e=>setCategory(e.target.value);
   $('#distance-control').onclick=e=>{const button=e.target.closest('[data-distance]');if(button)setDistance(Number(button.dataset.distance));};
   $('#threshold').oninput=e=>setThreshold(Number(e.target.value));$('#threshold-value').onchange=e=>{if(!e.target.checkValidity()){e.target.value=state.threshold.toFixed(2);return;}setThreshold(Number(e.target.value));};
   function mode(dynamic){graph.setDynamic(dynamic);$('#dynamic').setAttribute('aria-pressed',String(dynamic));$('#static').setAttribute('aria-pressed',String(!dynamic));}
@@ -102,11 +104,11 @@ async function start(){
   document.addEventListener('keydown',e=>{if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();$('#search').focus();}if(e.key==='Escape'&&!$('#search-results').hidden)closeSearch();});
   addEventListener('beforeunload',e=>{if(state.dirty){e.preventDefault();e.returnValue='';}});
   // Read-only diagnostics also make canvas behavior accessible to browser checks.
-  window.orgGraph={snapshot:()=>({...graph.snapshot(),threshold:state.threshold,focus:state.focus,maxDistance:state.maxDistance,detailId:state.detailId}),topic:id=>structuredClone(topic(id))};
+  window.orgGraph={snapshot:()=>({...graph.snapshot(),threshold:state.threshold,focus:state.focus,category:state.category,maxDistance:state.maxDistance,detailId:state.detailId}),topic:id=>structuredClone(topic(id))};
   const registry=document.modelContext;
   if(registry?.registerTool){const lifecycle=new AbortController();addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
     const specs=[
-      {name:'read_graph_state',description:'Read current visible topic IDs, threshold, focus, maximum distance and edge count.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true},execute:()=>({threshold:state.threshold,focus:state.focus,max_distance:state.maxDistance,node_ids:graph.nodes.map(n=>n.id),edge_count:graph.links.length})},
+      {name:'read_graph_state',description:'Read current visible topic IDs, threshold, focus, category, maximum distance and edge count.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true},execute:()=>({threshold:state.threshold,focus:state.focus,category_id:state.category,max_distance:state.maxDistance,node_ids:graph.nodes.map(n=>n.id),edge_count:graph.links.length})},
       {name:'configure_graph_view',description:'Set the relevance threshold, optional focus topic and maximum distance (1–5 edges from focus). Does not edit topic content.',inputSchema:{type:'object',properties:{threshold:{type:'number',minimum:.01,maximum:1},focus_id:{type:['string','null']},max_distance:{type:'integer',minimum:1,maximum:5}},required:['threshold'],additionalProperties:false},annotations:{readOnlyHint:false},execute:async input=>{
         if(!input||!Number.isFinite(input.threshold)||input.threshold<.01||input.threshold>1||('focus_id'in input&&input.focus_id!==null&&!topic(input.focus_id))||('max_distance'in input&&(!Number.isInteger(input.max_distance)||input.max_distance<1||input.max_distance>5)))throw new Error('Invalid graph view');
         setThreshold(input.threshold);clearTimeout(filterTimer);
@@ -122,6 +124,8 @@ async function start(){
 async function reloadData(){
   [dataset,{edges:state.edges}]=await Promise.all([api('/api/topics'),api('/api/relationships')]);state.topics=dataset.topics;state.editing=false;state.dirty=false;
   if(state.focus&&!topic(state.focus))state.focus=null;
+  if(state.category&&!category(state.category))state.category=null;
+  if(state.focus&&state.category&&topic(state.focus).category_id!==state.category)state.focus=null;
   if(state.detailId&&!topic(state.detailId)){state.detailId=null;$('#sidebar').hidden=true;}
   graph.categories=dataset.categories;graph.colors=new Map(dataset.categories.map((c,i)=>[c.id,PALETTE[i%PALETTE.length]]));
   focusOptions();updateGraph(true);

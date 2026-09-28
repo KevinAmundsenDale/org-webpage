@@ -10,8 +10,9 @@
 <header>
   <div class="masthead"><div class="brand"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 8 24 12 13 25Z"/><circle cx="8" cy="8" r="4"/><circle cx="24" cy="12" r="4"/><circle cx="13" cy="25" r="4"/></svg><span>Sammenheng<span class="brand-dot">.</span></span></div><span class="course">Organisasjon, ledelse og etikk</span><button class="local-tag" id="updates-button">Oppdateringer og backup</button></div>
   <div class="toolbar">
-    <div class="search-control"><label for="search">FINN ET TEMA</label><div class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-results" placeholder="Søk etter tema eller teoretiker…" autocomplete="off"><kbd>/</kbd></div><div id="search-results" role="listbox" hidden></div></div>
-    <div class="focus-control"><label for="focus">TEMA I FOKUS</label><div class="focus-row"><select id="focus"><option value="">Hele fagkartet</option></select><button id="clear-focus" class="icon-button" aria-label="Fjern fokus" title="Vis alle temaer" hidden>×</button></div></div>
+    <div class="search-control"><label for="search">FINN ET TEMA</label><div class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-results" placeholder="Søk i navn og fagtekst…" autocomplete="off"><kbd>/</kbd></div><div id="search-results" role="listbox" hidden></div></div>
+    <div class="focus-control"><label for="focus">TEMA I FOKUS</label><div class="focus-row"><select id="focus"><option value="">Hele fagkartet</option></select><button id="clear-focus" class="icon-button" aria-label="Fjern temafokus" title="Fjern temafokus" hidden>×</button></div></div>
+    <div class="category-control"><label for="category">FAGOMRÅDE I FOKUS</label><select id="category"><option value="">Alle fagområder</option></select></div>
     <fieldset class="distance-control" id="distance-control" disabled title="Velg et tema i fokus for å begrense avstanden.">
       <legend>MAKS STEG FRA FOKUS</legend>
       <div class="segmented">
@@ -29,7 +30,7 @@
 <main>
   <section class="graph-area" aria-label="Interaktivt fagkart">
     <canvas id="graph" tabindex="0" aria-label="Fagkart. Dra for å flytte, rull for å zoome. Finn og åpne temaer med søket. Piltaster panorerer, pluss og minus zoomer."></canvas>
-    <div class="view-summary"><span class="eyebrow">UTFORSK SAMMENHENGENE</span><h1 id="view-title">Hele fagkartet</h1><p id="graph-count" aria-live="polite">Laster 132 temaer…</p><span id="focus-note" hidden></span></div>
+    <div class="view-summary"><span class="eyebrow">UTFORSK SAMMENHENGENE</span><h1 id="view-title">Hele fagkartet</h1><p id="graph-count" aria-live="polite">Laster temaer…</p><span id="focus-note" hidden></span></div>
     <div id="graph-loading" class="loading">Henter fagkartet…</div>
     <div id="edge-tooltip" role="tooltip" hidden></div>
     <div id="density-note" hidden>Et tett nettverk. Zoom inn eller øk terskelen for bedre oversikt.</div>

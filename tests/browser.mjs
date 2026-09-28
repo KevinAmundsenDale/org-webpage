@@ -5,6 +5,7 @@ import {mkdtemp,cp,readFile,rm,mkdir} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join,resolve,sep} from 'node:path';
 import {topics,edges,visibleAtDefault,focusedCount} from './content-fixture.mjs';
+import {filterGraph,searchTopicMatches} from '../src/graph-data.js';
 const data=await mkdtemp(join(tmpdir(),'org-webpage-test-'));
 for(const name of ['topics.json','relationships.json','relationship-analysis.json','relationship-matrix.json','source-map.json'])await cp('data/'+name,join(data,name));
 let server,browser;
@@ -17,6 +18,45 @@ try {
   await page.goto('http://localhost:4318');await page.waitForFunction(()=>window.orgGraph);
   assert.equal((await page.evaluate(()=>orgGraph.snapshot())).edgeCount,visibleAtDefault);
   assert.equal(await page.locator('[data-distance="1"]').isDisabled(),true);
+  // Names precede body matches, and selecting either kind establishes focus.
+  await page.locator('#search').fill('tillit');
+  const expected=searchTopicMatches(topics,'tillit').slice(0,40);
+  assert.deepEqual(await page.locator('.result').evaluateAll(els=>els.map(el=>el.dataset.id)),expected.map(m=>m.topic.id));
+  const bodyMatch=expected.find(m=>m.matchKind==='body');assert.ok(bodyMatch);
+  await page.locator(`.result[data-id="${bodyMatch.topic.id}"]`).click();
+  assert.equal((await page.evaluate(()=>orgGraph.snapshot())).focus,bodyMatch.topic.id);
+  // Category focus includes isolated nodes; paths cannot leave the category.
+  const categoryId=topics.find(t=>t.id==='schein-kulturnivaaer').category_id;
+  await page.locator('#category').selectOption(categoryId);
+  let categoryState=await page.evaluate(()=>orgGraph.snapshot());
+  assert.equal(categoryState.focus,null);
+  assert.deepEqual(categoryState.nodes.map(n=>n.id).sort(),topics.filter(t=>t.category_id===categoryId).map(t=>t.id).sort());
+  await page.locator('#focus').selectOption('schein-kulturnivaaer');
+  categoryState=await page.evaluate(()=>orgGraph.snapshot());
+  assert.deepEqual(categoryState.nodes.map(n=>n.id).sort(),filterGraph(topics,edges,.88,'schein-kulturnivaaer',2,categoryId).nodes.map(t=>t.id).sort());
+  await page.locator('#search').fill('organisasjon');await page.locator('.result[data-id="organisasjon"]').click();
+  assert.equal((await page.evaluate(()=>orgGraph.snapshot())).category,null);
+  await page.locator('#clear-focus').click();await page.locator('#static').click();
+  // Right-click a node while the whole graph is visible.
+  await page.locator('#fit').click();
+  const whole=await page.evaluate(()=>orgGraph.snapshot()),target=whole.nodes.find(n=>n.id==='organisasjon');
+  const canvasBox=await page.locator('canvas').boundingBox();
+  await page.mouse.click(canvasBox.x+target.screen[0],canvasBox.y+target.screen[1],{button:'right'});
+  await page.locator('#edit-topic').waitFor();
+  assert.equal((await page.evaluate(()=>orgGraph.snapshot())).focus,'organisasjon');
+  const neighbor=page.locator('[data-focus-id]').first(),neighborId=await neighbor.getAttribute('data-focus-id');
+  await page.locator('[data-edge]').first().click();await page.locator('.related-reason').first().waitFor();
+  await neighbor.click();
+  assert.equal((await page.evaluate(()=>orgGraph.snapshot())).focus,neighborId);
+  assert.equal((await page.evaluate(()=>orgGraph.snapshot())).detailId,neighborId);
+  // Declining navigation retains unsaved text and the existing focus/filter.
+  await page.locator('#edit-topic').click();await page.locator('#edit-notes').fill('Unsaved navigation check');
+  page.once('dialog',dialog=>dialog.dismiss());await page.locator('#category').selectOption(categoryId);
+  assert.equal(await page.locator('#category').inputValue(),'');
+  assert.equal(await page.locator('#edit-notes').inputValue(),'Unsaved navigation check');
+  assert.equal((await page.evaluate(()=>orgGraph.snapshot())).focus,neighborId);
+  page.once('dialog',dialog=>dialog.accept());await page.locator('#cancel-edit').click();
+  await page.locator('#close-sidebar').click();await page.locator('#dynamic').click();
   await page.locator('#focus').selectOption('organisasjon');
   assert.equal((await page.evaluate(()=>orgGraph.snapshot())).maxDistance,2);
   for(const distance of [1,2,3,4,5]){
@@ -67,7 +107,7 @@ try {
   assert.equal(await page.evaluate(async()=>{try{await testTools.configure_graph_view.execute({threshold:.88,max_distance:6});return false;}catch{return true;}}),true);
   assert.equal(await page.evaluate(async()=>{try{await testTools.configure_graph_view.execute({threshold:0});return false;}catch{return true;}}),true);
   await page.evaluate(()=>testTools.configure_graph_view.execute({threshold:.88,focus_id:null}));
-  for(const width of [1121,1000,720,700,390,320]){
+  for(const width of [1800,1500,1121,1000,720,700,390,320]){
     await page.setViewportSize({width,height:844});await page.waitForTimeout(100);
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,`No overflow at ${width}px`);
     const controls=await page.locator('.toolbar > *').evaluateAll(els=>els.map(el=>{const r=el.getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom}}));

@@ -30,3 +30,21 @@
   .threshold-control{grid-column:1;grid-row:3}
   .layout-control{grid-column:2;grid-row:3}
 }
+/* Six controls remain readable at desktop and narrow window widths. */
+.toolbar{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 22px}
+.search-control{grid-column:1;grid-row:1}.focus-control{grid-column:2;grid-row:1}
+.category-control{grid-column:3;grid-row:1}.distance-control{grid-column:1;grid-row:2}
+.threshold-control{grid-column:2;grid-row:2;display:block}.layout-control{grid-column:3;grid-row:2}
+.control-label{min-width:0}.related-actions{display:flex;align-items:center;gap:8px}
+.related-actions .related-row{min-width:0;flex:1}.related-focus{color:var(--accent)}
+.match-kind{color:var(--accent)!important;font-size:11px!important}
+@media(min-width:1650px){
+  .toolbar{grid-template-columns:1.2fr 1.1fr 1.1fr .85fr 1.1fr auto;gap:18px}
+  .toolbar>*{grid-column:auto;grid-row:1}
+}
+@media(max-width:700px){
+  .toolbar{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+  .category-control{grid-column:1;grid-row:2}.distance-control{grid-column:2;grid-row:2}
+  .threshold-control{grid-column:1;grid-row:3}.layout-control{grid-column:2;grid-row:3}
+  .distance-control .segmented button{padding:0 3px}
+}
