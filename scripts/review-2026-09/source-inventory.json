@@ -1,0 +1,156 @@
+[
+  {
+    "id": "source-01",
+    "filename": "HSM121 (1) Introduksjon til emnet 26 B.pdf",
+    "pages": 51,
+    "chars": 23497,
+    "empty": [
+      10,
+      27,
+      32,
+      40
+    ],
+    "sha256": "6d60ce4e4de9f9d6971178c3034a31387a09c56798dae88e6001aa6384762fde"
+  },
+  {
+    "id": "source-02",
+    "filename": "HSM121 (10) Endring i organisasjoner 26 a.pdf",
+    "pages": 45,
+    "chars": 15021,
+    "empty": [
+      3,
+      4,
+      11,
+      13,
+      14
+    ],
+    "sha256": "367e4917e28f0e7370d373f8288569f4def2707225d2914c3cccf393678c70bb"
+  },
+  {
+    "id": "source-03",
+    "filename": "HSM121 (11) Sentrale ledesesteorier 26a.pdf",
+    "pages": 70,
+    "chars": 47306,
+    "empty": [
+      26,
+      68
+    ],
+    "sha256": "43b7b33eef6c249a4528dae66bc3ce678e8f69ec85e739cf51e57c63939a35d6"
+  },
+  {
+    "id": "source-04",
+    "filename": "HSM121 (12) Tjenede lederskap 2026 bk.pdf",
+    "pages": 42,
+    "chars": 20721,
+    "empty": [
+      11,
+      12,
+      27
+    ],
+    "sha256": "e04bf2fe138705f4d811b1e2e85b9eae881d8505ac259071b7e2074a149394bb"
+  },
+  {
+    "id": "source-05",
+    "filename": "HSM121 (13) Etikk og ledelse 26a.pdf",
+    "pages": 41,
+    "chars": 17648,
+    "empty": [
+      40
+    ],
+    "sha256": "d0364335ef8e5447af1e88483739d61c0f10ab0784fd7a1e1ce002d31bde4226"
+  },
+  {
+    "id": "source-06",
+    "filename": "HSM121 (2) Mål strategi og effektivitet i organisasjonen 26 b.pdf",
+    "pages": 27,
+    "chars": 10246,
+    "empty": [],
+    "sha256": "8fdce8382466d55a1ef45b9dc3757522b6d974fa7d104feb20fa3f92081d7ce7"
+  },
+  {
+    "id": "source-07",
+    "filename": "HSM121 (4) Organisasjonskultur 26 a.pdf",
+    "pages": 39,
+    "chars": 16497,
+    "empty": [],
+    "sha256": "b3ad0168006880d5eabc34dad10613fcaf25e3721e1aca1cf76c98db0ca0d201"
+  },
+  {
+    "id": "source-08",
+    "filename": "HSM121 (5) Motivasjon ytelse og personlighet 26.pdf",
+    "pages": 43,
+    "chars": 19695,
+    "empty": [
+      43
+    ],
+    "sha256": "1592741f8d0043db43eed20fbcaf2d354a00ff3fc9a02c77d685326db40cfccb"
+  },
+  {
+    "id": "source-09",
+    "filename": "HSM121 (6) Jobbholdninger^LJ psykososialt arbeidsmiljø 26 b.pdf",
+    "pages": 63,
+    "chars": 24781,
+    "empty": [
+      30
+    ],
+    "sha256": "08eacd1c25534571cf091556f0dfdb6714f88fee9d071d67955074006fb97865"
+  },
+  {
+    "id": "source-10",
+    "filename": "HSM121 (7) Beslutningsprosesser i organisasjoner 26 a.pdf",
+    "pages": 39,
+    "chars": 14804,
+    "empty": [
+      11,
+      12,
+      29,
+      30
+    ],
+    "sha256": "19c88c52989dc337a3dc7cf2c14f1c8b857e0d778e81ec7f3a10e3b476e1c637"
+  },
+  {
+    "id": "source-11",
+    "filename": "HSM121 (8) Organisasjonens omgivelser 26 a.pdf",
+    "pages": 23,
+    "chars": 9450,
+    "empty": [
+      8
+    ],
+    "sha256": "728d19a1916435af8d0179cdc0e12bf76232d2fe3a39399a0e1ef28318eea37a"
+  },
+  {
+    "id": "source-12",
+    "filename": "HSM121 (9) Læring og innovasjon 26a.pdf",
+    "pages": 32,
+    "chars": 12304,
+    "empty": [
+      10,
+      27
+    ],
+    "sha256": "f906a1928cd4eae0739013decc1698cba0cbe6a0d90bc5ba9b699636e5791a57"
+  },
+  {
+    "id": "source-13",
+    "filename": "HSM121 Organisasjonsstruktur (kap3) 26 B.pdf",
+    "pages": 30,
+    "chars": 10314,
+    "empty": [],
+    "sha256": "ca4361ca2420078cc39cf10267f2e72b30d75e5a872a50c760b261312eed84ce"
+  },
+  {
+    "id": "source-14",
+    "filename": "Jobbholdninger og psykososialt arbeidsmiljo kap 9 Kaufmann og Kaufmann 2023.pdf",
+    "pages": 37,
+    "chars": 99884,
+    "empty": [],
+    "sha256": "1a686d2dd6255178121e85508e0a73e9fe3402ac5e5ae90271942c6845632ea1"
+  },
+  {
+    "id": "source-15",
+    "filename": "Kaufmann, Geir og Kaufmann, Astrid. (2015). Psykologi i organisasjon og ledelse. 5. utg. Bergen Fagbokforlaget. (Kap. 4, 5).pdf",
+    "pages": 40,
+    "chars": 104230,
+    "empty": [],
+    "sha256": "03aa29aa64a03ab173307436797a2a7c6207669752936cd6cf8df43aba34dd42"
+  }
+]

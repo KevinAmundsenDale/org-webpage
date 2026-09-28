@@ -1,9 +1,10 @@
 import {chromium} from '@playwright/test';
 import assert from 'node:assert/strict';
 import {spawn} from 'node:child_process';
-import {mkdtemp,cp,readFile,rm} from 'node:fs/promises';
+import {mkdtemp,cp,readFile,rm,mkdir} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join,resolve,sep} from 'node:path';
+import {topics,edges,visibleAtDefault,focusedCount} from './content-fixture.mjs';
 const data=await mkdtemp(join(tmpdir(),'org-webpage-test-'));
 for(const name of ['topics.json','relationships.json','relationship-analysis.json','relationship-matrix.json','source-map.json'])await cp('data/'+name,join(data,name));
 let server,browser;
@@ -14,11 +15,12 @@ try {
   const page=await browser.newPage({viewport:{width:1500,height:1000}});page.on('pageerror',e=>errors.push(e.message));
   await page.addInitScript(()=>{window.testTools={};Object.defineProperty(document,'modelContext',{value:{registerTool:tool=>window.testTools[tool.name]=tool}});});
   await page.goto('http://localhost:4318');await page.waitForFunction(()=>window.orgGraph);
-  assert.equal((await page.evaluate(()=>orgGraph.snapshot())).edgeCount,333);
+  assert.equal((await page.evaluate(()=>orgGraph.snapshot())).edgeCount,visibleAtDefault);
   assert.equal(await page.locator('[data-distance="1"]').isDisabled(),true);
   await page.locator('#focus').selectOption('organisasjon');
   assert.equal((await page.evaluate(()=>orgGraph.snapshot())).maxDistance,2);
-  for(const [distance,count] of [[1,4],[2,15],[3,55],[4,106],[5,128]]){
+  for(const distance of [1,2,3,4,5]){
+    const count=focusedCount(distance);
     await page.locator(`[data-distance="${distance}"]`).click();
     const state=await page.evaluate(()=>orgGraph.snapshot());
     assert.equal(state.nodes.length,count);assert.equal(state.maxDistance,distance);
@@ -27,12 +29,12 @@ try {
     assert.ok(Math.abs(focus.screen[0]-state.width/2)<4);assert.ok(Math.abs(focus.screen[1]-state.height/2)<4);
   }
   await page.locator('[data-distance="1"]').focus();await page.locator('[data-distance="1"]').press('Enter');
-  assert.equal((await page.evaluate(()=>orgGraph.snapshot())).nodes.length,4);
+  assert.equal((await page.evaluate(()=>orgGraph.snapshot())).nodes.length,focusedCount(1));
   await page.locator('#search').fill('begrenset');await page.locator('.result').first().click();
   assert.equal((await page.evaluate(()=>orgGraph.snapshot())).focus,'begrenset-rasjonalitet');
   assert.equal((await page.evaluate(()=>orgGraph.snapshot())).maxDistance,1);
   await page.locator('#clear-focus').click();
-  assert.equal((await page.evaluate(()=>orgGraph.snapshot())).nodes.length,132);
+  assert.equal((await page.evaluate(()=>orgGraph.snapshot())).nodes.length,topics.length);
   assert.equal(await page.locator('[data-distance="1"]').isDisabled(),true);
   await page.locator('#search').fill('begrenset');await page.locator('.result').first().click();
   await page.waitForTimeout(400);
@@ -46,8 +48,8 @@ try {
   await page.reload();await page.waitForFunction(()=>window.orgGraph);assert.equal(await page.evaluate(()=>orgGraph.topic('begrenset-rasjonalitet').content.explanation),'Testforklaring som lagres og overlever omstart.');
   const exited=new Promise(r=>server.once('exit',r));server.kill();await exited;await startServer();await page.reload();await page.waitForFunction(()=>window.orgGraph);assert.equal(await page.evaluate(()=>orgGraph.topic('begrenset-rasjonalitet')._edit.notes),'Persistenssjekk: æøå <script>test</script>');
   await page.locator('#focus').selectOption('organisasjon');await page.locator('#threshold-value').fill('1.00');await page.locator('#threshold-value').press('Tab');await page.waitForTimeout(170);s=await page.evaluate(()=>orgGraph.snapshot());assert.equal(s.nodes.length,1);assert.equal(s.edgeCount,0);
-  await page.locator('#clear-focus').click();s=await page.evaluate(()=>orgGraph.snapshot());assert.equal(s.nodes.length,132);
-  await page.locator('#threshold-value').fill('0.01');await page.locator('#threshold-value').press('Tab');await page.waitForTimeout(220);s=await page.evaluate(()=>orgGraph.snapshot());assert.equal(s.edgeCount,8646);
+  await page.locator('#clear-focus').click();s=await page.evaluate(()=>orgGraph.snapshot());assert.equal(s.nodes.length,topics.length);
+  await page.locator('#threshold-value').fill('0.01');await page.locator('#threshold-value').press('Tab');await page.waitForTimeout(220);s=await page.evaluate(()=>orgGraph.snapshot());assert.equal(s.edgeCount,edges.length);
   await page.locator('#threshold-value').fill('0.88');await page.locator('#threshold-value').press('Tab');await page.waitForTimeout(150);
   await page.locator('#static').click();const before=await page.evaluate(()=>orgGraph.snapshot().nodes);await page.waitForTimeout(250);const after=await page.evaluate(()=>orgGraph.snapshot().nodes);assert.deepEqual(before,after);
   await page.locator('#search').fill('organisasjon');await page.locator('.result[data-id="organisasjon"]').click();
@@ -60,7 +62,7 @@ try {
   await page.locator('#fit').click();
   const tools=await page.evaluate(()=>Object.keys(window.testTools));assert.deepEqual(tools.sort(),['configure_graph_view','read_graph_state']);
   const toolResult=await page.evaluate(()=>testTools.configure_graph_view.execute({threshold:1,focus_id:'organisasjon'}));assert.equal(toolResult.node_count,1);
-  const distanceResult=await page.evaluate(()=>testTools.configure_graph_view.execute({threshold:.88,focus_id:'organisasjon',max_distance:3}));assert.equal(distanceResult.node_count,55);assert.equal(distanceResult.max_distance,3);
+  const distanceResult=await page.evaluate(()=>testTools.configure_graph_view.execute({threshold:.88,focus_id:'organisasjon',max_distance:3}));assert.equal(distanceResult.node_count,focusedCount(3));assert.equal(distanceResult.max_distance,3);
   assert.equal(await page.evaluate(()=>testTools.read_graph_state.execute().max_distance),3);
   assert.equal(await page.evaluate(async()=>{try{await testTools.configure_graph_view.execute({threshold:.88,max_distance:6});return false;}catch{return true;}}),true);
   assert.equal(await page.evaluate(async()=>{try{await testTools.configure_graph_view.execute({threshold:0});return false;}catch{return true;}}),true);
@@ -72,10 +74,20 @@ try {
     for(let a=0;a<controls.length;a++)for(let b=a+1;b<controls.length;b++)assert.ok(controls[a].right<=controls[b].x||controls[b].right<=controls[a].x||controls[a].bottom<=controls[b].y||controls[b].bottom<=controls[a].y,`No overlapping controls at ${width}px`);
   }
   await page.setViewportSize({width:390,height:844});await page.waitForTimeout(100);
-  await page.locator('#focus').selectOption('organisasjon');await page.locator('[data-distance="1"]').click();assert.equal((await page.evaluate(()=>orgGraph.snapshot())).nodes.length,4);
+  await page.locator('#focus').selectOption('organisasjon');await page.locator('[data-distance="1"]').click();assert.equal((await page.evaluate(()=>orgGraph.snapshot())).nodes.length,focusedCount(1));
   await page.locator('#clear-focus').click();
   await page.locator('#search').fill('organisasjon');await page.locator('.result[data-id="organisasjon"]').click();await page.locator('canvas').press('Enter');assert.equal(await page.locator('#sidebar').isVisible(),true);
   assert.ok((await page.locator('#edit-topic').boundingBox()).x>=0);
+  await page.locator('#close-sidebar').click();await page.setViewportSize({width:1500,height:1000});
+  for(const id of ['schein-kulturnivaaer','tjenende-ledelse']){
+    const t=topics.find(t=>t.id===id);
+    await page.locator('#search').fill(t.short_label);await page.locator(`.result[data-id="${id}"]`).click();await page.locator('canvas').press('Enter');
+    const example=page.locator('#sidebar-content p').filter({has:page.getByText('Konstruert praksiseksempel',{exact:true})});
+    await example.scrollIntoViewIfNeeded();assert.ok((await example.textContent()).includes(t.content.examples.at(-1).text));
+    if(id==='schein-kulturnivaaer'){await mkdir('.runtime',{recursive:true});await page.screenshot({path:'.runtime/practice-example.png'});}
+    await page.locator('#close-sidebar').click();
+  }
+  await page.locator('canvas').press('Enter');
   assert.deepEqual(errors,[]);
   await page.locator('#close-sidebar').click();await page.locator('#updates-button').click();await page.locator('#content-check').waitFor();assert.ok(await page.locator('#backup-export').isVisible());await page.locator('#sync-close').click();
   console.log('PASS: browser load, search centering, right-click, saved edits, restart persistence, stale-write protection, focus reachability, threshold extremes, static drag, elasticity, zoom, mobile, keyboard, WebMCP valid/invalid inputs; no browser errors.');

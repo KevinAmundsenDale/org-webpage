@@ -1,0 +1,88 @@
+// Semantic coding of subject matter, not wording in the examples or chapter membership.
+const p=(c,m,a)=>({concepts:features(c),mechanisms:features(m),applications:features(a)});
+function features(s){return Object.fromEntries(s.split(' ').map(x=>{const[k,v]=x.split(':');return[k,Number(v||3)]}));}
+export const profiles={
+ 'alderfer-erg':p('needs motivation trust:2 competence:2','need_fulfilment expectation_comparison:2','motivation_work recruiting:2'),
+ 'tjenende-ledelse':p('leadership ethics:2 autonomy trust competence:2','delegation relationship_exchange role_modelling:2 mobilization:2','leadership_work motivation_work:2 recruiting:2'),
+ 'kotter-endring':p('change implementation leadership:2 culture:2 goals:2','mobilization integration:2 feedback:2 socialization:2','change_process leadership_work:2'),
+ pliktetikk:p('ethics norms decisions:2 dignity','principled_judgment rule_matching:1','ethical_deliberation leadership_work:2 collective_decisions:2'),
+ konsekvensetikk:p('ethics decisions value:2 consequences','consequence_evaluation goal_translation:2','ethical_deliberation collective_decisions strategy_choice:2'),
+ dydsetikk:p('ethics norms leadership:2 learning:2','role_modelling principled_judgment:2 observation:2','ethical_deliberation leadership_work knowledge_work:1'),
+ diskursetikk:p('ethics participation communication rationality:2 power:2','dialogue principled_judgment:2 delegation:1','ethical_deliberation collective_decisions conflict_work:2'),
+ navigasjonshjulet:p('ethics decisions legitimacy:2 identity:2 value:2','principled_judgment consequence_evaluation:2','ethical_deliberation collective_decisions leadership_work:2'),
+ samfunnsansvar:p('ethics strategy legitimacy resources:2 value:2','legitimacy_pressure consequence_evaluation:2 resource_exchange:2','ethical_deliberation external_adaptation strategy_choice acceptance'),
+ 'destruktiv-ledelse':p('leadership power conflict trust:2 strain:2 dignity','domination filtering:2 reinforcement:2','leadership_work work_environment conflict_work'),
+ jobbholdninger:p('interpretation attitude jobs:2 motivation:2','sensemaking cognitive_learning:2','motivation_work diagnosis:2 change_process:1'),
+ jobbtilfredshet:p('attitude jobs motivation:2 rewards:2 needs:2','expectation_comparison task_design:2','motivation_work work_environment performance:2'),
+ 'psykologisk-kontrakt':p('expectations trust attachment rewards:2 change:2','relationship_exchange expectation_comparison resistance:2','recruiting motivation_work change_process:2'),
+ 'psykososialt-arbeidsmiljo':p('jobs strain trust autonomy:2 conflict:2 participation:2','task_design support_systems situational_fit:2','work_environment motivation_work restructuring:2'),
+ jobbstress:p('strain interpretation jobs resources:2 uncertainty:2','appraisal support_systems situational_fit:2','work_environment diagnosis:2 change_process:2'),
+ jobbengasjement:p('engagement motivation jobs meaning:2','task_design mobilization:2 relationship_exchange:1','motivation_work work_environment performance:2'),
+ 'psykologisk-kapital':p('psychological_resources motivation engagement:2 goals:2','self_efficacy mobilization:2 feedback:1','motivation_work work_environment learning_work:1'),
+ 'organisatorisk-rettferdighet':p('fairness rewards trust:2 ethics:2 participation:2','fair_comparison principled_judgment:2 dialogue:2','motivation_work ethical_deliberation conflict_work:2 change_process:2'),
+ 'mcclelland-behov':p('needs motivation power:2 goals:2 trust:2','need_fulfilment mobilization:2','motivation_work leadership_work:2'),
+ 'regulatorisk-fokus':p('motivation goals interpretation uncertainty:2','goal_framing appraisal:2 goal_translation:2','motivation_work performance:2 strategy_choice:1'),
+ 'prososial-motivasjon':p('motivation meaning value:2 ethics:2','beneficiary_impact mobilization:2','motivation_work leadership_work:2 work_environment:1'),
+ 'thorsrud-jobbkrav':p('jobs autonomy participation needs:2 learning:2 trust:2','task_design delegation support_systems:2','work_environment motivation_work restructuring:2'),
+ gruppetenkning:p('culture decisions information conflict:2 power:2','conformity filtering sensemaking:2','collective_decisions conflict_work:2 diagnosis:2'),
+ transaksjonskostnader:p('resources dependence strategy coordination:2','resource_exchange negotiation integration:2','strategy_choice external_adaptation operations:2'),
+ erfaringslaering:p('learning knowledge implementation:2','feedback cognitive_learning observation:2','knowledge_work innovation_work:2 operations:2')
+};
+export const vocabulary={
+ concepts:{dignity:'verdighet',consequences:'konsekvenser for berørte parter',strain:'arbeidsbelastning og stress',attitude:'jobbholdninger og vurdering av arbeidet',expectations:'opplevde gjensidige forpliktelser',engagement:'energi, dedikasjon og oppslukthet',psychological_resources:'psykologiske ressurser',fairness:'opplevd rettferdighet'},
+ mechanisms:{principled_judgment:'prinsipiell etisk begrunnelse',consequence_evaluation:'vurdering av følger for berørte',domination:'skadelig maktbruk',expectation_comparison:'sammenligning av forventninger og erfaring',support_systems:'støtte og tilgjengelige arbeidsressurser',appraisal:'vurdering av krav og mestring',self_efficacy:'mestringstro og alternative målveier',fair_comparison:'vurdering av rettferdig fordeling og prosess',need_fulfilment:'behovstilfredsstillelse',goal_framing:'fremgangs- eller forebyggingsorientering',beneficiary_impact:'motivasjon gjennom nytte for andre',conformity:'press mot enighet'},
+ applications:{ethical_deliberation:'drøfte etiske dilemmaer',work_environment:'utforme og vurdere arbeidsmiljø',learning_work:'utvikle personlige læringsressurser'}
+};
+// Add features only where the reviewed theory supports them. Existing dimensions retained.
+export const enrich={
+ 'selvbestemmelsesteori':p('needs:3 autonomy:3 competence:3 trust:2','need_fulfilment:3','work_environment:2'),
+ maslow:p('needs:3','need_fulfilment:3','work_environment:1'),
+ herzberg:p('attitude:3','expectation_comparison:2','work_environment:3'),
+ 'hackman-oldham':p('engagement:2','task_design:3','work_environment:3'),
+ 'organisatorisk-tilknytning':p('expectations:2 attitude:2','expectation_comparison:2','work_environment:1'),
+ 'beloenningssystemer':p('fairness:2','fair_comparison:2','ethical_deliberation:1'),
+ 'kollektiv-individuell-beloenning':p('fairness:2','fair_comparison:2','work_environment:1'),
+ 'endringsgjennomfoering':p('fairness:2','fair_comparison:2','work_environment:1'),
+ 'endringsmotstand':p('expectations:3 strain:2','expectation_comparison:2 appraisal:2','work_environment:2'),
+ 'etisk-ledelse':p('dignity:3 fairness:2','principled_judgment:3','ethical_deliberation:3'),
+ 'autentisk-ledelse':p('ethics:2','principled_judgment:1','ethical_deliberation:2'),
+ 'selznick-verdibasert-ledelse':p('identity:3 conflict:2 legitimacy:3','legitimacy_pressure:3 negotiation:2','ethical_deliberation:2'),
+ 'kompetanseledelse':p('autonomy:2 jobs:2 resources:2','task_design:3 delegation:2','recruiting:3 motivation_work:3'),
+ 'konflikt-beslutningskvalitet':p('strain:2 fairness:2','appraisal:2','work_environment:2'),
+ 'maalforskyvning':p('ethics:2','consequence_evaluation:2','ethical_deliberation:2'),
+ 'march-konsekvenslogikk':p('consequences:3','consequence_evaluation:3','ethical_deliberation:1'),
+ 'march-passendehet':p('norms:3','rule_matching:3','ethical_deliberation:1'),
+ 'matrisestruktur':p('strain:1','support_systems:1','work_environment:2'),
+ 'maktformer':p('dignity:1','domination:2','ethical_deliberation:2'),
+ 'organisasjonsatferd':p('attitude:3','appraisal:1','work_environment:2')
+};
+export const pairUpdates=[
+ ['selvbestemmelsesteori','bemyndiggjoring',.92,'Autonomistøtte gir en direkte bro mellom reelt handlingsrom og motivasjon; ansvar uten støtte er ikke tilstrekkelig.'],
+ ['selvbestemmelsesteori','lmx',.84,'Tillit og relasjonell støtte kan belyse tilhørighet og kompetanse, men en god lederrelasjon garanterer ikke autonomi.'],
+ ['kompetanseledelse','hrm',.94,'Kompetanseutvikling og mobilisering kobler ferdigheter til faktisk mulighet for å bruke dem.'],
+ ['kompetanseledelse','bemyndiggjoring',.88,'Handlingsrom kan være avgjørende for å mobilisere eksisterende kompetanse.'],
+ ['kompetanseledelse','hackman-oldham',.86,'Oppgaveutforming avgjør om kunnskap og ferdigheter kommer til anvendelse.'],
+ ['selznick-verdibasert-ledelse','institusjonelle-omgivelser',.91,'Institusjonell integritet og formål må forstås i møte med legitimitetskrav fra omgivelsene.'],
+ ['selznick-verdibasert-ledelse','interessentmodellen',.87,'Institusjonell ledelse håndterer interne konflikter og hensyn som ikke kan reduseres til teknisk effektivitet.'],
+ ['etisk-ledelse','autentisk-ledelse',.84,'Troverdig samsvar mellom verdier og handling er relevant, men autentisitet er ikke i seg selv en etisk garanti.'],
+ ['etisk-ledelse','transformasjonsledelse',.83,'Rollemodell og visjon kan støtte ansvarlighet, men transformasjonens mål må vurderes etisk særskilt.'],
+ ['endringsmotstand','begrenset-rasjonalitet',.78,'Usikkerhet og belastning påvirker vurderinger av endring; motstand kan også være saklig informasjon, ikke bare kognitiv begrensning.'],
+ ['konflikt-beslutningskvalitet','organisasjonskultur',.87,'Normer for åpenhet og reaksjoner på uenighet påvirker om konflikt blir læring eller personangrep.'],
+ ['maalsettingsteori','organisatorisk-laering',.86,'Komplekse oppgaver kan kreve læringsmål før ensidige prestasjonsmål.'],
+ ['maalsettingsteori','maalforskyvning',.93,'Snevre prestasjonsmål kan fortrenge kvalitet eller det overordnede formålet.'],
+ ['hersey-blanchard','fiedler',.88,'Begge er situasjonsperspektiver, men de bygger på forskjellige situasjonsvariabler og syn på stiltilpasning.'],
+ ['transaksjonsledelse','transformasjonsledelse',.93,'Bytte og avvikskontroll kan kontrasteres med mening og utvikling; de kan også kombineres.'],
+ ['uplanlagt-endring','forhandlingsmodeller',.86,'Et dialektisk endringsperspektiv synliggjør makt- og interessekonflikter som driver nye ordninger.'],
+ ['gruppetenkning','kulturell-aapenhet',.93,'Åpen kritikk og deling er en direkte kontrast til konformitet og selvsensur.'],
+ ['psykologisk-kontrakt','organisatorisk-rettferdighet',.9,'Opplevd brudd på gjensidige løfter og urettferdig behandling kan sammen svekke tillit.'],
+ ['jobbstress','jobbengasjement',.83,'Arbeidskrav og ressurser kan drøftes som både belastning og grunnlag for engasjement uten å gjøre begrepene til enkle motpoler.'],
+ ['jobbstress','psykologisk-kapital',.82,'Mestringsressurser kan påvirke vurderinger og håndtering, men erstatter ikke forsvarlig organisering.'],
+ ['diskursetikk','organisatorisk-rettferdighet',.91,'Reell stemme og begrunnet behandling forbinder etisk dialog med rettferdige prosedyrer.'],
+ ['dydsetikk','pliktetikk',.9,'Karakter og praktisk klokskap kan sammenlignes med prinsipp- og pliktbegrunnelse.'],
+ ['dydsetikk','konsekvensetikk',.89,'Drøft både hvilken aktør man bør være og hvilke følger handlingen får.'],
+ ['navigasjonshjulet','diskursetikk',.85,'Hjulets spørsmål kan prøves gjennom dialog med berørte, men verktøyene har ulike funksjoner.'],
+ ['destruktiv-ledelse','gruppetenkning',.87,'Maktpress og konformitet kan sammen stenge ute kritiske opplysninger.'],
+ ['tjenende-ledelse','transformasjonsledelse',.88,'Begge kan utvikle medarbeidere, men tjenende ledelse prioriterer andres vekst som et særskilt utgangspunkt.'],
+ ['jobbholdninger','jobbtilfredshet',.95,'Jobbtilfredshet er en sentral vurderende holdning til arbeidet.'],
+ ['psykososialt-arbeidsmiljo','jobbengasjement',.92,'Berikelsesperspektivet undersøker ressurser og meningsfulle arbeidsbetingelser.']
+];

@@ -1,0 +1,88 @@
+{
+  "version": "1.1.0",
+  "scope": "Naturlig og faglig nyttig sambruk i en kursdrøfting. Symmetrisk, positiv relevans mellom alle forskjellige temaer.",
+  "dimensions_for_editorial_review": [
+    "conceptual_overlap",
+    "explanatory_connection",
+    "shared_application",
+    "natural_writing_transition",
+    "useful_contrast"
+  ],
+  "chapter_bonus": 0,
+  "same_author_bonus": 0,
+  "empirical_correlation": false,
+  "scoring_precision": 2,
+  "minimum_observed": 0.08,
+  "maximum_observed": 0.97,
+  "bands": [
+    {
+      "min": 0.9,
+      "max": 1,
+      "label": "Svært nær forbindelse eller særlig viktig kontrast"
+    },
+    {
+      "min": 0.8,
+      "max": 0.89,
+      "label": "Sterk og naturlig forbindelse"
+    },
+    {
+      "min": 0.65,
+      "max": 0.79,
+      "label": "Tydelig forbindelse når drøftingens vinkling passer"
+    },
+    {
+      "min": 0.45,
+      "max": 0.64,
+      "label": "Moderat eller indirekte forbindelse som bør forklares"
+    },
+    {
+      "min": 0.25,
+      "max": 0.44,
+      "label": "Svakere forbindelse som ofte trenger flere mellomledd"
+    },
+    {
+      "min": 0,
+      "min_exclusive": true,
+      "max": 0.24,
+      "label": "Perifer forbindelse i dette pensumgrunnlaget"
+    }
+  ],
+  "profile_scoring": {
+    "features": "Manually authored, topic-specific concepts, mechanisms and application contexts; strength 1–3.",
+    "specificity": "idf(f) = 1 + ln((N+1)/(df(f)+1))",
+    "overlap": "Weighted Dice: 2 * sum(min(a_f,b_f)*idf_f) / (sum(a_f*idf_f)+sum(b_f*idf_f))",
+    "composite": "0.35*concepts + 0.40*mechanisms + 0.25*applications",
+    "transform": "round(0.08 + 0.78 * composite^0.60, 2)",
+    "calibration": "Editorial calibration to the verbal relevance bands, not fitted against a measured ground truth."
+  },
+  "path_scoring": {
+    "allowed_step_source": "Only individually reviewed pairs with weight >= 0.80.",
+    "two_hops": "round(0.66 * geometric_mean(step_weights), 2)",
+    "three_hops": "round(0.42 * geometric_mean(step_weights), 2)",
+    "forbidden_intermediates": "Overview nodes, needs_source_expansion nodes, and the generic topics organisasjon, ledelse, organisasjonskultur, beslutningsprosesser, organisatorisk-laering, formelle-uformelle-trekk, koordinering.",
+    "interpretation": "A possible writing route; never treated as proof of direct equivalence or causation.",
+    "selection": "For a non-reviewed pair use max(profile estimate, strongest eligible short route).",
+    "tie_break": "Lexicographically first normalized path for equal rounded route weights."
+  },
+  "pair_reviews": {
+    "count": 638,
+    "selection": "Tidligere direkte vurderinger beholdt etter semantisk gjennomgang; supplerende teori gir nye direkte par og presiseringer. Alle øvrige par beregnes på nytt fra reviderte profiler og korte skriveveier.",
+    "precedence": "Explicit pair review replaces profile/path estimates and may raise or lower the score.",
+    "judgment": "Holistic assessment across the five editorial dimensions. No invented per-dimension manual numeric ratings."
+  },
+  "confidence": {
+    "high": "Individually reviewed pair with substantive endpoint source material; not independent scholarly verification.",
+    "medium": "An inferred/profile pair, or a reviewed pair with limited source coverage.",
+    "low": "At least one endpoint needs source expansion.",
+    "separate_from_weight": true
+  },
+  "limitations": [
+    "Many unreviewed scores are systematic estimates rather than independent pair-by-pair essay judgments.",
+    "Two strong relationships do not make the endpoints directly related; mediated routes are explicitly marked and capped.",
+    "A lower-scored pair may become more relevant for a particular assignment.",
+    "Differences of one or two hundredths should not be treated as objective precision.",
+    "The source document has not been independently fact-checked against the complete book.",
+    "2026-09: Vurdert mot leverte forelesninger og bokutdrag, ikke fullstendig ekstern fagkontroll. Eksemplenes felles kontekst inngår ikke i skåringen."
+  ],
+  "update_rule": "Changing topic profiles, adding topics or changing pair reviews can change specificity weights and writing paths for other pairs. Regenerate all derived estimates and diagnostics; review direct judgments whose source content changed. Version and compare releases rather than silently reusing stale scores."
+}

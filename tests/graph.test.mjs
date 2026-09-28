@@ -6,11 +6,11 @@ import {Graph} from '../src/graph.js';
 const {topics}=JSON.parse(await readFile(new URL('../data/topics.json',import.meta.url)));
 const {edges}=JSON.parse(await readFile(new URL('../data/relationships.json',import.meta.url)));
 test('complete graph, inclusive thresholds and isolated focus',()=>{
-  assert.equal(filterGraph(topics,edges,.01).links.length,8646);
-  assert.equal(filterGraph(topics,edges,.88).links.length,333);
+  assert.equal(filterGraph(topics,edges,.01).links.length,topics.length*(topics.length-1)/2);
+  assert.equal(filterGraph(topics,edges,.88).links.length,edges.filter(e=>e.weight>=.88).length);
   const isolated=filterGraph(topics,edges,1,'organisasjon');
   assert.deepEqual(isolated.nodes.map(n=>n.id),['organisasjon']);assert.equal(isolated.links.length,0);
-  assert.equal(filterGraph(topics,edges,1).nodes.length,132);
+  assert.equal(filterGraph(topics,edges,1).nodes.length,topics.length);
 });
 test('focus follows reachable hops within the distance limit and excludes other components',()=>{
   const nodes=['a','b','c','d'].map(id=>({id}));const links=[{source:'a',target:'b',weight:.9},{source:'b',target:'c',weight:.8},{source:'c',target:'d',weight:.2}];

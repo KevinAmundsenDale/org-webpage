@@ -1,6 +1,6 @@
 # Sammenheng
 
-Et lokalt, interaktivt fagkart for **Organisasjon, ledelse og etikk**. Inneholder 132 temaer, 8 646 vektede forbindelser og figurene fra sammendraget.
+Et lokalt, interaktivt fagkart for **Organisasjon, ledelse og etikk**. Inneholder 157 temaer, 12 246 vektede forbindelser og figurene fra sammendraget.
 
 ## Skrivebordsapp, oppdateringer og deling
 
@@ -64,3 +64,5 @@ Kjør `npm run build` etter endringer i kildekoden. `npm run dev` overvåker Jav
 For å gi noen sin egen lokale kopi: kopier prosjektmappen, inkludert `data/` og `public/`, men utelat `node_modules/`; mottakeren kjører `npm ci`, `npm run build`, `npm start`. Ta med `data/edits.json` hvis du vil dele dine endringer. Bare du avgjør hvilke egne notater du deler.
 
 For vanlige brukere anbefales nå skrivebordsinstallasjonsfilene. Se [veiledningen](docs/SHARING-AND-UPDATES.md) for GitHub-utgaver og oppdateringer. Ingen utgaver er publisert automatisk ved den lokale byggingen. Serveren lytter fortsatt bare lokalt.
+
+Faginnhold 3 inkluderer 25 nye temaer fra kursmaterialet og konstruerte praksiseksempler til alle noder. Se [faglig gjennomgang og endringsoversikt](docs/CONTENT-REVIEW-2026-09.md).

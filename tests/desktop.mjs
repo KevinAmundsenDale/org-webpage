@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {mkdtemp,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join,resolve,sep} from 'node:path';
+import {topics,focusedCount} from './content-fixture.mjs';
 const profile=await mkdtemp(join(tmpdir(),'sammenheng-desktop-test-'));
 let instance;
 try{
@@ -12,9 +13,9 @@ try{
   const page=await instance.firstWindow();const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.waitForFunction(()=>window.orgGraph);
   assert.equal(await page.evaluate(()=>typeof window.require),'undefined');assert.equal(await page.evaluate(()=>!!window.desktop),true);
   await page.locator('#focus').selectOption('organisasjon');
-  await page.locator('[data-distance="1"]').click();assert.equal(await page.evaluate(()=>orgGraph.snapshot().nodes.length),4);
-  await page.locator('[data-distance="5"]').click();assert.equal(await page.evaluate(()=>orgGraph.snapshot().nodes.length),128);
-  await page.locator('#clear-focus').click();assert.equal(await page.evaluate(()=>orgGraph.snapshot().nodes.length),132);
+  await page.locator('[data-distance="1"]').click();assert.equal(await page.evaluate(()=>orgGraph.snapshot().nodes.length),focusedCount(1));
+  await page.locator('[data-distance="5"]').click();assert.equal(await page.evaluate(()=>orgGraph.snapshot().nodes.length),focusedCount(5));
+  await page.locator('#clear-focus').click();assert.equal(await page.evaluate(()=>orgGraph.snapshot().nodes.length),topics.length);
   const prefs=await instance.evaluate(({BrowserWindow})=>{const p=BrowserWindow.getAllWindows()[0].webContents.getLastWebPreferences();return {sandbox:p.sandbox,contextIsolation:p.contextIsolation,nodeIntegration:p.nodeIntegration};});assert.deepEqual(prefs,{sandbox:true,contextIsolation:true,nodeIntegration:false});
   assert.equal(await page.evaluate(async()=>{try{await desktop.installUpdate();return false;}catch{return true;}}),true);
   assert.equal(await page.evaluate(async()=>{try{await desktop.openExternal('https://example.com');return false;}catch{return true;}}),true);

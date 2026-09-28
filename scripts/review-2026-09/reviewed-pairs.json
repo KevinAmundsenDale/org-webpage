@@ -1,0 +1,4471 @@
+{
+  "review_version": "1.1.0",
+  "reviews": [
+    {
+      "source": "adaptiv-ledelse",
+      "target": "administrasjon-ledelse",
+      "weight": 0.84,
+      "reason": "Drift og utvikling kan sammenlignes med operativ problemløsning og adaptiv læring.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adaptiv-ledelse",
+      "target": "endringsomfang",
+      "weight": 0.79,
+      "reason": "Læring og tilpasning kan støtte ulike grader av endring; skillet mellom radikalt og inkrementelt presiserer hva tilpasningen innebærer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adaptiv-ledelse",
+      "target": "kulturell-aapenhet",
+      "weight": 0.87,
+      "reason": "Læring og kreativitet trenger rom for å dele ideer og prøve nye løsninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adaptiv-ledelse",
+      "target": "ledelse",
+      "weight": 0.87,
+      "reason": "Adaptiv ledelse presiserer en form for påvirkning som støtter kreativitet, læring og tilpasning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adaptiv-ledelse",
+      "target": "march-utnyttelse-utforsking",
+      "weight": 0.9,
+      "reason": "Tilpasning og stabil drift kan drøftes i lys av utforsking og utnyttelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adaptiv-ledelse",
+      "target": "miles-snow",
+      "weight": 0.8,
+      "reason": "Innovasjonsorienterte strategier kan skape behov for ledelse som støtter læring og tilpasning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adaptiv-ledelse",
+      "target": "omgivelsesusikkerhet",
+      "weight": 0.87,
+      "reason": "Usikre og skiftende forhold gjør læring og tilpasningskapasitet relevant i ledelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adaptiv-ledelse",
+      "target": "sosial-laering",
+      "weight": 0.72,
+      "reason": "Læring fra andres erfaringer kan være et virkemiddel i adaptiv ledelse, uten at dette uttømmer ledelsesperspektivet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adhockrati",
+      "target": "cameron-quinn",
+      "weight": 0.83,
+      "reason": "Innovasjonskultur og fleksibel struktur kan støtte hverandre, men kulturtypen og konfigurasjonen må holdes adskilt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adhockrati",
+      "target": "delt-ledelse",
+      "weight": 0.86,
+      "reason": "Gjensidig tilpasning gir en naturlig inngang til ledelsesfunksjoner som ivaretas på tvers av formelle posisjoner.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adhockrati",
+      "target": "innovasjon",
+      "weight": 0.93,
+      "reason": "Gjensidig tilpasning og fleksibel arbeidsdeling kan brukes til å drøfte organisering for nytenkning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adhockrati",
+      "target": "koordinering",
+      "weight": 0.95,
+      "reason": "Gjensidig tilpasning er en direkte kobling mellom adhockratiet og koordineringsmekanismene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adhockrati",
+      "target": "markedsgruppering",
+      "weight": 0.64,
+      "reason": "Begge gjelder organisasjonsdesign, men fleksibel koordinering og inndeling etter kunder er ulike egenskaper som må kobles gjennom en konkret situasjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adhockrati",
+      "target": "maskinbyraakrati",
+      "weight": 0.92,
+      "reason": "Formalisering og regelstyring gir en tydelig kontrast til fleksibel arbeidsdeling og gjensidig tilpasning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adhockrati",
+      "target": "matrisestruktur",
+      "weight": 0.84,
+      "reason": "Kryssende forbindelser kan støtte fleksibelt samarbeid, men en matrise er ikke automatisk et adhockrati.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adhockrati",
+      "target": "miles-snow",
+      "weight": 0.84,
+      "reason": "En innovasjonsorientert strategi kan drøftes sammen med en struktur som støtter fleksibel samhandling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adhockrati",
+      "target": "mintzberg-konfigurasjoner",
+      "weight": 0.94,
+      "reason": "Adhockratiet er én av modellene eller formene i denne oversikten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adhockrati",
+      "target": "omgivelsesusikkerhet",
+      "weight": 0.91,
+      "reason": "Komplekse og skiftende oppgaver gir en naturlig begrunnelse for fleksibilitet og løpende tilpasning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "adhockrati",
+      "target": "prosjektorganisering",
+      "weight": 0.92,
+      "reason": "Tverrfaglige prosjekter gir en naturlig konkretisering av fleksibel arbeidsdeling og gjensidig tilpasning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "administrasjon-ledelse",
+      "target": "ledelse",
+      "weight": 0.92,
+      "reason": "Skillet setter påvirkning og retning i sammenheng med den praktiske driften ledere også må ivareta.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "administrasjon-ledelse",
+      "target": "lederroller",
+      "weight": 0.93,
+      "reason": "Rolletabellen viser hvordan praktisk administrasjon og påvirkning inngår i det samme lederarbeidet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "alderfer-erg",
+      "target": "karrieresystemer",
+      "weight": 0.84,
+      "reason": "Blokkerte utviklingsmuligheter kan drøftes som frustrerte vekstbehov.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "alderfer-erg",
+      "target": "maslow",
+      "weight": 0.95,
+      "reason": "ERG gir en nær sammenligning av behovsgrupper, samtidighet og frustrasjon–regresjon.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "alderfer-erg",
+      "target": "mcclelland-behov",
+      "weight": 0.87,
+      "reason": "Begge nyanserer behovsmotivasjon med ulike grupperinger.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "argyris-laeringskretser",
+      "target": "endringsomfang",
+      "weight": 0.91,
+      "reason": "Endring av premisser kan gi større brudd enn forbedring innenfor eksisterende mål.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "argyris-laeringskretser",
+      "target": "erfaringslaering",
+      "weight": 0.91,
+      "reason": "Refleksjon kan rette seg mot både arbeidsmåter og underliggende mål.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "argyris-laeringskretser",
+      "target": "laering-endring",
+      "weight": 0.94,
+      "reason": "Læringskretsene viser konkret hvordan tilbakemelding kan endre atferd eller de rammene atferden bygger på.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "argyris-laeringskretser",
+      "target": "march-utnyttelse-utforsking",
+      "weight": 0.95,
+      "reason": "Begge skiller forbedring innenfor etablerte rammer fra mer grunnleggende nytenkning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "argyris-laeringskretser",
+      "target": "organisasjonskultur",
+      "weight": 0.9,
+      "reason": "Dobbeltkretslæring kan utfordre verdier og grunnleggende antakelser som kulturen tar for gitt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "argyris-laeringskretser",
+      "target": "organisatorisk-laering",
+      "weight": 0.95,
+      "reason": "Læringskretsene skiller mellom korrigering av praksis og revurdering av dens mål og verdier.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "argyris-laeringskretser",
+      "target": "toyota-hvorfor",
+      "weight": 0.95,
+      "reason": "Å følge årsaker tilbake til styringskriterier kan utfordre premissene, ikke bare reparere symptomet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "artefakter",
+      "target": "beloenningssystemer",
+      "weight": 0.84,
+      "reason": "En belønning har både praktisk verdi og symbolsk betydning for hva organisasjonen anerkjenner.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "artefakter",
+      "target": "cameron-quinn",
+      "weight": 0.82,
+      "reason": "Synlige uttrykk kan brukes til å undersøke hvilke verdier en mulig kulturtype faktisk fremhever.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "artefakter",
+      "target": "hofstede",
+      "weight": 0.63,
+      "reason": "Kulturelle uttrykk kan tolkes i lys av samfunnets verdier, men et artefakt gir ikke direkte belegg for en nasjonal dimensjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "artefakter",
+      "target": "kulturell-aapenhet",
+      "weight": 0.77,
+      "reason": "Møter, historier og synlig håndtering av feil kan brukes til å undersøke om en uttalt åpen kultur finnes i praksis.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "artefakter",
+      "target": "martin-kulturperspektiver",
+      "weight": 0.86,
+      "reason": "Samme synlige uttrykk kan forstås likt, ulikt mellom grupper eller tvetydig, avhengig av kulturperspektivet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "artefakter",
+      "target": "omdoemme",
+      "weight": 0.87,
+      "reason": "Synlige handlinger, logoer og fortellinger kan forme hvordan organisasjonen fortolkes utad.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "artefakter",
+      "target": "organisasjonskultur",
+      "weight": 0.94,
+      "reason": "Artefakter er synlige innganger til analyse av kulturens praktiske og symbolske uttrykk.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "artefakter",
+      "target": "schein-kulturnivaaer",
+      "weight": 0.95,
+      "reason": "Artefakter er det synlige nivået der både praktiske funksjoner og symbolsk mening kan undersøkes.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "artefakter",
+      "target": "selznick-verdibasert-ledelse",
+      "weight": 0.89,
+      "reason": "Ledere kan formidle og synliggjøre verdier gjennom handlinger, fortellinger og andre kulturelle uttrykk.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "artefakter",
+      "target": "symbolske-beslutninger",
+      "weight": 0.92,
+      "reason": "Vedtak kan analyseres som symboler som formidler verdier og handlekraft utover sin praktiske funksjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "autentisk-ledelse",
+      "target": "dydsetikk",
+      "weight": 0.79,
+      "reason": "Samsvar med egne verdier er relevant, men verdiene må også kunne forsvares etisk.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "autentisk-ledelse",
+      "target": "etisk-ledelse",
+      "weight": 0.84,
+      "reason": "Troverdig samsvar mellom verdier og handling er relevant, men autentisitet er ikke i seg selv en etisk garanti.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "autentisk-ledelse",
+      "target": "inkrementelle-beslutninger",
+      "weight": 0.26,
+      "reason": "Verdikonsistens kan vurderes gjennom en serie små valg, men modellene har liten direkte forklaringsmessig overlapp.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "autentisk-ledelse",
+      "target": "karismatisk-ledelse",
+      "weight": 0.77,
+      "reason": "Konsistent overbevisning kan sammenlignes med personlig tiltrekningskraft; det ene innebærer ikke automatisk det andre.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "autentisk-ledelse",
+      "target": "konflikt-beslutningskvalitet",
+      "weight": 0.52,
+      "reason": "Tydelige overbevisninger kan gi åpen meningsbrytning, men må kobles til evne til å lytte for å belyse kvaliteten på beslutninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "autentisk-ledelse",
+      "target": "ledelse",
+      "weight": 0.88,
+      "reason": "Autentisk ledelse undersøker konsistens mellom lederens verdier, kommunikasjon og handling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "autentisk-ledelse",
+      "target": "ledergitteret",
+      "weight": 0.53,
+      "reason": "Begge beskriver ledelse, men verdikonsistens og balansen mellom menneske- og produksjonshensyn er ulike spørsmål.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "autentisk-ledelse",
+      "target": "lmx",
+      "weight": 0.8,
+      "reason": "Forutsigbar og konsistent opptreden kan diskuteres som en betingelse for tillit i den enkelte lederrelasjonen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "autentisk-ledelse",
+      "target": "organisasjonskultur",
+      "weight": 0.79,
+      "reason": "Lederens egne verdier kan støtte eller bryte med normene som preger organisasjonen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "autentisk-ledelse",
+      "target": "selznick-verdibasert-ledelse",
+      "weight": 0.88,
+      "reason": "Egne tydelige verdier kan sammenlignes med ledelse gjennom organisasjonens felles verdier og mening.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "autentisk-ledelse",
+      "target": "transformasjonsledelse",
+      "weight": 0.86,
+      "reason": "Tydelige verdier og troverdig opptreden kan sammenlignes med visjon og inspirasjon, men modellene vektlegger ulike sider.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "balansert-maalstyring",
+      "target": "beloenningssystemer",
+      "weight": 0.88,
+      "reason": "Når indikatorer kobles til belønning, påvirker de hva ansatte prioriterer og hvilke resultater de søker.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "balansert-maalstyring",
+      "target": "divisjonalisert-struktur",
+      "weight": 0.84,
+      "reason": "Resultatstyring av divisjoner trenger indikatorer som fanger både lokale prestasjoner og helhetlige mål.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "balansert-maalstyring",
+      "target": "maalforskyvning",
+      "weight": 0.94,
+      "reason": "Flere perspektiver kan motvirke snever måling, men indikatorene kan fortsatt styre oppmerksomheten feil.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "balansert-maalstyring",
+      "target": "maalhierarki",
+      "weight": 0.91,
+      "reason": "Målhierarkiet gir retning, og balansert målstyring gjør flere sider ved måloppnåelsen synlige.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "balansert-maalstyring",
+      "target": "maalsettingsteori",
+      "weight": 0.86,
+      "reason": "Organisatoriske indikatorer og motiverende individuelle mål kan kobles, men modellenes analysenivå og formål er ulike.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "balansert-maalstyring",
+      "target": "organisatorisk-laering",
+      "weight": 0.72,
+      "reason": "Læring og vekst inngår som forutsetninger for langsiktige resultater.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "balansert-maalstyring",
+      "target": "produktivitet-effektivitet",
+      "weight": 0.95,
+      "reason": "Balansert målstyring utvider hvordan resultater og langsiktige forutsetninger vurderes utover ett produktivitetsmål.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "barnard-uformell-kommunikasjon",
+      "target": "beloenningssystemer",
+      "weight": 0.45,
+      "reason": "Ansatte kan tolke belønningers rettferdighet gjennom småprat; forbindelsen går via fortolkning og gruppenormer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "barnard-uformell-kommunikasjon",
+      "target": "effektiv-kommunikasjon",
+      "weight": 0.86,
+      "reason": "Småprat kan avklare uklare budskap, men også skape feilinformasjon; begge deler er relevante for kommunikasjonens virkning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "barnard-uformell-kommunikasjon",
+      "target": "hrm",
+      "weight": 0.79,
+      "reason": "Småprat kan bidra til sosialisering, læring og tilhørighet som personalpolitikken forsøker å støtte.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "barnard-uformell-kommunikasjon",
+      "target": "kommunikasjonsprosess",
+      "weight": 0.92,
+      "reason": "Småprat konkretiserer gjensidig fortolkning og viser at budskap får mening i sosial samhandling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "barnard-uformell-kommunikasjon",
+      "target": "koordinering",
+      "weight": 0.94,
+      "reason": "Gjensidig tilpasning kan skje nettopp gjennom uformell kommunikasjon mellom dem som utfører arbeidet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "barnard-uformell-kommunikasjon",
+      "target": "kulturell-aapenhet",
+      "weight": 0.92,
+      "reason": "Trygg og åpen småprat kan støtte erfaringsdeling; rykter kan samtidig undergrave tillit.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "barnard-uformell-kommunikasjon",
+      "target": "maalsettingsteori",
+      "weight": 0.5,
+      "reason": "Uformelle samtaler kan gi tilbakemelding og påvirke hvordan mål forstås, men er ikke et kjerneelement i målsettingsteorien.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "barnard-uformell-kommunikasjon",
+      "target": "nonaka-kunnskap",
+      "weight": 0.91,
+      "reason": "Samtaler og felles praksis kan gjøre erfaringer tilgjengelige for andre.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "barnard-uformell-kommunikasjon",
+      "target": "organisasjonskultur",
+      "weight": 0.95,
+      "reason": "Småprat både formidler og utvikler normer, felles fortolkninger og gruppetilhørighet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "barnard-uformell-kommunikasjon",
+      "target": "organisatorisk-laering",
+      "weight": 0.93,
+      "reason": "Delte erfaringer og kollektiv fortolkning kan bli grunnlag for endret praksis.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "barnard-uformell-kommunikasjon",
+      "target": "vertikal-horisontal-kommunikasjon",
+      "weight": 0.9,
+      "reason": "Uformell prat kan supplere eller omgå de formelle informasjonsveiene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "beslutningsmodeller",
+      "weight": 0.95,
+      "reason": "Begrenset rasjonalitet er et gjennomgående utgangspunkt for å forstå hvorfor beslutningsmodellene gir ulike løsninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "beslutningsprosesser",
+      "weight": 0.94,
+      "reason": "Begrenset kapasitet og informasjon preger hele prosessen fra problemforståelse til valg.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "beslutningsstroemmer",
+      "weight": 0.78,
+      "reason": "Strømperspektivet beskriver hvordan begrenset informasjon og deltakelse kan fordeles i en organisatorisk prosess.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "endringsmotstand",
+      "weight": 0.78,
+      "reason": "Usikkerhet og belastning påvirker vurderinger av endring; motstand kan også være saklig informasjon, ikke bare kognitiv begrensning.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "gruppetenkning",
+      "weight": 0.92,
+      "reason": "Konformitet kan ytterligere begrense informasjon og alternativsøk.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "inkrementelle-beslutninger",
+      "weight": 0.93,
+      "reason": "Begrenset analyse gjør små justeringer av kjente løsninger til en naturlig beslutningsmåte.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "jobbstress",
+      "weight": 0.82,
+      "reason": "Tidspress og belastning kan innsnevre oppmerksomhet og alternativsøk.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "kognitiv-laering",
+      "weight": 0.95,
+      "reason": "Begge tar hensyn til selektiv informasjonsbehandling og begrenset kapasitet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "kommunikasjon-beslutninger",
+      "weight": 0.95,
+      "reason": "Begrenset og filtrert informasjon forklarer hvorfor beslutningstakere ikke har full oversikt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "march-konsekvenslogikk",
+      "weight": 0.91,
+      "reason": "Man kan forsøke å vurdere konsekvenser selv om mål og informasjon er ufullstendige.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "perfekt-rasjonalitet",
+      "weight": 0.97,
+      "reason": "Full maksimering kontrasteres med sekvensielt søk etter en tilfredsstillende løsning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "rasjonell-organisasjon",
+      "weight": 0.93,
+      "reason": "Organisering kan hjelpe individer å håndtere begrensningene i egen kapasitet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "regelmodellen",
+      "weight": 0.91,
+      "reason": "Regler kan redusere søkebehovet, men samtidig begrense hvilke situasjoner og alternativer som vurderes.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "begrenset-rasjonalitet",
+      "target": "vertikal-horisontal-kommunikasjon",
+      "weight": 0.9,
+      "reason": "Filtrert og fordreid informasjon begrenser beslutningstakernes grunnlag.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beloenningssystemer",
+      "target": "betinging",
+      "weight": 0.72,
+      "reason": "Erfaring med konsekvenser av handlinger er relevant for å drøfte belønning som læringsbetingelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beloenningssystemer",
+      "target": "forventningsteori",
+      "weight": 0.96,
+      "reason": "Belønning motiverer bare dersom den har verdi og oppleves oppnåelig.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beloenningssystemer",
+      "target": "hrm",
+      "weight": 0.93,
+      "reason": "Belønning må vurderes sammen med rekruttering, utvikling og muligheter for deltakelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beloenningssystemer",
+      "target": "indre-ytre-motivasjon",
+      "weight": 0.95,
+      "reason": "Belønninger konkretiserer ytre motivasjon og gir grunnlag for å diskutere samspillet med interesse for oppgaven.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beloenningssystemer",
+      "target": "kollektiv-individuell-beloenning",
+      "weight": 0.96,
+      "reason": "Belønningsgrunnlaget må suppleres med valget av hvem som mottar belønningen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beloenningssystemer",
+      "target": "maalforskyvning",
+      "weight": 0.95,
+      "reason": "Belønningskriterier kan gjøre det lønnsomt å prioritere målbare delresultater.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beloenningssystemer",
+      "target": "maalsettingsteori",
+      "weight": 0.9,
+      "reason": "Belønning og tilbakemelding må knyttes til mål som både motiverer og uttrykker ønsket innsats.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beloenningssystemer",
+      "target": "organisatorisk-rettferdighet",
+      "weight": 0.95,
+      "reason": "Belønning må vurderes ut fra både fordeling og prosedyre.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "beloenningssystemer",
+      "target": "selvbestemmelsesteori",
+      "weight": 0.88,
+      "reason": "Belønninger kan drøftes ut fra hvor kontrollerende eller selvvalgt handlingen oppleves.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beloenningssystemer",
+      "target": "styringsmekanismer",
+      "weight": 0.94,
+      "reason": "Belønning konkretiserer hvordan organisasjonen kan påvirke og følge opp ønsket atferd.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beloenningssystemer",
+      "target": "transaksjonsledelse",
+      "weight": 0.96,
+      "reason": "Belønningssystemet er et konkret virkemiddel i lederens bytte med medarbeiderne.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "bemyndiggjoring",
+      "target": "delt-ledelse",
+      "weight": 0.92,
+      "reason": "Flere som ivaretar lederfunksjoner kan endre fordelingen av innflytelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "bemyndiggjoring",
+      "target": "diskursetikk",
+      "weight": 0.86,
+      "reason": "Reell deltakelse krever at svake stemmer får innflytelse.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "bemyndiggjoring",
+      "target": "endringsgjennomfoering",
+      "weight": 0.88,
+      "reason": "Mulighet til å påvirke endringen kan bidra til medvirkning og oppslutning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "bemyndiggjoring",
+      "target": "endringsstrategier",
+      "weight": 0.87,
+      "reason": "Reell medvirkning og endret maktfordeling er særlig relevante ved deltakende endringsstrategier.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "bemyndiggjoring",
+      "target": "hackman-oldham",
+      "weight": 0.9,
+      "reason": "Større innflytelse kan gi autonomi og opplevd ansvar i arbeidet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "bemyndiggjoring",
+      "target": "hersey-blanchard",
+      "weight": 0.83,
+      "reason": "Delegerende ledelse kan gi innflytelse, men modellen begrunner delegasjon ut fra kompetanse og vilje.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "bemyndiggjoring",
+      "target": "kompetanseledelse",
+      "weight": 0.88,
+      "reason": "Handlingsrom kan være avgjørende for å mobilisere eksisterende kompetanse.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "bemyndiggjoring",
+      "target": "linjeorganisasjon",
+      "weight": 0.86,
+      "reason": "Bemyndiggjøring kan konkretiseres som endringer i hvem i hierarkiet som har reell innflytelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "bemyndiggjoring",
+      "target": "selvbestemmelsesteori",
+      "weight": 0.92,
+      "reason": "Autonomistøtte gir en direkte bro mellom reelt handlingsrom og motivasjon; ansvar uten støtte er ikke tilstrekkelig.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "bemyndiggjoring",
+      "target": "sentralisering",
+      "weight": 0.95,
+      "reason": "Begge gjelder fordeling av innflytelse, men delegert beslutningsmyndighet og reell makt er ikke alltid det samme.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "bemyndiggjoring",
+      "target": "thorsrud-jobbkrav",
+      "weight": 0.91,
+      "reason": "Eget beslutningsområde og medvirkning gjelder faktisk innflytelse.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "bemyndiggjoring",
+      "target": "tjenende-ledelse",
+      "weight": 0.94,
+      "reason": "Tjenende ledelse konkretiserer hvordan myndighet og utviklingsmuligheter kan deles.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsfora",
+      "target": "beslutningsstroemmer",
+      "weight": 0.94,
+      "reason": "Fora bestemmer hvor og med hvem strømmer av problemer og løsninger kan kobles.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsfora",
+      "target": "kommunikativ-rasjonalitet",
+      "weight": 0.88,
+      "reason": "Møteplass, deltakelse og prosedyrer påvirker om åpen argumentasjon er mulig.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsfora",
+      "target": "maktbaser",
+      "weight": 0.94,
+      "reason": "Kontroll over deltakelse og dagsorden avgjør hvilke interesser som får innflytelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsfora",
+      "target": "organisert-anarki",
+      "weight": 0.92,
+      "reason": "Administrative arenaer kan koble strømmer som ellers ville møttes mer tilfeldig.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsfora",
+      "target": "sentralisering",
+      "weight": 0.92,
+      "reason": "Fordeling av myndighet konkretiseres gjennom hvem som kan delta og avgjøre saker i ulike fora.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsmodeller",
+      "target": "forhandlingsmodeller",
+      "weight": 0.93,
+      "reason": "Forhandlingsmodeller er én av modellene eller formene i denne oversikten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsmodeller",
+      "target": "inkrementelle-beslutninger",
+      "weight": 0.93,
+      "reason": "Inkrementelle beslutninger er én av modellene eller formene i denne oversikten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsmodeller",
+      "target": "kommunikativ-rasjonalitet",
+      "weight": 0.93,
+      "reason": "Kommunikativ rasjonalitet er én av modellene eller formene i denne oversikten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsmodeller",
+      "target": "organisert-anarki",
+      "weight": 0.93,
+      "reason": "Organisert anarki er én av modellene eller formene i denne oversikten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsmodeller",
+      "target": "porter-generiske-strategier",
+      "weight": 0.7,
+      "reason": "Strategivalg kan analyseres som beslutninger med ulike grader av analyse, forhandling og gradvis utvikling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsmodeller",
+      "target": "rasjonell-organisasjon",
+      "weight": 0.93,
+      "reason": "Organisasjonen som rasjonell aktør er én av modellene eller formene i denne oversikten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsmodeller",
+      "target": "regelmodellen",
+      "weight": 0.93,
+      "reason": "Regelmodellen er én av modellene eller formene i denne oversikten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsprosesser",
+      "target": "byttemakt",
+      "weight": 0.83,
+      "reason": "Kontroll over ressurser påvirker hvilke alternativer aktørene kan få gjennomslag for i en beslutningsprosess.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsprosesser",
+      "target": "fremvoksende-strategi",
+      "weight": 0.91,
+      "reason": "Daglige beslutninger kan danne et strategisk mønster selv om ingen har vedtatt det samlet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsprosesser",
+      "target": "helhetlig-organisasjonsmodell",
+      "weight": 0.86,
+      "reason": "Beslutninger formes av organisatoriske rammer og kan samtidig endre dem.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsprosesser",
+      "target": "inkrementelle-beslutninger",
+      "weight": 0.91,
+      "reason": "Småskrittsmodellen viser et konkret alternativ til forestillingen om et samlet og fullstendig analysert valg.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsprosesser",
+      "target": "iverksettingsproblemer",
+      "weight": 0.94,
+      "reason": "Gjennomføring er en del av beslutningsprosessen og kan svikte etter vedtaket.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsprosesser",
+      "target": "kommunikasjon-beslutninger",
+      "weight": 0.96,
+      "reason": "Beslutningsprosessen trenger informasjon som blir tilgjengelig gjennom kommunikasjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsprosesser",
+      "target": "march-konsekvenslogikk",
+      "weight": 0.92,
+      "reason": "Spørsmål om alternativer og følger gir en direkte ramme for analyse av valgfasen i prosessen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsprosesser",
+      "target": "organisasjonsatferd",
+      "weight": 0.83,
+      "reason": "Beslutninger er en av atferdsprosessene og viser hvordan tenkning omsettes til valg og handling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsprosesser",
+      "target": "perfekt-rasjonalitet",
+      "weight": 0.92,
+      "reason": "Idealmodellen presiserer strenge antakelser om informasjon og mål som kan brukes til å vurdere en faktisk prosess.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsstroemmer",
+      "target": "kommunikasjon-beslutninger",
+      "weight": 0.86,
+      "reason": "Kommunikasjon påvirker hvilke problemer og løsninger deltakere bringer inn i beslutningsanledningene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsstroemmer",
+      "target": "organisert-anarki",
+      "weight": 0.97,
+      "reason": "Organisert anarki forklarer hvordan relativt uavhengige strømmer kobles.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "beslutningsstroemmer",
+      "target": "produksjonssystem",
+      "weight": 0.28,
+      "reason": "Beslutninger kan være et resultat organisasjonen produserer, men strømmodellen krever en særskilt kobling til denne typen virksomhet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "betinging",
+      "target": "kollektiv-individuell-beloenning",
+      "weight": 0.63,
+      "reason": "Lærte reaksjoner på konsekvenser kan kobles til belønningens nivå, men kilden utdyper ikke operant betinging tilstrekkelig.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "betinging",
+      "target": "sosial-laering",
+      "weight": 0.78,
+      "reason": "Direkte innlærte reaksjoner kan sammenlignes med læring gjennom observasjon av andre.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "business-model-canvas",
+      "target": "haandtere-tekniske-omgivelser",
+      "weight": 0.71,
+      "reason": "Endret partnerskap eller ressurstilgang kan kreve justering av forretningsmodellen, men ikke alle tiltak berører hele modellen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "business-model-canvas",
+      "target": "interorganisatoriske-relasjoner",
+      "weight": 0.86,
+      "reason": "Partnere og ressurstilgang i forretningsmodellen kan utdypes gjennom kontrakter, kjeder og nettverk.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "business-model-canvas",
+      "target": "porter-generiske-strategier",
+      "weight": 0.85,
+      "reason": "Den valgte konkurranseposisjonen må konkretiseres i kundeverdi, aktiviteter, ressurser og økonomi.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "business-model-canvas",
+      "target": "porter-verdikjede",
+      "weight": 0.88,
+      "reason": "Forretningsmodellens aktiviteter kan utdypes gjennom verdikjeden.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "business-model-canvas",
+      "target": "produksjonssystem",
+      "weight": 0.85,
+      "reason": "Produksjonssystemet beskriver transformasjon, mens forretningsmodellen konkretiserer kundeverdi, ressurser og inntekter.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "business-model-canvas",
+      "target": "ressursbasert-strategi",
+      "weight": 0.86,
+      "reason": "Ressurser og kompetanse kan oversettes til et verdiforslag og en praktisk forretningsmodell.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "business-model-canvas",
+      "target": "tekniske-omgivelser",
+      "weight": 0.84,
+      "reason": "Kunder, partnere, ressurser og teknologi er betingelser for hvordan forretningsmodellen fungerer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "byttemakt",
+      "target": "interessentmodellen",
+      "weight": 0.93,
+      "reason": "Interessentene har ulik kontroll over ønskede ressurser og dermed ulike avhengigheter og forhandlingsposisjoner.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "byttemakt",
+      "target": "lmx",
+      "weight": 0.81,
+      "reason": "Begge handler om relasjoner og gjensidige forventninger, men LMX vektlegger relasjonskvalitet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "byttemakt",
+      "target": "omgivelsesavhengighet",
+      "weight": 0.94,
+      "reason": "Byttemakt presiserer hvordan behov for ressurser og få alternativer skaper avhengighet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "byttemakt",
+      "target": "organisatorisk-tilknytning",
+      "weight": 0.82,
+      "reason": "Tilgang til alternative jobber påvirker både avhengighet og muligheten til å forlate organisasjonen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "byttemakt",
+      "target": "transaksjonskostnader",
+      "weight": 0.83,
+      "reason": "Få alternative leverandører kan påvirke både forhandling og kostnader.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "byttemakt",
+      "target": "transaksjonsledelse",
+      "weight": 0.94,
+      "reason": "Arbeid mot belønning er en bytterelasjon der partenes avhengighet har betydning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "byttemakt",
+      "target": "weber-autoritet",
+      "weight": 0.92,
+      "reason": "Nyttebasert lydighet kan sammenlignes med mer stabile legitimeringsgrunnlag for autoritet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "cameron-quinn",
+      "target": "hofstede",
+      "weight": 0.76,
+      "reason": "Begge klassifiserer kultur, men på ulike nivåer; organisasjonskultur må ikke likestilles med nasjonal kultur.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "cameron-quinn",
+      "target": "lederstiler",
+      "weight": 0.83,
+      "reason": "Kulturtypene vektlegger forskjellige forventninger til lederens atferd.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "cameron-quinn",
+      "target": "martin-kulturperspektiver",
+      "weight": 0.9,
+      "reason": "En klassifisering av kulturtype kan problematiseres ved å spørre om typen faktisk deles av hele organisasjonen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "cameron-quinn",
+      "target": "mintzberg-konfigurasjoner",
+      "weight": 0.85,
+      "reason": "Kultur og struktur kan sammenlignes som ulike forklaringer på organisering; like typenavn betyr ikke identiske modeller.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "cameron-quinn",
+      "target": "organisasjonskultur",
+      "weight": 0.96,
+      "reason": "Typologien konkretiserer ulike kulturelle antakelser om samarbeid, kontroll, kreativitet og konkurranse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "cameron-quinn",
+      "target": "schein-kulturnivaaer",
+      "weight": 0.9,
+      "reason": "Kulturtypene beskriver ulike verdimønstre som kan undersøkes gjennom Scheins nivåer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "cameron-quinn",
+      "target": "selznick-verdibasert-ledelse",
+      "weight": 0.83,
+      "reason": "Kulturtypene kan konkretisere hvilke verdier en leder forsøker å fremme og hvilke andre hensyn som kan trenges tilbake.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "delt-ledelse",
+      "target": "entreprenororganisasjon",
+      "weight": 0.84,
+      "reason": "Horisontalt fordelte lederfunksjoner gir en tydelig kontrast til sentralisert direkte tilsyn.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "delt-ledelse",
+      "target": "interessentmodellen",
+      "weight": 0.68,
+      "reason": "Fordeling av lederfunksjoner gjør det relevant å undersøke hvilke grupper som får innflytelse og hvilke interesser de ivaretar.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "delt-ledelse",
+      "target": "koordinering",
+      "weight": 0.91,
+      "reason": "Når lederfunksjoner deles, blir horisontal samordning en sentral del av ledelsesarbeidet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "delt-ledelse",
+      "target": "ledelse",
+      "weight": 0.92,
+      "reason": "Delt ledelse utvider spørsmålet om hvem som utfører påvirkningen mot felles mål.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "delt-ledelse",
+      "target": "linjeorganisasjon",
+      "weight": 0.86,
+      "reason": "Horisontal fordeling av ledelsesfunksjoner kan sammenlignes med formelle vertikale myndighetslinjer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "delt-ledelse",
+      "target": "profesjonell-autoritet",
+      "weight": 0.8,
+      "reason": "Faglig kunnskap kan gi personer lederinnflytelse selv uten en formell lederposisjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "delt-ledelse",
+      "target": "profesjonelt-byraakrati",
+      "weight": 0.8,
+      "reason": "Faglig autonomi gjør det relevant å undersøke hvordan lederfunksjoner fordeles, uten at distribuert ledelse følger automatisk.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "delt-ledelse",
+      "target": "sentralisering",
+      "weight": 0.91,
+      "reason": "Delt ledelse gir en naturlig kontrast til antakelsen om at påvirkning samles hos én formell leder.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "destruktiv-ledelse",
+      "target": "etisk-ledelse",
+      "weight": 0.94,
+      "reason": "En viktig kontrast om ansvar, verdighet og varsling.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "destruktiv-ledelse",
+      "target": "gruppetenkning",
+      "weight": 0.87,
+      "reason": "Maktpress og konformitet kan sammen stenge ute kritiske opplysninger.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "destruktiv-ledelse",
+      "target": "karismatisk-ledelse",
+      "weight": 0.81,
+      "reason": "Personlig tiltrekning kan kombineres med skadelig maktbruk, men karisma er ikke i seg selv destruktiv.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "destruktiv-ledelse",
+      "target": "maktformer",
+      "weight": 0.92,
+      "reason": "Skadelig ledelse kan virke gjennom både åpen og skjult makt.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "destruktiv-ledelse",
+      "target": "psykososialt-arbeidsmiljo",
+      "weight": 0.92,
+      "reason": "Skadelig lederatferd inngår i belastningsperspektivet.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "direkte-indirekte-ledelse",
+      "target": "formelle-uformelle-trekk",
+      "weight": 0.94,
+      "reason": "Ledere kan påvirke både formelle rammer og uformell kultur; dette konkretiserer indirekte ledelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "direkte-indirekte-ledelse",
+      "target": "helhetlig-organisasjonsmodell",
+      "weight": 0.93,
+      "reason": "Helhetsmodellen viser rammene som ledere kan påvirke direkte og indirekte.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "direkte-indirekte-ledelse",
+      "target": "ledelse",
+      "weight": 0.95,
+      "reason": "Skillet viser forskjellige kanaler for lederens påvirkning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "direkte-indirekte-ledelse",
+      "target": "lederroller",
+      "weight": 0.91,
+      "reason": "Informasjons-, menneske- og handlingsroller kan utøves gjennom samhandling og organisatoriske rammer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "direkte-indirekte-ledelse",
+      "target": "markedsgruppering",
+      "weight": 0.84,
+      "reason": "Valg av markedsinndeling er et konkret eksempel på indirekte ledelse gjennom organisasjonsdesign.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "direkte-indirekte-ledelse",
+      "target": "selznick-verdibasert-ledelse",
+      "weight": 0.93,
+      "reason": "Påvirkning gjennom verdier og kultur er en sentral form for indirekte ledelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "direkte-indirekte-ledelse",
+      "target": "styringsmekanismer",
+      "weight": 0.92,
+      "reason": "Rekruttering, sosialisering og kontroll er konkrete kanaler for indirekte ledelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "diskursetikk",
+      "target": "forhandlingsmodeller",
+      "weight": 0.82,
+      "reason": "Sammenlign argumentbasert normbegrunnelse med kompromiss mellom interesser.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "diskursetikk",
+      "target": "kommunikativ-rasjonalitet",
+      "weight": 0.97,
+      "reason": "Diskursetikk anvender idealer om fri og begrunnet dialog på moralske normer.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "diskursetikk",
+      "target": "navigasjonshjulet",
+      "weight": 0.85,
+      "reason": "Hjulets spørsmål kan prøves gjennom dialog med berørte, men verktøyene har ulike funksjoner.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "diskursetikk",
+      "target": "organisatorisk-rettferdighet",
+      "weight": 0.91,
+      "reason": "Reell stemme og begrunnet behandling forbinder etisk dialog med rettferdige prosedyrer.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "divisjonalisert-struktur",
+      "target": "koordinering",
+      "weight": 0.94,
+      "reason": "Standardisering av resultater samordner divisjoner uten å detaljstyre alle handlingene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "divisjonalisert-struktur",
+      "target": "maalforskyvning",
+      "weight": 0.9,
+      "reason": "Selvstendige enheter med resultatkrav kan optimalisere egne mål på bekostning av helheten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "divisjonalisert-struktur",
+      "target": "markedsgruppering",
+      "weight": 0.96,
+      "reason": "Divisjoner grupperes etter marked eller produkt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "divisjonalisert-struktur",
+      "target": "mintzberg-konfigurasjoner",
+      "weight": 0.94,
+      "reason": "Divisjonalisert struktur er én av modellene eller formene i denne oversikten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "divisjonalisert-struktur",
+      "target": "profesjonelt-byraakrati",
+      "weight": 0.85,
+      "reason": "Begge kan være desentraliserte, men resultater og fagkunnskap gir ulike grunnlag for koordinering.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "divisjonalisert-struktur",
+      "target": "sentralisering",
+      "weight": 0.91,
+      "reason": "Divisjonene kan få operativ myndighet samtidig som overordnede resultatkrav beholdes.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "dydsetikk",
+      "target": "etisk-ledelse",
+      "weight": 0.92,
+      "reason": "Rollemodeller og praktisk dømmekraft forbinder dydsetikk med lederatferd.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "dydsetikk",
+      "target": "konsekvensetikk",
+      "weight": 0.89,
+      "reason": "Drøft både hvilken aktør man bør være og hvilke følger handlingen får.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "dydsetikk",
+      "target": "pliktetikk",
+      "weight": 0.9,
+      "reason": "Karakter og praktisk klokskap kan sammenlignes med prinsipp- og pliktbegrunnelse.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "dydsetikk",
+      "target": "sosial-laering",
+      "weight": 0.84,
+      "reason": "Dyder kan illustreres og øves gjennom observasjon og handling.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "effektiv-kommunikasjon",
+      "target": "forhandlingsmodeller",
+      "weight": 0.84,
+      "reason": "Forhandling krever forståelse av interesser og forslag, selv om god kommunikasjon ikke fjerner interessekonflikten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "effektiv-kommunikasjon",
+      "target": "kommunikasjon-beslutninger",
+      "weight": 0.89,
+      "reason": "Forståelig og relevant informasjonsutveksling er et naturlig vilkår for et brukbart beslutningsgrunnlag.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "effektiv-kommunikasjon",
+      "target": "kommunikasjonskanaler",
+      "weight": 0.88,
+      "reason": "Kanalvalg er et av spørsmålene som må avklares for å oppnå nødvendig forståelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "effektiv-kommunikasjon",
+      "target": "kommunikasjonsprosess",
+      "weight": 0.9,
+      "reason": "Avsender, kanal og fortolkning gir en ramme for å undersøke om budskapet blir forstått.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "effektiv-kommunikasjon",
+      "target": "kommunikativ-rasjonalitet",
+      "weight": 0.83,
+      "reason": "Krav til forståelig og ærlig dialog gir en konkret inngang til effektiv kommunikasjon i beslutninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "effektiv-kommunikasjon",
+      "target": "organisasjonskultur",
+      "weight": 0.78,
+      "reason": "Felles normer og meningsmønstre påvirker hvordan budskap blir forstått og hva det er mulig å uttrykke.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "effektiv-kommunikasjon",
+      "target": "schein-kulturnivaaer",
+      "weight": 0.61,
+      "reason": "Ulike antakelser kan gi ulike fortolkninger av budskap; koblingen går gjennom kulturens betydning for forståelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "effektiv-kommunikasjon",
+      "target": "vertikal-horisontal-kommunikasjon",
+      "weight": 0.87,
+      "reason": "Filtrering og fordreining gjennom hierarkiet er konkrete problemer for effektiv kommunikasjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsagenter",
+      "target": "endringsgjennomfoering",
+      "weight": 0.95,
+      "reason": "Endringsagenter trenger både strategi, ressurser, oppslutning og oppfølging for å realisere planene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsagenter",
+      "target": "endringspress",
+      "weight": 0.91,
+      "reason": "Endringsagentene fortolker drivkreftene før de utvikler og begrunner tiltak.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsagenter",
+      "target": "endringsstrategier",
+      "weight": 0.94,
+      "reason": "Endringsagenter velger hvordan omstilling skal gjennomføres, med ulik vekt på samarbeid, tvang og omfang.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsagenter",
+      "target": "iverksettingsproblemer",
+      "weight": 0.91,
+      "reason": "Endringsagentenes planer avhenger av kunnskap, ressurser og støtte for å bli realisert.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsagenter",
+      "target": "ledelse",
+      "weight": 0.87,
+      "reason": "Å mobilisere og påvirke mennesker er en naturlig del av endringsagentens arbeid, også uten formell lederstilling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsagenter",
+      "target": "lewin",
+      "weight": 0.89,
+      "reason": "Endringsagentenes arbeid kan organiseres som forberedelse, gjennomføring og stabilisering av ny praksis.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsagenter",
+      "target": "maslow",
+      "weight": 0.48,
+      "reason": "Behov for trygghet og tilhørighet kan hjelpe endringsagenter å forstå reaksjoner, men gir ikke en endringsmodell.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsagenter",
+      "target": "uplanlagt-endring",
+      "weight": 0.86,
+      "reason": "Planlagt endring gjennom aktører kan kontrasteres med utvikling som ikke styres av en samlet intensjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsgjennomfoering",
+      "target": "endringsmotstand",
+      "weight": 0.96,
+      "reason": "Medvirkning, rettferdighet og kommunikasjon kan brukes til å undersøke og håndtere motstand.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsgjennomfoering",
+      "target": "endringsstrategier",
+      "weight": 0.95,
+      "reason": "Strategien må vurderes mot kapasitet, medvirkning, kommunikasjon og forankring i gjennomføringen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsgjennomfoering",
+      "target": "indre-ytre-motivasjon",
+      "weight": 0.86,
+      "reason": "Endringsarbeid trenger oppslutning som kan bygge på både mening i oppgaven og forventede ytre følger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsgjennomfoering",
+      "target": "iverksettingsproblemer",
+      "weight": 0.95,
+      "reason": "Kapasitet, kompetanse, medvirkning og oppfølging svarer direkte på sentrale gjennomføringsproblemer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsgjennomfoering",
+      "target": "kommunikasjonsprosess",
+      "weight": 0.86,
+      "reason": "Visjon og fremdrift må formidles og forstås; utsendt informasjon er ikke tilstrekkelig.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsgjennomfoering",
+      "target": "kotter-endring",
+      "weight": 0.96,
+      "reason": "Trinnene konkretiserer flere av gjennomføringsbetingelsene.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "endringsgjennomfoering",
+      "target": "lewin",
+      "weight": 0.92,
+      "reason": "Opptining og forankring kan utdypes gjennom behovsforståelse, kapasitet og varig innarbeiding av praksis.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsgjennomfoering",
+      "target": "organisatorisk-rettferdighet",
+      "weight": 0.89,
+      "reason": "Rettferdig prosess og medvirkning er viktig ved omstilling.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "endringsgjennomfoering",
+      "target": "transformasjonsledelse",
+      "weight": 0.91,
+      "reason": "Visjon, inspirasjon og individuell oppfølging er relevante for å skape tilslutning til endringen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "endringspress",
+      "weight": 0.91,
+      "reason": "Ulik oppfatning av nødvendighet og konsekvenser kan forklare motstand mot samme forslag.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "endringsstrategier",
+      "weight": 0.94,
+      "reason": "Årsakene til motstand er viktige ved valg mellom tvang, samarbeid og ulike endringstakter.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "interessentmodellen",
+      "weight": 0.9,
+      "reason": "Berørte grupper kan motsette seg endring fordi deres interesser utfordres.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "iverksettingsproblemer",
+      "weight": 0.96,
+      "reason": "Motstand fra sentrale grupper er en uttrykkelig årsak til at vedtak ikke blir gjennomført.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "jobbholdninger",
+      "weight": 0.85,
+      "reason": "Holdninger kan gi innsikt i reaksjoner på endring uten å sidestilles med motstand.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "jobbstress",
+      "weight": 0.84,
+      "reason": "Dobbeltarbeid og usikkerhet kan gi forståelige reaksjoner på endring.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "kulturell-aapenhet",
+      "weight": 0.9,
+      "reason": "Åpenhet gir et perspektiv på hvordan bekymringer kan uttrykkes og behandles før de blir fastlåst motstand.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "lewin",
+      "weight": 0.9,
+      "reason": "Motstand gir et konkret problem som må forstås når man forsøker å skape motivasjon for endring.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "maktbaser",
+      "weight": 0.91,
+      "reason": "Tap av kontroll over informasjon, kompetanse eller nettverk kan forklare motstand mot nye ordninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "maktformer",
+      "weight": 0.88,
+      "reason": "Endring kan oppfattes som omfordeling av makt og møtes med både synlig og skjult motstand.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "martin-kulturperspektiver",
+      "weight": 0.86,
+      "reason": "Ulike subkulturer kan tolke og reagere forskjellig på samme endringsforslag.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "organisasjonskultur",
+      "weight": 0.93,
+      "reason": "Endring kan utfordre grunnleggende antakelser, identitet og etablerte måter å handle på.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "psykologisk-kontrakt",
+      "weight": 0.94,
+      "reason": "Opplevd kontraktsbrudd kan forklare motstand og tap av tillit ved endring.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "stiavhengighet",
+      "weight": 0.92,
+      "reason": "Investeringer og etablerte avhengigheter kan forklare hvorfor aktører forsvarer den eksisterende kursen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsmotstand",
+      "target": "suksessfellen",
+      "weight": 0.9,
+      "reason": "Erfaring med suksess kan legitimere forsvar av eksisterende praksis selv når omgivelsene endres.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsomfang",
+      "target": "endringsstrategier",
+      "weight": 0.95,
+      "reason": "Endringens omfang er den ene dimensjonen i tabellen over strategier.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsomfang",
+      "target": "innovasjon",
+      "weight": 0.93,
+      "reason": "Begge skiller mellom gradvise forbedringer og større brudd, men gjelder ikke helt samme fenomen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsomfang",
+      "target": "march-utnyttelse-utforsking",
+      "weight": 0.94,
+      "reason": "Skillet mellom utnyttelse og utforsking knyttes direkte til inkrementell og radikal endring i sammendraget.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsomfang",
+      "target": "miles-snow",
+      "weight": 0.82,
+      "reason": "Innovasjonsorientering og forsvar av etablerte posisjoner kan gi ulike behov for brudd eller gradvis forbedring.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsomfang",
+      "target": "rasjonell-organisasjon",
+      "weight": 0.42,
+      "reason": "Omfattende endring kan analyseres som målrettet beslutning, men omfanget sier ikke i seg selv hvor rasjonell prosessen er.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringspress",
+      "target": "kognitiv-laering",
+      "weight": 0.89,
+      "reason": "Selektiv fortolkning kan forklare at aktører oppfatter drivkreftene ulikt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringspress",
+      "target": "lewin",
+      "weight": 0.87,
+      "reason": "Å skape forståelse av endringsbehovet er en naturlig del av opptiningsfasen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringspress",
+      "target": "omgivelsesusikkerhet",
+      "weight": 0.9,
+      "reason": "Endringer i omgivelsene skaper drivkrefter, mens fortolkningen avgjør hvor nødvendige de oppleves.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringspress",
+      "target": "organisasjonsatferd",
+      "weight": 0.71,
+      "reason": "Hvordan endringspress fortolkes kan påvirke holdninger og handlinger, men atferdsbegrepet er en bredere ramme.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsstrategier",
+      "target": "sentralisering",
+      "weight": 0.84,
+      "reason": "Tvang og samarbeid innebærer ulike måter å fordele innflytelse i endringen på.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsstrategier",
+      "target": "transaksjonsledelse",
+      "weight": 0.72,
+      "reason": "Belønning og oppfølging kan brukes i endringsarbeid, men valg av tvang eller deltakelse er et bredere strategisk spørsmål.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "endringsstrategier",
+      "target": "transformasjonsledelse",
+      "weight": 0.86,
+      "reason": "Visjon og inspirasjon kan bidra til å mobilisere oppslutning om en omfattende endring.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "entreprenororganisasjon",
+      "target": "koordinering",
+      "weight": 0.94,
+      "reason": "Direkte tilsyn er en uttrykkelig koordineringsmåte i entreprenørkonfigurasjonen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "entreprenororganisasjon",
+      "target": "linjeorganisasjon",
+      "weight": 0.91,
+      "reason": "Entreprenørkonfigurasjonen konkretiserer en enkel linje med sentral myndighet og direkte tilsyn.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "entreprenororganisasjon",
+      "target": "markedsgruppering",
+      "weight": 0.57,
+      "reason": "Sentralisert direkte tilsyn og markedsinndeling kan forekomme sammen, men det ene er ikke en forklaring på det andre.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "entreprenororganisasjon",
+      "target": "matrisestruktur",
+      "weight": 0.85,
+      "reason": "Samlet beslutningsmyndighet kan kontrasteres med et system der likestilte ledere må forhandle.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "entreprenororganisasjon",
+      "target": "mintzberg-hoveddeler",
+      "weight": 0.85,
+      "reason": "Konfigurasjonens sentraliserte ledelse kan plasseres i modellen av kjerne, ledelse og staber.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "entreprenororganisasjon",
+      "target": "mintzberg-konfigurasjoner",
+      "weight": 0.93,
+      "reason": "Entreprenørorganisasjonen er én av modellene eller formene i denne oversikten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "entreprenororganisasjon",
+      "target": "profesjonelt-byraakrati",
+      "weight": 0.87,
+      "reason": "Direkte sentral styring kan kontrasteres med desentralisert faglig myndighet og standardisert kunnskap.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "entreprenororganisasjon",
+      "target": "sentralisering",
+      "weight": 0.93,
+      "reason": "Entreprenørkonfigurasjonen knytter direkte tilsyn til sentral myndighet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "erfaringslaering",
+      "target": "organisatorisk-laering",
+      "weight": 0.94,
+      "reason": "Erfaringssirkelen utdyper forbindelsen mellom innsikt og handling.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "erfaringslaering",
+      "target": "toyota-hvorfor",
+      "weight": 0.85,
+      "reason": "Systematisk årsaksundersøkelse kan inngå i refleksjonsfasen.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "institusjonelle-omgivelser",
+      "weight": 0.89,
+      "reason": "Lederens etiske standarder må drøftes sammen med samfunnets normative forventninger og organisasjonens legitimitet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "karismatisk-ledelse",
+      "weight": 0.75,
+      "reason": "Sterk personlig oppslutning kan sammenlignes med krav om etisk begrunnelse; karisma garanterer ikke etisk opptreden.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "kommunikativ-rasjonalitet",
+      "weight": 0.9,
+      "reason": "Åpenhet, ærlighet og fravær av sanksjoner mot kritikk støtter en friere argumentasjonsprosess.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "kulturell-aapenhet",
+      "weight": 0.91,
+      "reason": "Ledere som støtter åpenhet og kritikk kan gjøre det lettere å dele bekymringer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "ledelse",
+      "weight": 0.9,
+      "reason": "Etisk ledelse presiserer hvilke moralske krav som kan stilles til påvirkningsprosessen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "march-passendehet",
+      "weight": 0.87,
+      "reason": "Etiske retningslinjer kan inngå i vurderingen av hva en aktør bør gjøre, men passende praksis er ikke nødvendigvis moralsk riktig.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "navigasjonshjulet",
+      "weight": 0.93,
+      "reason": "Hjulet konkretiserer lederens etiske refleksjon.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "omdoemme",
+      "weight": 0.88,
+      "reason": "Synlig ansvarlig opptreden kan påvirke tillit og aksept, men omdømme er ikke et mål på etikk i seg selv.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "organisatorisk-rettferdighet",
+      "weight": 0.91,
+      "reason": "Respekt og upartisk behandling forbinder motivasjon med lederetikk.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "organisert-anarki",
+      "weight": 0.31,
+      "reason": "Etiske krav kan brukes til å vurdere uoversiktlige beslutninger, men de to perspektivene gir ingen direkte felles modell.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "pliktetikk",
+      "weight": 0.93,
+      "reason": "Pliktetikk gir et normativt grunnlag for lederens valg.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "selznick-verdibasert-ledelse",
+      "weight": 0.87,
+      "reason": "Verdier som styringsgrunnlag kan drøftes opp mot krav om faktisk etisk handling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "sosial-laering",
+      "weight": 0.86,
+      "reason": "Lederen kan fungere som en modell for hvordan medarbeidere opptrer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "tjenende-ledelse",
+      "weight": 0.92,
+      "reason": "Begge tematiserer ansvarlig bruk av makt, men tjenende ledelse legger særlig vekt på andres vekst.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "etisk-ledelse",
+      "target": "transformasjonsledelse",
+      "weight": 0.83,
+      "reason": "Rollemodell og visjon kan støtte ansvarlighet, men transformasjonens mål må vurderes etisk særskilt.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "fiedler",
+      "target": "hersey-blanchard",
+      "weight": 0.88,
+      "reason": "Begge er situasjonsperspektiver, men de bygger på forskjellige situasjonsvariabler og syn på stiltilpasning.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "fiedler",
+      "target": "ledelse",
+      "weight": 0.89,
+      "reason": "Fiedler gir en situasjonsbetinget forklaring på når ulike lederorienteringer kan fungere.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "fiedler",
+      "target": "ledergitteret",
+      "weight": 0.84,
+      "reason": "Menneske- og oppgavehensyn kan settes i sammenheng med Fiedlers vurdering av situasjonens betydning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "fiedler",
+      "target": "lederstiler",
+      "weight": 0.93,
+      "reason": "Oppgave- og relasjonsorientering vurderes opp mot hvor gunstig situasjonen er for lederen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "fiedler",
+      "target": "lmx",
+      "weight": 0.88,
+      "reason": "Leder–medarbeider-relasjonen inngår i begge, men hos Fiedler er den en situasjonsfaktor og hos LMX selve analysefokuset.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "fiedler",
+      "target": "maktbaser",
+      "weight": 0.87,
+      "reason": "Stillingsmakt er en eksplisitt situasjonsfaktor i Fiedlers modell.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "fiedler",
+      "target": "march-passendehet",
+      "weight": 0.37,
+      "reason": "Begge tar kontekst på alvor, men egnet lederstil og identitetsbasert handlingsvalg er ulike spørsmål.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "fiedler",
+      "target": "organisert-anarki",
+      "weight": 0.24,
+      "reason": "Uklare beslutningsprosesser kan inngå i lederens situasjon, men modellene analyserer ganske forskjellige problemer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "forhandlingsmodeller",
+      "target": "interessentmodellen",
+      "weight": 0.96,
+      "reason": "Interessentmodellen identifiserer aktørene og interessene som forhandlingsmodeller viser hvordan kan håndteres.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "forhandlingsmodeller",
+      "target": "kommunikativ-rasjonalitet",
+      "weight": 0.93,
+      "reason": "Interessebaserte kompromisser kan sammenlignes med enighet som oppstår gjennom utprøving av argumenter.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "forhandlingsmodeller",
+      "target": "konflikt-beslutningskvalitet",
+      "weight": 0.92,
+      "reason": "Uenighet om interesser kan håndteres gjennom forhandling med ulike konsekvenser for beslutningskvalitet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "forhandlingsmodeller",
+      "target": "maktformer",
+      "weight": 0.93,
+      "reason": "Maktutøvelse påvirker hvilke interesser som får gjennomslag og om forhandlingene blir preget av tvang eller gjensidige løsninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "forhandlingsmodeller",
+      "target": "matrisestruktur",
+      "weight": 0.91,
+      "reason": "Delt myndighet kan gjøre forhandling nødvendig når ledere prioriterer ulikt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "forhandlingsmodeller",
+      "target": "porter-verdikjede",
+      "weight": 0.66,
+      "reason": "Leverandør- og kunderelasjoner kan romme forhandling om verdifordeling, men verdikjeden beskriver ikke selve forhandlingsprosessen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "forhandlingsmodeller",
+      "target": "uplanlagt-endring",
+      "weight": 0.86,
+      "reason": "Et dialektisk endringsperspektiv synliggjør makt- og interessekonflikter som driver nye ordninger.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "formelle-uformelle-trekk",
+      "target": "fremvoksende-strategi",
+      "weight": 0.85,
+      "reason": "Uformelle handlingsmønstre kan gi en annen realisert strategi enn den vedtatte.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "formelle-uformelle-trekk",
+      "target": "helhetlig-organisasjonsmodell",
+      "weight": 0.96,
+      "reason": "Skillet mellom formelle og uformelle trekk er en sentral del av helhetsmodellens forklaring på atferd.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "formelle-uformelle-trekk",
+      "target": "laering-endring",
+      "weight": 0.91,
+      "reason": "Læring kan endre både vedtatte strukturer og uformelle normer, samtidig som disse rammer inn læringen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "formelle-uformelle-trekk",
+      "target": "ledelse",
+      "weight": 0.91,
+      "reason": "Ledelse skjer innenfor, og kan påvirke, både vedtatte rammer og sosialt utviklede mønstre.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "formelle-uformelle-trekk",
+      "target": "maktformer",
+      "weight": 0.87,
+      "reason": "Skjult og åpen makt gjør det mulig å undersøke påvirkning utover det formelle organisasjonskartet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "formelle-uformelle-trekk",
+      "target": "organisasjon",
+      "weight": 0.89,
+      "reason": "En bevisst konstruert orden må forstås sammen med de sosiale mønstrene som utvikles i den.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "formelle-uformelle-trekk",
+      "target": "organisasjonskultur",
+      "weight": 0.91,
+      "reason": "Kultur gir de uformelle forventningene som kan støtte eller motarbeide formelle ordninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "formelle-uformelle-trekk",
+      "target": "styringsmekanismer",
+      "weight": 0.89,
+      "reason": "Rekruttering, sosialisering, disiplinering og kontroll virker gjennom både formelle og uformelle forhold.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "forventningsteori",
+      "target": "indre-ytre-motivasjon",
+      "weight": 0.94,
+      "reason": "Forventningsteori utdyper hvordan forventet belønning utenfor oppgaven kan motivere innsats.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "forventningsteori",
+      "target": "kollektiv-individuell-beloenning",
+      "weight": 0.9,
+      "reason": "På hvilket nivå belønningen gis påvirker opplevelsen av sammenheng mellom egen innsats, resultat og belønning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "forventningsteori",
+      "target": "maalforskyvning",
+      "weight": 0.86,
+      "reason": "Forventet belønning kan forklare hvorfor ansatte velger målbare handlinger fremfor den overordnede hensikten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "forventningsteori",
+      "target": "maalsettingsteori",
+      "weight": 0.9,
+      "reason": "Begge gjelder fremtidsrettet motivasjon, men belønningens verdi og målets egenskaper er forskjellige forklaringer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "forventningsteori",
+      "target": "march-konsekvenslogikk",
+      "weight": 0.85,
+      "reason": "Begge kan brukes til å drøfte handling ut fra forventede og verdsatte konsekvenser, på ulike analysenivåer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "forventningsteori",
+      "target": "transaksjonsledelse",
+      "weight": 0.95,
+      "reason": "Teorien forklarer når lederens tilbud om belønning kan gi motivasjon til ønsket innsats.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "fremvoksende-strategi",
+      "target": "inkrementelle-beslutninger",
+      "weight": 0.9,
+      "reason": "Små beslutninger kan gradvis danne et strategisk mønster.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "fremvoksende-strategi",
+      "target": "iverksettingsproblemer",
+      "weight": 0.88,
+      "reason": "Manglende ressurser eller motstand kan forklare hvorfor formell strategi ikke blir realisert.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "fremvoksende-strategi",
+      "target": "miles-snow",
+      "weight": 0.82,
+      "reason": "Strategitypene kan brukes til å beskrive en realisert orientering, mens fremvoksende strategi forklarer hvordan den kan oppstå.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "fremvoksende-strategi",
+      "target": "organisert-anarki",
+      "weight": 0.79,
+      "reason": "Skiftende koblinger mellom problemer og løsninger kan bidra til retning som ikke følger en forhåndsplan.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "fremvoksende-strategi",
+      "target": "profesjonelt-byraakrati",
+      "weight": 0.64,
+      "reason": "Faglig autonome beslutninger kan over tid forme praksis og retning uten å følge en sentral plan.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "fremvoksende-strategi",
+      "target": "symbolske-beslutninger",
+      "weight": 0.83,
+      "reason": "Begge belyser avstand mellom formelle vedtak og faktisk praksis, men med ulike forklaringer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "fremvoksende-strategi",
+      "target": "uplanlagt-endring",
+      "weight": 0.79,
+      "reason": "Begge åpner for utvikling som ikke følger en samlet forhåndsplan.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "funksjonsgruppering",
+      "target": "koordinering",
+      "weight": 0.94,
+      "reason": "Funksjonell spesialisering gjør det nødvendig å samordne avhengige oppgaver mellom enhetene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "funksjonsgruppering",
+      "target": "linjeorganisasjon",
+      "weight": 0.78,
+      "reason": "Funksjoner og hierarkiske nivåer kan kombineres, men beskriver henholdsvis horisontal og vertikal organisering.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "funksjonsgruppering",
+      "target": "maalforskyvning",
+      "weight": 0.89,
+      "reason": "Sterke enhetsgrenser kan bidra til at lokale delmål fortrenger helheten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "funksjonsgruppering",
+      "target": "markedsgruppering",
+      "weight": 0.96,
+      "reason": "Det ene samler like fag eller funksjoner, det andre samler oppgaver rundt kunder eller produkter.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "funksjonsgruppering",
+      "target": "maskinbyraakrati",
+      "weight": 0.93,
+      "reason": "Funksjonell arbeidsdeling er et uttrykkelig kjennetegn ved maskinbyråkratiet i sammendraget.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "funksjonsgruppering",
+      "target": "matrisestruktur",
+      "weight": 0.94,
+      "reason": "Matrisestrukturen kombinerer funksjonsprinsippet med et annet organiseringshensyn.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "funksjonsgruppering",
+      "target": "mintzberg-hoveddeler",
+      "weight": 0.83,
+      "reason": "Grupperingsprinsippet gjelder arbeidsdeling, mens hoveddelene viser hvordan operative og støttende funksjoner inngår i helheten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "funksjonsgruppering",
+      "target": "perfekt-rasjonalitet",
+      "weight": 0.49,
+      "reason": "Spesialisering kan forbedre informasjonsgrunnlaget, men garanterer ikke idealmodellens fulle oversikt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "funksjonsgruppering",
+      "target": "profesjonelt-byraakrati",
+      "weight": 0.91,
+      "reason": "Gruppering etter fag er et sentralt trekk ved det profesjonelle byråkratiet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "funksjonsgruppering",
+      "target": "prosjektorganisering",
+      "weight": 0.89,
+      "reason": "Prosjekter kan koble kompetanse fra funksjonelle basisenheter til en felles tidsavgrenset oppgave.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "funksjonsgruppering",
+      "target": "rasjonell-organisasjon",
+      "weight": 0.81,
+      "reason": "Faglig arbeidsdeling kan bedre kunnskapsgrunnlaget, men krever koordinering for at beslutningene skal tjene helheten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "funksjonsgruppering",
+      "target": "taylor-arbeidsdeling",
+      "weight": 0.9,
+      "reason": "Spesialisering på individnivå kan sammenlignes med samling av like oppgaver på gruppenivå.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "granovetter-svake-baand",
+      "target": "innovasjon",
+      "weight": 0.93,
+      "reason": "Tilgang til ulike miljøer gir nye impulser som kan brukes i utvikling av løsninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "granovetter-svake-baand",
+      "target": "interorganisatoriske-relasjoner",
+      "weight": 0.88,
+      "reason": "Forbindelser til andre miljøer kan gi tilgang til ny kunnskap og ideer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "granovetter-svake-baand",
+      "target": "nonaka-kunnskap",
+      "weight": 0.78,
+      "reason": "Svake bånd gir tilgang til informasjon, mens Nonaka utdyper hvordan kunnskap omformes og tas i bruk.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "granovetter-svake-baand",
+      "target": "strukturelle-hull",
+      "weight": 0.94,
+      "reason": "Begge belyser nettverk og informasjon, men svake bånd og manglende forbindelser er ulike forhold.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "gruppetenkning",
+      "target": "kommunikativ-rasjonalitet",
+      "weight": 0.91,
+      "reason": "Fri argumentasjon utfordres når rang og gruppepress avgjør hva som kan sies.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "gruppetenkning",
+      "target": "konflikt-beslutningskvalitet",
+      "weight": 0.94,
+      "reason": "Saklig meningsbrytning er en viktig kontrast til undertrykt uenighet.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "gruppetenkning",
+      "target": "kulturell-aapenhet",
+      "weight": 0.93,
+      "reason": "Åpen kritikk og deling er en direkte kontrast til konformitet og selvsensur.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "haandtere-tekniske-omgivelser",
+      "target": "interorganisatoriske-relasjoner",
+      "weight": 0.91,
+      "reason": "Samarbeid og nettverk konkretiserer måter å håndtere ressursavhengighet på.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "haandtere-tekniske-omgivelser",
+      "target": "omgivelsesavhengighet",
+      "weight": 0.93,
+      "reason": "Buffere, integrasjon og samarbeid er strategier for å håndtere avhengigheten av eksterne aktører.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "haandtere-tekniske-omgivelser",
+      "target": "omgivelsesusikkerhet",
+      "weight": 0.93,
+      "reason": "Tiltakene er ulike måter å håndtere usikkerhet og avhengighet på.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "haandtere-tekniske-omgivelser",
+      "target": "porter-generiske-strategier",
+      "weight": 0.76,
+      "reason": "Konkurranseposisjonen kan støttes av tiltak som sikrer ressurser og reduserer sårbarhet, uten at modellene har samme formål.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "haandtere-tekniske-omgivelser",
+      "target": "ressursbasert-strategi",
+      "weight": 0.77,
+      "reason": "Tiltak som samarbeid og integrasjon kan sikre eller utvikle ressurser som den interne strategien bygger på.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "haandtere-tekniske-omgivelser",
+      "target": "swot",
+      "weight": 0.81,
+      "reason": "Identifiserte trusler og ressursmangler kan følges opp med konkrete tiltak for å redusere sårbarhet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "haandtere-tekniske-omgivelser",
+      "target": "teknisk-institusjonelt-samspill",
+      "weight": 0.8,
+      "reason": "Tiltak rettet mot ressursbetingelser kan også få følger for hvordan organisasjonen blir vurdert utad.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "haandtere-tekniske-omgivelser",
+      "target": "tekniske-omgivelser",
+      "weight": 0.96,
+      "reason": "Tiltakene svarer direkte på utfordringer i de tekniske omgivelsene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "haandtere-tekniske-omgivelser",
+      "target": "transaksjonskostnader",
+      "weight": 0.86,
+      "reason": "Integrasjon og samarbeid kan vurderes som alternative måter å håndtere avhengighet på.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "herzberg",
+      "weight": 0.94,
+      "reason": "Begge fremhever arbeidsoppgavenes betydning, men organiserer forklaringen ulikt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "hrm",
+      "weight": 0.94,
+      "reason": "Motiverende jobbutforming er ett av tiltakene som må fungere sammen med andre personaltiltak.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "indre-ytre-motivasjon",
+      "weight": 0.95,
+      "reason": "Jobbmodellen konkretiserer hvordan oppgaver kan gi mening, ansvar og motivasjon i arbeidet selv.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "jobbengasjement",
+      "weight": 0.91,
+      "reason": "Meningsfulle oppgaver, autonomi og tilbakemelding gir en naturlig forklaring på engasjement.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "kompetanseledelse",
+      "weight": 0.86,
+      "reason": "Oppgaveutforming avgjør om kunnskap og ferdigheter kommer til anvendelse.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "maslow",
+      "weight": 0.8,
+      "reason": "Behov for utvikling og selvrealisering kan knyttes til oppgaver som gir variasjon, mening og ansvar.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "prososial-motivasjon",
+      "weight": 0.87,
+      "reason": "Opplevd betydning for andre kan gjøre arbeidet meningsfullt.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "psykososialt-arbeidsmiljo",
+      "weight": 0.91,
+      "reason": "Jobbutforming kan både skape ressurser og redusere belastninger.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "selvbestemmelsesteori",
+      "weight": 0.91,
+      "reason": "Autonomi er en tydelig skrivebro mellom selvvalgt handling og motivasjon gjennom jobbdesign.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "sentralisering",
+      "weight": 0.86,
+      "reason": "Desentralisering kan gi autonomi og ansvar, men virkningen avhenger av hvordan jobben faktisk utformes.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "taylor-arbeidsdeling",
+      "weight": 0.94,
+      "reason": "Sterk oppsplitting kan settes opp mot behovet for variasjon, mening og autonomi.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "thorsrud-jobbkrav",
+      "weight": 0.95,
+      "reason": "Begge belyser motiverende jobbutforming, med ulike begreper og historisk innramming.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "varer-tjenester",
+      "weight": 0.57,
+      "reason": "Ulik kundekontakt og oppgavekarakter gir ulike muligheter for meningsfull jobbutforming.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "helhetlig-organisasjonsmodell",
+      "target": "laering-endring",
+      "weight": 0.91,
+      "reason": "Læring og endring viser tilbakevirkningen fra atferd til organisatoriske rammer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "helhetlig-organisasjonsmodell",
+      "target": "lederroller",
+      "weight": 0.82,
+      "reason": "Rollene viser hvordan ledere konkret kobler mennesker, informasjon og organisatoriske rammer i helheten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "helhetlig-organisasjonsmodell",
+      "target": "organisasjon",
+      "weight": 0.94,
+      "reason": "Systemdefinisjonen utdypes gjennom samspillet mellom rammer, prosesser og omgivelser.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "helhetlig-organisasjonsmodell",
+      "target": "organisasjonsatferd",
+      "weight": 0.91,
+      "reason": "Atferdsprosessene er det helhetsmodellen forsøker å forklare gjennom konteksten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hersey-blanchard",
+      "target": "kompetanseledelse",
+      "weight": 0.84,
+      "reason": "Medarbeidernes kompetanse er en direkte vurderingsdimensjon ved tilpasning av lederstil.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hersey-blanchard",
+      "target": "ledelse",
+      "weight": 0.89,
+      "reason": "Modellen konkretiserer tilpasning av lederens påvirkning til medarbeiderens forutsetninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hersey-blanchard",
+      "target": "ledergitteret",
+      "weight": 0.9,
+      "reason": "Begge kombinerer to dimensjoner av lederatferd, men Hersey og Blanchard kobler dem til medarbeidernes forutsetninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hersey-blanchard",
+      "target": "lederstiler",
+      "weight": 0.94,
+      "reason": "Støttende og styrende atferd brukes til å tilpasse lederstil til medarbeidernes kompetanse og vilje.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hersey-blanchard",
+      "target": "transformasjonsledelse",
+      "weight": 0.77,
+      "reason": "Individuell oppfølging er en mulig skrivebro, men situasjonstilpasset styring og visjonsbasert inspirasjon er ulike forklaringer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hersey-blanchard",
+      "target": "weber-autoritet",
+      "weight": 0.54,
+      "reason": "Aksept av lederens påvirkning er relevant for en situasjonstilpasset stil, men autoritetsgrunnlag og medarbeidermodenhet må skilles.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "herzberg",
+      "target": "hrm",
+      "weight": 0.89,
+      "reason": "Skillet mellom jobbinnhold og arbeidsbetingelser kan brukes til å vurdere et sammensatt personalpolitisk system.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "herzberg",
+      "target": "indre-ytre-motivasjon",
+      "weight": 0.91,
+      "reason": "Skillet mellom motivasjon i oppgaven og ytre forhold kan sammenlignes med motivasjons- og hygienefaktorer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "herzberg",
+      "target": "jobbtilfredshet",
+      "weight": 0.93,
+      "reason": "Tofaktorteorien skiller forhold som skaper tilfredshet fra forhold som forebygger mistrivsel.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "herzberg",
+      "target": "maslow",
+      "weight": 0.88,
+      "reason": "Behovsperspektivet kan sammenlignes med skillet mellom jobbinnhold og arbeidsbetingelser.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "herzberg",
+      "target": "selvbestemmelsesteori",
+      "weight": 0.87,
+      "reason": "Begge gir grunnlag for å diskutere motivasjon utover ytre arbeidsbetingelser, men bruker forskjellige begreper og skiller.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "herzberg",
+      "target": "taylor-arbeidsdeling",
+      "weight": 0.89,
+      "reason": "Monotont arbeid kan settes opp mot Herzbergs vekt på interessante oppgaver, ansvar og vekst.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hofstede",
+      "target": "institusjonelle-omgivelser",
+      "weight": 0.87,
+      "reason": "Samfunnets verdier og forventninger kan forstås som en del av presset for legitim organisering.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hofstede",
+      "target": "lederstiler",
+      "weight": 0.78,
+      "reason": "Kulturelle forventninger kan påvirke hvordan styring, medvirkning og støtte blir oppfattet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hofstede",
+      "target": "organisasjonskultur",
+      "weight": 0.91,
+      "reason": "Sammendraget bruker nasjonale kulturdimensjoner til å drøfte forventninger som kan prege organisasjoners kultur.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hofstede",
+      "target": "profesjonelt-byraakrati",
+      "weight": 0.57,
+      "reason": "Kulturelle forventninger til makt og usikkerhet kan påvirke synet på faglig autonomi, men er ikke hovedforklaringen på konfigurasjonen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hofstede",
+      "target": "schein-kulturnivaaer",
+      "weight": 0.79,
+      "reason": "Nasjonale mønstre kan drøftes som en mulig bakgrunn for organisatoriske antakelser, uten å likestille analysenivåene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hofstede",
+      "target": "selznick-verdibasert-ledelse",
+      "weight": 0.74,
+      "reason": "Verdibasert påvirkning må fortolkes i en kulturell sammenheng, men nasjonale dimensjoner forklarer ikke alene lederens praksis.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hofstede",
+      "target": "sentralisering",
+      "weight": 0.8,
+      "reason": "Maktavstand gir en relevant kulturell innfallsvinkel til forventninger om hvor myndighet bør ligge.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hofstede",
+      "target": "weber-autoritet",
+      "weight": 0.81,
+      "reason": "Forventninger om maktavstand kan brukes til å drøfte aksept av autoritet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hrm",
+      "target": "indre-ytre-motivasjon",
+      "weight": 0.93,
+      "reason": "HRM kombinerer belønning med jobbinnhold, utvikling og medvirkning som ulike motivasjonskilder.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hrm",
+      "target": "karrieresystemer",
+      "weight": 0.95,
+      "reason": "Rekruttering, kvalifisering og utviklingsmuligheter inngår direkte i et helhetlig HRM-system.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hrm",
+      "target": "kompetanseledelse",
+      "weight": 0.94,
+      "reason": "Kompetanseutvikling og mobilisering kobler ferdigheter til faktisk mulighet for å bruke dem.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "hrm",
+      "target": "maslow",
+      "weight": 0.79,
+      "reason": "Behov for trygghet, tilhørighet og utvikling kan brukes til å vurdere hvilke sider ved arbeidsforholdene personalpolitikken ivaretar.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hrm",
+      "target": "organisatorisk-tilknytning",
+      "weight": 0.94,
+      "reason": "Å beholde medarbeidere er et eksplisitt mål for sammenhengende personalpolitikk.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hrm",
+      "target": "perfekt-rasjonalitet",
+      "weight": 0.43,
+      "reason": "Personalvalg kan sammenlignes med et ideal om full informasjon, men idealet er et analyseverktøy fremfor en HRM-forklaring.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hrm",
+      "target": "ressursbasert-strategi",
+      "weight": 0.91,
+      "reason": "Rekruttering og utvikling kan bygge kompetansen som strategien tar utgangspunkt i.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hrm",
+      "target": "styringsmekanismer",
+      "weight": 0.94,
+      "reason": "Rekruttering og sosialisering inngår i personalpolitikkens påvirkning av atferd.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "indre-ytre-motivasjon",
+      "target": "jobbengasjement",
+      "weight": 0.91,
+      "reason": "Interesse og mening kan støtte engasjement, men begrepene er ikke identiske.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "indre-ytre-motivasjon",
+      "target": "kollektiv-individuell-beloenning",
+      "weight": 0.86,
+      "reason": "Belønningens nivå kan drøftes sammen med hvilke grunner ansatte har til å yte og samarbeide.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "indre-ytre-motivasjon",
+      "target": "koordinering",
+      "weight": 0.67,
+      "reason": "Vilje til å samarbeide kan bygge på både mening og belønning; dette supplerer de strukturelle koordineringsmekanismene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "indre-ytre-motivasjon",
+      "target": "maslow",
+      "weight": 0.85,
+      "reason": "Behovsperspektivet kan kobles til om tilfredsstillelsen søkes gjennom oppgaven eller gjennom dens ytre følger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "indre-ytre-motivasjon",
+      "target": "organisasjonsatferd",
+      "weight": 0.82,
+      "reason": "Motivasjon forklarer en viktig del av hvorfor ansatte handler og yter.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "indre-ytre-motivasjon",
+      "target": "prososial-motivasjon",
+      "weight": 0.93,
+      "reason": "Mottakerorientert motivasjon må skilles fra interesse i aktiviteten og ytre konsekvenser.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "indre-ytre-motivasjon",
+      "target": "selvbestemmelsesteori",
+      "weight": 0.96,
+      "reason": "Internalisering nyanserer hvor selvvalgt en ytre motivert handling kan oppleves.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "indre-ytre-motivasjon",
+      "target": "stiavhengighet",
+      "weight": 0.24,
+      "reason": "Tidligere belønninger kan bidra til å videreføre praksis, men en naturlig drøfting trenger et mellomledd om læring eller bindinger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "indre-ytre-motivasjon",
+      "target": "taylor-arbeidsdeling",
+      "weight": 0.86,
+      "reason": "Produktivitetsgevinster ved oppsplitting kan veies mot tap av interesse og mening i selve oppgaven.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "indre-ytre-motivasjon",
+      "target": "transaksjonsledelse",
+      "weight": 0.94,
+      "reason": "Transaksjonsledelse knytter innsats til belønning og er derfor en direkte anvendelse av ytre motivasjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "indre-ytre-motivasjon",
+      "target": "transformasjonsledelse",
+      "weight": 0.88,
+      "reason": "Visjon, mening og personlig utvikling kan drøftes som motivasjon utover et rent belønningsbytte.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "inkrementelle-beslutninger",
+      "target": "organisert-anarki",
+      "weight": 0.83,
+      "reason": "Begge utfordrer helhetlig planlegging, men tilfeldige koblinger og gradvise justeringer er ulike prosesser.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "inkrementelle-beslutninger",
+      "target": "regelmodellen",
+      "weight": 0.87,
+      "reason": "Begge bygger på tidligere praksis, men regler og små revisjoner styrer valg på ulike måter.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "inkrementelle-beslutninger",
+      "target": "stiavhengighet",
+      "weight": 0.91,
+      "reason": "Små justeringer kan forsterke det sporet organisasjonen allerede følger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "innovasjon",
+      "target": "kulturell-aapenhet",
+      "weight": 0.89,
+      "reason": "Rom for å dele ideer, bekymringer og feil støtter utprøving av nye løsninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "innovasjon",
+      "target": "march-utnyttelse-utforsking",
+      "weight": 0.95,
+      "reason": "Utforsking av nye løsninger og utnyttelse av eksisterende kunnskap er sentrale avveininger i innovasjonsarbeid.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "innovasjon",
+      "target": "miles-snow",
+      "weight": 0.91,
+      "reason": "Strategitypene skiller seg nettopp i hvor aktivt de søker eller følger nye produkter og løsninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "innovasjon",
+      "target": "nonaka-kunnskap",
+      "weight": 0.9,
+      "reason": "Omforming og kombinasjon av kunnskap kan gi grunnlag for nye produkter og arbeidsmåter.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-omgivelser",
+      "target": "institusjonelle-strategier",
+      "weight": 0.96,
+      "reason": "Strategiene beskriver hvordan organisasjonen kan svare på institusjonelle forventninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-omgivelser",
+      "target": "interessentmodellen",
+      "weight": 0.86,
+      "reason": "Eksterne interessenter kan bære krav og forventninger som påvirker organisasjonens legitimitet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-omgivelser",
+      "target": "march-passendehet",
+      "weight": 0.93,
+      "reason": "Normer og tatt-for-gitt-oppfatninger former hva organisasjonen oppfatter som passende.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-omgivelser",
+      "target": "omdoemme",
+      "weight": 0.95,
+      "reason": "Ekstern kommunikasjon kan påvirke hvordan organisasjonen vurderes og aksepteres.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-omgivelser",
+      "target": "organisasjonskultur",
+      "weight": 0.88,
+      "reason": "Interne antakelser og normer kan drøftes i sammenheng med verdier og forventninger i samfunnet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-omgivelser",
+      "target": "samfunnsansvar",
+      "weight": 0.9,
+      "reason": "Regler og samfunnsforventninger påvirker hva som regnes som ansvarlig drift.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-omgivelser",
+      "target": "selznick-verdibasert-ledelse",
+      "weight": 0.91,
+      "reason": "Institusjonell integritet og formål må forstås i møte med legitimitetskrav fra omgivelsene.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-omgivelser",
+      "target": "symbolske-beslutninger",
+      "weight": 0.94,
+      "reason": "Vedtak uten tilsvarende gjennomføring kan være et forsøk på å møte krav om legitimitet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-omgivelser",
+      "target": "teknisk-institusjonelt-samspill",
+      "weight": 0.94,
+      "reason": "Samspillstemaet setter legitimitetskrav inn i forholdet til oppgaveløsning og ressurser.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-omgivelser",
+      "target": "tekniske-omgivelser",
+      "weight": 0.94,
+      "reason": "Oppgavekrav kan skilles analytisk fra krav om å bli oppfattet som legitim.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-omgivelser",
+      "target": "weber-autoritet",
+      "weight": 0.88,
+      "reason": "Aksept av regler, tradisjoner og autoritet kan drøftes sammen med omgivelsenes krav til legitim styring.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-strategier",
+      "target": "omdoemme",
+      "weight": 0.94,
+      "reason": "Omdømmebygging er en av strategiene for å håndtere institusjonelle forventninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-strategier",
+      "target": "samfunnsansvar",
+      "weight": 0.89,
+      "reason": "Reelle tiltak kan sammenlignes med symbolsk konformitet.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-strategier",
+      "target": "symbolske-beslutninger",
+      "weight": 0.96,
+      "reason": "Dekobling kan komme til uttrykk gjennom vedtak som først og fremst signaliserer tilpasning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "institusjonelle-strategier",
+      "target": "teknisk-institusjonelt-samspill",
+      "weight": 0.89,
+      "reason": "Dekobling og forhandling kan drøftes som svar på at effektivitet og legitimitet stiller ulike krav.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "interessentmodellen",
+      "target": "konflikt-beslutningskvalitet",
+      "weight": 0.86,
+      "reason": "Flere interesser kan utvide vurderingsgrunnlaget eller skape fastlåst konflikt; interessentene gjør motsetningene konkrete.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "interessentmodellen",
+      "target": "konsekvensetikk",
+      "weight": 0.88,
+      "reason": "Interessenter synliggjør hvem som får gevinster og byrder.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "interessentmodellen",
+      "target": "maktformer",
+      "weight": 0.89,
+      "reason": "Aktørenes interesser kan følges opp med en analyse av hvordan de utøver makt for å fremme dem.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "interessentmodellen",
+      "target": "martin-kulturperspektiver",
+      "weight": 0.77,
+      "reason": "Subkulturer og interessegrupper gir ulike innfallsvinkler til intern variasjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "interessentmodellen",
+      "target": "samfunnsansvar",
+      "weight": 0.94,
+      "reason": "Samfunnsansvar vurderes overfor parter som påvirker og påvirkes av virksomheten.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "interessentmodellen",
+      "target": "selznick-verdibasert-ledelse",
+      "weight": 0.87,
+      "reason": "Institusjonell ledelse håndterer interne konflikter og hensyn som ikke kan reduseres til teknisk effektivitet.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "interorganisatoriske-relasjoner",
+      "target": "lederroller",
+      "weight": 0.8,
+      "reason": "Nettverksbygging og representasjon er lederroller som kan støtte samarbeid over organisasjonsgrenser.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "interorganisatoriske-relasjoner",
+      "target": "omgivelsesavhengighet",
+      "weight": 0.91,
+      "reason": "Samarbeid og nettverk kan gi tilgang til nødvendige ressurser og samtidig skape nye avhengigheter.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "interorganisatoriske-relasjoner",
+      "target": "porter-verdikjede",
+      "weight": 0.94,
+      "reason": "Produksjonskjeder viser hvordan verdiskapende aktiviteter kan fordeles mellom selvstendige organisasjoner.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "interorganisatoriske-relasjoner",
+      "target": "produksjonssystem",
+      "weight": 0.91,
+      "reason": "Produksjonssystemets tilgang til ressurser og leveranser kan organiseres gjennom forbindelser mellom flere virksomheter.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "interorganisatoriske-relasjoner",
+      "target": "strukturelle-hull",
+      "weight": 0.88,
+      "reason": "Bindeledd mellom organisasjoner kan få en særlig rolle i koordinering og informasjonsutveksling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "interorganisatoriske-relasjoner",
+      "target": "transaksjonskostnader",
+      "weight": 0.94,
+      "reason": "Kontrakter og samarbeid har kostnader ved etablering og oppfølging.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "iverksettingsproblemer",
+      "target": "konflikt-beslutningskvalitet",
+      "weight": 0.68,
+      "reason": "Uenighet kan avdekke svakheter før iverksetting, mens fastlåst konflikt kan hindre gjennomføring av et godt vedtak.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "iverksettingsproblemer",
+      "target": "symbolske-beslutninger",
+      "weight": 0.91,
+      "reason": "Manglende gjennomføring kan skyldes hindringer eller at vedtaket primært skulle gi et signal; forklaringene bør skilles.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "jobbengasjement",
+      "target": "jobbstress",
+      "weight": 0.83,
+      "reason": "Arbeidskrav og ressurser kan drøftes som både belastning og grunnlag for engasjement uten å gjøre begrepene til enkle motpoler.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "jobbengasjement",
+      "target": "jobbtilfredshet",
+      "weight": 0.89,
+      "reason": "Engasjement innebærer aktivering og involvering, mens tilfredshet er en vurdering av jobben.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "jobbengasjement",
+      "target": "psykologisk-kapital",
+      "weight": 0.93,
+      "reason": "Psykologiske ressurser kan støtte energi, dedikasjon og konsentrasjon.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "jobbengasjement",
+      "target": "psykososialt-arbeidsmiljo",
+      "weight": 0.92,
+      "reason": "Berikelsesperspektivet undersøker ressurser og meningsfulle arbeidsbetingelser.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "jobbholdninger",
+      "target": "jobbtilfredshet",
+      "weight": 0.95,
+      "reason": "Jobbtilfredshet er en sentral vurderende holdning til arbeidet.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "jobbholdninger",
+      "target": "organisasjonsatferd",
+      "weight": 0.94,
+      "reason": "Holdninger er én del av sammenhengen mellom tenkning, følelser og handling.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "jobbstress",
+      "target": "psykologisk-kapital",
+      "weight": 0.82,
+      "reason": "Mestringsressurser kan påvirke vurderinger og håndtering, men erstatter ikke forsvarlig organisering.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "jobbstress",
+      "target": "psykososialt-arbeidsmiljo",
+      "weight": 0.96,
+      "reason": "Stressprosessen utdyper belastningsperspektivet.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "jobbtilfredshet",
+      "target": "organisatorisk-tilknytning",
+      "weight": 0.88,
+      "reason": "Tilfredshet med jobben og bånd til organisasjonen kan samvariere, men er forskjellige.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "jobbtilfredshet",
+      "target": "produktivitet-effektivitet",
+      "weight": 0.76,
+      "reason": "Forholdet mellom tilfredshet og ytelse må drøftes uten enkel kausal slutning.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "karismatisk-ledelse",
+      "target": "ledelse",
+      "weight": 0.91,
+      "reason": "Karismatisk ledelse er en konkret forklaring på påvirkning gjennom personlig oppslutning og visjonsformidling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "karismatisk-ledelse",
+      "target": "transformasjonsledelse",
+      "weight": 0.93,
+      "reason": "Begge kan bruke visjoner og inspirasjon, men begrepene dekker ikke det samme.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "karismatisk-ledelse",
+      "target": "weber-autoritet",
+      "weight": 0.96,
+      "reason": "Karismatisk autoritet belyser hvorfor oppslutning kan knyttes til lederen som person.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "karrieresystemer",
+      "target": "organisatorisk-tilknytning",
+      "weight": 0.9,
+      "reason": "Utviklingsmuligheter kan inngå i vurderingen av å bli eller slutte.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "karrieresystemer",
+      "target": "ressursbasert-strategi",
+      "weight": 0.82,
+      "reason": "Intern kvalifisering og faglige karriereveier kan utvikle ressursene strategien bygger på.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kognitiv-laering",
+      "target": "kommunikasjon-beslutninger",
+      "weight": 0.9,
+      "reason": "Selektiv bearbeiding av informasjon former både læringen og premissene for valg.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kognitiv-laering",
+      "target": "kommunikasjonsprosess",
+      "weight": 0.89,
+      "reason": "Mottakeren fortolker budskap gjennom eksisterende forståelser, slik at kommunikasjon og kognitiv læring henger tett sammen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kognitiv-laering",
+      "target": "organisatorisk-laering",
+      "weight": 0.91,
+      "reason": "Kognitive prosesser forklarer hvordan erfaring blir tolket før den deles og omsettes til praksis.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kognitiv-laering",
+      "target": "sosial-laering",
+      "weight": 0.87,
+      "reason": "Observasjon gir impulser som må fortolkes og innpasses i eksisterende forståelser.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kognitiv-laering",
+      "target": "toyota-hvorfor",
+      "weight": 0.86,
+      "reason": "Hvorfor-spørsmål kan utvide eller endre forståelsen av hva problemet egentlig skyldes.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kognitiv-laering",
+      "target": "weber-autoritet",
+      "weight": 0.34,
+      "reason": "Aksept av autoritet innebærer fortolkning og innlærte forståelser, men krever et mellomledd for å bli en naturlig overgang.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kollektiv-individuell-beloenning",
+      "target": "koordinering",
+      "weight": 0.9,
+      "reason": "Belønningens nivå kan støtte eller undergrave den samhandlingen oppgaven krever.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kollektiv-individuell-beloenning",
+      "target": "maalforskyvning",
+      "weight": 0.91,
+      "reason": "Belønning på individ- eller gruppenivå kan gjøre lokale prestasjoner viktigere enn organisasjonens samlede mål.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kollektiv-individuell-beloenning",
+      "target": "prosjektorganisering",
+      "weight": 0.81,
+      "reason": "Tverrfaglige prosjekter gjør det relevant å vurdere om insentivene støtter samarbeid.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kollektiv-individuell-beloenning",
+      "target": "transaksjonsledelse",
+      "weight": 0.88,
+      "reason": "Lederens belønningsbytte må også avklare om prestasjoner vurderes individuelt eller kollektivt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kommunikasjon-beslutninger",
+      "target": "kommunikasjonskanaler",
+      "weight": 0.86,
+      "reason": "Kanalvalg påvirker hvilken informasjon som kan formidles og bearbeides før en beslutning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kommunikasjon-beslutninger",
+      "target": "kommunikasjonsprosess",
+      "weight": 0.93,
+      "reason": "Kommunikasjonsprosessen forklarer hvordan informasjon blir til beslutningspremisser.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kommunikasjon-beslutninger",
+      "target": "maktbaser",
+      "weight": 0.92,
+      "reason": "Kontroll over hvilke beslutningspremisser som formidles er en viktig kilde til makt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kommunikasjon-beslutninger",
+      "target": "vertikal-horisontal-kommunikasjon",
+      "weight": 0.95,
+      "reason": "Informasjonens vei gjennom hierarkiet former hvilke premisser som når beslutningstakerne.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kommunikasjonskanaler",
+      "target": "kommunikasjonsprosess",
+      "weight": 0.92,
+      "reason": "Kanalen er en del av prosessen der budskapet formidles og fortolkes.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kommunikasjonskanaler",
+      "target": "vertikal-horisontal-kommunikasjon",
+      "weight": 0.86,
+      "reason": "Valg av kanal og organisering av kommunikasjonsretning er to nært beslektede sider ved informasjonsflyt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kommunikasjonsprosess",
+      "target": "lmx",
+      "weight": 0.85,
+      "reason": "Forhandling om forventninger og roller avhenger av fortolkning og gjensidig kommunikasjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kommunikasjonsprosess",
+      "target": "organisasjonsatferd",
+      "weight": 0.81,
+      "reason": "Kommunikasjon binder sammen holdninger, fortolkning og samhandling i organisasjonen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kommunikasjonsprosess",
+      "target": "vertikal-horisontal-kommunikasjon",
+      "weight": 0.92,
+      "reason": "Strukturen bestemmer hvilke veier budskapet går og hvor mange fortolkninger det passerer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kommunikativ-rasjonalitet",
+      "target": "konflikt-beslutningskvalitet",
+      "weight": 0.9,
+      "reason": "Saklig meningsbrytning kan vurderes opp mot kravene til åpen og ærlig argumentasjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kommunikativ-rasjonalitet",
+      "target": "kulturell-aapenhet",
+      "weight": 0.88,
+      "reason": "Trygghet og åpen meningsutveksling støtter vilkårene for ærlig argumentasjon uten tvang.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kommunikativ-rasjonalitet",
+      "target": "maktformer",
+      "weight": 0.89,
+      "reason": "Tvang og skjult påvirkning gir en direkte problematisering av idealet om argumentasjon uten maktpress.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kompetanseledelse",
+      "target": "ledergitteret",
+      "weight": 0.59,
+      "reason": "Ledelse av fagpersoner kan analyseres med oppgave- og menneskehensyn, men gitteret har ingen særskilt forklaring på profesjonell kompetanse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kompetanseledelse",
+      "target": "profesjonell-autoritet",
+      "weight": 0.91,
+      "reason": "Fagpersoners kunnskapsbaserte autoritet er relevant når de skal ledes.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kompetanseledelse",
+      "target": "profesjonelt-byraakrati",
+      "weight": 0.91,
+      "reason": "Ledelse av fagpersoner er særlig relevant der koordineringen bygger på deres profesjonelle kunnskap.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "konflikt-beslutningskvalitet",
+      "target": "ledelse",
+      "weight": 0.81,
+      "reason": "Ledere må kunne håndtere meningsbrytning slik at den belyser saken uten å ødelegge samhandlingen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "konflikt-beslutningskvalitet",
+      "target": "matrisestruktur",
+      "weight": 0.82,
+      "reason": "Motstridende prioriteringer kan gi nyttig meningsbrytning eller samarbeidsproblemer, avhengig av håndteringen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "konflikt-beslutningskvalitet",
+      "target": "organisasjonskultur",
+      "weight": 0.87,
+      "reason": "Normer for åpenhet og reaksjoner på uenighet påvirker om konflikt blir læring eller personangrep.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "konflikt-beslutningskvalitet",
+      "target": "organisatorisk-rettferdighet",
+      "weight": 0.83,
+      "reason": "Opplevd urettferdighet kan flytte saklig uenighet over i destruktiv konflikt.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "konsekvensetikk",
+      "target": "march-konsekvenslogikk",
+      "weight": 0.89,
+      "reason": "Konsekvenslogikk strukturerer valg; konsekvensetikk tilfører en moralsk vurdering av hvem som berøres.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "konsekvensetikk",
+      "target": "navigasjonshjulet",
+      "weight": 0.86,
+      "reason": "Konsekvensvurdering inngår, men suppleres av flere begrunnelsestyper.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "konsekvensetikk",
+      "target": "pliktetikk",
+      "weight": 0.95,
+      "reason": "En sentral etisk kontrast mellom konsekvenser og prinsipielle grenser.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "koordinering",
+      "target": "maskinbyraakrati",
+      "weight": 0.95,
+      "reason": "Standardisering av atferd er konfigurasjonens sentrale koordineringsmåte.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "koordinering",
+      "target": "nonaka-kunnskap",
+      "weight": 0.81,
+      "reason": "Kunnskapsdeling støtter samordning når oppgaveløsning avhenger av erfaringer fordelt mellom personer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "koordinering",
+      "target": "organisasjonskultur",
+      "weight": 0.88,
+      "reason": "Standardisering av normer kan samordne handlinger gjennom kultur.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "koordinering",
+      "target": "profesjonelt-byraakrati",
+      "weight": 0.95,
+      "reason": "Standardisering av kunnskap er konfigurasjonens sentrale koordineringsmekanisme.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "koordinering",
+      "target": "prosjektorganisering",
+      "weight": 0.92,
+      "reason": "Arbeid på tvers av basisenheter trenger løpende samordning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "koordinering",
+      "target": "rasjonell-organisasjon",
+      "weight": 0.93,
+      "reason": "Koordinering gjør det mulig å sammenfatte spesialisert kunnskap til beslutninger for organisasjonen som helhet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "koordinering",
+      "target": "varer-tjenester",
+      "weight": 0.77,
+      "reason": "Samtidig produksjon og konsum gir andre behov for løpende samordning enn produksjon for lager.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "koordinering",
+      "target": "vertikal-horisontal-kommunikasjon",
+      "weight": 0.93,
+      "reason": "Kommunikasjonsretning og forbindelser mellom enheter er sentrale for løpende samordning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kotter-endring",
+      "target": "lewin",
+      "weight": 0.94,
+      "reason": "Kotter utdyper mobilisering, gjennomføring og forankring som også står sentralt hos Lewin.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "kotter-endring",
+      "target": "organisasjonskultur",
+      "weight": 0.86,
+      "reason": "Forankring krever at nye handlinger blir en del av praksis og normer.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "kulturell-aapenhet",
+      "target": "organisatorisk-laering",
+      "weight": 0.94,
+      "reason": "Åpen deling og trygghet gjør det lettere å sammenfatte erfaringer og endre praksis.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kulturell-aapenhet",
+      "target": "schein-kulturnivaaer",
+      "weight": 0.86,
+      "reason": "Åpenhet kan undersøkes både som uttalt verdi, synlig praksis og dypere antakelser om hva det er trygt å si.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "laerende-organisasjoner",
+      "target": "march-utnyttelse-utforsking",
+      "weight": 0.88,
+      "reason": "Oversikten over lærende organisasjoner kan utdypes gjennom balansen mellom kjent og ny kunnskap.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "laerende-organisasjoner",
+      "target": "nonaka-kunnskap",
+      "weight": 0.89,
+      "reason": "Kunnskapsproduksjon er ett av perspektivene i oversikten og utdypes av Nonakas modell.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "laerende-organisasjoner",
+      "target": "organisatorisk-laering",
+      "weight": 0.92,
+      "reason": "Oversikten over lærende organisasjoner samler betingelser for at læring skal bli en varig organisatorisk evne.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "laering-endring",
+      "target": "organisatorisk-laering",
+      "weight": 0.97,
+      "reason": "Læringsbegrepet omfatter endret praksis, og samspillstemaet viser hvordan dette påvirker organisasjonens rammer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ledelse",
+      "target": "lederroller",
+      "weight": 0.94,
+      "reason": "Lederrollene viser konkrete funksjoner som inngår i ledelsesprosessen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ledelse",
+      "target": "lederstiler",
+      "weight": 0.92,
+      "reason": "Lederstiler konkretiserer hvordan påvirkning faktisk utøves i møte med medarbeidere.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ledelse",
+      "target": "lmx",
+      "weight": 0.89,
+      "reason": "LMX konkretiserer påvirkning gjennom den enkelte leder–medarbeider-relasjonen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ledelse",
+      "target": "selznick-verdibasert-ledelse",
+      "weight": 0.91,
+      "reason": "Verdibasert ledelse forklarer påvirkning gjennom mening og normer fremfor bare direkte instrukser.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ledelse",
+      "target": "transaksjonsledelse",
+      "weight": 0.91,
+      "reason": "Transaksjonsledelse konkretiserer påvirkning gjennom betinget belønning og oppfølging.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ledelse",
+      "target": "transformasjonsledelse",
+      "weight": 0.91,
+      "reason": "Transformasjonsledelse er en konkret tilnærming til å påvirke motivasjon og handling gjennom mening og inspirasjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ledelse",
+      "target": "uplanlagt-endring",
+      "weight": 0.69,
+      "reason": "Perspektivene kan sammen brukes til å problematisere hvor mye av utviklingen ledelsen faktisk kan styre.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ledergitteret",
+      "target": "lederstiler",
+      "weight": 0.96,
+      "reason": "Ledergitteret viser oppgave- og menneskehensyn som kombinerbare dimensjoner.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ledergitteret",
+      "target": "lmx",
+      "weight": 0.73,
+      "reason": "Relasjonshensyn kan utdypes gjennom individuelle lederrelasjoner, men LMX forklares ikke av plassering i gitteret.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ledergitteret",
+      "target": "transaksjonsledelse",
+      "weight": 0.73,
+      "reason": "Produksjonshensyn kan kobles til målrettet belønning, men gitteret sier ikke i seg selv hvordan bytterelasjonen utformes.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "lederroller",
+      "target": "maktbaser",
+      "weight": 0.83,
+      "reason": "Informasjonsformidling, nettverk og koalisjonsbygging er lederoppgaver som også kan gi makt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "lederroller",
+      "target": "transaksjonsledelse",
+      "weight": 0.77,
+      "reason": "Måloppfølging og belønning kan plasseres blant lederens handlings- og menneskeoppgaver.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "lederstiler",
+      "target": "lmx",
+      "weight": 0.88,
+      "reason": "En generell relasjonsorientering kan utdypes gjennom kvaliteten i relasjonen til hver enkelt medarbeider.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "lederstiler",
+      "target": "transaksjonsledelse",
+      "weight": 0.89,
+      "reason": "Sammendraget knytter transaksjonsledelse til oppgaveorientering og styring mot formelle mål.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "linjeorganisasjon",
+      "target": "markedsgruppering",
+      "weight": 0.7,
+      "reason": "Marked bestemmer hvordan enheter grupperes, mens linjen angir myndighetsforholdene mellom nivåene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "linjeorganisasjon",
+      "target": "matrisestruktur",
+      "weight": 0.94,
+      "reason": "Én hierarkisk myndighetslinje gir en direkte kontrast til flere likestilte ledere i matrisen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "linjeorganisasjon",
+      "target": "mintzberg-hoveddeler",
+      "weight": 0.94,
+      "reason": "Linjen består av tre av hoveddelene, mens teknostruktur og støtte ligger ved siden av den.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "linjeorganisasjon",
+      "target": "mintzberg-konfigurasjoner",
+      "weight": 0.87,
+      "reason": "Konfigurasjonene viser ulike grader og former for hierarkisk styring og samordning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "linjeorganisasjon",
+      "target": "profesjonelt-byraakrati",
+      "weight": 0.82,
+      "reason": "Faglig autonomi kan settes opp mot hvor mye avgjørelser styres gjennom det formelle hierarkiet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "linjeorganisasjon",
+      "target": "sentralisering",
+      "weight": 0.95,
+      "reason": "Hierarkiet angir nivåene som beslutningsmyndighet kan fordeles mellom.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "linjeorganisasjon",
+      "target": "vertikal-horisontal-kommunikasjon",
+      "weight": 0.94,
+      "reason": "Antall hierarkiske ledd former informasjonsveiene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "lmx",
+      "target": "organisatorisk-tilknytning",
+      "weight": 0.78,
+      "reason": "En fungerende lederrelasjon er en relevant mulig betingelse for tilhørighet og ønske om å bli.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "lmx",
+      "target": "psykologisk-kontrakt",
+      "weight": 0.9,
+      "reason": "Gjensidige forventninger og tillit står sentralt i leder–medarbeider-relasjonen.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "lmx",
+      "target": "selvbestemmelsesteori",
+      "weight": 0.84,
+      "reason": "Tillit og relasjonell støtte kan belyse tilhørighet og kompetanse, men en god lederrelasjon garanterer ikke autonomi.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "lmx",
+      "target": "tjenende-ledelse",
+      "weight": 0.84,
+      "reason": "Respekt og tillit i relasjonen kan støtte utvikling, men tjenesteidealet gjelder mer enn en enkelt dyade.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "lmx",
+      "target": "transaksjonsledelse",
+      "weight": 0.87,
+      "reason": "Begge bruker bytterelasjoner, men LMX fremhever kvalitet, tillit og rolleavklaring utover betinget belønning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "lmx",
+      "target": "transformasjonsledelse",
+      "weight": 0.88,
+      "reason": "Individuell oppfølging og respekt kan drøftes gjennom kvaliteten i relasjonen mellom leder og medarbeider.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maalforskyvning",
+      "target": "maalhierarki",
+      "weight": 0.94,
+      "reason": "Delmål kan miste forbindelsen til overordnede mål; målhierarkiet gjør denne forskyvningen tydelig.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maalforskyvning",
+      "target": "maalsettingsteori",
+      "weight": 0.93,
+      "reason": "Snevre prestasjonsmål kan fortrenge kvalitet eller det overordnede formålet.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "maalforskyvning",
+      "target": "maskinbyraakrati",
+      "weight": 0.92,
+      "reason": "Sterk regelkontroll gjør spenningen mellom regeloppfyllelse og overordnet formål særlig relevant.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maalforskyvning",
+      "target": "produktivitet-effektivitet",
+      "weight": 0.93,
+      "reason": "Stor produksjon på målbare indikatorer kan skje uten tilsvarende måloppnåelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maalforskyvning",
+      "target": "regelmodellen",
+      "weight": 0.91,
+      "reason": "Regler kan effektivisere valg, men også bli mål i seg selv og fortrenge hensikten med saksbehandlingen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maalforskyvning",
+      "target": "styringsmekanismer",
+      "weight": 0.95,
+      "reason": "Styringsmekanismer skal skape målsamsvar, mens målforskyvning viser hvordan dette kan mislykkes.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maalforskyvning",
+      "target": "teknisk-institusjonelt-samspill",
+      "weight": 0.69,
+      "reason": "Krav om målbare resultater og krav om legitimitet kan trekke prioriteringer bort fra det opprinnelige formålet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maalforskyvning",
+      "target": "toyota-hvorfor",
+      "weight": 0.9,
+      "reason": "Figurens årsakskjede ender i innkjøpskriterier som belønner kortsiktig innsparing fremfor driftskvalitet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maalhierarki",
+      "target": "maalsettingsteori",
+      "weight": 0.89,
+      "reason": "Overordnede mål kan konkretiseres til mål som gir retning for den enkeltes innsats.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maalhierarki",
+      "target": "march-konsekvenslogikk",
+      "weight": 0.84,
+      "reason": "Konsekvenslogikk trenger preferanser og mål som grunnlag for rangering av handlingsalternativer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maalhierarki",
+      "target": "perfekt-rasjonalitet",
+      "weight": 0.9,
+      "reason": "Rangering av alternativer forutsetter klare mål; målhierarkiet gjør det mulig å undersøke om slike mål finnes.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maalhierarki",
+      "target": "produktivitet-effektivitet",
+      "weight": 0.92,
+      "reason": "Vurdering av effektivitet krever avklaring av hvilke mål resultatene skal sammenlignes med.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maalsettingsteori",
+      "target": "mcclelland-behov",
+      "weight": 0.86,
+      "reason": "Prestasjonsbehov kan knyttes til utfordring, ansvar og tilbakemelding.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "maalsettingsteori",
+      "target": "organisatorisk-laering",
+      "weight": 0.86,
+      "reason": "Komplekse oppgaver kan kreve læringsmål før ensidige prestasjonsmål.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "maalsettingsteori",
+      "target": "produktivitet-effektivitet",
+      "weight": 0.78,
+      "reason": "Motiverende mål bør vurderes opp mot om innsatsen gir ønskede resultater, ikke bare mer aktivitet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maalsettingsteori",
+      "target": "psykologisk-kapital",
+      "weight": 0.88,
+      "reason": "Mestringstro og alternative målveier er relevante for målrettet innsats.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "maalsettingsteori",
+      "target": "regulatorisk-fokus",
+      "weight": 0.87,
+      "reason": "Mål kan rammes inn som fremgang eller forebygging.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "maalsettingsteori",
+      "target": "transaksjonsledelse",
+      "weight": 0.88,
+      "reason": "Klare mål og tilbakemelding kan kobles til betinget belønning og oppfølging av avvik.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maktbaser",
+      "target": "maktformer",
+      "weight": 0.95,
+      "reason": "Maktformer beskriver hvordan innflytelse utøves, mens maktbaser beskriver hva den bygger på.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maktbaser",
+      "target": "mcclelland-behov",
+      "weight": 0.79,
+      "reason": "Ønske om innflytelse må skilles fra ressursene som faktisk gir makt.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "maktbaser",
+      "target": "strukturelle-hull",
+      "weight": 0.94,
+      "reason": "Nettverksposisjoner kan gi kontroll over informasjon og dermed innflytelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maktbaser",
+      "target": "vertikal-horisontal-kommunikasjon",
+      "weight": 0.92,
+      "reason": "Mulighet til å holde tilbake eller endre informasjon gir en kobling mellom kommunikasjonsstruktur og makt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maktformer",
+      "target": "omgivelsesavhengighet",
+      "weight": 0.87,
+      "reason": "Ekstern avhengighet gir aktører muligheter til å utøve makt over organisasjonens valg.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "march-konsekvenslogikk",
+      "target": "march-passendehet",
+      "weight": 0.97,
+      "reason": "Forventede resultater kan vurderes opp mot hva roller og normer tilsier.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "march-konsekvenslogikk",
+      "target": "perfekt-rasjonalitet",
+      "weight": 0.94,
+      "reason": "Den rasjonelle idealmodellen er en tydelig anvendelse av å velge etter ønskede konsekvenser.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "march-passendehet",
+      "target": "organisasjonskultur",
+      "weight": 0.96,
+      "reason": "Kultur gir identiteter og normer som former hva medlemmene oppfatter som passende handling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "march-passendehet",
+      "target": "pliktetikk",
+      "weight": 0.76,
+      "reason": "Begge kan vise til handlingsregler, men en passende norm er ikke automatisk moralsk forsvarlig.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "march-passendehet",
+      "target": "regelmodellen",
+      "weight": 0.96,
+      "reason": "Klassifisering av situasjoner og anvendelse av regler er en form for passende handling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "march-passendehet",
+      "target": "schein-kulturnivaaer",
+      "weight": 0.92,
+      "reason": "Verdier, normer og grunnleggende antakelser bidrar til å definere hva som oppleves riktig i en situasjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "march-passendehet",
+      "target": "selznick-verdibasert-ledelse",
+      "weight": 0.92,
+      "reason": "Ledelse gjennom verdier kan forme hvilken handling medlemmene oppfatter som passende for organisasjonen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "march-utnyttelse-utforsking",
+      "target": "markedsgruppering",
+      "weight": 0.46,
+      "reason": "Markedsenheter kan prioritere lokal forbedring eller nye muligheter, men grupperingsprinsippet bestemmer ikke læringsbalansen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "march-utnyttelse-utforsking",
+      "target": "miles-snow",
+      "weight": 0.92,
+      "reason": "Oppfinnere og forsvarere gir en naturlig inngang til avveiningen mellom utforsking og utnyttelse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "march-utnyttelse-utforsking",
+      "target": "regulatorisk-fokus",
+      "weight": 0.78,
+      "reason": "Orienteringene kan belyse spenningen mellom utprøving og pålitelig drift uten å være samme modell.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "march-utnyttelse-utforsking",
+      "target": "suksessfellen",
+      "weight": 0.96,
+      "reason": "Ensidig videreføring av vellykkede løsninger kan fortrenge utforsking.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "markedsgruppering",
+      "target": "matrisestruktur",
+      "weight": 0.94,
+      "reason": "Matrisen forsøker å ivareta markedshensyn samtidig som funksjoner holdes samlet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "markedsgruppering",
+      "target": "mintzberg-hoveddeler",
+      "weight": 0.77,
+      "reason": "Marked er et prinsipp for enhetsinndeling, mens hoveddelene beskriver funksjoner som kan finnes på tvers av slike enheter.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "markedsgruppering",
+      "target": "porter-generiske-strategier",
+      "weight": 0.77,
+      "reason": "Valg av segment og kundebehov kan begrunne organisering etter marked, men avgjør ikke alene strukturen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "markedsgruppering",
+      "target": "porter-verdikjede",
+      "weight": 0.78,
+      "reason": "En markedsenhet kan samle flere aktiviteter i verdikjeden rundt en bestemt kundegruppe eller leveranse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "markedsgruppering",
+      "target": "prosjektorganisering",
+      "weight": 0.77,
+      "reason": "Begge kan samle flere funksjoner rundt en oppgave eller kunde, men prosjekter er tidsavgrensede.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "markedsgruppering",
+      "target": "rasjonell-organisasjon",
+      "weight": 0.71,
+      "reason": "Gruppering rundt kunder kan samle relevant informasjon, men er bare én mulig organisering for bedre beslutninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "martin-kulturperspektiver",
+      "target": "organisasjonskultur",
+      "weight": 0.96,
+      "reason": "Martins perspektiver problematiserer direkte om organisasjonen har én kultur eller flere meningsmønstre.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "martin-kulturperspektiver",
+      "target": "organisert-anarki",
+      "weight": 0.8,
+      "reason": "Fragmentering og skiftende meninger kan brukes til å drøfte uklare preferanser i beslutningsprosesser.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "martin-kulturperspektiver",
+      "target": "schein-kulturnivaaer",
+      "weight": 0.92,
+      "reason": "Schein skiller nivåer i kultur, mens Martin undersøker om meningsmønstrene er felles, gruppedelte eller tvetydige.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "martin-kulturperspektiver",
+      "target": "transformasjonsledelse",
+      "weight": 0.79,
+      "reason": "En samlende visjon kan møte ulike subkulturer eller tvetydige tolkninger, slik at lik inspirasjon ikke kan tas for gitt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maskinbyraakrati",
+      "target": "mintzberg-hoveddeler",
+      "weight": 0.91,
+      "reason": "Teknostrukturens arbeid med standardisering og kontroll er særlig relevant for denne konfigurasjonen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maskinbyraakrati",
+      "target": "mintzberg-konfigurasjoner",
+      "weight": 0.94,
+      "reason": "Maskinbyråkratiet er én av modellene eller formene i denne oversikten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maskinbyraakrati",
+      "target": "profesjonelt-byraakrati",
+      "weight": 0.92,
+      "reason": "Standardisering av arbeid kan sammenlignes med standardisering av kunnskap og større faglig autonomi.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maskinbyraakrati",
+      "target": "regelmodellen",
+      "weight": 0.96,
+      "reason": "Standardisert atferd og regelkontroll passer med beslutninger gjennom faste kategorier.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maskinbyraakrati",
+      "target": "taylor-arbeidsdeling",
+      "weight": 0.91,
+      "reason": "Detaljert arbeidsdeling og standardisert atferd er nært beslektede måter å organisere repetitivt arbeid på.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maskinbyraakrati",
+      "target": "weber-autoritet",
+      "weight": 0.91,
+      "reason": "Legal autoritet knyttes naturlig til en organisasjonsform som bygger på regler og formelle prosedyrer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maslow",
+      "target": "mcclelland-behov",
+      "weight": 0.87,
+      "reason": "To ulike måter å systematisere behov på.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "maslow",
+      "target": "organisatorisk-tilknytning",
+      "weight": 0.77,
+      "reason": "Trygghet og tilhørighet gir en mulig forklaring på hvorfor ansatte ønsker å bli i organisasjonen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maslow",
+      "target": "selvbestemmelsesteori",
+      "weight": 0.73,
+      "reason": "Begge hører til motivasjonsdrøftingen, men det leverte selvbestemmelsesavsnittet utdyper internalisering fremfor en direkte sammenligning av behov.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "matrisestruktur",
+      "target": "mintzberg-hoveddeler",
+      "weight": 0.72,
+      "reason": "Matrisen gjelder kryssende myndighetslinjer, mens hoveddelene beskriver organisasjonens funksjoner; de belyser ulike designspørsmål.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "matrisestruktur",
+      "target": "prosjektorganisering",
+      "weight": 0.94,
+      "reason": "Begge skaper arbeid på tvers av basisenheter og kan gi medarbeidere flere ledelsesrelasjoner.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "matrisestruktur",
+      "target": "psykososialt-arbeidsmiljo",
+      "weight": 0.77,
+      "reason": "Dobbelt lederskap kan gi rolleuklarhet når ansvar og prioriteringer ikke avklares.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "matrisestruktur",
+      "target": "sentralisering",
+      "weight": 0.85,
+      "reason": "Delt myndighet viser at beslutningsmakt ikke alltid følger én entydig hierarkisk linje.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "miles-snow",
+      "target": "porter-generiske-strategier",
+      "weight": 0.9,
+      "reason": "Begge typologier belyser strategivalg, men med ulike inndelinger og vektlegginger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "miles-snow",
+      "target": "ressursbasert-strategi",
+      "weight": 0.87,
+      "reason": "Markedsorienterte strategityper kan sammenlignes med et perspektiv som starter i eksisterende ressurser og kompetanse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "miles-snow",
+      "target": "suksessfellen",
+      "weight": 0.83,
+      "reason": "Forsvar av en etablert posisjon kan bli problematisk når endrede omgivelser krever nytenkning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "miles-snow",
+      "target": "swot",
+      "weight": 0.85,
+      "reason": "SWOT kan gi situasjonsgrunnlag for å drøfte hvilken strategisk orientering som er hensiktsmessig.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "mintzberg-hoveddeler",
+      "target": "mintzberg-konfigurasjoner",
+      "weight": 0.93,
+      "reason": "Konfigurasjonene beskriver ulike måter organisasjonens deler kan inngå i en helhet på.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "mintzberg-hoveddeler",
+      "target": "profesjonelt-byraakrati",
+      "weight": 0.89,
+      "reason": "Konfigurasjonen gjør det relevant å undersøke forholdet mellom faglig operativ kjerne, ledelse og staber.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "mintzberg-hoveddeler",
+      "target": "rasjonell-organisasjon",
+      "weight": 0.83,
+      "reason": "Arbeidsdeling mellom kjerne, ledelse og staber kan analyseres som en måte å støtte informasjonsbehandling og beslutninger på.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "mintzberg-konfigurasjoner",
+      "target": "omgivelsesusikkerhet",
+      "weight": 0.93,
+      "reason": "Strukturelle mønstre kan vurderes opp mot kompleksitet og endring i omgivelsene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "mintzberg-konfigurasjoner",
+      "target": "profesjonelt-byraakrati",
+      "weight": 0.94,
+      "reason": "Profesjonelt byråkrati er én av modellene eller formene i denne oversikten.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "navigasjonshjulet",
+      "target": "omdoemme",
+      "weight": 0.87,
+      "reason": "Omdømme er én dimensjon og må skilles fra etisk forsvarlighet.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "navigasjonshjulet",
+      "target": "pliktetikk",
+      "weight": 0.86,
+      "reason": "Prinsipper og grenser utfyller vurderinger av nytte.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "nonaka-kunnskap",
+      "target": "organisatorisk-laering",
+      "weight": 0.95,
+      "reason": "Nonaka konkretiserer hvordan kunnskap kan deles og tas i bruk kollektivt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "nonaka-kunnskap",
+      "target": "prosjektorganisering",
+      "weight": 0.85,
+      "reason": "Samarbeid mellom fagpersoner kan gjøre taus kunnskap synlig og kombinere ulike kunnskaper.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "nonaka-kunnskap",
+      "target": "ressursbasert-strategi",
+      "weight": 0.84,
+      "reason": "Kunnskapsutvikling kan forklare hvordan en organisasjon bygger og deler kompetanser som gir strategiske muligheter.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "nonaka-kunnskap",
+      "target": "sosial-laering",
+      "weight": 0.92,
+      "reason": "Observasjon av kolleger er sentral i Nonakas sosialisering fra taus til taus kunnskap.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "omdoemme",
+      "target": "perfekt-rasjonalitet",
+      "weight": 0.28,
+      "reason": "Omdømme kan være en konsekvens som vurderes i et valg, men er ikke nært knyttet til antakelsen om full informasjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "omdoemme",
+      "target": "symbolske-beslutninger",
+      "weight": 0.93,
+      "reason": "Et vedtak kan brukes til å kommunisere handlekraft og påvirke omgivelsenes oppfatning uten tilsvarende handling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "omdoemme",
+      "target": "teknisk-institusjonelt-samspill",
+      "weight": 0.87,
+      "reason": "Omdømme gjelder aksept, men kan samtidig få betydning for tilgang til kunder, medarbeidere og kapital.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "omgivelsesavhengighet",
+      "target": "omgivelsesusikkerhet",
+      "weight": 0.92,
+      "reason": "Avhengigheten gjør kompleksitet og endring i omgivelsene til et problem organisasjonen må håndtere.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "omgivelsesavhengighet",
+      "target": "teknisk-institusjonelt-samspill",
+      "weight": 0.91,
+      "reason": "Avhengighet gjelder både nødvendige ressurser og støtte og aksept fra omgivelsene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "omgivelsesavhengighet",
+      "target": "tekniske-omgivelser",
+      "weight": 0.95,
+      "reason": "Tekniske omgivelser konkretiserer hvilke eksterne ressurser og aktører organisasjonen er avhengig av.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "omgivelsesusikkerhet",
+      "target": "swot",
+      "weight": 0.87,
+      "reason": "Kompleksitet og dynamikk påvirker hvor sikkert muligheter og trusler kan identifiseres.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "organisasjon",
+      "target": "produksjonssystem",
+      "weight": 0.91,
+      "reason": "Systemdefinisjonen kan konkretiseres ved å vise hvordan samhandling omdanner ressurser til resultater.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "organisasjonsatferd",
+      "target": "organisatorisk-laering",
+      "weight": 0.82,
+      "reason": "Læring forklarer hvordan kunnskap og erfaring kan endre organisasjonens atferd.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "organisasjonskultur",
+      "target": "organisatorisk-tilknytning",
+      "weight": 0.88,
+      "reason": "Fellesskap og normer kan bidra til følelsesmessige og normative bånd til organisasjonen.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "organisasjonskultur",
+      "target": "schein-kulturnivaaer",
+      "weight": 0.97,
+      "reason": "Kulturnivåene gjør den generelle kulturdefinisjonen mer anvendelig i analyse.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "organisasjonskultur",
+      "target": "selznick-verdibasert-ledelse",
+      "weight": 0.93,
+      "reason": "Verdier og normer kan gi retning gjennom kultur fremfor detaljstyring.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "organisasjonskultur",
+      "target": "sosial-laering",
+      "weight": 0.89,
+      "reason": "Nye medlemmer kan lære passende praksis gjennom å observere og etterligne andre.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "organisasjonskultur",
+      "target": "styringsmekanismer",
+      "weight": 0.93,
+      "reason": "Sosialisering former normer og handlingsmodeller som kan styre ansatte uten direkte kontroll.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "organisatorisk-laering",
+      "target": "sosial-laering",
+      "weight": 0.91,
+      "reason": "Å lære av andre er en måte individuell erfaring kan inngå i kollektiv utvikling på.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "organisatorisk-rettferdighet",
+      "target": "psykologisk-kontrakt",
+      "weight": 0.9,
+      "reason": "Opplevd brudd på gjensidige løfter og urettferdig behandling kan sammen svekke tillit.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "organisatorisk-tilknytning",
+      "target": "psykologisk-kontrakt",
+      "weight": 0.91,
+      "reason": "Opplevde forpliktelser kan styrke eller svekke båndet til arbeidsgiver.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "organisert-anarki",
+      "target": "transformasjonsledelse",
+      "weight": 0.46,
+      "reason": "En tydelig visjon kan kontrasteres med uklare og skiftende preferanser, men sammenhengen krever en konkret endringssituasjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "organisert-anarki",
+      "target": "uplanlagt-endring",
+      "weight": 0.8,
+      "reason": "Tilfeldige koblinger mellom aktører og løsninger kan gi en konkret innfallsvinkel til ikke-planlagt utvikling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "perfekt-rasjonalitet",
+      "target": "rasjonell-organisasjon",
+      "weight": 0.92,
+      "reason": "Individets idealmodell kan sammenlignes med hvordan organisering forsøker å støtte rasjonell handling kollektivt.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "pliktetikk",
+      "target": "regelmodellen",
+      "weight": 0.72,
+      "reason": "Etiske prinsipper kan brukes til å kritisere organisatoriske regler.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "porter-generiske-strategier",
+      "target": "porter-verdikjede",
+      "weight": 0.9,
+      "reason": "Kostnadsledelse og differensiering kan drøftes gjennom hvilke aktiviteter som skaper kostnader og særpreg.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "porter-generiske-strategier",
+      "target": "ressursbasert-strategi",
+      "weight": 0.91,
+      "reason": "Markedsposisjon kan drøftes opp mot en strategi som starter i egne styrker.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "porter-generiske-strategier",
+      "target": "swot",
+      "weight": 0.91,
+      "reason": "Analyse av styrker, svakheter, muligheter og trusler gir grunnlag for vurdering av konkurranseposisjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "porter-generiske-strategier",
+      "target": "tekniske-omgivelser",
+      "weight": 0.91,
+      "reason": "Konkurrenter, kunder, leverandører og substitutter inngår direkte i vurderingen av konkurranseposisjon.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "porter-verdikjede",
+      "target": "produksjonssystem",
+      "weight": 0.94,
+      "reason": "Verdikjeden konkretiserer hvilke aktiviteter som inngår i transformasjon og verdiskaping.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "porter-verdikjede",
+      "target": "tekniske-omgivelser",
+      "weight": 0.92,
+      "reason": "Leverandører, produksjonsteknologi og kunder påvirker aktivitetene i verdikjeden direkte.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "porter-verdikjede",
+      "target": "varer-tjenester",
+      "weight": 0.82,
+      "reason": "Verdikjedens aktiviteter kan drøftes opp mot forskjeller mellom fysiske leveranser og samtidig tjenesteyting.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "produksjonssystem",
+      "target": "produktivitet-effektivitet",
+      "weight": 0.95,
+      "reason": "Produksjonssystemets ressurser, output og resultater gir grunnlaget for å skille produktivitet fra effektivitet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "produksjonssystem",
+      "target": "tekniske-omgivelser",
+      "weight": 0.93,
+      "reason": "Produksjonssystemet trenger ressurser, teknologi og etterspørsel fra omgivelsene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "produksjonssystem",
+      "target": "varer-tjenester",
+      "weight": 0.92,
+      "reason": "Skillet mellom varer og tjenester presiserer hva produksjonssystemet omdanner og leverer.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "produktivitet-effektivitet",
+      "target": "taylor-arbeidsdeling",
+      "weight": 0.87,
+      "reason": "Taylor gir et konkret produktivitetsargument som kan drøftes opp mot bredere mål og menneskelige konsekvenser.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "produktivitet-effektivitet",
+      "target": "teknisk-institusjonelt-samspill",
+      "weight": 0.78,
+      "reason": "Resultatvurdering kan drøftes sammen med krav om legitimitet.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "profesjonell-autoritet",
+      "target": "profesjonelt-byraakrati",
+      "weight": 0.96,
+      "reason": "Fagbasert koordinering gir kunnskap en sentral rolle i autoritet og beslutninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "profesjonell-autoritet",
+      "target": "weber-autoritet",
+      "weight": 0.92,
+      "reason": "Kunnskapsbasert autoritet kan sammenlignes med Webers tre legitimeringsgrunnlag uten å gjøres til en av dem.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "profesjonelt-byraakrati",
+      "target": "sentralisering",
+      "weight": 0.89,
+      "reason": "Fagbasert organisering kan begrunne hvorfor beslutninger legges hos kompetente medarbeidere.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "profesjonelt-byraakrati",
+      "target": "transformasjonsledelse",
+      "weight": 0.7,
+      "reason": "Inspirasjon og utvikling kan brukes i ledelse av autonome fagpersoner, men erstatter ikke profesjonell koordinering.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "prososial-motivasjon",
+      "target": "tjenende-ledelse",
+      "weight": 0.92,
+      "reason": "Andres utvikling og velferd er en naturlig motivasjonsbro.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "psykologisk-kapital",
+      "target": "sosial-laering",
+      "weight": 0.8,
+      "reason": "Observasjon, mestringserfaring og støtte gir en naturlig læringsbro.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "psykososialt-arbeidsmiljo",
+      "target": "thorsrud-jobbkrav",
+      "weight": 0.93,
+      "reason": "Jobbkravene konkretiserer berikelsesperspektivet.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "rasjonell-organisasjon",
+      "target": "stiavhengighet",
+      "weight": 0.71,
+      "reason": "Historiske investeringer kan begrense hvilke alternativer den målrettede organisasjonen faktisk har tilgjengelig.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ressursbasert-strategi",
+      "target": "suksessfellen",
+      "weight": 0.88,
+      "reason": "Sterke eksisterende kompetanser kan både gi fortrinn og binde organisasjonen til gamle løsninger.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ressursbasert-strategi",
+      "target": "swot",
+      "weight": 0.92,
+      "reason": "SWOT gjør det mulig å koble interne styrker til eksterne muligheter.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ressursbasert-strategi",
+      "target": "tekniske-omgivelser",
+      "weight": 0.86,
+      "reason": "Interne ressurser må vurderes sammen med tilgang til arbeidskraft, teknologi og markeder.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "schein-kulturnivaaer",
+      "target": "selznick-verdibasert-ledelse",
+      "weight": 0.88,
+      "reason": "Kulturnivåene gjør det mulig å undersøke om lederens uttalte verdier også preger praksis og antakelser.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "selvbestemmelsesteori",
+      "target": "tjenende-ledelse",
+      "weight": 0.89,
+      "reason": "Støtte til autonomi, kompetanse og tilhørighet gir en forklaringsbro til motivasjon.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "selznick-verdibasert-ledelse",
+      "target": "transformasjonsledelse",
+      "weight": 0.91,
+      "reason": "Begge gir mening og verdier en sentral plass i påvirkning utover detaljstyring og belønning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "selznick-verdibasert-ledelse",
+      "target": "weber-autoritet",
+      "weight": 0.82,
+      "reason": "Verdibasert ledelse kan undersøkes sammen med hvilke grunner medarbeidere har for å akseptere lederens påvirkning.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "stiavhengighet",
+      "target": "suksessfellen",
+      "weight": 0.95,
+      "reason": "Tidligere suksess og investeringer kan gjøre kursendring vanskelig.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "suksessfellen",
+      "target": "taylor-arbeidsdeling",
+      "weight": 0.62,
+      "reason": "Effektiv spesialisering kan bli vanskelig å endre når gamle produksjonsmåter ikke lenger passer, men dette krever en tids- og kontekstkobling.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "swot",
+      "target": "tekniske-omgivelser",
+      "weight": 0.9,
+      "reason": "Tekniske omgivelser gir konkrete forhold som kan analyseres som muligheter, trusler og ressursbetingelser.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "taylor-arbeidsdeling",
+      "target": "varer-tjenester",
+      "weight": 0.75,
+      "reason": "Produksjonens karakter påvirker hvor langt arbeid kan deles opp og standardiseres; direkte kundekontakt kan endre betingelsene.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "teknisk-institusjonelt-samspill",
+      "target": "tekniske-omgivelser",
+      "weight": 0.94,
+      "reason": "Samspillstemaet presiserer hvordan tekniske krav kan overlappe med krav om aksept.",
+      "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "tjenende-ledelse",
+      "target": "transformasjonsledelse",
+      "weight": 0.88,
+      "reason": "Begge kan utvikle medarbeidere, men tjenende ledelse prioriterer andres vekst som et særskilt utgangspunkt.",
+      "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "transaksjonsledelse",
+      "target": "transformasjonsledelse",
+      "weight": 0.93,
+      "reason": "Bytte og avvikskontroll kan kontrasteres med mening og utvikling; de kan også kombineres.",
+      "basis": "course_material_editorial_pair_review"
+    }
+  ]
+}

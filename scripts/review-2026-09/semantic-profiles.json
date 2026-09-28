@@ -1,0 +1,2695 @@
+{
+  "profile_version": "1.0.0",
+  "basis": "Editorial coding from topic definitions, explanations, mechanisms and writing uses; not keyword counts or embeddings.",
+  "strength_scale": {
+    "1": "secondary",
+    "2": "substantial",
+    "3": "central"
+  },
+  "feature_registries": {
+    "concepts": {
+      "system": "system og gjensidig påvirkning",
+      "value": "verdiskaping og leveranser",
+      "resources": "ressurser",
+      "technology": "teknologi",
+      "goals": "mål og prioriteringer",
+      "strategy": "strategi",
+      "market": "marked og kunder",
+      "metrics": "måling og resultatvurdering",
+      "design": "organisasjonsdesign",
+      "specialization": "arbeidsdeling og spesialisering",
+      "coordination": "samordning",
+      "hierarchy": "hierarki",
+      "autonomy": "autonomi og myndighetsfordeling",
+      "rules": "regler og rutiner",
+      "culture": "organisasjonskultur",
+      "norms": "normer og verdier",
+      "identity": "identitet og tilhørighet",
+      "meaning": "mening og symboler",
+      "power": "makt",
+      "dependence": "avhengighet",
+      "legitimacy": "legitimitet",
+      "conflict": "interessemotsetninger og konflikt",
+      "participation": "deltakelse og medvirkning",
+      "uncertainty": "usikkerhet",
+      "motivation": "motivasjon",
+      "rewards": "belønning",
+      "competence": "kompetanse",
+      "jobs": "arbeidsoppgavenes utforming",
+      "needs": "behov",
+      "trust": "tillit og relasjoner",
+      "attachment": "tilknytning og turnover",
+      "communication": "kommunikasjon",
+      "information": "informasjonsgrunnlag",
+      "interpretation": "fortolkning",
+      "networks": "nettverk",
+      "rationality": "rasjonalitet",
+      "decisions": "beslutninger",
+      "implementation": "iverksetting",
+      "learning": "læring",
+      "knowledge": "kunnskapsutvikling",
+      "tacit": "taus og eksplisitt kunnskap",
+      "innovation": "innovasjon",
+      "exploration": "utforsking og utnyttelse",
+      "inertia": "treghet og historiske bindinger",
+      "change": "organisasjonsendring",
+      "leadership": "ledelse",
+      "ethics": "etikk",
+      "contingency": "situasjonstilpasning"
+    },
+    "mechanisms": {
+      "resource_exchange": "ressurskontroll, bytte og avhengighet",
+      "goal_translation": "omsetting av mål til prioriteringer og valg",
+      "incentives": "insentivers påvirkning av innsats og prioritering",
+      "standardization": "samordning gjennom standardisering",
+      "specialization_mechanism": "konsentrasjon av oppgaver og fagkunnskap",
+      "integration": "sammenkobling av oppgaver, ressurser og aktører",
+      "delegation": "fordeling av myndighet og innflytelse",
+      "socialization": "innlæring og internalisering av normer",
+      "legitimacy_pressure": "tilpasning til forventninger om akseptabel opptreden",
+      "sensemaking": "dannelse og fortolkning av mening",
+      "filtering": "utvalg og filtrering av informasjon eller deltakelse",
+      "brokerage": "formidling mellom atskilte nettverk",
+      "dialogue": "gjensidig avklaring gjennom samtale",
+      "bounded_search": "begrenset søk etter handlingsalternativer",
+      "rule_matching": "kobling av situasjoner til handlingsregler",
+      "negotiation": "forhandling om interesser og prioriteringer",
+      "stream_coupling": "kobling av beslutningsstrømmer",
+      "feedback": "tilbakemelding og justering",
+      "reinforcement": "videreføring av mønstre gjennom erfaring og konsekvenser",
+      "knowledge_conversion": "deling, omforming og anvendelse av kunnskap",
+      "observation": "læring ved å observere andre",
+      "path_lock": "selvforsterkende bindinger til tidligere valg",
+      "exploration_balance": "avveining mellom kjente og nye løsninger",
+      "mobilization": "utvikling av motivasjon og oppslutning",
+      "resistance": "forsvar av interesser og etablert praksis",
+      "role_modelling": "påvirkning gjennom rollemodeller",
+      "relationship_exchange": "gjensidige forventninger i personlige relasjoner",
+      "situational_fit": "tilpasning mellom organisering og situasjon",
+      "task_design": "motivasjon gjennom oppgavenes egenskaper",
+      "system_interaction": "gjensidig påvirkning mellom organisatoriske elementer",
+      "cognitive_learning": "endring av kognitive forståelser"
+    },
+    "applications": {
+      "diagnosis": "analysere hvordan organisasjonen fungerer",
+      "operations": "forbedre produksjon og oppgaveløsning",
+      "external_adaptation": "håndtere forholdet til omgivelsene",
+      "performance": "vurdere prestasjoner og styringssystemer",
+      "strategy_choice": "utforme og vurdere strategi",
+      "restructuring": "vurdere organisasjonsstruktur",
+      "coordination_work": "organisere samarbeid og samordning",
+      "change_process": "forstå og gjennomføre endring",
+      "innovation_work": "utvikle nye løsninger",
+      "conflict_work": "håndtere uenighet og interesser",
+      "recruiting": "rekruttere, utvikle og beholde medarbeidere",
+      "motivation_work": "forstå og styrke arbeidsmotivasjon",
+      "leadership_work": "analysere og utøve ledelse",
+      "knowledge_work": "dele kunnskap og utvikle læring",
+      "collective_decisions": "analysere og forbedre beslutninger",
+      "acceptance": "bygge tillit og legitimitet i omgivelsene"
+    }
+  },
+  "specificity_weights": {
+    "concepts": {
+      "system": 4.504054767101863,
+      "value": 3.6931245508855346,
+      "resources": 2.754854912292604,
+      "technology": 3.9444389791664403,
+      "goals": 2.55814461804655,
+      "strategy": 3.1822989271195437,
+      "market": 3.4054424784337534,
+      "metrics": 3.4054424784337534,
+      "design": 2.4891517465595987,
+      "specialization": 3.810907586541918,
+      "coordination": 2.754854912292604,
+      "hierarchy": 3.4054424784337534,
+      "autonomy": 3.4924538554233835,
+      "rules": 3.4054424784337534,
+      "culture": 2.894616854667763,
+      "norms": 2.999977370325589,
+      "identity": 3.4924538554233835,
+      "meaning": 3.0571357841655376,
+      "power": 2.671473303353553,
+      "dependence": 3.325399770760217,
+      "legitimacy": 3.5877640352277083,
+      "conflict": 3.4924538554233835,
+      "participation": 3.325399770760217,
+      "uncertainty": 3.2512917986064953,
+      "motivation": 2.8458266904983307,
+      "rewards": 3.325399770760217,
+      "competence": 2.9459101490553135,
+      "jobs": 3.4924538554233835,
+      "needs": 4.791736839553645,
+      "trust": 3.4924538554233835,
+      "attachment": 4.098589658993699,
+      "communication": 2.8458266904983307,
+      "information": 3.1822989271195437,
+      "interpretation": 3.2512917986064953,
+      "networks": 3.6931245508855346,
+      "rationality": 3.4924538554233835,
+      "decisions": 2.7993066748634376,
+      "implementation": 3.6931245508855346,
+      "learning": 2.754854912292604,
+      "knowledge": 4.098589658993699,
+      "tacit": 5.197201947661808,
+      "innovation": 3.5877640352277083,
+      "exploration": 4.098589658993699,
+      "inertia": 4.098589658993699,
+      "change": 2.754854912292604,
+      "leadership": 2.7122952978738084,
+      "ethics": 4.504054767101863,
+      "contingency": 4.098589658993699
+    },
+    "mechanisms": {
+      "resource_exchange": 2.999977370325589,
+      "goal_translation": 3.0571357841655376,
+      "incentives": 3.325399770760217,
+      "standardization": 3.325399770760217,
+      "specialization_mechanism": 3.4924538554233835,
+      "integration": 2.671473303353553,
+      "delegation": 3.4054424784337534,
+      "socialization": 2.7993066748634376,
+      "legitimacy_pressure": 3.4924538554233835,
+      "sensemaking": 2.8458266904983307,
+      "filtering": 3.325399770760217,
+      "brokerage": 4.098589658993699,
+      "dialogue": 3.1822989271195437,
+      "bounded_search": 3.6931245508855346,
+      "rule_matching": 4.098589658993699,
+      "negotiation": 3.6931245508855346,
+      "stream_coupling": 4.098589658993699,
+      "feedback": 3.0571357841655376,
+      "reinforcement": 3.9444389791664403,
+      "knowledge_conversion": 3.6931245508855346,
+      "observation": 4.504054767101863,
+      "path_lock": 4.098589658993699,
+      "exploration_balance": 3.5877640352277083,
+      "mobilization": 3.325399770760217,
+      "resistance": 4.791736839553645,
+      "role_modelling": 3.810907586541918,
+      "relationship_exchange": 3.4924538554233835,
+      "situational_fit": 2.999977370325589,
+      "task_design": 3.4924538554233835,
+      "system_interaction": 3.5877640352277083,
+      "cognitive_learning": 4.504054767101863
+    },
+    "applications": {
+      "diagnosis": 2.671473303353553,
+      "operations": 2.999977370325589,
+      "external_adaptation": 2.671473303353553,
+      "performance": 2.894616854667763,
+      "strategy_choice": 2.671473303353553,
+      "restructuring": 2.7993066748634376,
+      "coordination_work": 2.306830189765644,
+      "change_process": 2.424613225422027,
+      "innovation_work": 3.2512917986064953,
+      "conflict_work": 3.1177604059819726,
+      "recruiting": 3.325399770760217,
+      "motivation_work": 2.6322525902002716,
+      "leadership_work": 2.306830189765644,
+      "knowledge_work": 2.9459101490553135,
+      "collective_decisions": 2.363988603605592,
+      "acceptance": 3.325399770760217
+    }
+  },
+  "profiles": [
+    {
+      "topic_id": "adaptiv-ledelse",
+      "concepts": {
+        "leadership": 3,
+        "learning": 3,
+        "uncertainty": 2,
+        "innovation": 2,
+        "exploration": 2
+      },
+      "mechanisms": {
+        "exploration_balance": 3,
+        "mobilization": 2,
+        "situational_fit": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "innovation_work": 3,
+        "change_process": 2
+      }
+    },
+    {
+      "topic_id": "adhockrati",
+      "concepts": {
+        "design": 3,
+        "innovation": 3,
+        "coordination": 3,
+        "autonomy": 2,
+        "uncertainty": 2
+      },
+      "mechanisms": {
+        "integration": 3,
+        "dialogue": 2,
+        "exploration_balance": 2
+      },
+      "applications": {
+        "restructuring": 3,
+        "innovation_work": 3,
+        "coordination_work": 3
+      }
+    },
+    {
+      "topic_id": "administrasjon-ledelse",
+      "concepts": {
+        "leadership": 3,
+        "goals": 2,
+        "meaning": 2,
+        "design": 2,
+        "coordination": 2
+      },
+      "mechanisms": {
+        "integration": 3,
+        "goal_translation": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "operations": 3,
+        "change_process": 1
+      }
+    },
+    {
+      "topic_id": "argyris-laeringskretser",
+      "concepts": {
+        "learning": 3,
+        "goals": 3,
+        "norms": 2,
+        "change": 3
+      },
+      "mechanisms": {
+        "feedback": 3,
+        "cognitive_learning": 2,
+        "exploration_balance": 2
+      },
+      "applications": {
+        "knowledge_work": 3,
+        "change_process": 3,
+        "performance": 2
+      }
+    },
+    {
+      "topic_id": "artefakter",
+      "concepts": {
+        "meaning": 3,
+        "culture": 3,
+        "identity": 2,
+        "rewards": 1,
+        "design": 1
+      },
+      "mechanisms": {
+        "sensemaking": 3,
+        "socialization": 1
+      },
+      "applications": {
+        "diagnosis": 3,
+        "acceptance": 2,
+        "leadership_work": 1
+      }
+    },
+    {
+      "topic_id": "autentisk-ledelse",
+      "concepts": {
+        "leadership": 3,
+        "identity": 3,
+        "norms": 2,
+        "trust": 3,
+        "meaning": 2
+      },
+      "mechanisms": {
+        "role_modelling": 3,
+        "relationship_exchange": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "acceptance": 1,
+        "motivation_work": 1
+      }
+    },
+    {
+      "topic_id": "balansert-maalstyring",
+      "concepts": {
+        "metrics": 3,
+        "goals": 3,
+        "strategy": 2,
+        "learning": 2,
+        "market": 1
+      },
+      "mechanisms": {
+        "goal_translation": 3,
+        "feedback": 3
+      },
+      "applications": {
+        "performance": 3,
+        "strategy_choice": 2,
+        "operations": 1
+      }
+    },
+    {
+      "topic_id": "barnard-uformell-kommunikasjon",
+      "concepts": {
+        "communication": 3,
+        "culture": 2,
+        "trust": 2,
+        "learning": 2,
+        "interpretation": 2
+      },
+      "mechanisms": {
+        "sensemaking": 3,
+        "socialization": 3,
+        "dialogue": 3,
+        "knowledge_conversion": 2
+      },
+      "applications": {
+        "knowledge_work": 3,
+        "coordination_work": 3,
+        "change_process": 1
+      }
+    },
+    {
+      "topic_id": "begrenset-rasjonalitet",
+      "concepts": {
+        "rationality": 3,
+        "decisions": 3,
+        "information": 3,
+        "interpretation": 2
+      },
+      "mechanisms": {
+        "bounded_search": 3,
+        "filtering": 3
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "diagnosis": 1
+      }
+    },
+    {
+      "topic_id": "beloenningssystemer",
+      "concepts": {
+        "rewards": 3,
+        "metrics": 3,
+        "motivation": 2,
+        "goals": 2
+      },
+      "mechanisms": {
+        "incentives": 3,
+        "reinforcement": 2,
+        "goal_translation": 2
+      },
+      "applications": {
+        "performance": 3,
+        "motivation_work": 3,
+        "recruiting": 1
+      }
+    },
+    {
+      "topic_id": "bemyndiggjoring",
+      "concepts": {
+        "autonomy": 3,
+        "power": 3,
+        "participation": 3,
+        "motivation": 1
+      },
+      "mechanisms": {
+        "delegation": 3,
+        "mobilization": 1
+      },
+      "applications": {
+        "leadership_work": 3,
+        "motivation_work": 2,
+        "change_process": 2
+      }
+    },
+    {
+      "topic_id": "beslutningsfora",
+      "concepts": {
+        "decisions": 3,
+        "participation": 3,
+        "design": 3,
+        "power": 2,
+        "rules": 2
+      },
+      "mechanisms": {
+        "filtering": 3,
+        "stream_coupling": 3,
+        "standardization": 2
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "restructuring": 2,
+        "conflict_work": 1
+      }
+    },
+    {
+      "topic_id": "beslutningsmodeller",
+      "concepts": {
+        "decisions": 3,
+        "rationality": 2,
+        "design": 2,
+        "culture": 1,
+        "power": 2,
+        "contingency": 2
+      },
+      "mechanisms": {
+        "situational_fit": 3,
+        "bounded_search": 2
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "diagnosis": 2
+      }
+    },
+    {
+      "topic_id": "beslutningsprosesser",
+      "concepts": {
+        "decisions": 3,
+        "implementation": 3,
+        "information": 2,
+        "goals": 2,
+        "design": 1
+      },
+      "mechanisms": {
+        "bounded_search": 2,
+        "goal_translation": 2,
+        "feedback": 2,
+        "system_interaction": 2
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "change_process": 2,
+        "diagnosis": 1
+      }
+    },
+    {
+      "topic_id": "beslutningsstroemmer",
+      "concepts": {
+        "decisions": 3,
+        "participation": 3,
+        "information": 2,
+        "uncertainty": 2
+      },
+      "mechanisms": {
+        "stream_coupling": 3,
+        "filtering": 2
+      },
+      "applications": {
+        "collective_decisions": 3
+      }
+    },
+    {
+      "topic_id": "betinging",
+      "concepts": {
+        "learning": 3,
+        "motivation": 1,
+        "interpretation": 1
+      },
+      "mechanisms": {
+        "reinforcement": 2,
+        "observation": 1
+      },
+      "applications": {
+        "knowledge_work": 2,
+        "motivation_work": 2
+      }
+    },
+    {
+      "topic_id": "business-model-canvas",
+      "concepts": {
+        "value": 3,
+        "market": 3,
+        "resources": 2,
+        "strategy": 2,
+        "networks": 1
+      },
+      "mechanisms": {
+        "resource_exchange": 3,
+        "integration": 2
+      },
+      "applications": {
+        "strategy_choice": 3,
+        "operations": 3,
+        "external_adaptation": 1
+      }
+    },
+    {
+      "topic_id": "byttemakt",
+      "concepts": {
+        "power": 3,
+        "dependence": 3,
+        "resources": 3,
+        "rewards": 2
+      },
+      "mechanisms": {
+        "resource_exchange": 3,
+        "relationship_exchange": 2
+      },
+      "applications": {
+        "conflict_work": 3,
+        "external_adaptation": 2,
+        "motivation_work": 1
+      }
+    },
+    {
+      "topic_id": "cameron-quinn",
+      "concepts": {
+        "culture": 3,
+        "norms": 2,
+        "leadership": 2,
+        "innovation": 2,
+        "metrics": 1
+      },
+      "mechanisms": {
+        "situational_fit": 2,
+        "socialization": 2,
+        "sensemaking": 2
+      },
+      "applications": {
+        "diagnosis": 3,
+        "leadership_work": 2,
+        "innovation_work": 1
+      }
+    },
+    {
+      "topic_id": "delt-ledelse",
+      "concepts": {
+        "leadership": 3,
+        "coordination": 3,
+        "participation": 3,
+        "autonomy": 3
+      },
+      "mechanisms": {
+        "delegation": 3,
+        "integration": 3,
+        "dialogue": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "coordination_work": 3,
+        "restructuring": 2
+      }
+    },
+    {
+      "topic_id": "direkte-indirekte-ledelse",
+      "concepts": {
+        "leadership": 3,
+        "design": 3,
+        "culture": 3,
+        "communication": 2,
+        "goals": 2
+      },
+      "mechanisms": {
+        "system_interaction": 3,
+        "socialization": 2,
+        "dialogue": 2,
+        "goal_translation": 1
+      },
+      "applications": {
+        "leadership_work": 3,
+        "restructuring": 2,
+        "diagnosis": 2
+      }
+    },
+    {
+      "topic_id": "divisjonalisert-struktur",
+      "concepts": {
+        "design": 3,
+        "market": 3,
+        "metrics": 3,
+        "autonomy": 2,
+        "goals": 2
+      },
+      "mechanisms": {
+        "standardization": 3,
+        "goal_translation": 3,
+        "delegation": 2
+      },
+      "applications": {
+        "restructuring": 3,
+        "performance": 3,
+        "coordination_work": 2
+      }
+    },
+    {
+      "topic_id": "effektiv-kommunikasjon",
+      "concepts": {
+        "communication": 3,
+        "interpretation": 3,
+        "coordination": 2
+      },
+      "mechanisms": {
+        "dialogue": 3,
+        "sensemaking": 2
+      },
+      "applications": {
+        "coordination_work": 3,
+        "collective_decisions": 2
+      }
+    },
+    {
+      "topic_id": "endringsagenter",
+      "concepts": {
+        "change": 3,
+        "implementation": 3,
+        "leadership": 2,
+        "strategy": 2
+      },
+      "mechanisms": {
+        "mobilization": 3,
+        "goal_translation": 2
+      },
+      "applications": {
+        "change_process": 3,
+        "leadership_work": 2
+      }
+    },
+    {
+      "topic_id": "endringsgjennomfoering",
+      "concepts": {
+        "change": 3,
+        "implementation": 3,
+        "participation": 3,
+        "communication": 2,
+        "resources": 2,
+        "ethics": 1
+      },
+      "mechanisms": {
+        "mobilization": 3,
+        "dialogue": 2,
+        "feedback": 2
+      },
+      "applications": {
+        "change_process": 3,
+        "leadership_work": 2,
+        "conflict_work": 1
+      }
+    },
+    {
+      "topic_id": "endringsmotstand",
+      "concepts": {
+        "change": 3,
+        "conflict": 3,
+        "identity": 2,
+        "power": 2,
+        "attachment": 2,
+        "uncertainty": 2
+      },
+      "mechanisms": {
+        "resistance": 3,
+        "path_lock": 2
+      },
+      "applications": {
+        "change_process": 3,
+        "conflict_work": 3
+      }
+    },
+    {
+      "topic_id": "endringsomfang",
+      "concepts": {
+        "change": 3,
+        "exploration": 3,
+        "learning": 2,
+        "innovation": 2
+      },
+      "mechanisms": {
+        "exploration_balance": 3
+      },
+      "applications": {
+        "change_process": 3,
+        "innovation_work": 2,
+        "strategy_choice": 2
+      }
+    },
+    {
+      "topic_id": "endringspress",
+      "concepts": {
+        "change": 3,
+        "uncertainty": 3,
+        "interpretation": 3,
+        "conflict": 1
+      },
+      "mechanisms": {
+        "sensemaking": 3,
+        "mobilization": 2,
+        "situational_fit": 1
+      },
+      "applications": {
+        "change_process": 3,
+        "external_adaptation": 3
+      }
+    },
+    {
+      "topic_id": "endringsstrategier",
+      "concepts": {
+        "change": 3,
+        "participation": 3,
+        "power": 3,
+        "strategy": 2
+      },
+      "mechanisms": {
+        "mobilization": 3,
+        "delegation": 2,
+        "negotiation": 2
+      },
+      "applications": {
+        "change_process": 3,
+        "leadership_work": 2,
+        "conflict_work": 2
+      }
+    },
+    {
+      "topic_id": "entreprenororganisasjon",
+      "concepts": {
+        "design": 3,
+        "hierarchy": 3,
+        "leadership": 2,
+        "power": 2,
+        "coordination": 2
+      },
+      "mechanisms": {
+        "delegation": 3,
+        "integration": 2
+      },
+      "applications": {
+        "restructuring": 3,
+        "leadership_work": 2,
+        "coordination_work": 2
+      }
+    },
+    {
+      "topic_id": "etisk-ledelse",
+      "concepts": {
+        "leadership": 3,
+        "ethics": 3,
+        "norms": 3,
+        "trust": 3,
+        "communication": 2
+      },
+      "mechanisms": {
+        "role_modelling": 3,
+        "dialogue": 3,
+        "socialization": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "acceptance": 2,
+        "conflict_work": 2
+      }
+    },
+    {
+      "topic_id": "fiedler",
+      "concepts": {
+        "leadership": 3,
+        "power": 3,
+        "jobs": 2,
+        "trust": 2,
+        "contingency": 3
+      },
+      "mechanisms": {
+        "situational_fit": 3,
+        "relationship_exchange": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "coordination_work": 2
+      }
+    },
+    {
+      "topic_id": "forhandlingsmodeller",
+      "concepts": {
+        "decisions": 3,
+        "conflict": 3,
+        "power": 3,
+        "resources": 2,
+        "goals": 2
+      },
+      "mechanisms": {
+        "negotiation": 3,
+        "resource_exchange": 2
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "conflict_work": 3
+      }
+    },
+    {
+      "topic_id": "formelle-uformelle-trekk",
+      "concepts": {
+        "design": 3,
+        "culture": 3,
+        "power": 2,
+        "goals": 2,
+        "norms": 2
+      },
+      "mechanisms": {
+        "system_interaction": 3,
+        "socialization": 2,
+        "standardization": 2
+      },
+      "applications": {
+        "diagnosis": 3,
+        "coordination_work": 2,
+        "change_process": 1
+      }
+    },
+    {
+      "topic_id": "forventningsteori",
+      "concepts": {
+        "motivation": 3,
+        "rewards": 3,
+        "goals": 2,
+        "resources": 1,
+        "rationality": 1
+      },
+      "mechanisms": {
+        "incentives": 3,
+        "goal_translation": 2
+      },
+      "applications": {
+        "motivation_work": 3,
+        "performance": 3
+      }
+    },
+    {
+      "topic_id": "fremvoksende-strategi",
+      "concepts": {
+        "strategy": 3,
+        "decisions": 3,
+        "implementation": 2,
+        "change": 2
+      },
+      "mechanisms": {
+        "feedback": 2,
+        "stream_coupling": 1,
+        "bounded_search": 2
+      },
+      "applications": {
+        "strategy_choice": 3,
+        "collective_decisions": 2,
+        "change_process": 2
+      }
+    },
+    {
+      "topic_id": "funksjonsgruppering",
+      "concepts": {
+        "design": 3,
+        "specialization": 3,
+        "competence": 2,
+        "coordination": 2
+      },
+      "mechanisms": {
+        "specialization_mechanism": 3,
+        "integration": 2
+      },
+      "applications": {
+        "restructuring": 3,
+        "coordination_work": 3,
+        "operations": 1
+      }
+    },
+    {
+      "topic_id": "granovetter-svake-baand",
+      "concepts": {
+        "networks": 3,
+        "information": 3,
+        "innovation": 2,
+        "learning": 2
+      },
+      "mechanisms": {
+        "brokerage": 3,
+        "knowledge_conversion": 1
+      },
+      "applications": {
+        "knowledge_work": 3,
+        "innovation_work": 3,
+        "external_adaptation": 1
+      }
+    },
+    {
+      "topic_id": "haandtere-tekniske-omgivelser",
+      "concepts": {
+        "uncertainty": 3,
+        "dependence": 3,
+        "resources": 2,
+        "networks": 2,
+        "strategy": 2
+      },
+      "mechanisms": {
+        "resource_exchange": 3,
+        "integration": 2,
+        "situational_fit": 2
+      },
+      "applications": {
+        "external_adaptation": 3,
+        "strategy_choice": 3
+      }
+    },
+    {
+      "topic_id": "hackman-oldham",
+      "concepts": {
+        "jobs": 3,
+        "motivation": 3,
+        "autonomy": 3,
+        "meaning": 2,
+        "metrics": 1
+      },
+      "mechanisms": {
+        "task_design": 3,
+        "feedback": 2,
+        "delegation": 2
+      },
+      "applications": {
+        "motivation_work": 3,
+        "restructuring": 2,
+        "performance": 2
+      }
+    },
+    {
+      "topic_id": "helhetlig-organisasjonsmodell",
+      "concepts": {
+        "system": 3,
+        "design": 2,
+        "culture": 2,
+        "power": 2,
+        "leadership": 2,
+        "change": 1
+      },
+      "mechanisms": {
+        "system_interaction": 3,
+        "feedback": 2
+      },
+      "applications": {
+        "diagnosis": 3,
+        "change_process": 2
+      }
+    },
+    {
+      "topic_id": "hersey-blanchard",
+      "concepts": {
+        "leadership": 3,
+        "competence": 3,
+        "motivation": 3,
+        "autonomy": 2,
+        "contingency": 3
+      },
+      "mechanisms": {
+        "situational_fit": 3,
+        "delegation": 2,
+        "relationship_exchange": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "motivation_work": 3
+      }
+    },
+    {
+      "topic_id": "herzberg",
+      "concepts": {
+        "motivation": 3,
+        "jobs": 3,
+        "needs": 2,
+        "rewards": 2,
+        "competence": 1
+      },
+      "mechanisms": {
+        "task_design": 3,
+        "incentives": 1
+      },
+      "applications": {
+        "motivation_work": 3,
+        "recruiting": 2
+      }
+    },
+    {
+      "topic_id": "hofstede",
+      "concepts": {
+        "norms": 3,
+        "culture": 3,
+        "power": 2,
+        "uncertainty": 2,
+        "identity": 1
+      },
+      "mechanisms": {
+        "socialization": 3,
+        "legitimacy_pressure": 2,
+        "situational_fit": 1
+      },
+      "applications": {
+        "diagnosis": 3,
+        "leadership_work": 2,
+        "external_adaptation": 2
+      }
+    },
+    {
+      "topic_id": "hrm",
+      "concepts": {
+        "competence": 3,
+        "motivation": 3,
+        "attachment": 2,
+        "strategy": 2,
+        "jobs": 2,
+        "participation": 2
+      },
+      "mechanisms": {
+        "task_design": 3,
+        "incentives": 2,
+        "socialization": 2,
+        "situational_fit": 2
+      },
+      "applications": {
+        "recruiting": 3,
+        "motivation_work": 3,
+        "strategy_choice": 2,
+        "performance": 2
+      }
+    },
+    {
+      "topic_id": "indre-ytre-motivasjon",
+      "concepts": {
+        "motivation": 3,
+        "rewards": 3,
+        "meaning": 2,
+        "jobs": 2,
+        "autonomy": 1
+      },
+      "mechanisms": {
+        "incentives": 3,
+        "task_design": 2
+      },
+      "applications": {
+        "motivation_work": 3,
+        "performance": 2,
+        "recruiting": 1
+      }
+    },
+    {
+      "topic_id": "inkrementelle-beslutninger",
+      "concepts": {
+        "decisions": 3,
+        "change": 2,
+        "rationality": 2,
+        "learning": 2,
+        "inertia": 2
+      },
+      "mechanisms": {
+        "bounded_search": 3,
+        "feedback": 2,
+        "path_lock": 2
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "change_process": 2,
+        "strategy_choice": 2
+      }
+    },
+    {
+      "topic_id": "innovasjon",
+      "concepts": {
+        "innovation": 3,
+        "technology": 3,
+        "learning": 2,
+        "change": 2,
+        "value": 1
+      },
+      "mechanisms": {
+        "knowledge_conversion": 2,
+        "exploration_balance": 3
+      },
+      "applications": {
+        "innovation_work": 3,
+        "operations": 2,
+        "strategy_choice": 2
+      }
+    },
+    {
+      "topic_id": "institusjonelle-omgivelser",
+      "concepts": {
+        "legitimacy": 3,
+        "norms": 3,
+        "rules": 2,
+        "meaning": 2,
+        "culture": 2
+      },
+      "mechanisms": {
+        "legitimacy_pressure": 3,
+        "socialization": 2,
+        "rule_matching": 2
+      },
+      "applications": {
+        "acceptance": 3,
+        "external_adaptation": 3,
+        "diagnosis": 1
+      }
+    },
+    {
+      "topic_id": "institusjonelle-strategier",
+      "concepts": {
+        "legitimacy": 3,
+        "meaning": 3,
+        "strategy": 2,
+        "implementation": 2,
+        "norms": 2
+      },
+      "mechanisms": {
+        "legitimacy_pressure": 3,
+        "sensemaking": 2,
+        "negotiation": 1
+      },
+      "applications": {
+        "acceptance": 3,
+        "external_adaptation": 3,
+        "strategy_choice": 1
+      }
+    },
+    {
+      "topic_id": "interessentmodellen",
+      "concepts": {
+        "power": 3,
+        "conflict": 3,
+        "resources": 2,
+        "goals": 2,
+        "dependence": 2
+      },
+      "mechanisms": {
+        "negotiation": 3,
+        "resource_exchange": 2
+      },
+      "applications": {
+        "conflict_work": 3,
+        "collective_decisions": 3,
+        "external_adaptation": 2
+      }
+    },
+    {
+      "topic_id": "interorganisatoriske-relasjoner",
+      "concepts": {
+        "networks": 3,
+        "resources": 3,
+        "coordination": 3,
+        "dependence": 2,
+        "competence": 2
+      },
+      "mechanisms": {
+        "resource_exchange": 3,
+        "integration": 3,
+        "brokerage": 2
+      },
+      "applications": {
+        "coordination_work": 3,
+        "external_adaptation": 3,
+        "knowledge_work": 2
+      }
+    },
+    {
+      "topic_id": "iverksettingsproblemer",
+      "concepts": {
+        "implementation": 3,
+        "resources": 3,
+        "competence": 2,
+        "conflict": 2,
+        "change": 2
+      },
+      "mechanisms": {
+        "resistance": 3,
+        "integration": 2,
+        "goal_translation": 1
+      },
+      "applications": {
+        "change_process": 3,
+        "collective_decisions": 2,
+        "operations": 1
+      }
+    },
+    {
+      "topic_id": "karismatisk-ledelse",
+      "concepts": {
+        "leadership": 3,
+        "legitimacy": 2,
+        "meaning": 3,
+        "communication": 2,
+        "power": 2
+      },
+      "mechanisms": {
+        "role_modelling": 3,
+        "mobilization": 3,
+        "legitimacy_pressure": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "acceptance": 2,
+        "change_process": 1
+      }
+    },
+    {
+      "topic_id": "karrieresystemer",
+      "concepts": {
+        "competence": 3,
+        "rewards": 2,
+        "attachment": 3,
+        "hierarchy": 2,
+        "motivation": 2
+      },
+      "mechanisms": {
+        "specialization_mechanism": 2,
+        "incentives": 2,
+        "socialization": 2
+      },
+      "applications": {
+        "recruiting": 3,
+        "motivation_work": 2,
+        "leadership_work": 1
+      }
+    },
+    {
+      "topic_id": "kognitiv-laering",
+      "concepts": {
+        "learning": 3,
+        "interpretation": 3,
+        "information": 3,
+        "rationality": 2
+      },
+      "mechanisms": {
+        "cognitive_learning": 3,
+        "filtering": 3,
+        "sensemaking": 3
+      },
+      "applications": {
+        "knowledge_work": 3,
+        "collective_decisions": 2
+      }
+    },
+    {
+      "topic_id": "kollektiv-individuell-beloenning",
+      "concepts": {
+        "rewards": 3,
+        "coordination": 3,
+        "motivation": 2,
+        "conflict": 2,
+        "identity": 1
+      },
+      "mechanisms": {
+        "incentives": 3,
+        "integration": 2
+      },
+      "applications": {
+        "motivation_work": 3,
+        "coordination_work": 3,
+        "performance": 2
+      }
+    },
+    {
+      "topic_id": "kommunikasjon-beslutninger",
+      "concepts": {
+        "communication": 3,
+        "information": 3,
+        "decisions": 3,
+        "interpretation": 2
+      },
+      "mechanisms": {
+        "filtering": 3,
+        "sensemaking": 3
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "coordination_work": 2
+      }
+    },
+    {
+      "topic_id": "kommunikasjonskanaler",
+      "concepts": {
+        "communication": 3,
+        "information": 3,
+        "technology": 1
+      },
+      "mechanisms": {
+        "filtering": 2,
+        "dialogue": 2
+      },
+      "applications": {
+        "coordination_work": 3,
+        "collective_decisions": 2,
+        "knowledge_work": 1
+      }
+    },
+    {
+      "topic_id": "kommunikasjonsprosess",
+      "concepts": {
+        "communication": 3,
+        "interpretation": 3,
+        "information": 3
+      },
+      "mechanisms": {
+        "sensemaking": 3,
+        "dialogue": 2,
+        "filtering": 2
+      },
+      "applications": {
+        "coordination_work": 3,
+        "collective_decisions": 2,
+        "knowledge_work": 2
+      }
+    },
+    {
+      "topic_id": "kommunikativ-rasjonalitet",
+      "concepts": {
+        "decisions": 3,
+        "communication": 3,
+        "rationality": 3,
+        "participation": 2,
+        "ethics": 2
+      },
+      "mechanisms": {
+        "dialogue": 3,
+        "sensemaking": 3
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "conflict_work": 3
+      }
+    },
+    {
+      "topic_id": "kompetanseledelse",
+      "concepts": {
+        "leadership": 3,
+        "competence": 3,
+        "knowledge": 2
+      },
+      "mechanisms": {
+        "specialization_mechanism": 1
+      },
+      "applications": {
+        "leadership_work": 3,
+        "recruiting": 1,
+        "knowledge_work": 1
+      }
+    },
+    {
+      "topic_id": "konflikt-beslutningskvalitet",
+      "concepts": {
+        "conflict": 3,
+        "decisions": 3,
+        "information": 2,
+        "participation": 2
+      },
+      "mechanisms": {
+        "dialogue": 3,
+        "negotiation": 2,
+        "filtering": 1
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "conflict_work": 3
+      }
+    },
+    {
+      "topic_id": "koordinering",
+      "concepts": {
+        "coordination": 3,
+        "specialization": 2,
+        "rules": 2,
+        "communication": 2,
+        "norms": 1,
+        "competence": 1
+      },
+      "mechanisms": {
+        "integration": 3,
+        "standardization": 3,
+        "dialogue": 2
+      },
+      "applications": {
+        "coordination_work": 3,
+        "restructuring": 2,
+        "operations": 2
+      }
+    },
+    {
+      "topic_id": "kulturell-aapenhet",
+      "concepts": {
+        "culture": 3,
+        "trust": 3,
+        "communication": 3,
+        "learning": 2,
+        "change": 2
+      },
+      "mechanisms": {
+        "dialogue": 3,
+        "knowledge_conversion": 2,
+        "mobilization": 2
+      },
+      "applications": {
+        "knowledge_work": 3,
+        "change_process": 3,
+        "innovation_work": 2
+      }
+    },
+    {
+      "topic_id": "laerende-organisasjoner",
+      "concepts": {
+        "learning": 3,
+        "knowledge": 3,
+        "exploration": 2,
+        "system": 2
+      },
+      "mechanisms": {
+        "knowledge_conversion": 2,
+        "exploration_balance": 2,
+        "system_interaction": 2
+      },
+      "applications": {
+        "knowledge_work": 3,
+        "innovation_work": 2,
+        "change_process": 2
+      }
+    },
+    {
+      "topic_id": "laering-endring",
+      "concepts": {
+        "learning": 3,
+        "change": 3,
+        "design": 2,
+        "culture": 2,
+        "goals": 2
+      },
+      "mechanisms": {
+        "feedback": 3,
+        "system_interaction": 3
+      },
+      "applications": {
+        "change_process": 3,
+        "knowledge_work": 3,
+        "diagnosis": 2
+      }
+    },
+    {
+      "topic_id": "ledelse",
+      "concepts": {
+        "leadership": 3,
+        "motivation": 3,
+        "goals": 2,
+        "communication": 1
+      },
+      "mechanisms": {
+        "mobilization": 3,
+        "goal_translation": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "motivation_work": 2
+      }
+    },
+    {
+      "topic_id": "ledergitteret",
+      "concepts": {
+        "leadership": 3,
+        "jobs": 2,
+        "trust": 2,
+        "goals": 2
+      },
+      "mechanisms": {
+        "relationship_exchange": 3,
+        "task_design": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "motivation_work": 2
+      }
+    },
+    {
+      "topic_id": "lederroller",
+      "concepts": {
+        "leadership": 3,
+        "communication": 2,
+        "networks": 2,
+        "coordination": 2,
+        "power": 1
+      },
+      "mechanisms": {
+        "integration": 3,
+        "brokerage": 2,
+        "mobilization": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "coordination_work": 2,
+        "external_adaptation": 1
+      }
+    },
+    {
+      "topic_id": "lederstiler",
+      "concepts": {
+        "leadership": 3,
+        "jobs": 2,
+        "trust": 2,
+        "participation": 2,
+        "goals": 2
+      },
+      "mechanisms": {
+        "relationship_exchange": 3,
+        "task_design": 2,
+        "delegation": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "motivation_work": 2,
+        "coordination_work": 1
+      }
+    },
+    {
+      "topic_id": "lewin",
+      "concepts": {
+        "change": 3,
+        "motivation": 2,
+        "implementation": 2,
+        "inertia": 1
+      },
+      "mechanisms": {
+        "mobilization": 3,
+        "reinforcement": 2
+      },
+      "applications": {
+        "change_process": 3
+      }
+    },
+    {
+      "topic_id": "linjeorganisasjon",
+      "concepts": {
+        "hierarchy": 3,
+        "design": 3,
+        "power": 2,
+        "coordination": 2
+      },
+      "mechanisms": {
+        "standardization": 1,
+        "delegation": 3,
+        "integration": 2
+      },
+      "applications": {
+        "restructuring": 3,
+        "coordination_work": 3,
+        "leadership_work": 1
+      }
+    },
+    {
+      "topic_id": "lmx",
+      "concepts": {
+        "leadership": 3,
+        "trust": 3,
+        "communication": 2,
+        "jobs": 2,
+        "rewards": 1
+      },
+      "mechanisms": {
+        "relationship_exchange": 3,
+        "dialogue": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "motivation_work": 2,
+        "coordination_work": 2
+      }
+    },
+    {
+      "topic_id": "maalforskyvning",
+      "concepts": {
+        "goals": 3,
+        "metrics": 3,
+        "rules": 2,
+        "rewards": 2,
+        "specialization": 2
+      },
+      "mechanisms": {
+        "incentives": 3,
+        "goal_translation": 2,
+        "standardization": 2
+      },
+      "applications": {
+        "performance": 3,
+        "coordination_work": 2,
+        "collective_decisions": 1
+      }
+    },
+    {
+      "topic_id": "maalhierarki",
+      "concepts": {
+        "goals": 3,
+        "strategy": 2,
+        "metrics": 1,
+        "hierarchy": 1
+      },
+      "mechanisms": {
+        "goal_translation": 3
+      },
+      "applications": {
+        "strategy_choice": 3,
+        "performance": 2
+      }
+    },
+    {
+      "topic_id": "maalsettingsteori",
+      "concepts": {
+        "goals": 3,
+        "motivation": 3,
+        "metrics": 2,
+        "competence": 1
+      },
+      "mechanisms": {
+        "goal_translation": 3,
+        "feedback": 3
+      },
+      "applications": {
+        "motivation_work": 3,
+        "performance": 3,
+        "leadership_work": 1
+      }
+    },
+    {
+      "topic_id": "maktbaser",
+      "concepts": {
+        "power": 3,
+        "information": 2,
+        "hierarchy": 2,
+        "competence": 2,
+        "networks": 2
+      },
+      "mechanisms": {
+        "filtering": 3,
+        "brokerage": 2,
+        "resource_exchange": 2,
+        "socialization": 1
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "conflict_work": 3,
+        "diagnosis": 2
+      }
+    },
+    {
+      "topic_id": "maktformer",
+      "concepts": {
+        "power": 3,
+        "dependence": 2,
+        "norms": 2,
+        "meaning": 2,
+        "conflict": 2
+      },
+      "mechanisms": {
+        "resource_exchange": 2,
+        "sensemaking": 2,
+        "socialization": 2,
+        "negotiation": 2
+      },
+      "applications": {
+        "conflict_work": 3,
+        "collective_decisions": 3,
+        "diagnosis": 2
+      }
+    },
+    {
+      "topic_id": "march-konsekvenslogikk",
+      "concepts": {
+        "rationality": 3,
+        "decisions": 3,
+        "goals": 3
+      },
+      "mechanisms": {
+        "goal_translation": 3,
+        "bounded_search": 1
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "strategy_choice": 2
+      }
+    },
+    {
+      "topic_id": "march-passendehet",
+      "concepts": {
+        "decisions": 3,
+        "norms": 3,
+        "identity": 3,
+        "rules": 3,
+        "culture": 2
+      },
+      "mechanisms": {
+        "rule_matching": 3,
+        "socialization": 2,
+        "sensemaking": 2
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "diagnosis": 2,
+        "acceptance": 1
+      }
+    },
+    {
+      "topic_id": "march-utnyttelse-utforsking",
+      "concepts": {
+        "learning": 3,
+        "exploration": 3,
+        "innovation": 3,
+        "resources": 2
+      },
+      "mechanisms": {
+        "exploration_balance": 3,
+        "feedback": 1
+      },
+      "applications": {
+        "innovation_work": 3,
+        "strategy_choice": 3,
+        "knowledge_work": 2
+      }
+    },
+    {
+      "topic_id": "markedsgruppering",
+      "concepts": {
+        "design": 3,
+        "market": 3,
+        "coordination": 2,
+        "value": 1
+      },
+      "mechanisms": {
+        "integration": 3,
+        "specialization_mechanism": 2
+      },
+      "applications": {
+        "restructuring": 3,
+        "coordination_work": 3,
+        "strategy_choice": 1
+      }
+    },
+    {
+      "topic_id": "martin-kulturperspektiver",
+      "concepts": {
+        "culture": 3,
+        "identity": 3,
+        "interpretation": 3,
+        "conflict": 2
+      },
+      "mechanisms": {
+        "sensemaking": 3,
+        "socialization": 2
+      },
+      "applications": {
+        "diagnosis": 3,
+        "conflict_work": 2,
+        "change_process": 1
+      }
+    },
+    {
+      "topic_id": "maskinbyraakrati",
+      "concepts": {
+        "design": 3,
+        "rules": 3,
+        "specialization": 2,
+        "hierarchy": 2,
+        "coordination": 2
+      },
+      "mechanisms": {
+        "standardization": 3,
+        "specialization_mechanism": 2,
+        "rule_matching": 2
+      },
+      "applications": {
+        "restructuring": 3,
+        "operations": 3,
+        "performance": 2
+      }
+    },
+    {
+      "topic_id": "maslow",
+      "concepts": {
+        "needs": 3,
+        "motivation": 3,
+        "attachment": 2,
+        "competence": 1
+      },
+      "mechanisms": {
+        "task_design": 1,
+        "incentives": 1
+      },
+      "applications": {
+        "motivation_work": 3,
+        "recruiting": 2
+      }
+    },
+    {
+      "topic_id": "matrisestruktur",
+      "concepts": {
+        "design": 3,
+        "coordination": 3,
+        "hierarchy": 2,
+        "conflict": 2,
+        "participation": 1
+      },
+      "mechanisms": {
+        "integration": 3,
+        "negotiation": 3
+      },
+      "applications": {
+        "restructuring": 3,
+        "coordination_work": 3,
+        "conflict_work": 2
+      }
+    },
+    {
+      "topic_id": "miles-snow",
+      "concepts": {
+        "strategy": 3,
+        "market": 2,
+        "innovation": 2,
+        "exploration": 2,
+        "change": 1
+      },
+      "mechanisms": {
+        "situational_fit": 3,
+        "exploration_balance": 2
+      },
+      "applications": {
+        "strategy_choice": 3,
+        "external_adaptation": 2,
+        "innovation_work": 2
+      }
+    },
+    {
+      "topic_id": "mintzberg-hoveddeler",
+      "concepts": {
+        "design": 3,
+        "hierarchy": 2,
+        "specialization": 2,
+        "coordination": 2,
+        "rules": 1
+      },
+      "mechanisms": {
+        "specialization_mechanism": 3,
+        "integration": 3
+      },
+      "applications": {
+        "restructuring": 3,
+        "diagnosis": 2,
+        "coordination_work": 2
+      }
+    },
+    {
+      "topic_id": "mintzberg-konfigurasjoner",
+      "concepts": {
+        "design": 3,
+        "coordination": 3,
+        "hierarchy": 2,
+        "specialization": 2,
+        "contingency": 2
+      },
+      "mechanisms": {
+        "situational_fit": 3,
+        "integration": 3,
+        "standardization": 2
+      },
+      "applications": {
+        "restructuring": 3,
+        "diagnosis": 3,
+        "external_adaptation": 2
+      }
+    },
+    {
+      "topic_id": "nonaka-kunnskap",
+      "concepts": {
+        "knowledge": 3,
+        "tacit": 3,
+        "learning": 3,
+        "communication": 2
+      },
+      "mechanisms": {
+        "knowledge_conversion": 3,
+        "observation": 2
+      },
+      "applications": {
+        "knowledge_work": 3,
+        "innovation_work": 2,
+        "coordination_work": 1
+      }
+    },
+    {
+      "topic_id": "omdoemme",
+      "concepts": {
+        "legitimacy": 3,
+        "communication": 3,
+        "meaning": 2,
+        "trust": 2,
+        "resources": 1
+      },
+      "mechanisms": {
+        "legitimacy_pressure": 3,
+        "sensemaking": 2,
+        "resource_exchange": 1
+      },
+      "applications": {
+        "acceptance": 3,
+        "external_adaptation": 2,
+        "recruiting": 2
+      }
+    },
+    {
+      "topic_id": "omgivelsesavhengighet",
+      "concepts": {
+        "dependence": 3,
+        "resources": 3,
+        "uncertainty": 2,
+        "power": 2,
+        "legitimacy": 1
+      },
+      "mechanisms": {
+        "resource_exchange": 3,
+        "legitimacy_pressure": 1
+      },
+      "applications": {
+        "external_adaptation": 3,
+        "strategy_choice": 2
+      }
+    },
+    {
+      "topic_id": "omgivelsesusikkerhet",
+      "concepts": {
+        "uncertainty": 3,
+        "contingency": 3,
+        "design": 2,
+        "change": 2,
+        "information": 1
+      },
+      "mechanisms": {
+        "situational_fit": 3,
+        "filtering": 1
+      },
+      "applications": {
+        "external_adaptation": 3,
+        "restructuring": 3,
+        "strategy_choice": 2
+      }
+    },
+    {
+      "topic_id": "organisasjon",
+      "concepts": {
+        "system": 3,
+        "design": 2,
+        "goals": 2,
+        "coordination": 2,
+        "resources": 1
+      },
+      "mechanisms": {
+        "system_interaction": 3,
+        "integration": 2
+      },
+      "applications": {
+        "diagnosis": 3,
+        "coordination_work": 2
+      }
+    },
+    {
+      "topic_id": "organisasjonsatferd",
+      "concepts": {
+        "motivation": 2,
+        "communication": 2,
+        "decisions": 2,
+        "learning": 2,
+        "interpretation": 2
+      },
+      "mechanisms": {
+        "sensemaking": 2,
+        "system_interaction": 2
+      },
+      "applications": {
+        "diagnosis": 3,
+        "motivation_work": 1,
+        "collective_decisions": 1
+      }
+    },
+    {
+      "topic_id": "organisasjonskultur",
+      "concepts": {
+        "culture": 3,
+        "norms": 3,
+        "meaning": 2,
+        "identity": 2,
+        "learning": 1
+      },
+      "mechanisms": {
+        "socialization": 3,
+        "sensemaking": 3,
+        "reinforcement": 1
+      },
+      "applications": {
+        "diagnosis": 3,
+        "coordination_work": 2,
+        "change_process": 2
+      }
+    },
+    {
+      "topic_id": "organisatorisk-laering",
+      "concepts": {
+        "learning": 3,
+        "knowledge": 3,
+        "change": 2,
+        "communication": 2
+      },
+      "mechanisms": {
+        "knowledge_conversion": 3,
+        "feedback": 3,
+        "integration": 2
+      },
+      "applications": {
+        "knowledge_work": 3,
+        "change_process": 3,
+        "innovation_work": 2
+      }
+    },
+    {
+      "topic_id": "organisatorisk-tilknytning",
+      "concepts": {
+        "attachment": 3,
+        "identity": 2,
+        "norms": 2,
+        "motivation": 2,
+        "dependence": 1
+      },
+      "mechanisms": {
+        "socialization": 2,
+        "relationship_exchange": 2,
+        "resource_exchange": 1
+      },
+      "applications": {
+        "recruiting": 3,
+        "motivation_work": 2
+      }
+    },
+    {
+      "topic_id": "organisert-anarki",
+      "concepts": {
+        "decisions": 3,
+        "uncertainty": 3,
+        "participation": 2,
+        "interpretation": 1
+      },
+      "mechanisms": {
+        "stream_coupling": 3
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "change_process": 1
+      }
+    },
+    {
+      "topic_id": "perfekt-rasjonalitet",
+      "concepts": {
+        "rationality": 3,
+        "decisions": 3,
+        "information": 3,
+        "goals": 3
+      },
+      "mechanisms": {
+        "goal_translation": 3,
+        "bounded_search": 1
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "strategy_choice": 2
+      }
+    },
+    {
+      "topic_id": "porter-generiske-strategier",
+      "concepts": {
+        "strategy": 3,
+        "market": 3,
+        "value": 2,
+        "resources": 1
+      },
+      "mechanisms": {
+        "situational_fit": 3,
+        "resource_exchange": 1
+      },
+      "applications": {
+        "strategy_choice": 3,
+        "external_adaptation": 2,
+        "operations": 1
+      }
+    },
+    {
+      "topic_id": "porter-verdikjede",
+      "concepts": {
+        "value": 3,
+        "resources": 3,
+        "market": 2,
+        "technology": 1,
+        "coordination": 2
+      },
+      "mechanisms": {
+        "resource_exchange": 3,
+        "integration": 3
+      },
+      "applications": {
+        "operations": 3,
+        "strategy_choice": 2,
+        "coordination_work": 2
+      }
+    },
+    {
+      "topic_id": "produksjonssystem",
+      "concepts": {
+        "value": 3,
+        "resources": 3,
+        "technology": 2,
+        "goals": 1,
+        "dependence": 2
+      },
+      "mechanisms": {
+        "resource_exchange": 3,
+        "feedback": 2,
+        "system_interaction": 2
+      },
+      "applications": {
+        "operations": 3,
+        "external_adaptation": 2,
+        "performance": 2
+      }
+    },
+    {
+      "topic_id": "produktivitet-effektivitet",
+      "concepts": {
+        "metrics": 3,
+        "goals": 3,
+        "value": 2,
+        "resources": 2
+      },
+      "mechanisms": {
+        "goal_translation": 3,
+        "feedback": 2
+      },
+      "applications": {
+        "performance": 3,
+        "operations": 3
+      }
+    },
+    {
+      "topic_id": "profesjonell-autoritet",
+      "concepts": {
+        "power": 3,
+        "competence": 3,
+        "legitimacy": 2,
+        "trust": 2
+      },
+      "mechanisms": {
+        "legitimacy_pressure": 2,
+        "specialization_mechanism": 3
+      },
+      "applications": {
+        "leadership_work": 3,
+        "collective_decisions": 2,
+        "coordination_work": 1
+      }
+    },
+    {
+      "topic_id": "profesjonelt-byraakrati",
+      "concepts": {
+        "design": 3,
+        "competence": 3,
+        "autonomy": 3,
+        "coordination": 2
+      },
+      "mechanisms": {
+        "standardization": 3,
+        "specialization_mechanism": 3,
+        "delegation": 2
+      },
+      "applications": {
+        "restructuring": 3,
+        "coordination_work": 2,
+        "leadership_work": 2
+      }
+    },
+    {
+      "topic_id": "prosjektorganisering",
+      "concepts": {
+        "design": 3,
+        "coordination": 3,
+        "competence": 2,
+        "networks": 2,
+        "innovation": 1
+      },
+      "mechanisms": {
+        "integration": 3,
+        "negotiation": 2,
+        "knowledge_conversion": 1
+      },
+      "applications": {
+        "coordination_work": 3,
+        "restructuring": 2,
+        "innovation_work": 2
+      }
+    },
+    {
+      "topic_id": "rasjonell-organisasjon",
+      "concepts": {
+        "rationality": 3,
+        "decisions": 3,
+        "design": 3,
+        "coordination": 3,
+        "goals": 2
+      },
+      "mechanisms": {
+        "integration": 3,
+        "specialization_mechanism": 2,
+        "bounded_search": 2
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "restructuring": 2,
+        "coordination_work": 2
+      }
+    },
+    {
+      "topic_id": "regelmodellen",
+      "concepts": {
+        "decisions": 3,
+        "rules": 3,
+        "rationality": 2,
+        "interpretation": 2
+      },
+      "mechanisms": {
+        "rule_matching": 3,
+        "standardization": 3
+      },
+      "applications": {
+        "collective_decisions": 3,
+        "operations": 2
+      }
+    },
+    {
+      "topic_id": "ressursbasert-strategi",
+      "concepts": {
+        "strategy": 3,
+        "resources": 3,
+        "competence": 2,
+        "market": 1
+      },
+      "mechanisms": {
+        "situational_fit": 3,
+        "resource_exchange": 2
+      },
+      "applications": {
+        "strategy_choice": 3,
+        "external_adaptation": 2,
+        "recruiting": 1
+      }
+    },
+    {
+      "topic_id": "schein-kulturnivaaer",
+      "concepts": {
+        "culture": 3,
+        "norms": 3,
+        "meaning": 3,
+        "identity": 2
+      },
+      "mechanisms": {
+        "sensemaking": 3,
+        "socialization": 2
+      },
+      "applications": {
+        "diagnosis": 3,
+        "change_process": 2
+      }
+    },
+    {
+      "topic_id": "selvbestemmelsesteori",
+      "concepts": {
+        "motivation": 3,
+        "autonomy": 3,
+        "meaning": 2,
+        "norms": 1
+      },
+      "mechanisms": {
+        "socialization": 2,
+        "task_design": 2,
+        "incentives": 1
+      },
+      "applications": {
+        "motivation_work": 3,
+        "leadership_work": 2
+      }
+    },
+    {
+      "topic_id": "selznick-verdibasert-ledelse",
+      "concepts": {
+        "leadership": 3,
+        "norms": 3,
+        "culture": 3,
+        "meaning": 3
+      },
+      "mechanisms": {
+        "socialization": 3,
+        "role_modelling": 2,
+        "sensemaking": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "diagnosis": 2,
+        "acceptance": 1
+      }
+    },
+    {
+      "topic_id": "sentralisering",
+      "concepts": {
+        "autonomy": 3,
+        "hierarchy": 3,
+        "power": 3,
+        "decisions": 2,
+        "design": 2
+      },
+      "mechanisms": {
+        "delegation": 3
+      },
+      "applications": {
+        "restructuring": 3,
+        "collective_decisions": 3,
+        "leadership_work": 2
+      }
+    },
+    {
+      "topic_id": "sosial-laering",
+      "concepts": {
+        "learning": 3,
+        "knowledge": 2,
+        "culture": 1
+      },
+      "mechanisms": {
+        "observation": 3,
+        "role_modelling": 2,
+        "socialization": 2
+      },
+      "applications": {
+        "knowledge_work": 3,
+        "recruiting": 1,
+        "leadership_work": 1
+      }
+    },
+    {
+      "topic_id": "stiavhengighet",
+      "concepts": {
+        "inertia": 3,
+        "decisions": 2,
+        "change": 3,
+        "resources": 2,
+        "learning": 1
+      },
+      "mechanisms": {
+        "path_lock": 3,
+        "reinforcement": 2
+      },
+      "applications": {
+        "change_process": 3,
+        "strategy_choice": 2,
+        "collective_decisions": 2
+      }
+    },
+    {
+      "topic_id": "strukturelle-hull",
+      "concepts": {
+        "networks": 3,
+        "information": 3,
+        "power": 3,
+        "dependence": 1
+      },
+      "mechanisms": {
+        "brokerage": 3,
+        "filtering": 2
+      },
+      "applications": {
+        "knowledge_work": 3,
+        "collective_decisions": 2,
+        "conflict_work": 1
+      }
+    },
+    {
+      "topic_id": "styringsmekanismer",
+      "concepts": {
+        "design": 2,
+        "goals": 2,
+        "rules": 2,
+        "culture": 2,
+        "rewards": 2,
+        "competence": 2
+      },
+      "mechanisms": {
+        "socialization": 3,
+        "incentives": 3,
+        "standardization": 2
+      },
+      "applications": {
+        "performance": 3,
+        "recruiting": 2,
+        "coordination_work": 2
+      }
+    },
+    {
+      "topic_id": "suksessfellen",
+      "concepts": {
+        "inertia": 3,
+        "learning": 2,
+        "change": 3,
+        "strategy": 2,
+        "culture": 2,
+        "design": 1
+      },
+      "mechanisms": {
+        "path_lock": 3,
+        "reinforcement": 3,
+        "exploration_balance": 2
+      },
+      "applications": {
+        "change_process": 3,
+        "strategy_choice": 3,
+        "external_adaptation": 2
+      }
+    },
+    {
+      "topic_id": "swot",
+      "concepts": {
+        "strategy": 3,
+        "resources": 2,
+        "market": 2,
+        "uncertainty": 2
+      },
+      "mechanisms": {
+        "situational_fit": 3
+      },
+      "applications": {
+        "strategy_choice": 3,
+        "external_adaptation": 3,
+        "diagnosis": 1
+      }
+    },
+    {
+      "topic_id": "symbolske-beslutninger",
+      "concepts": {
+        "decisions": 3,
+        "legitimacy": 3,
+        "meaning": 3,
+        "implementation": 2
+      },
+      "mechanisms": {
+        "legitimacy_pressure": 3,
+        "sensemaking": 2
+      },
+      "applications": {
+        "acceptance": 3,
+        "collective_decisions": 3
+      }
+    },
+    {
+      "topic_id": "taylor-arbeidsdeling",
+      "concepts": {
+        "specialization": 3,
+        "jobs": 3,
+        "metrics": 2,
+        "motivation": 2,
+        "design": 2
+      },
+      "mechanisms": {
+        "specialization_mechanism": 3,
+        "task_design": 3,
+        "standardization": 2
+      },
+      "applications": {
+        "operations": 3,
+        "motivation_work": 2,
+        "coordination_work": 2
+      }
+    },
+    {
+      "topic_id": "teknisk-institusjonelt-samspill",
+      "concepts": {
+        "legitimacy": 3,
+        "resources": 3,
+        "dependence": 2,
+        "goals": 2
+      },
+      "mechanisms": {
+        "legitimacy_pressure": 3,
+        "resource_exchange": 3,
+        "situational_fit": 2
+      },
+      "applications": {
+        "external_adaptation": 3,
+        "acceptance": 3,
+        "performance": 2
+      }
+    },
+    {
+      "topic_id": "tekniske-omgivelser",
+      "concepts": {
+        "resources": 3,
+        "technology": 3,
+        "market": 3,
+        "dependence": 2,
+        "uncertainty": 2
+      },
+      "mechanisms": {
+        "resource_exchange": 3,
+        "situational_fit": 2
+      },
+      "applications": {
+        "external_adaptation": 3,
+        "operations": 3,
+        "strategy_choice": 2
+      }
+    },
+    {
+      "topic_id": "toyota-hvorfor",
+      "concepts": {
+        "learning": 3,
+        "interpretation": 2,
+        "metrics": 2,
+        "rules": 1
+      },
+      "mechanisms": {
+        "feedback": 3,
+        "cognitive_learning": 3
+      },
+      "applications": {
+        "operations": 3,
+        "performance": 2,
+        "knowledge_work": 2
+      }
+    },
+    {
+      "topic_id": "transaksjonsledelse",
+      "concepts": {
+        "leadership": 3,
+        "rewards": 3,
+        "goals": 3,
+        "dependence": 2
+      },
+      "mechanisms": {
+        "incentives": 3,
+        "relationship_exchange": 3,
+        "feedback": 1
+      },
+      "applications": {
+        "leadership_work": 3,
+        "motivation_work": 3,
+        "performance": 2
+      }
+    },
+    {
+      "topic_id": "transformasjonsledelse",
+      "concepts": {
+        "leadership": 3,
+        "meaning": 3,
+        "motivation": 3,
+        "change": 2,
+        "competence": 2
+      },
+      "mechanisms": {
+        "mobilization": 3,
+        "role_modelling": 3,
+        "relationship_exchange": 2
+      },
+      "applications": {
+        "leadership_work": 3,
+        "motivation_work": 3,
+        "change_process": 2
+      }
+    },
+    {
+      "topic_id": "uplanlagt-endring",
+      "concepts": {
+        "change": 3,
+        "uncertainty": 2,
+        "inertia": 1
+      },
+      "mechanisms": {
+        "stream_coupling": 1,
+        "path_lock": 1
+      },
+      "applications": {
+        "change_process": 3,
+        "external_adaptation": 1
+      }
+    },
+    {
+      "topic_id": "varer-tjenester",
+      "concepts": {
+        "value": 3,
+        "technology": 2,
+        "jobs": 2,
+        "coordination": 1,
+        "market": 2
+      },
+      "mechanisms": {
+        "task_design": 2,
+        "integration": 1
+      },
+      "applications": {
+        "operations": 3,
+        "coordination_work": 2
+      }
+    },
+    {
+      "topic_id": "vertikal-horisontal-kommunikasjon",
+      "concepts": {
+        "communication": 3,
+        "information": 3,
+        "hierarchy": 3,
+        "power": 2,
+        "design": 2
+      },
+      "mechanisms": {
+        "filtering": 3,
+        "sensemaking": 2,
+        "integration": 2
+      },
+      "applications": {
+        "coordination_work": 3,
+        "collective_decisions": 3,
+        "restructuring": 2
+      }
+    },
+    {
+      "topic_id": "weber-autoritet",
+      "concepts": {
+        "power": 3,
+        "legitimacy": 3,
+        "rules": 2,
+        "leadership": 2,
+        "norms": 2
+      },
+      "mechanisms": {
+        "legitimacy_pressure": 3,
+        "role_modelling": 2,
+        "rule_matching": 1
+      },
+      "applications": {
+        "leadership_work": 3,
+        "diagnosis": 2,
+        "acceptance": 2
+      }
+    }
+  ]
+}

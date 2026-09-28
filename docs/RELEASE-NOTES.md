@@ -1,10 +1,14 @@
-Sammenheng 1.2.0
+Sammenheng 1.2.1
 
-- Nytt i verktøylinjen: «Maks steg fra fokus» med knapper fra 1 til 5.
-- 1 viser direkte naboer; 5 viser temaer inntil fem forbindelser unna. Fokus er steg 0. Standard er 2 steg.
-- Avstanden måles langs den korteste stien gjennom forbindelser som oppfyller den valgte relasjonsvekten. Visningen oppdateres og sentreres når avstand, fokus eller terskel endres.
-- Velg «Hele fagkartet» eller fjern fokus for å vise alle temaene igjen. Avstandsknappene er da inaktive.
-- Egne tekster og notater beholdes ved oppdatering. Faginnhold 2 er fortsatt inkludert.
+- Faginnhold 3: gjennomgang av 13 forelesningsfiler og to bokutdrag.
+- 25 nye temaer, blant annet tjenende ledelse, etiske perspektiver, arbeidsmiljø, psykologisk kontrakt, rettferdighet og Kotters endringstrinn.
+- Konstruerte praksiseksempler til alle 157 noder, med modellens sentrale deler forklart i situasjonen.
+- 22 eksisterende forklaringer er presisert, blant annet selvbestemmelsesteori, forventningsteori, Hersey–Blanchard, Selznick og kompetanseledelse.
+- 12 246 forbindelser: 3 600 nye og 1 085 endrede eksisterende vekter. Vektene er faglige nærhetsvurderinger, ikke statistisk korrelasjon.
+- Egne tekster og notater beholdes. Ved samtidige endringer i samme felt kan du velge lokal eller felles tekst i oppdateringsdialogen.
+- Kildereferanser er lagt til; originale forelesnings-PDF-er og bokutdrag distribueres ikke.
+
+Full oversikt: https://github.com/KevinAmundsenDale/org-webpage/blob/main/docs/CONTENT-REVIEW-2026-09.md
 
 Windows: last ned .exe-installasjonsfilen, eller bruk «Hjelp → Se etter appoppdateringer» i appen. Mac: last ned .dmg og dra appen til Programmer. .zip-, .yml- og .blockmap-filene er for oppdateringssystemet.
 

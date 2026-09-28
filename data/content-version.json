@@ -1,6 +1,5 @@
 {
-  "format": 1,
-  "version": 2,
+  "version": 3,
   "min_app_version": "1.1.0",
-  "notes": "Godkjenningsklar rettelse fra fagforslag #1"
+  "notes": "Gjennomgang av 13 forelesninger og to bokutdrag: 25 nye temaer, presiserte forklaringer, konstruerte praksiseksempler til alle 157 noder og reviderte relasjonsvekter. Kildehenvisninger skiller PDF-sider og boksider. Lokale endringer beholdes og eventuelle konflikter kan gjennomgås."
 }
