@@ -2,6 +2,7 @@ import './style.css';
 import {Graph,PALETTE} from './graph.js';
 import {filterGraph,searchTopicMatches} from './graph-data.js';
 import {setupSync} from './sync-ui.js';
+import {setupLayout} from './layout.js';
 
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -40,12 +41,14 @@ function chooseTopic(id){
   if(!setFocus(id))return false;
   state.selected=id;graph.select(id);if(!$('#sidebar').hidden)renderDetail(id);$('#search').value='';closeSearch();return true;
 }
+function closeSidebar(){if(!canLeave())return false;$('#sidebar').hidden=true;state.detailId=null;state.editing=false;return true;}
+function clearBackgroundFocus(){if(!closeSidebar())return;state.selected=null;graph.selected=null;graph.centered=null;setFocus(null);}
 function closeSearch(){$('#search-results').hidden=true;$('#search').setAttribute('aria-expanded','false');$('#search').removeAttribute('aria-activedescendant');searchIndex=-1;}
 function showSearch(){const query=$('#search').value,matches=searchTopicMatches(state.topics,query);searchResults=matches.map(m=>m.topic);searchIndex=-1;$('#search-results').innerHTML=matches.length?matches.slice(0,40).map(({topic:t,matchKind,count},i)=>`<button class="result" role="option" aria-selected="false" tabindex="-1" id="result-${i}" data-id="${esc(t.id)}" data-match="${matchKind}"><strong>${esc(t.short_label)}</strong><small>${esc(category(t.category_id).title)}</small>${query.trim()?`<small class="match-kind">${matchKind==='name'?'Treff i navn / teoretiker':`Teksttreff · ${count} forekomst${count===1?'':'er'}`}</small>`:''}</button>`).join(''):'<div class="empty-result">Ingen temaer funnet. Prøv et annet ord.</div>';$('#search-results').hidden=false;$('#search').setAttribute('aria-expanded','true');}
 function section(title,items){return items?.length?`<h3>${title}</h3><ul>${items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';}
 function panelTop(edit=false){return `<div class="panel-top"><span class="eyebrow">${edit?'REDIGER TEMA':'TEMANOTAT'}</span><button class="small-button" id="edit-topic">${edit?'Lagre':'✎ Rediger'}</button><button class="close-button" id="close-sidebar" aria-label="Lukk temadetaljer">×</button></div>`;}
 function wirePanel(){
-  $('#close-sidebar').onclick=()=>{if(!canLeave())return;$('#sidebar').hidden=true;state.detailId=null;state.editing=false;};
+  $('#close-sidebar').onclick=closeSidebar;
   $('#edit-topic').onclick=()=>{if(state.editing)$('#edit-form').requestSubmit();else renderEditor(state.detailId);};
 }
 function renderDetail(id){
@@ -78,11 +81,12 @@ function renderEditor(id){
     }catch(e){error.textContent=e instanceof SyntaxError?'Kontroller JSON-feltene. Teksten din er beholdt.':e.message;error.hidden=false;error.scrollIntoView({block:'nearest'});form.querySelector('[type=submit]').disabled=false;$('#edit-topic').disabled=false;}
   };
 }
-async function openEdge(edge){if(!canLeave())return;const e=await api('/api/relationships/'+encodeURIComponent(edge.id)).catch(()=>null);if(!e)return;state.detailId=null;state.editing=false;$('#sidebar').hidden=false;$('#sidebar-content').innerHTML=`<div class="panel-top"><span class="eyebrow">FORBINDELSE</span><button class="close-button" id="close-edge" aria-label="Lukk forbindelse">×</button></div><div class="panel-body"><span class="weight-chip">Relasjonsvekt ${edge.weight.toFixed(2)}</span><h2>${esc(edge.source.label)}<br><span class="muted">↔</span> ${esc(edge.target.label)}</h2><p class="definition">${esc(e.reason)}</p><p class="muted">${edge.assessment_method==='pair_review'?'Særskilt vurdert forbindelse.':edge.assessment_method==='mediated_path'?'Indirekte skrivevei gjennom andre temaer.':'Anslag basert på faglige profiler.'}</p><p class="sources">Vekten beskriver relevans i en drøfting, ikke statistisk korrelasjon.</p><button class="focus-topic" id="edge-source">Åpne ${esc(edge.source.label)}</button><button class="focus-topic" id="edge-target">Åpne ${esc(edge.target.label)}</button></div>`;$('#close-edge').onclick=()=>$('#sidebar').hidden=true;$('#edge-source').onclick=()=>openDetail(edge.source.id);$('#edge-target').onclick=()=>openDetail(edge.target.id);}
+async function openEdge(edge){if(!canLeave())return;const e=await api('/api/relationships/'+encodeURIComponent(edge.id)).catch(()=>null);if(!e)return;state.detailId=null;state.editing=false;$('#sidebar').hidden=false;$('#sidebar-content').innerHTML=`<div class="panel-top"><span class="eyebrow">FORBINDELSE</span><button class="close-button" id="close-edge" aria-label="Lukk forbindelse">×</button></div><div class="panel-body"><span class="weight-chip">Relasjonsvekt ${edge.weight.toFixed(2)}</span><h2>${esc(edge.source.label)}<br><span class="muted">↔</span> ${esc(edge.target.label)}</h2><p class="definition">${esc(e.reason)}</p><p class="muted">${edge.assessment_method==='pair_review'?'Særskilt vurdert forbindelse.':edge.assessment_method==='mediated_path'?'Indirekte skrivevei gjennom andre temaer.':'Anslag basert på faglige profiler.'}</p><p class="sources">Vekten beskriver relevans i en drøfting, ikke statistisk korrelasjon.</p><button class="focus-topic" id="edge-source">Åpne ${esc(edge.source.label)}</button><button class="focus-topic" id="edge-target">Åpne ${esc(edge.target.label)}</button></div>`;$('#close-edge').onclick=closeSidebar;$('#edge-source').onclick=()=>openDetail(edge.source.id);$('#edge-target').onclick=()=>openDetail(edge.target.id);}
 
+const layout=setupLayout({closeSearch});
 async function start(){
   [dataset,{edges:state.edges}]=await Promise.all([api('/api/topics'),api('/api/relationships')]);state.topics=dataset.topics;
-  graph=new Graph($('#graph'),dataset.categories,{zoom:value=>$('#zoom-level').textContent=value+' %',select:id=>{state.selected=id;},details:openDetail,edge:openEdge,hover:info=>{const el=$('#edge-tooltip');el.hidden=!info;if(info){el.textContent=info.text;el.style.left=Math.min(info.x+16,Math.max(8,graph.w-300))+'px';el.style.top=Math.min(info.y+16,graph.h-85)+'px';}}});
+  graph=new Graph($('#graph'),dataset.categories,{zoom:value=>$('#zoom-level').textContent=value+' %',select:id=>{if(!$('#sidebar').hidden){if(!chooseTopic(id))return false;$('#sidebar').scrollTop=0;}else state.selected=id;},details:openDetail,edge:openEdge,background:closeSidebar,clearFocus:clearBackgroundFocus,hover:info=>{const el=$('#edge-tooltip');el.hidden=!info;if(info){el.textContent=info.text;el.style.left=Math.min(info.x+16,Math.max(8,graph.w-300))+'px';el.style.top=Math.min(info.y+16,graph.h-85)+'px';}}});
   focusOptions();updateGraph();graph.settle(180);graph.resize();graph.center('organisasjon');$('#graph-loading').hidden=true;
   $('#chapter-legend').innerHTML=dataset.categories.map(c=>`<div class="legend-item"><span class="swatch" style="background:${color(c.id)}"></span>${esc(c.title)}</div>`).join('');
   $('#search').addEventListener('input',showSearch);$('#search').addEventListener('focus',showSearch);
@@ -101,7 +105,7 @@ async function start(){
   mode(graph.dynamic);$('#dynamic').onclick=()=>mode(true);$('#static').onclick=()=>mode(false);
   $('#zoom-in').onclick=()=>graph.scale(1.25);$('#zoom-out').onclick=()=>graph.scale(.8);$('#fit').onclick=()=>graph.fit();
   $('#chapters-toggle').onclick=()=>{const el=$('#chapter-legend');el.hidden=!el.hidden;$('#chapters-toggle').setAttribute('aria-expanded',String(!el.hidden));};
-  document.addEventListener('keydown',e=>{if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();$('#search').focus();}if(e.key==='Escape'&&!$('#search-results').hidden)closeSearch();});
+  document.addEventListener('keydown',e=>{if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();layout.expandToolbar();$('#search').focus();}if(e.key==='Escape'&&!$('#search-results').hidden)closeSearch();});
   addEventListener('beforeunload',e=>{if(state.dirty){e.preventDefault();e.returnValue='';}});
   // Read-only diagnostics also make canvas behavior accessible to browser checks.
   window.orgGraph={snapshot:()=>({...graph.snapshot(),threshold:state.threshold,focus:state.focus,category:state.category,maxDistance:state.maxDistance,detailId:state.detailId}),topic:id=>structuredClone(topic(id))};
@@ -133,5 +137,5 @@ async function reloadData(){
   $('#chapters-toggle span').textContent=dataset.categories.length;
 }
 // Header height can change with viewport size or browser text enlargement.
-new ResizeObserver(()=>{const h=$('header').getBoundingClientRect().height;$('main').style.height=`calc(100dvh - ${h}px)`;if(innerWidth<=700)$('#sidebar').style.top=h+'px';else $('#sidebar').style.top='';}).observe($('header'));
+new ResizeObserver(()=>{const h=$('header').getBoundingClientRect().height;$('main').style.height=`calc(100dvh - ${h}px)`;}).observe($('header'));
 start().catch(e=>{$('#graph-loading').textContent='Kunne ikke laste fagkartet: '+e.message;});

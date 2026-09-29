@@ -12,7 +12,7 @@ let server,browser;
 const errors=[];
 async function startServer(){server=spawn(process.execPath,['server.mjs'],{cwd:resolve('.'),env:{...process.env,PORT:'4318',ORG_DATA_DIR:data},stdio:['ignore','pipe','pipe']});await new Promise((yes,no)=>{server.stdout.on('data',v=>{if(v.toString().includes('http://'))yes();});server.stderr.on('data',v=>no(new Error(v.toString())));server.on('error',no);});}
 try {
-  await startServer();browser=await chromium.launch({channel:'msedge',headless:true});
+  await startServer();browser=await chromium.launch({channel:process.env.BROWSER_CHANNEL||'msedge',headless:true});
   const page=await browser.newPage({viewport:{width:1500,height:1000}});page.on('pageerror',e=>errors.push(e.message));
   await page.addInitScript(()=>{window.testTools={};Object.defineProperty(document,'modelContext',{value:{registerTool:tool=>window.testTools[tool.name]=tool}});});
   await page.goto('http://localhost:4318');await page.waitForFunction(()=>window.orgGraph);

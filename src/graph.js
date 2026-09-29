@@ -13,9 +13,10 @@ export class Graph {
     canvas.addEventListener('pointerdown',e=>this.pointerDown(e));
     canvas.addEventListener('pointermove',e=>this.pointerMove(e));
     canvas.addEventListener('pointerup',e=>this.pointerUp(e));
-    canvas.addEventListener('pointercancel',e=>this.pointerUp(e));
-    canvas.addEventListener('contextmenu',e=>{e.preventDefault();const n=this.hitNode(e.offsetX,e.offsetY);if(n){this.select(n.id);this.callbacks.details(n.id);}});
-    canvas.addEventListener('dblclick',e=>{const n=this.hitNode(e.offsetX,e.offsetY);if(n)this.callbacks.details(n.id);});
+    canvas.addEventListener('pointercancel',e=>this.pointerUp(e,true));
+    canvas.addEventListener('click',e=>this.click(e));
+    canvas.addEventListener('contextmenu',e=>{e.preventDefault();const n=this.hitNode(e.offsetX,e.offsetY);if(n)this.callbacks.details(n.id);});
+    canvas.addEventListener('dblclick',()=>{if(this.lastClick?.node)this.callbacks.details(this.lastClick.node);});
     canvas.addEventListener('pointerleave',()=>{if(!this.drag){this.hover=null;this.callbacks.hover(null);this.schedule();}});
     canvas.addEventListener('keydown',e=>{
       if(e.key==='+'||e.key==='='){e.preventDefault();this.scale(1.25);}else if(e.key==='-'){e.preventDefault();this.scale(.8);}
@@ -53,11 +54,41 @@ export class Graph {
   screen(n){return this.transform.apply([n.x,n.y]);}
   hitNode(x,y){if(!Number.isFinite(x)||!Number.isFinite(y))return null;const p=this.world(x,y),selected=this.nodes.find(n=>n.id===this.selected);if(selected&&Math.hypot(selected.x-p[0],selected.y-p[1])<=RADIUS)return selected;for(let i=this.nodes.length-1;i>=0;i--){const n=this.nodes[i];if(Math.hypot(n.x-p[0],n.y-p[1])<=RADIUS)return n;}return null;}
   hitEdge(x,y){const p=this.world(x,y),limit=7/this.transform.k;let best=null,distance=limit;for(const e of this.links){const a=e.source,b=e.target,dx=b.x-a.x,dy=b.y-a.y;const t=Math.max(.05,Math.min(.95,((p[0]-a.x)*dx+(p[1]-a.y)*dy)/(dx*dx+dy*dy||1)));const d=Math.hypot(p[0]-a.x-t*dx,p[1]-a.y-t*dy);if(d<distance){distance=d;best=e;}}return best;}
-  pointerDown(e){if(e.button!==0)return;this.down={x:e.offsetX,y:e.offsetY};const n=this.hitNode(e.offsetX,e.offsetY);if(!n)return;this.drag={node:n,x:e.offsetX,y:e.offsetY,moved:false};this.centered=null;this.canvas.setPointerCapture(e.pointerId);n.fx=n.x;n.fy=n.y;if(this.dynamic)this.sim.alphaTarget(.15).restart();}
-  pointerMove(e){if(this.drag){const d=this.drag;if(Math.hypot(e.offsetX-d.x,e.offsetY-d.y)>4)d.moved=true;if(d.moved){const[x,y]=this.world(e.offsetX,e.offsetY);Object.assign(d.node,{fx:x,fy:y,x,y});this.schedule();}return;}
+  pointerDown(e){
+    if(e.button!==0)return;
+    const node=this.hitNode(e.offsetX,e.offsetY);
+    this.gesture=null;this.down={x:e.offsetX,y:e.offsetY,node:node?.id,edge:node?null:this.hitEdge(e.offsetX,e.offsetY),moved:false};
+    if(!node)return;
+    this.drag={node,x:e.offsetX,y:e.offsetY,moved:false};this.canvas.setPointerCapture(e.pointerId);
+    node.fx=node.x;node.fy=node.y;
+  }
+  pointerMove(e){
+    if(this.down&&Math.hypot(e.offsetX-this.down.x,e.offsetY-this.down.y)>4)this.down.moved=true;
+    if(this.drag){const d=this.drag;
+      if(this.down.moved&&!d.moved){d.moved=true;this.centered=null;if(this.dynamic)this.sim.alphaTarget(.15).restart();}
+      if(d.moved){const[x,y]=this.world(e.offsetX,e.offsetY);Object.assign(d.node,{fx:x,fy:y,x,y});this.schedule();}return;
+    }
     const node=this.hitNode(e.offsetX,e.offsetY),edge=node?null:this.hitEdge(e.offsetX,e.offsetY);this.hover=node?.id||null;this.hoverEdge=edge;this.canvas.style.cursor=node?'grab':edge?'pointer':'grab';this.callbacks.hover(node?{text:node.title+' · Høyreklikk for detaljer',x:e.offsetX,y:e.offsetY}:edge?{text:`${edge.source.label} ↔ ${edge.target.label} · ${edge.weight.toFixed(2)} · Klikk for forklaring`,x:e.offsetX,y:e.offsetY}:null);this.schedule();
   }
-  pointerUp(e){if(this.drag){const d=this.drag;this.drag=null;d.node.fx=null;d.node.fy=null;this.sim.alphaTarget(0);if(this.dynamic)this.sim.alpha(.3).restart();if(!d.moved){this.select(d.node.id);this.callbacks.select(d.node.id);}if(this.canvas.hasPointerCapture(e.pointerId))this.canvas.releasePointerCapture(e.pointerId);this.schedule();}else if(this.down&&Math.hypot(e.offsetX-this.down.x,e.offsetY-this.down.y)<4&&e.button===0){const edge=this.hitEdge(e.offsetX,e.offsetY);if(edge)this.callbacks.edge(edge);}this.down=null;}
+  pointerUp(e,cancelled=false){
+    if(e.button!==0&&!cancelled)return;
+    this.gesture=!cancelled&&this.down&&!this.down.moved?this.down:null;
+    if(this.drag){const d=this.drag;this.drag=null;d.node.fx=null;d.node.fy=null;this.sim.alphaTarget(0);if(d.moved&&this.dynamic)this.sim.alpha(.3).restart();if(this.canvas.hasPointerCapture(e.pointerId))this.canvas.releasePointerCapture(e.pointerId);this.schedule();}
+    if(!this.gesture)this.lastClick=null;
+    this.down=null;
+  }
+  click(e){
+    const gesture=this.gesture;this.gesture=null;
+    if(!gesture||e.button!==0)return;
+    // Closing the panel resizes the canvas. Keep the first background hit for
+    // the second click, even if a node moves beneath the pointer after resize.
+    if(e.detail===2&&this.lastClick?.background){this.callbacks.clearFocus?.();return;}
+    if(e.detail===2&&this.lastClick?.node)return;
+    this.lastClick={node:gesture.node,background:!gesture.node&&!gesture.edge};
+    if(gesture.node){if(this.callbacks.select(gesture.node)!==false)this.select(gesture.node);}
+    else if(gesture.edge)this.callbacks.edge(gesture.edge);
+    else this.callbacks.background?.();
+  }
   select(id){this.selected=id;this.center(id,true);if(this.dynamic)this.sim.alpha(.18).restart();this.schedule();}
   center(id,zoomIn=true){const n=this.pool.get(id);if(!n)return;this.centered=id;const k=zoomIn?Math.max(this.transform.k,.95):this.transform.k;select(this.canvas).call(this.zoom.transform,zoomIdentity.translate(this.w/2-n.x*k,this.h/2-n.y*k).scale(k));}
   fit(){if(!this.nodes.length)return;this.centered=null;const xs=this.nodes.map(n=>n.x),ys=this.nodes.map(n=>n.y),minX=Math.min(...xs)-RADIUS-35,maxX=Math.max(...xs)+RADIUS+35,minY=Math.min(...ys)-RADIUS-35,maxY=Math.max(...ys)+RADIUS+35;const k=Math.max(.1,Math.min(1.25,(this.w-70)/(maxX-minX),(this.h-140)/(maxY-minY)));select(this.canvas).call(this.zoom.transform,zoomIdentity.translate(this.w/2-(minX+maxX)/2*k,this.h/2+15-(minY+maxY)/2*k).scale(k));}

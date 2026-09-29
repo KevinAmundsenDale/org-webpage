@@ -48,3 +48,19 @@
   .threshold-control{grid-column:1;grid-row:3}.layout-control{grid-column:2;grid-row:3}
   .distance-control .segmented button{padding:0 3px}
 }
+/* A persistent menu toggle and a keyboard-accessible panel divider. */
+main{position:relative;min-height:0}
+#toolbar-toggle{flex-shrink:0}
+#sidebar{flex:0 0 var(--sidebar-width,420px);width:var(--sidebar-width,420px);min-width:0;overflow-wrap:anywhere}
+#sidebar-resize{flex:0 0 9px;position:relative;z-index:21;cursor:col-resize;touch-action:none;background:white;border-left:1px solid var(--border);outline-offset:-2px}
+#sidebar-resize::after{content:"";position:absolute;top:calc(50% - 24px);left:3px;width:2px;height:48px;border-radius:2px;background:#91a6b9}
+#sidebar-resize:hover,#sidebar-resize:focus-visible{background:#dcefed;outline:2px solid var(--accent)}
+#sidebar-resize:has(+ #sidebar[hidden]){display:none}
+.resizing-sidebar,.resizing-sidebar *{cursor:col-resize!important;user-select:none!important}
+@media(max-width:900px){.course{display:none}.masthead{gap:14px}}
+@media(max-width:700px){
+  .masthead{height:auto;min-height:56px;flex-wrap:wrap;gap:8px 12px;padding:10px 16px}
+  #toolbar-toggle{margin-left:auto}
+  #sidebar{top:0;width:var(--sidebar-width,380px)}
+  #sidebar-resize{position:absolute;top:0;bottom:0;right:var(--sidebar-width,380px);width:9px}
+}

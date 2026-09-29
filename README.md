@@ -19,7 +19,7 @@ På GitHub-siden ruller du ned til **Assets** og velger filen for maskinen din. 
 | Windows, x64 | `Sammenheng-<versjon>-win-x64.exe` |
 | Mac, både Apple Silicon og Intel | `Sammenheng-<versjon>-mac-universal.dmg` |
 
-For eksempel heter Windows-installasjonsfilen til versjon 1.3.0 `Sammenheng-1.3.0-win-x64.exe`. Versjonsnummeret endres ved nye utgaver.
+For eksempel heter Windows-installasjonsfilen til versjon 1.4.0 `Sammenheng-1.4.0-win-x64.exe`. Versjonsnummeret endres ved nye utgaver.
 
 **Velg EXE eller DMG.** Filene `latest.yml`, `.blockmap` og Mac-utgavens `.zip` brukes av oppdateringssystemet. «Source code» og den grønne «Code → Download ZIP»-knappen laster ned prosjektets kildekode, ikke den ferdige appen. Utgaver kalt `content-v…` er faginnholdspakker som appen håndterer selv.
 
@@ -43,7 +43,7 @@ Den samme Mac-filen brukes på både Intel-maskiner og maskiner med Apple Silico
 
 ### Hvorfor kommer det et sikkerhetsvarsel?
 
-**Versjon 1.3.0 er usignert.** Appen har foreløpig ikke en verifisert utgiversignatur for Windows eller Developer ID-signering og notarization fra Apple. Operativsystemet kan derfor advare om ukjent utgiver eller si at det ikke kan bekrefte at appen er fri for skadelig programvare. Et slikt varsel er ikke i seg selv et funn av skadevare, men appen har heller ikke denne bekreftelsen fra utgiverkontrollen.
+**Versjon 1.4.0 er usignert.** Appen har foreløpig ikke en verifisert utgiversignatur for Windows eller Developer ID-signering og notarization fra Apple. Operativsystemet kan derfor advare om ukjent utgiver eller si at det ikke kan bekrefte at appen er fri for skadelig programvare. Et slikt varsel er ikke i seg selv et funn av skadevare, men appen har heller ikke denne bekreftelsen fra utgiverkontrollen.
 
 Last ned fra dette prosjektets offisielle utgivelsesside. Hvis du stoler på denne kopien og vil åpne den:
 
@@ -93,9 +93,12 @@ For å komme tilbake til hele kartet, velg **Alle fagområder** og fjern eventue
 
 ### Flytt, zoom og åpne detaljer
 
-- **Enkeltklikk** fremhever og sentrerer en node.
+- **Enkeltklikk** fremhever og sentrerer en node. Når detaljpanelet er åpent, setter klikket den nye noden i fokus og viser dens definisjon.
 - **Høyreklikk eller dobbeltklikk** setter noden i fokus og åpner detaljene. På berøringsskjerm kan du dobbelttrykke.
-- **Dra en node** for å flytte den. Dra bakgrunnen for å flytte utsnittet.
+- **Dra en node** for å flytte den uten å bytte fokus eller definisjon. Dra bakgrunnen for å flytte utsnittet.
+- **Klikk på tom bakgrunn** for å lukke detaljpanelet uten å fjerne fokus. **Dobbeltklikk på tom bakgrunn** for også å fjerne temafokus og markering. Fagområde og terskel beholdes.
+- **Skjul meny / Vis meny** øverst frigjør plass til kartet. `/` åpner menyen og søket igjen.
+- **Dra skillelinjen til venstre for detaljpanelet** for å gjøre teksten bredere. Med tastatur: fokuser skillelinjen med Tab og bruk venstre/høyre piltast, eller Home/End for minste/største bredde. Menyvalg og panelbredde huskes på maskinen.
 - **Rull eller knip** for å zoome. Du kan også bruke pluss/minus nederst i kartet. Knappen med fire hjørner tilpasser utsnittet til de synlige nodene.
 - **Dynamisk** lar nodene bevege seg og finne plass når kartet endres. En node du slipper, inngår igjen i bevegelsen. **Statisk** fryser plasseringen og lar flyttede noder bli der du slipper dem.
 
@@ -199,11 +202,12 @@ Skrivebordsappens brukerdata ligger normalt i `%APPDATA%\Sammenheng\profile` på
 ```sh
 npm test
 npm run test:browser
+npm run test:interactions-browser
 npm run test:sync-browser
 npm run test:desktop
 ```
 
-Kjør `npm run build` først. Nettlesertestene bruker Microsoft Edge og isolerte testdata. Testene dekker blant annet datavalidering, søk, kategorier, fokus, redigering, lagring, konflikter, oppdateringer og skrivebordsappen.
+Kjør `npm run build` først. Nettlesertestene bruker Microsoft Edge og isolerte testdata. Sett `BROWSER_CHANNEL=chrome` for å bruke Chrome i stedet. Testene dekker blant annet datavalidering, søk, kategorier, fokus, redigering, lagring, konflikter, oppdateringer og skrivebordsappen.
 
 `npm run desktop:dist` bygger installasjonsfiler for vertsplattformen. GitHub Actions-workflowen **Build desktop installers** bygger Windows x64 og Mac universal og oppretter en utgave som utkast. **Build shared content release** lager et separat utkast for faginnhold. Et push til GitHub alene oppdaterer ikke installerte apper.
 

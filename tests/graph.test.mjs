@@ -71,3 +71,25 @@ test('a selected overlapping node remains the drag target when a layout is froze
   const selected={id:'a',x:0,y:0},overlap={id:'b',x:2,y:2};
   assert.equal(Graph.prototype.hitNode.call({nodes:[selected,overlap],selected:'a',world:(x,y)=>[x,y]},0,0),selected);
 });
+
+test('cancelled or moved pointer gestures release nodes without activating them',()=>{
+  for(const cancelled of [false,true]){
+    const node={id:'a',fx:10,fy:10},g=Object.create(Graph.prototype);
+    Object.assign(g,{down:{node:'a',moved:!cancelled},drag:{node,moved:!cancelled},lastClick:{node:'b'},dynamic:false,sim:{alphaTarget:()=>{}},canvas:{hasPointerCapture:()=>false},schedule:()=>{}});
+    g.pointerUp({button:0,pointerId:1},cancelled);
+    assert.equal(node.fx,null);assert.equal(node.fy,null);assert.equal(g.drag,null);assert.equal(g.gesture,null);assert.equal(g.lastClick,null);
+  }
+});
+
+test('background double-click keeps the original hit after panel resize',()=>{
+  const events=[],g=Object.create(Graph.prototype);
+  Object.assign(g,{gesture:{},callbacks:{background:()=>events.push('close'),clearFocus:()=>events.push('clear'),select:()=>events.push('select')}});
+  g.click({button:0,detail:1});
+  g.gesture={node:'moved-under-pointer'};g.click({button:0,detail:2});
+  assert.deepEqual(events,['close','clear']);assert.equal(g.lastClick.background,true);
+});
+
+test('declined navigation leaves the selected node unchanged',()=>{
+  const g=Object.create(Graph.prototype);Object.assign(g,{gesture:{node:'new'},selected:'original',callbacks:{select:()=>false},select:()=>assert.fail('Must not select when navigation is declined')});
+  g.click({button:0,detail:1});assert.equal(g.selected,'original');
+});

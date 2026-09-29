@@ -8,8 +8,8 @@
 </head>
 <body>
 <header>
-  <div class="masthead"><div class="brand"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 8 24 12 13 25Z"/><circle cx="8" cy="8" r="4"/><circle cx="24" cy="12" r="4"/><circle cx="13" cy="25" r="4"/></svg><span>Sammenheng<span class="brand-dot">.</span></span></div><span class="course">Organisasjon, ledelse og etikk</span><button class="local-tag" id="updates-button">Oppdateringer og backup</button></div>
-  <div class="toolbar">
+  <div class="masthead"><div class="brand"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 8 24 12 13 25Z"/><circle cx="8" cy="8" r="4"/><circle cx="24" cy="12" r="4"/><circle cx="13" cy="25" r="4"/></svg><span>Sammenheng<span class="brand-dot">.</span></span></div><span class="course">Organisasjon, ledelse og etikk</span><button class="local-tag" id="updates-button">Oppdateringer og backup</button><button id="toolbar-toggle" class="small-button" aria-expanded="true" aria-controls="toolbar">Skjul meny</button></div>
+  <div class="toolbar" id="toolbar">
     <div class="search-control"><label for="search">FINN ET TEMA</label><div class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-results" placeholder="Søk i navn og fagtekst…" autocomplete="off"><kbd>/</kbd></div><div id="search-results" role="listbox" hidden></div></div>
     <div class="focus-control"><label for="focus">TEMA I FOKUS</label><div class="focus-row"><select id="focus"><option value="">Hele fagkartet</option></select><button id="clear-focus" class="icon-button" aria-label="Fjern temafokus" title="Fjern temafokus" hidden>×</button></div></div>
     <div class="category-control"><label for="category">FAGOMRÅDE I FOKUS</label><select id="category"><option value="">Alle fagområder</option></select></div>
@@ -37,6 +37,7 @@
     <div class="graph-bottom"><div class="navigation-tools"><button id="zoom-in" aria-label="Zoom inn" title="Zoom inn">+</button><button id="zoom-out" aria-label="Zoom ut" title="Zoom ut">−</button><span id="zoom-level">100 %</span><button id="fit" aria-label="Tilpass hele grafen" title="Tilpass hele grafen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/></svg></button></div><span class="graph-instructions">Dra for å flytte · Rull for å zoome · Høyreklikk for detaljer</span><button id="chapters-toggle" class="chapter-button" aria-expanded="false">Fagområder <span>12</span></button></div>
     <div id="chapter-legend" hidden></div>
   </section>
+  <div id="sidebar-resize" role="separator" tabindex="0" aria-label="Bredde på temadetaljer" aria-orientation="vertical" aria-controls="sidebar" title="Dra for å endre bredde. Bruk venstre/høyre piltast for å justere."></div>
   <aside id="sidebar" aria-label="Temadetaljer" hidden><div id="sidebar-content"></div></aside>
 </main>
 <div id="toast" role="status" hidden></div>
