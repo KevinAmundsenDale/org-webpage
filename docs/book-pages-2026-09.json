@@ -1,0 +1,1185 @@
+{
+  "date": "2026-09-30",
+  "source_id": "book-01",
+  "content_version": 4,
+  "method": "Redaksjonell kobling av eksisterende noder til boktekst, innholdsfortegnelse og stikkord-/personregister lest i brukerens lisensierte Bookshelf. Ingen boktekst distribuert. Kun sidehenvisninger; full nodetekst og relasjonsvekter er ikke revidert.",
+  "references": [
+    {
+      "id": "organisasjon",
+      "pages": [
+        15,
+        16
+      ],
+      "scope": "Definisjon av organisasjon"
+    },
+    {
+      "id": "produksjonssystem",
+      "pages": [
+        16,
+        17
+      ],
+      "scope": "Organisasjonen som produksjonssystem"
+    },
+    {
+      "id": "organisasjonsatferd",
+      "pages": [
+        18,
+        19
+      ],
+      "scope": "Organisasjonsatferd"
+    },
+    {
+      "id": "formelle-uformelle-trekk",
+      "pages": [
+        19,
+        20,
+        21
+      ],
+      "scope": "Formelle og uformelle trekk"
+    },
+    {
+      "id": "omgivelsesavhengighet",
+      "pages": [
+        21,
+        22
+      ],
+      "scope": "Avhengighet av omgivelsene"
+    },
+    {
+      "id": "helhetlig-organisasjonsmodell",
+      "pages": [
+        22,
+        23
+      ],
+      "scope": "Bokens helhetlige modell"
+    },
+    {
+      "id": "varer-tjenester",
+      "pages": [
+        23,
+        24
+      ],
+      "scope": "Vare- og tjenesteproduksjon"
+    },
+    {
+      "id": "maalhierarki",
+      "pages": [
+        36,
+        38
+      ],
+      "scope": "Målhierarki"
+    },
+    {
+      "id": "porter-generiske-strategier",
+      "pages": [
+        41,
+        42
+      ],
+      "scope": "Generiske konkurransestrategier"
+    },
+    {
+      "id": "miles-snow",
+      "pages": [
+        42
+      ],
+      "scope": "Strategiske typer"
+    },
+    {
+      "id": "ressursbasert-strategi",
+      "pages": [
+        40,
+        45
+      ],
+      "scope": "Ressursbasert strategiperspektiv"
+    },
+    {
+      "id": "swot",
+      "pages": [
+        44
+      ],
+      "scope": "SWOT"
+    },
+    {
+      "id": "business-model-canvas",
+      "pages": [
+        46,
+        47
+      ],
+      "scope": "Forretningsmodeller (tematisk henvisning; Canvas-detaljene er ikke sideverifisert)"
+    },
+    {
+      "id": "produktivitet-effektivitet",
+      "pages": [
+        49,
+        50,
+        52,
+        53
+      ],
+      "scope": "Produktivitet og effektivitet"
+    },
+    {
+      "id": "balansert-maalstyring",
+      "pages": [
+        53
+      ],
+      "scope": "Balansert målstyring"
+    },
+    {
+      "id": "fremvoksende-strategi",
+      "pages": [
+        57
+      ],
+      "scope": "Fremvoksende strategi"
+    },
+    {
+      "id": "maalforskyvning",
+      "pages": [
+        59,
+        60
+      ],
+      "scope": "Målforskyvning"
+    },
+    {
+      "id": "samfunnsansvar",
+      "pages": [
+        54,
+        55
+      ],
+      "scope": "Samfunnsansvar og bærekraft (supplerer forelesningen; ikke kildeverifisering av alle fire ansvarskategorier)"
+    },
+    {
+      "id": "transaksjonskostnader",
+      "pages": [
+        50,
+        51
+      ],
+      "scope": "Transaksjonskostnader"
+    },
+    {
+      "id": "taylor-arbeidsdeling",
+      "pages": [
+        68,
+        69
+      ],
+      "scope": "Arbeidsdeling og vitenskapelig arbeidsledelse"
+    },
+    {
+      "id": "funksjonsgruppering",
+      "pages": [
+        69,
+        70,
+        71
+      ],
+      "scope": "Funksjonsbasert gruppering"
+    },
+    {
+      "id": "markedsgruppering",
+      "pages": [
+        71,
+        72
+      ],
+      "scope": "Markedsbasert gruppering"
+    },
+    {
+      "id": "matrisestruktur",
+      "pages": [
+        73
+      ],
+      "scope": "Matrise- og prosjektstrukturer"
+    },
+    {
+      "id": "prosjektorganisering",
+      "pages": [
+        73
+      ],
+      "scope": "Matrise- og prosjektstrukturer"
+    },
+    {
+      "id": "linjeorganisasjon",
+      "pages": [
+        77,
+        78
+      ],
+      "scope": "Linje og stab"
+    },
+    {
+      "id": "mintzberg-hoveddeler",
+      "pages": [
+        77,
+        78
+      ],
+      "scope": "Linje, teknostruktur og støttestruktur"
+    },
+    {
+      "id": "sentralisering",
+      "pages": [
+        78
+      ],
+      "scope": "Sentralisering og desentralisering"
+    },
+    {
+      "id": "koordinering",
+      "pages": [
+        80,
+        81,
+        82,
+        83
+      ],
+      "scope": "Koordineringsmekanismer"
+    },
+    {
+      "id": "styringsmekanismer",
+      "pages": [
+        86,
+        87,
+        88
+      ],
+      "scope": "Styring og kontroll"
+    },
+    {
+      "id": "mintzberg-konfigurasjoner",
+      "pages": [
+        89,
+        95
+      ],
+      "scope": "Strukturelle konfigurasjoner: innledning og oversikt"
+    },
+    {
+      "id": "entreprenororganisasjon",
+      "pages": [
+        89
+      ],
+      "scope": "Entreprenørorganisasjonen"
+    },
+    {
+      "id": "maskinbyraakrati",
+      "pages": [
+        90
+      ],
+      "scope": "Maskinbyråkratiet"
+    },
+    {
+      "id": "profesjonelt-byraakrati",
+      "pages": [
+        92
+      ],
+      "scope": "Profesjonalisering (registerhenvisning til faglig organisering)"
+    },
+    {
+      "id": "adhockrati",
+      "pages": [
+        93,
+        94
+      ],
+      "scope": "Adhockrati"
+    },
+    {
+      "id": "divisjonalisert-struktur",
+      "pages": [
+        95
+      ],
+      "scope": "Divisjonalisert organisering"
+    },
+    {
+      "id": "organisasjonskultur",
+      "pages": [
+        110,
+        111,
+        112
+      ],
+      "scope": "Organisasjonskultur og Scheins definisjon"
+    },
+    {
+      "id": "schein-kulturnivaaer",
+      "pages": [
+        112,
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "scope": "Kulturnivåer: grunnleggende antakelser, verdier, normer og artefakter"
+    },
+    {
+      "id": "artefakter",
+      "pages": [
+        116,
+        117,
+        118
+      ],
+      "scope": "Artefakter og symbolsk mening"
+    },
+    {
+      "id": "cameron-quinn",
+      "pages": [
+        119,
+        120
+      ],
+      "scope": "Kulturtyper"
+    },
+    {
+      "id": "martin-kulturperspektiver",
+      "pages": [
+        121,
+        122
+      ],
+      "scope": "Kulturmangfold og de tre kulturperspektivene"
+    },
+    {
+      "id": "hofstede",
+      "pages": [
+        131
+      ],
+      "scope": "Nasjonal kultur"
+    },
+    {
+      "id": "gruppetenkning",
+      "pages": [
+        125
+      ],
+      "scope": "Gruppetenkning"
+    },
+    {
+      "id": "maktformer",
+      "pages": [
+        141,
+        144,
+        145,
+        146
+      ],
+      "scope": "Åpen og skjult makt"
+    },
+    {
+      "id": "byttemakt",
+      "pages": [
+        141
+      ],
+      "scope": "Byttemakt"
+    },
+    {
+      "id": "interessentmodellen",
+      "pages": [
+        147
+      ],
+      "scope": "Organisasjonen som politisk arena"
+    },
+    {
+      "id": "maktbaser",
+      "pages": [
+        148,
+        151
+      ],
+      "scope": "Maktbaser"
+    },
+    {
+      "id": "weber-autoritet",
+      "pages": [
+        152,
+        153
+      ],
+      "scope": "Autoritet og legitimering av makt"
+    },
+    {
+      "id": "profesjonell-autoritet",
+      "pages": [
+        153
+      ],
+      "scope": "Profesjonell autoritet"
+    },
+    {
+      "id": "konflikt-beslutningskvalitet",
+      "pages": [
+        154,
+        155,
+        156
+      ],
+      "scope": "Konflikt og beslutningskvalitet"
+    },
+    {
+      "id": "bemyndiggjoring",
+      "pages": [
+        160
+      ],
+      "scope": "Bemyndiggjøring"
+    },
+    {
+      "id": "tekniske-omgivelser",
+      "pages": [
+        174
+      ],
+      "scope": "Tekniske omgivelser"
+    },
+    {
+      "id": "omgivelsesusikkerhet",
+      "pages": [
+        175,
+        176,
+        177
+      ],
+      "scope": "Kompleksitet og endring i omgivelsene"
+    },
+    {
+      "id": "haandtere-tekniske-omgivelser",
+      "pages": [
+        180,
+        182
+      ],
+      "scope": "Håndtering av tekniske omgivelser"
+    },
+    {
+      "id": "institusjonelle-omgivelser",
+      "pages": [
+        182,
+        183
+      ],
+      "scope": "Institusjonelle omgivelser"
+    },
+    {
+      "id": "teknisk-institusjonelt-samspill",
+      "pages": [
+        185
+      ],
+      "scope": "Tekniske og institusjonelle omgivelser"
+    },
+    {
+      "id": "institusjonelle-strategier",
+      "pages": [
+        186,
+        187,
+        188,
+        189,
+        191
+      ],
+      "scope": "Isomorfi, konformitet, dekobling og omdømme"
+    },
+    {
+      "id": "interorganisatoriske-relasjoner",
+      "pages": [
+        191,
+        192,
+        193,
+        194,
+        195,
+        196
+      ],
+      "scope": "Interorganisatoriske relasjoner"
+    },
+    {
+      "id": "indre-ytre-motivasjon",
+      "pages": [
+        207,
+        209
+      ],
+      "scope": "Motivasjon; indre og ytre motivasjon"
+    },
+    {
+      "id": "selvbestemmelsesteori",
+      "pages": [
+        209
+      ],
+      "scope": "Selvbestemmelse (kort omtale; forelesningen utdyper reguleringsformene)"
+    },
+    {
+      "id": "maslow",
+      "pages": [
+        210,
+        211
+      ],
+      "scope": "Behov og Maslow"
+    },
+    {
+      "id": "forventningsteori",
+      "pages": [
+        213,
+        214
+      ],
+      "scope": "Forventningsteori"
+    },
+    {
+      "id": "maalsettingsteori",
+      "pages": [
+        213,
+        216
+      ],
+      "scope": "Belønninger og mål (tematisk henvisning til delkapittel 7.4)"
+    },
+    {
+      "id": "beloenningssystemer",
+      "pages": [
+        217
+      ],
+      "scope": "Belønningssystemer"
+    },
+    {
+      "id": "kollektiv-individuell-beloenning",
+      "pages": [
+        218,
+        219
+      ],
+      "scope": "Individ-, gruppe- og systembelønninger"
+    },
+    {
+      "id": "karrieresystemer",
+      "pages": [
+        219,
+        220
+      ],
+      "scope": "Karrieresystemer"
+    },
+    {
+      "id": "herzberg",
+      "pages": [
+        222,
+        223,
+        224
+      ],
+      "scope": "Motivasjons- og hygienefaktorer"
+    },
+    {
+      "id": "hackman-oldham",
+      "pages": [
+        224,
+        227
+      ],
+      "scope": "Jobbkarakteristika og jobbutforming"
+    },
+    {
+      "id": "organisatorisk-tilknytning",
+      "pages": [
+        231,
+        232
+      ],
+      "scope": "Psykologiske kontrakter og forpliktelse (supplerer forelesningens tredeling)"
+    },
+    {
+      "id": "psykologisk-kontrakt",
+      "pages": [
+        231
+      ],
+      "scope": "Psykologiske kontrakter"
+    },
+    {
+      "id": "hrm",
+      "pages": [
+        232
+      ],
+      "scope": "Human Resource Management"
+    },
+    {
+      "id": "organisatorisk-rettferdighet",
+      "pages": [
+        221
+      ],
+      "scope": "Likeverdsteori (kun fordelingsperspektivet; øvrige rettferdighetsformer er fra forelesningen)"
+    },
+    {
+      "id": "prososial-motivasjon",
+      "pages": [
+        208
+      ],
+      "scope": "Altruisme og offentlig tjenestemotivasjon"
+    },
+    {
+      "id": "thorsrud-jobbkrav",
+      "pages": [
+        229
+      ],
+      "scope": "Sosioteknikk og skandinavisk jobbutforming (supplerer forelesningens jobbkrav)"
+    },
+    {
+      "id": "kommunikasjonsprosess",
+      "pages": [
+        245,
+        246
+      ],
+      "scope": "Kommunikasjonsprosessen"
+    },
+    {
+      "id": "kommunikasjonskanaler",
+      "pages": [
+        247,
+        249
+      ],
+      "scope": "Kanaler, synkron og asynkron kommunikasjon"
+    },
+    {
+      "id": "effektiv-kommunikasjon",
+      "pages": [
+        250,
+        251
+      ],
+      "scope": "Effektiv kommunikasjon"
+    },
+    {
+      "id": "vertikal-horisontal-kommunikasjon",
+      "pages": [
+        252,
+        254
+      ],
+      "scope": "Vertikal og horisontal kommunikasjon"
+    },
+    {
+      "id": "barnard-uformell-kommunikasjon",
+      "pages": [
+        254,
+        256
+      ],
+      "scope": "Uformell kommunikasjon og rykter (tematisk henvisning)"
+    },
+    {
+      "id": "omdoemme",
+      "pages": [
+        257,
+        258
+      ],
+      "scope": "Omdømme og virksomhetskommunikasjon"
+    },
+    {
+      "id": "granovetter-svake-baand",
+      "pages": [
+        261
+      ],
+      "scope": "Kommunikasjonsnettverk og Granovetter"
+    },
+    {
+      "id": "strukturelle-hull",
+      "pages": [
+        261
+      ],
+      "scope": "Strukturelle hull"
+    },
+    {
+      "id": "kommunikasjon-beslutninger",
+      "pages": [
+        263
+      ],
+      "scope": "Kommunikasjon og beslutningsprosesser (oppsummerende omtale)"
+    },
+    {
+      "id": "beslutningsprosesser",
+      "pages": [
+        270
+      ],
+      "scope": "Hva en beslutning er"
+    },
+    {
+      "id": "perfekt-rasjonalitet",
+      "pages": [
+        271,
+        272
+      ],
+      "scope": "Perfekt rasjonalitet"
+    },
+    {
+      "id": "begrenset-rasjonalitet",
+      "pages": [
+        274,
+        275
+      ],
+      "scope": "Satisfiering og begrenset rasjonalitet"
+    },
+    {
+      "id": "march-konsekvenslogikk",
+      "pages": [
+        279,
+        280
+      ],
+      "scope": "Konsekvenslogikk"
+    },
+    {
+      "id": "march-passendehet",
+      "pages": [
+        280
+      ],
+      "scope": "Passendehetslogikk"
+    },
+    {
+      "id": "beslutningsstroemmer",
+      "pages": [
+        279,
+        282,
+        283
+      ],
+      "scope": "Individuelle beslutninger og organisatoriske rammer (tematisk henvisning)"
+    },
+    {
+      "id": "beslutningsfora",
+      "pages": [
+        282,
+        283
+      ],
+      "scope": "Deltakelsesrettigheter, prosedyrer og beslutningsstruktur"
+    },
+    {
+      "id": "beslutningsmodeller",
+      "pages": [
+        283,
+        284
+      ],
+      "scope": "Oversikt over beslutningsmodeller"
+    },
+    {
+      "id": "rasjonell-organisasjon",
+      "pages": [
+        283,
+        284
+      ],
+      "scope": "Modelloversikt (tematisk henvisning til rasjonelle beslutningsmodeller)"
+    },
+    {
+      "id": "regelmodellen",
+      "pages": [
+        287
+      ],
+      "scope": "Regelmodellen"
+    },
+    {
+      "id": "forhandlingsmodeller",
+      "pages": [
+        289
+      ],
+      "scope": "Forhandlingsmodeller"
+    },
+    {
+      "id": "kommunikativ-rasjonalitet",
+      "pages": [
+        290
+      ],
+      "scope": "Kommunikativ rasjonalitet"
+    },
+    {
+      "id": "inkrementelle-beslutninger",
+      "pages": [
+        292
+      ],
+      "scope": "Inkrementelle beslutninger"
+    },
+    {
+      "id": "organisert-anarki",
+      "pages": [
+        294
+      ],
+      "scope": "Organisert anarki"
+    },
+    {
+      "id": "stiavhengighet",
+      "pages": [
+        297,
+        298
+      ],
+      "scope": "Stiavhengighet"
+    },
+    {
+      "id": "iverksettingsproblemer",
+      "pages": [
+        299
+      ],
+      "scope": "Iverksetting av beslutninger"
+    },
+    {
+      "id": "symbolske-beslutninger",
+      "pages": [
+        300
+      ],
+      "scope": "Symbolske beslutninger"
+    },
+    {
+      "id": "organisatorisk-laering",
+      "pages": [
+        307
+      ],
+      "scope": "Hva læring er"
+    },
+    {
+      "id": "betinging",
+      "pages": [
+        309
+      ],
+      "scope": "Klassisk og operant betinging"
+    },
+    {
+      "id": "kognitiv-laering",
+      "pages": [
+        311
+      ],
+      "scope": "Kognitive kart"
+    },
+    {
+      "id": "sosial-laering",
+      "pages": [
+        312
+      ],
+      "scope": "Sosial læringsteori"
+    },
+    {
+      "id": "argyris-laeringskretser",
+      "pages": [
+        312,
+        313
+      ],
+      "scope": "Enkeltkrets- og dobbeltkretslæring"
+    },
+    {
+      "id": "nonaka-kunnskap",
+      "pages": [
+        316,
+        317,
+        318
+      ],
+      "scope": "Taus og eksplisitt kunnskap; læringsspiralen"
+    },
+    {
+      "id": "march-utnyttelse-utforsking",
+      "pages": [
+        318
+      ],
+      "scope": "Utnyttelse og utforsking"
+    },
+    {
+      "id": "suksessfellen",
+      "pages": [
+        319
+      ],
+      "scope": "Suksessfellen"
+    },
+    {
+      "id": "innovasjon",
+      "pages": [
+        320,
+        321
+      ],
+      "scope": "Innovasjonstyper"
+    },
+    {
+      "id": "laerende-organisasjoner",
+      "pages": [
+        321,
+        322,
+        324,
+        325,
+        326,
+        327,
+        328
+      ],
+      "scope": "Lærende organisasjoner: systemtenkning, kunnskapsproduksjon, absorpsjon og ambideksteritet"
+    },
+    {
+      "id": "toyota-hvorfor",
+      "pages": [
+        323
+      ],
+      "scope": "Hvorfor-analyse"
+    },
+    {
+      "id": "laering-endring",
+      "pages": [
+        307,
+        329
+      ],
+      "scope": "Læring, endring og makt (tematisk henvisning)"
+    },
+    {
+      "id": "endringsomfang",
+      "pages": [
+        339
+      ],
+      "scope": "Hva organisasjonsendring er"
+    },
+    {
+      "id": "endringsagenter",
+      "pages": [
+        340,
+        341,
+        343
+      ],
+      "scope": "Planlagt endring og endringsagenter"
+    },
+    {
+      "id": "endringspress",
+      "pages": [
+        341,
+        343
+      ],
+      "scope": "Behov for endring; proaktiv og reaktiv endring"
+    },
+    {
+      "id": "endringsmotstand",
+      "pages": [
+        344
+      ],
+      "scope": "Motstand mot endring"
+    },
+    {
+      "id": "endringsstrategier",
+      "pages": [
+        347,
+        348,
+        352
+      ],
+      "scope": "Endringsstrategier"
+    },
+    {
+      "id": "lewin",
+      "pages": [
+        353
+      ],
+      "scope": "Opptining, endring og nedfrysing"
+    },
+    {
+      "id": "endringsgjennomfoering",
+      "pages": [
+        355
+      ],
+      "scope": "Vellykket endring"
+    },
+    {
+      "id": "uplanlagt-endring",
+      "pages": [
+        358,
+        359,
+        360
+      ],
+      "scope": "Livssyklus, evolusjon og andre perspektiver på endring"
+    },
+    {
+      "id": "ledelse",
+      "pages": [
+        367
+      ],
+      "scope": "Hva ledelse er"
+    },
+    {
+      "id": "direkte-indirekte-ledelse",
+      "pages": [
+        367,
+        369
+      ],
+      "scope": "Ledelse og organisatoriske rammer (tematisk henvisning)"
+    },
+    {
+      "id": "administrasjon-ledelse",
+      "pages": [
+        368
+      ],
+      "scope": "Administrasjon og ledelse"
+    },
+    {
+      "id": "lederstiler",
+      "pages": [
+        370,
+        371
+      ],
+      "scope": "Lederstiler"
+    },
+    {
+      "id": "ledergitteret",
+      "pages": [
+        371,
+        372
+      ],
+      "scope": "Ledergitteret"
+    },
+    {
+      "id": "hersey-blanchard",
+      "pages": [
+        373,
+        374,
+        375
+      ],
+      "scope": "Situasjonsbetinget ledelse"
+    },
+    {
+      "id": "fiedler",
+      "pages": [
+        376,
+        377
+      ],
+      "scope": "Fiedlers modell"
+    },
+    {
+      "id": "lmx",
+      "pages": [
+        378
+      ],
+      "scope": "Leder–medarbeider-relasjoner"
+    },
+    {
+      "id": "delt-ledelse",
+      "pages": [
+        380
+      ],
+      "scope": "Distribuert ledelse"
+    },
+    {
+      "id": "adaptiv-ledelse",
+      "pages": [
+        381
+      ],
+      "scope": "Adaptiv ledelse"
+    },
+    {
+      "id": "kompetanseledelse",
+      "pages": [
+        382
+      ],
+      "scope": "Kompetanseledelse"
+    },
+    {
+      "id": "selznick-verdibasert-ledelse",
+      "pages": [
+        383,
+        384
+      ],
+      "scope": "Institusjonell ledelse"
+    },
+    {
+      "id": "transaksjonsledelse",
+      "pages": [
+        385
+      ],
+      "scope": "Transaksjonsledelse"
+    },
+    {
+      "id": "transformasjonsledelse",
+      "pages": [
+        385
+      ],
+      "scope": "Transformasjonsledelse"
+    },
+    {
+      "id": "karismatisk-ledelse",
+      "pages": [
+        386
+      ],
+      "scope": "Karismatisk ledelse"
+    },
+    {
+      "id": "etisk-ledelse",
+      "pages": [
+        387
+      ],
+      "scope": "Moralske ledelsesteorier"
+    },
+    {
+      "id": "autentisk-ledelse",
+      "pages": [
+        387
+      ],
+      "scope": "Autentisk ledelse"
+    },
+    {
+      "id": "lederroller",
+      "pages": [
+        390,
+        392,
+        394
+      ],
+      "scope": "Lederroller og lederarbeid"
+    },
+    {
+      "id": "tjenende-ledelse",
+      "pages": [
+        388
+      ],
+      "scope": "Tjenende lederskap (kort omtale; de seks dimensjonene utdypes i bokutdraget)"
+    }
+  ],
+  "without_verified_book_page": [
+    {
+      "id": "kulturell-aapenhet",
+      "title": "Kulturell åpenhet",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "porter-verdikjede",
+      "title": "Porters verdikjede",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "kotter-endring",
+      "title": "Kotter: åtte endringstrinn",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "pliktetikk",
+      "title": "Kant: pliktetikk",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "konsekvensetikk",
+      "title": "Konsekvensetikk",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "dydsetikk",
+      "title": "Aristoteles: dydsetikk",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "diskursetikk",
+      "title": "Habermas: diskursetikk",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "navigasjonshjulet",
+      "title": "Navigasjonshjulet",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "destruktiv-ledelse",
+      "title": "Destruktiv ledelse",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "jobbholdninger",
+      "title": "Jobbholdninger (ABC)",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "jobbtilfredshet",
+      "title": "Jobbtilfredshet",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "psykososialt-arbeidsmiljo",
+      "title": "Psykososialt arbeidsmiljø",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "jobbstress",
+      "title": "McGrath: jobbstress",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "jobbengasjement",
+      "title": "Jobbengasjement",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "psykologisk-kapital",
+      "title": "Luthans: psykologisk kapital",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "mcclelland-behov",
+      "title": "McClelland: tre behov",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "regulatorisk-fokus",
+      "title": "Regulatorisk fokus",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "erfaringslaering",
+      "title": "Erfaringslæring",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    },
+    {
+      "id": "alderfer-erg",
+      "title": "Alderfer: ERG",
+      "reason": "Ingen tilstrekkelig presis bokside verifisert i denne gjennomgangen; eksisterende kilder beholdt. Dette betyr ikke at temaet nødvendigvis mangler i boka."
+    }
+  ]
+}

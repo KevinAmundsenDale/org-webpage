@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "dataset_id": "organisasjon-ledelse-etikk",
-  "dataset_revision": 4,
+  "dataset_revision": 5,
   "relationship_revision": 3,
   "rubric_version": "1.1.0",
-  "topics_fingerprint": "f856d1ca6bc7918b6d44fd3ef50b92f9f995f7e6134b853c57e70eab5266cd04",
+  "topics_fingerprint": "86378b618e37c311073cc2797062e74db2f1c8cc8cd57849502ee5f9f13d5835",
   "semantic_profiles_fingerprint": "e0e93880e8ed370bf77e817dd0d01da39055fdbbd301a69a82c1d54f02d34ef8",
   "pair_reviews_fingerprint": "a532aca6a2e0c63d55410eb3c153e646c87b6188c341da23606f252dd4fdf0a9",
   "weight_semantics": "Faglig nærhet og naturlig overgang i en kursdrøfting; ikke statistisk korrelasjon, sannsynlighet eller kausal effekt.",
@@ -174,18 +174,18 @@
   "topic_manifest": [
     {
       "id": "adaptiv-ledelse",
-      "revision": 2,
-      "content_hash": "2fa1f17f773229a499f686afbc53c02def49b352d9f3123fab19be774c1952a2"
+      "revision": 3,
+      "content_hash": "32b1e1c1b3473d19580035e7b190236ad8e5cf95bae811e2bc1e295b1cff5f30"
     },
     {
       "id": "adhockrati",
-      "revision": 2,
-      "content_hash": "6e7c281dbe9fa75c005f78e61b07ab948f54715857c50399725182062a6f2503"
+      "revision": 3,
+      "content_hash": "afb8461ee91ba7ef0d72d82c4e945c7b2466f1850e0408ea1bcd28c79f5ee16d"
     },
     {
       "id": "administrasjon-ledelse",
-      "revision": 2,
-      "content_hash": "b3d384825000f6c77158a77f57a3e43369c5a046941a77d37aa2b19aadbd117d"
+      "revision": 3,
+      "content_hash": "feac18e668c9f5ef66779524bac909bd0e0a4fea96f70d23ee02c87ad0ea320b"
     },
     {
       "id": "alderfer-erg",
@@ -194,88 +194,88 @@
     },
     {
       "id": "argyris-laeringskretser",
-      "revision": 2,
-      "content_hash": "1f8f4870b96483a9c1c467dbf823f1fa450ecfa047a549080d446978b0d036a5"
+      "revision": 3,
+      "content_hash": "ef803d7f078f227d5046100d1a80130680f4a59d8b577faca9868b2ca8ec2d0e"
     },
     {
       "id": "artefakter",
-      "revision": 2,
-      "content_hash": "56be5e1d3ee70e4f47b617decddbb0cc962b38aac6cfe20bb2e223e78695ff53"
+      "revision": 3,
+      "content_hash": "0a73d668cf123a89941ff25effe06db5e8ed2f41aa9ec400599eb03d6129bb6e"
     },
     {
       "id": "autentisk-ledelse",
-      "revision": 2,
-      "content_hash": "00eda947a11596c3326e1fb599b9d9c62fb1d1604797ad841d5d5df9b63575e5"
+      "revision": 3,
+      "content_hash": "9b1d350520e1205ba7bf534a26b4cf9fa09fd9b4bcd1e8bacb9e00e262909c4b"
     },
     {
       "id": "balansert-maalstyring",
-      "revision": 2,
-      "content_hash": "d67156b0e8968aee121881e69f380825d58ffd00e161ef61a4042063f3ce7fff"
+      "revision": 3,
+      "content_hash": "9fb6fd38b67c38b1e95d7a8a836bb2d7c3e79d686ace94812e80fbfe8cee6a2d"
     },
     {
       "id": "barnard-uformell-kommunikasjon",
-      "revision": 2,
-      "content_hash": "737f31954702faf027c068495ed835018cecf73037a8d908156e3e0f5ff8c7b0"
+      "revision": 3,
+      "content_hash": "7273d36e19f2666c79dd94ace521bffa10503a3d00d6f88f56aa86ca56450aee"
     },
     {
       "id": "begrenset-rasjonalitet",
-      "revision": 2,
-      "content_hash": "bbae4633d53cb51073349ee20c06e3f1be955489b50ba29c4b1461b888187c4b"
+      "revision": 3,
+      "content_hash": "4658353299242ff0200de31f8bf8ef7ab65cbea79aeb5dae71ed6a130339d196"
     },
     {
       "id": "beloenningssystemer",
-      "revision": 2,
-      "content_hash": "2065e82855943e00c7e96a647b01b3693c4440017de4c2b5d16cd850405e9108"
+      "revision": 3,
+      "content_hash": "0a66bb2d7bb9f29410c43cb710c6a9ef2da2f95027495dd0ca4701ddd80caa39"
     },
     {
       "id": "bemyndiggjoring",
-      "revision": 2,
-      "content_hash": "dfb8b97e3d2cc14ec7699d093120f238da6d5866b3644b99c7276c2a90992fce"
+      "revision": 3,
+      "content_hash": "fc1b71c4e131a0dcc29b22595e1c77280cee2c242e496350b8e3e7c590116d62"
     },
     {
       "id": "beslutningsfora",
-      "revision": 2,
-      "content_hash": "eae9f25cda5cde463bbaf255d5404c912d3853af489ef4575a17d115ba743f99"
+      "revision": 3,
+      "content_hash": "0de5d2691dfe0c4103a0eaa6c9d44a8a2a411a88a1938c03964abe36423e1c4a"
     },
     {
       "id": "beslutningsmodeller",
-      "revision": 2,
-      "content_hash": "711a166b05396da2f2324abb9171888dcad27b0c05a38333f55ab8fa9ee8f5be"
+      "revision": 3,
+      "content_hash": "de9557012e8e6c780ad3ffa60388d0f3db0fcfaa106ef57d1f28a19872907cfd"
     },
     {
       "id": "beslutningsprosesser",
-      "revision": 2,
-      "content_hash": "6ed2dcb423db0649dbdca504a02588af846201d20fd357e3b3b6c334e58049a9"
+      "revision": 3,
+      "content_hash": "2f1979cb9c7bebe68b1a055742d239f4cb420d4fbe950ea5963da351661f85ac"
     },
     {
       "id": "beslutningsstroemmer",
-      "revision": 2,
-      "content_hash": "6e1a7187f273b1537992825eb8d8131e67cfdee47090fa7c3bf1908fafc79f48"
+      "revision": 3,
+      "content_hash": "16a3244e041f7799ad92b68d2b4f4184ed969d23f517a18131de5562edba9911"
     },
     {
       "id": "betinging",
-      "revision": 2,
-      "content_hash": "424c6fde481694ef23e91a81fc4bf59c6c8be1242a43f0bc1c8ec453d657760a"
+      "revision": 3,
+      "content_hash": "ee8bc69985c952633ed0b7d23cfa4bf59d0853bee9a3b0a141a53f63b929de95"
     },
     {
       "id": "business-model-canvas",
-      "revision": 2,
-      "content_hash": "09844920a8de17e8aa4b7f1e7e063ab33322cca25c7fdc7eacdc8b5d864b75fe"
+      "revision": 3,
+      "content_hash": "849bdb9cf0a64289778ba17e210fff59d9a80a4ec698223f484a73d6b8f67336"
     },
     {
       "id": "byttemakt",
-      "revision": 2,
-      "content_hash": "6540fca026294d06d74b828afb74325478249399e5fe3d1286aabd871204bfd9"
+      "revision": 3,
+      "content_hash": "88de8e573a9774fb9b1aa52533bfea4d3ec7d25942920a2c5e9c0b03c2dd57ad"
     },
     {
       "id": "cameron-quinn",
-      "revision": 2,
-      "content_hash": "277ed59e806fe402b79baeac1d484f21fd22f8b5c42dd6ae3afb110af6a53572"
+      "revision": 3,
+      "content_hash": "b93fcd70e2fad1a7188affe18e073004d9609d476b9045c29a9bbbddabd5462d"
     },
     {
       "id": "delt-ledelse",
-      "revision": 2,
-      "content_hash": "28682a60483b71e78ea7f3a09111092ce874a999badf2987c8a1b40beef9b47e"
+      "revision": 3,
+      "content_hash": "4422a6bee3b6eedcebf743bbeb58a25791ff738890bf5b2ec85c265e6d3abf91"
     },
     {
       "id": "destruktiv-ledelse",
@@ -284,8 +284,8 @@
     },
     {
       "id": "direkte-indirekte-ledelse",
-      "revision": 2,
-      "content_hash": "1346c5c43432cc6b11e869f3f28071cb2bda4f39cc265efecf6388a72dc6f0a0"
+      "revision": 3,
+      "content_hash": "0406004dd6f0468adc88434ae921146b230658ff9ba8a1901ae04ec8729ccd81"
     },
     {
       "id": "diskursetikk",
@@ -294,8 +294,8 @@
     },
     {
       "id": "divisjonalisert-struktur",
-      "revision": 2,
-      "content_hash": "1272adb2f15c18e177698bd910dce5fd30bfbd22e9d9926556600b72a48ed6cc"
+      "revision": 3,
+      "content_hash": "f46e90653365ccc041a3cb1c40b96e144b0859f7ddf7058452c8d7bf5a2a5219"
     },
     {
       "id": "dydsetikk",
@@ -304,43 +304,43 @@
     },
     {
       "id": "effektiv-kommunikasjon",
-      "revision": 2,
-      "content_hash": "d70540e350d7dd903b437b85e66ea1f7221a66511385c7ef1d96c354187bf9a8"
+      "revision": 3,
+      "content_hash": "c493662afc2ad6a6449e1cb40ba8c8e22a90b981f2974e7366e765cbd52007e4"
     },
     {
       "id": "endringsagenter",
-      "revision": 2,
-      "content_hash": "6b7efe11deac8817fa8232f3d6b9da31b492a2cdf600635395b96e00fc39c76a"
+      "revision": 3,
+      "content_hash": "433b6b53d114f634e99f1e052a7a95372a663fca7a6118997891c914075d0a7b"
     },
     {
       "id": "endringsgjennomfoering",
-      "revision": 2,
-      "content_hash": "49cfab54faa4caf88a7995b4d73c2b6296b4bbee12aadd535456d42dd48543b3"
+      "revision": 3,
+      "content_hash": "fc916991f4bb7bda808301860a6b0593fc3682ee53a7d54f61e2e17820d74db4"
     },
     {
       "id": "endringsmotstand",
-      "revision": 2,
-      "content_hash": "667ec47e13c73eef33ce6ffaf203919fb6a817d1f9b2db4a2b9603dcb35569ae"
+      "revision": 3,
+      "content_hash": "991c7d228b0d9abb8566d0bc5a80b4da2bde2d23e103770756399a8a4662c1ab"
     },
     {
       "id": "endringsomfang",
-      "revision": 2,
-      "content_hash": "c22fb42dfc19f011685f98e5d05d7dcf682908687622c40a56e98f37842e4930"
+      "revision": 3,
+      "content_hash": "42d06feb75f6596a7f95be80c57be3d1b0379e9b08e96b08cadde62db538da86"
     },
     {
       "id": "endringspress",
-      "revision": 2,
-      "content_hash": "17cebeb075ce2bd052a295fcbe28d5fa48147282f4493100fe6288bbb5e90e51"
+      "revision": 3,
+      "content_hash": "238eb9143070b57bd90511923bcd4aa7a37a942865b9def389e14f0e0095cb1f"
     },
     {
       "id": "endringsstrategier",
-      "revision": 2,
-      "content_hash": "39f618e50efe0e884937712bdf98b4ea780f342700668670690adb3347dcf23c"
+      "revision": 3,
+      "content_hash": "7db762c9ec654a43ab4c9061314b40cd9d0aaa00f1805428b84b118bba6e151e"
     },
     {
       "id": "entreprenororganisasjon",
-      "revision": 2,
-      "content_hash": "a068b7319c2bd06343eaf06c2adb012beaa3137d8c8d6059e1a1e8d5426dbae0"
+      "revision": 3,
+      "content_hash": "47b73f47ea0977501a05e11a1e4b944bc4abff8744707cda9109a63f4de1a7f9"
     },
     {
       "id": "erfaringslaering",
@@ -349,123 +349,123 @@
     },
     {
       "id": "etisk-ledelse",
-      "revision": 2,
-      "content_hash": "0164e986439ed0cafef21d15b79e8194c5a84fae18976131a92997c155e0060d"
+      "revision": 3,
+      "content_hash": "1e347ec47a8cee37e80ba8cb4a2e784489a8610e4ac75c57413201091c724255"
     },
     {
       "id": "fiedler",
-      "revision": 2,
-      "content_hash": "50829061596b35e691e890175de1f272d729e12018a05275d80dee56c0f82775"
+      "revision": 3,
+      "content_hash": "f648a19ab2ad53ab8ca6a148d3c77b271ad71f7596c90abb9c1a23ff11e9f30b"
     },
     {
       "id": "forhandlingsmodeller",
-      "revision": 2,
-      "content_hash": "a1f457994d9bec65dc2fbb2e404995154ca2f942aadcab10de77792a233ea654"
+      "revision": 3,
+      "content_hash": "83c4be62bef4d6437d864cffeb06f560335bfe1828c3901da108382a5a1b1aa0"
     },
     {
       "id": "formelle-uformelle-trekk",
-      "revision": 2,
-      "content_hash": "43b8048b8f9ebe128bcf219aeddcfd39c6be48856c6e59e1762cccfc1efc67d3"
+      "revision": 3,
+      "content_hash": "86802ff99d3db88444e40ed386bf6a151f803062788c252bf28f2f4891628253"
     },
     {
       "id": "forventningsteori",
-      "revision": 2,
-      "content_hash": "32d8b1c6bd9345d40585a80817e30340082e899c9f44b6a9dfd23c7799a0b865"
+      "revision": 3,
+      "content_hash": "7c06f821c9645935141af34be6b9fb1ad63a6b175ba75a255e9777af3c5f2389"
     },
     {
       "id": "fremvoksende-strategi",
-      "revision": 2,
-      "content_hash": "f18f1fed327545c3b84d3fca706b92e144bc92d118091ccf2dfaf544db05f13e"
+      "revision": 3,
+      "content_hash": "e5f33b1cb4a66eb5ef22f6ca71074386ea6622c7200b7fe585f5e0f78b4985f5"
     },
     {
       "id": "funksjonsgruppering",
-      "revision": 2,
-      "content_hash": "32776d5786fd5b272d3cba21b3b185f554957605fef9e152c67885e783a1e31a"
+      "revision": 3,
+      "content_hash": "6b7fbb4593fcfcd05fa0e7700e7f3de2f38c4cb2f0c250558183f12dfba5049a"
     },
     {
       "id": "granovetter-svake-baand",
-      "revision": 2,
-      "content_hash": "eeb34b7c94b543abf944bbace71dbe475046f938ef618a3231eadc806f56751a"
+      "revision": 3,
+      "content_hash": "41c1e57f64011f955d2bc0510f84b0af455c988d0143a4e2a26768e9cfbb9d0f"
     },
     {
       "id": "gruppetenkning",
-      "revision": 1,
-      "content_hash": "9c02b82398c28883e84536145e30e3569a858a6c44bdbd28d5fc0ca95f3dfa7c"
+      "revision": 2,
+      "content_hash": "25fd8650037aa8b80bcf7ffd4fe471246f0a7b6e6602fc63c39aa50d50647423"
     },
     {
       "id": "haandtere-tekniske-omgivelser",
-      "revision": 2,
-      "content_hash": "33d3219a51dca9fb7a919985937ad10f468dc38dcc29243c0990cbbf58fd02d3"
+      "revision": 3,
+      "content_hash": "2ccc9eb9b61a1d46bfd9da3712e679794702caeac338bb5d15729bd04d798c9b"
     },
     {
       "id": "hackman-oldham",
-      "revision": 2,
-      "content_hash": "855e72f5802dbbcc01d4f5f79c9c664a596985e28aa8ded2b292e39926c84baa"
+      "revision": 3,
+      "content_hash": "a256161f16aac28d83fb5fa8c2d822bc90ff043d5057ce95f2ca704580b78575"
     },
     {
       "id": "helhetlig-organisasjonsmodell",
-      "revision": 2,
-      "content_hash": "a88be08d7fdf5d5ad7aedeb8cbd84291bc6c26b8bf35ff007d34cfa95bcce477"
+      "revision": 3,
+      "content_hash": "8c8fc199820dce750b2e60ed23b025dd124d2b8fce309d827e2e56452438ab06"
     },
     {
       "id": "hersey-blanchard",
-      "revision": 2,
-      "content_hash": "99d266202971f0dba83ae6a739bc33b5f4bcea4a29a1363fdf458c6aa233afee"
+      "revision": 3,
+      "content_hash": "9953edb4cb4734b9f51052002927e1ed12f030910e6265935d4a2845f001f6c3"
     },
     {
       "id": "herzberg",
-      "revision": 2,
-      "content_hash": "a75ea78976a90b2416f0b7dba242fd426d34dd6e6814ef58e59b3cf99471c164"
+      "revision": 3,
+      "content_hash": "182b4f6a4884579d84cec4544eb016cda838f85f07dacedad8a22c01a2386490"
     },
     {
       "id": "hofstede",
-      "revision": 2,
-      "content_hash": "8c8346a0d7051ebe56fa49a8e8e57ea276737bbe019f2b3960fbe10bd65b7e3a"
+      "revision": 3,
+      "content_hash": "f4ceddf248a717ba12374d38c16be773c3bc912d742bfcde4d4aa66e12ff748d"
     },
     {
       "id": "hrm",
-      "revision": 2,
-      "content_hash": "3ca13b4e38bf15a47ecb6499369df7bee7c6a17949f655552086a432ef6b6d3b"
+      "revision": 3,
+      "content_hash": "221ca62c40f77cdab851ab4adcba98ef2db222d66593cbe3d97db6e00b8d90c2"
     },
     {
       "id": "indre-ytre-motivasjon",
-      "revision": 2,
-      "content_hash": "b133eae1f958d38610428f9c6a00f448150f2e65ed357c36e5e0b489c5b63c8b"
+      "revision": 3,
+      "content_hash": "3701e484b26d9e69cf6659962762b5c9e90637642b08f22bbd8481fbb245e522"
     },
     {
       "id": "inkrementelle-beslutninger",
-      "revision": 2,
-      "content_hash": "4b4dd4998f6f03c9a8dfd04d56edb1858516fff762fc1f4a1c0ce200b43a5908"
+      "revision": 3,
+      "content_hash": "d804b55662756078b627b9a1e3c0c6a46908c81d9c003897a5145ed5c29ab6ef"
     },
     {
       "id": "innovasjon",
-      "revision": 2,
-      "content_hash": "55d473adeccef635fbfadb0957a8ac56bb060511dbc4625e6898606198bbc091"
+      "revision": 3,
+      "content_hash": "8cef69923e672b69a1c1c288cf0dd1ccc452e5c74456352aae8ff68a15aeae83"
     },
     {
       "id": "institusjonelle-omgivelser",
-      "revision": 2,
-      "content_hash": "6876fc0776fd13f61ab8df4528ff71e1ec1f5f14f9fcc22f822a79452ef12613"
+      "revision": 3,
+      "content_hash": "6b826d6e53a3e3665acc0511a226341b3e31d8861f4f6ff84da13c1f3040a77f"
     },
     {
       "id": "institusjonelle-strategier",
-      "revision": 2,
-      "content_hash": "c888ed04cfa342c28df583f0f449f0c012b38c1da2e018833373f885d37f70d7"
+      "revision": 3,
+      "content_hash": "3221f8eed43020d5131bee95dbf3dbece5dd007d882ce2d75b31ff4b68be5b00"
     },
     {
       "id": "interessentmodellen",
-      "revision": 2,
-      "content_hash": "768a2e7df01ac05e9094685451bcebc8ada2412923a053f6410e0b129e59414e"
+      "revision": 3,
+      "content_hash": "ed69d07bc32abffebf5793abc2ef36f6921dc6eb242cef079ccbf83d7924d1bc"
     },
     {
       "id": "interorganisatoriske-relasjoner",
-      "revision": 2,
-      "content_hash": "9e68e5109f89e375f26829c40c9a314a2847fd1faceb8311a08a2aa5894de417"
+      "revision": 3,
+      "content_hash": "d20ec2bff8d55a2abf4f44c31cfdc3c4e868f7b6cdadd4187d25601fefd21298"
     },
     {
       "id": "iverksettingsproblemer",
-      "revision": 2,
-      "content_hash": "7ba782688433c81debe7428a385c22bd506ee25a0585d2ed2f3a22c408a8a894"
+      "revision": 3,
+      "content_hash": "a7af25f209d471558b71bff68af4a4f0daf37247c4df324fdd0b309ac930e6ec"
     },
     {
       "id": "jobbengasjement",
@@ -489,53 +489,53 @@
     },
     {
       "id": "karismatisk-ledelse",
-      "revision": 2,
-      "content_hash": "094546d1593180b9354a99341ecc6577c9c4665f65cb1649dfd77879f9ab99d7"
+      "revision": 3,
+      "content_hash": "aacbe672efcc03bc6b838276c25de0586c978a675755e193f58f135a1d94848c"
     },
     {
       "id": "karrieresystemer",
-      "revision": 2,
-      "content_hash": "dae70ed12ee34e16dd2ab4b594596eaa2cd444d80a80c76655f120e8f4b1eb52"
+      "revision": 3,
+      "content_hash": "fffb6d5add8262d26327b7e5f7beeefcdf9aed107183fe661aa2d2c3c8d41bab"
     },
     {
       "id": "kognitiv-laering",
-      "revision": 2,
-      "content_hash": "ce8147479e9393dabaf04dca3a25f725a5c6300f50b7e6d007d89eedc2306d1e"
+      "revision": 3,
+      "content_hash": "9482fc051b753fddadfed22721cb61ceb7c1547e3a298120129c2ccbf1af8ee5"
     },
     {
       "id": "kollektiv-individuell-beloenning",
-      "revision": 2,
-      "content_hash": "e2da479eaf9ec3eb78ae82ece60288358415eeb23c0e7996c55d9c2b31b79a6f"
+      "revision": 3,
+      "content_hash": "f206ff1ab6a7ba5e5ef09e50653afde0b2ba7e1c942665562fc85ff6cfa1c734"
     },
     {
       "id": "kommunikasjon-beslutninger",
-      "revision": 2,
-      "content_hash": "a377ffeb0337c7f17f5b11ed7031bc6d3ca8763af61da5acf943c0d9370ca6d5"
+      "revision": 3,
+      "content_hash": "59c6053f3a8e6e006ebf197aedd8df12bdb426d79f759b558caea5ec3b559220"
     },
     {
       "id": "kommunikasjonskanaler",
-      "revision": 2,
-      "content_hash": "9649cdad9423d6346e5e92d9b3c5e196adf4b0d2d5959949481f2d2349ce2f0b"
+      "revision": 3,
+      "content_hash": "e108a635b6774d6169b7fae93734f079a0f62e3e0e5a14a25c426616b2b47864"
     },
     {
       "id": "kommunikasjonsprosess",
-      "revision": 2,
-      "content_hash": "c5d8c0914047e4ef8735e2fc027e2fb57456eaee07062a6f4f73c295629fb48c"
+      "revision": 3,
+      "content_hash": "90c401a21990b5f310fb4502aa5605ab241e157cba8995f3334bc139c0e0697f"
     },
     {
       "id": "kommunikativ-rasjonalitet",
-      "revision": 2,
-      "content_hash": "69e6db7c94a533c80cecb8b32c838ee71ec991d0f177dc16d401bfeddf28070d"
+      "revision": 3,
+      "content_hash": "802abe87d96a39d37c6183fdd71f9da1445f1cef51f855bb805ed7c502c6104e"
     },
     {
       "id": "kompetanseledelse",
-      "revision": 2,
-      "content_hash": "02b99e41d779b146d9817bc6bf772aa83e5e934bd3fce85233be2c555100bc06"
+      "revision": 3,
+      "content_hash": "03ad06cd561c41f290a423dd12a2cf72ed27b52f30c04ab35e122dc4f847e622"
     },
     {
       "id": "konflikt-beslutningskvalitet",
-      "revision": 2,
-      "content_hash": "f343fd0f95c480887e39e6e6825952b165001299ae37e3623d80926203acc93f"
+      "revision": 3,
+      "content_hash": "7952366f604d2aabed33b5b84241ab76e29566841b531c90e4bfb26439c5eadc"
     },
     {
       "id": "konsekvensetikk",
@@ -544,8 +544,8 @@
     },
     {
       "id": "koordinering",
-      "revision": 2,
-      "content_hash": "5a781808d1cceababe147dbcbe8625d3b20ea95a911dc6551516387b676daf05"
+      "revision": 3,
+      "content_hash": "4d422012efde81897f758951f572adb2a5f87cdbf4a25540a25a0eb0e1de5257"
     },
     {
       "id": "kotter-endring",
@@ -559,113 +559,113 @@
     },
     {
       "id": "laerende-organisasjoner",
-      "revision": 2,
-      "content_hash": "71ae202c1e958ac17cd6e5250df5befd6a1da1267c9ca1721a2a4b73155f8f8f"
+      "revision": 3,
+      "content_hash": "33b3adc48f4091cc7af32f57f45969583c8d5c8b090152cd754f65d487f8c007"
     },
     {
       "id": "laering-endring",
-      "revision": 2,
-      "content_hash": "ff55190e21f4731e65525645d7886fac1b722e06b250af4adda6594bd8d24c69"
+      "revision": 3,
+      "content_hash": "3a3d16deea93e2ba586d67ea41637124d19b12c0873f01c5e5d5dbd452cf1993"
     },
     {
       "id": "ledelse",
-      "revision": 2,
-      "content_hash": "b190c6da91bf42b52330bb83e331aaa237ec06e7d399daa51b1af83a4250fdf0"
+      "revision": 3,
+      "content_hash": "8d7fb0be7f55c8c2394c31678d0cfa78c751d55219150dbee32ed0102f8b389c"
     },
     {
       "id": "ledergitteret",
-      "revision": 2,
-      "content_hash": "ec6b16b1a3ad0f868d24b948740c76650b4d2d737157fa19e8ec8dcb8c3f424f"
+      "revision": 3,
+      "content_hash": "26ebf3ac5df4d6ff9cac57486ba13acc1af181ed4f5bc9f049235a5cec9e59dd"
     },
     {
       "id": "lederroller",
-      "revision": 2,
-      "content_hash": "7db31d27ebef317770a67376db0f340e3c7f752f0bf56518255408117c631b8a"
+      "revision": 3,
+      "content_hash": "67d069b3a5a042e1940c228f397bdced75cc3fa909e3e0144a4ad56013bd7190"
     },
     {
       "id": "lederstiler",
-      "revision": 2,
-      "content_hash": "06e926af5c9610bbd8ccb0e2d401f7abc864dbeecb6a87eb5d72f78c3b863676"
+      "revision": 3,
+      "content_hash": "39c7a87e8fbfcb49597747ba3d99426fbbccf6bd0602df1c98d522df42a8e6c4"
     },
     {
       "id": "lewin",
-      "revision": 2,
-      "content_hash": "2682635fe30ba049c4789de2f0b2d6cedc6a3741d3d054a9ed5907b9148a13b5"
+      "revision": 3,
+      "content_hash": "7986b3a5bd833c0033c136ee40fad346976b8c1862354ae024dc09a0c6dd201f"
     },
     {
       "id": "linjeorganisasjon",
-      "revision": 2,
-      "content_hash": "22c7026c78c9825735b48765ace3cb3c21a0ce3cf0f2d84edbe3da775cb5d718"
+      "revision": 3,
+      "content_hash": "3087bbda595ed45acfb44f1deefed3b014fb44bf76a207207a1ad4f08eb87695"
     },
     {
       "id": "lmx",
-      "revision": 2,
-      "content_hash": "6418b771cd047d950eeb839d2edcc966bd9014321782fd25cc7a4ac1f5c5327b"
+      "revision": 3,
+      "content_hash": "7e5fa1fc0c3a76d7801d101c60aa87e84e410cfc9c5d90a92f1a5fbdd871b9e6"
     },
     {
       "id": "maalforskyvning",
-      "revision": 2,
-      "content_hash": "3adca91113b9529ee90ced94adac88ff75165f56d165a4e57b9dc6f045da970a"
+      "revision": 3,
+      "content_hash": "c35112ce0e7fef7a9454efe7ac94a1380de77ef830c733e31cee7a61c1639209"
     },
     {
       "id": "maalhierarki",
-      "revision": 2,
-      "content_hash": "fe24bee5b9f3858fa97fb0184663bb9ba9ea2537c421f00a5a3f85a2b7c29471"
+      "revision": 3,
+      "content_hash": "1eaa6fbe2497205c613111a409a2bce5c75872ea766b2a364772d3e1b03c570d"
     },
     {
       "id": "maalsettingsteori",
-      "revision": 2,
-      "content_hash": "7715fce9e456209e482add833de82e9bf3f8f625c200ba8fed6c8beb1f37b066"
+      "revision": 3,
+      "content_hash": "086fc300ec48d65e17498ddf89b50198158daec59c455081941b0bd35f8ca3a6"
     },
     {
       "id": "maktbaser",
-      "revision": 2,
-      "content_hash": "6438513b4c3bd2287e3a489f0e613638284368da1985cb5b58af7866c417f726"
+      "revision": 3,
+      "content_hash": "adcd19784a048375310f39df1e2bef4e2ea5003210310620df7f45807532fa76"
     },
     {
       "id": "maktformer",
-      "revision": 2,
-      "content_hash": "e8fe6a11a9765bf217de6983ef43ef758f0b9bce6d4a829c4f7bf196be937032"
+      "revision": 3,
+      "content_hash": "ad81bfa2ec3057911b2f1d748e58c667d2c061031cc345a2265ada2604c40c62"
     },
     {
       "id": "march-konsekvenslogikk",
-      "revision": 2,
-      "content_hash": "6ecc2615ff67a5ad7e51113d33b5de0ba6f51316fc9457b709a2357c72dc9c3b"
+      "revision": 3,
+      "content_hash": "adbb2610d40e811e650ca140d7ad9361052211416abe2c48c0d07bebb265cc58"
     },
     {
       "id": "march-passendehet",
-      "revision": 2,
-      "content_hash": "8cb46e55d52c0945d8189c7b09e8d6daae31b244b28aaeba8436cfb4845df4c5"
+      "revision": 3,
+      "content_hash": "8054e20716e67c7698553702272c604d77b422a7dc47900e78de0bca05fd6b33"
     },
     {
       "id": "march-utnyttelse-utforsking",
-      "revision": 2,
-      "content_hash": "fcdc17451c7554542d553fdd807ccf50f19c4bef9f9f1174cbb7c463eb01737c"
+      "revision": 3,
+      "content_hash": "7ea3ac18457d6f6a509ad76589d5025d452d6ace59df5c40caaae4fbc8265655"
     },
     {
       "id": "markedsgruppering",
-      "revision": 2,
-      "content_hash": "346e0f208f2ae8fdc0644832beaeb0994c37bcd457d1fc04ed2bcf77480a5c54"
+      "revision": 3,
+      "content_hash": "75334d8eb276ea47f28a136469411bd5991b26424171a8d3a1406e3742746acc"
     },
     {
       "id": "martin-kulturperspektiver",
-      "revision": 2,
-      "content_hash": "4482fd909d8a7e956c361f8ded04b61e6a76a2815fd38dbff7220b2415922cde"
+      "revision": 3,
+      "content_hash": "ec5057df9f1688ae0b60040aa15602fa5038da4061f1b8503d29704b2090b571"
     },
     {
       "id": "maskinbyraakrati",
-      "revision": 2,
-      "content_hash": "e090e34dc476b656a16eb90cadb64f1c983527feec37990644ece3ee3fd075db"
+      "revision": 3,
+      "content_hash": "ecdd435e36bc0429367b6f6d53a433b27c629c43f548cb1cc2a413295ec4c736"
     },
     {
       "id": "maslow",
-      "revision": 2,
-      "content_hash": "2225c09613e897a321eb35ff0002d439cb61b486b6c2d15bdbaa8e1c1107619e"
+      "revision": 3,
+      "content_hash": "79f384c24ea24f9fcb576d885906637f2d2e043a65f7d2bbe2b37ace9f5fc777"
     },
     {
       "id": "matrisestruktur",
-      "revision": 2,
-      "content_hash": "a69ae23316b5461bba41c48147a13124e6ee7073f65543f456b43b4ed2c58e12"
+      "revision": 3,
+      "content_hash": "3a4f0e54d1ccfe802456d93d602239adca7f8ac13a0665beffc345cecb86b990"
     },
     {
       "id": "mcclelland-behov",
@@ -674,18 +674,18 @@
     },
     {
       "id": "miles-snow",
-      "revision": 2,
-      "content_hash": "5ed71edfce9acfb1c1b4936d2739313513f18da96e82122f951af4e2b544dff5"
+      "revision": 3,
+      "content_hash": "4b74a8d89077d085293cec5c3a8cfebfc02f5df5e9606fd7c311e22078f2a110"
     },
     {
       "id": "mintzberg-hoveddeler",
-      "revision": 2,
-      "content_hash": "d22a7ff8c660c5049019bb83ed557bd8ab4260b3ab4fd2d7edfa66add4ce0089"
+      "revision": 3,
+      "content_hash": "d96b457adec8477385216e0fdcbf9b423e704c04308b09870fc0d3b2a275bd81"
     },
     {
       "id": "mintzberg-konfigurasjoner",
-      "revision": 2,
-      "content_hash": "bb034bb4a56387aa97e7fd60aeb2bbd78c3ffa9c3e57ed82f97a0af356d6aef9"
+      "revision": 3,
+      "content_hash": "a8c74a7a614086f197a833d21d191e61f82e35d60144512ee85c4cd1068ef40a"
     },
     {
       "id": "navigasjonshjulet",
@@ -694,63 +694,63 @@
     },
     {
       "id": "nonaka-kunnskap",
-      "revision": 2,
-      "content_hash": "8cd4c7d4474c720cc2b40f8b13f5be9950e387226c987b840a3242a0f574435e"
+      "revision": 3,
+      "content_hash": "b4b5940e2b5ecf3dff54bbb1020547c39d6cd374aa92847d63cb151d34293e59"
     },
     {
       "id": "omdoemme",
-      "revision": 2,
-      "content_hash": "5ebaa9a5ffb9e11d02f00368005bece6392e390ab91c9ebbb26f4789641216f9"
+      "revision": 3,
+      "content_hash": "4b2cfaade044dac5816217ab445dec321a3af678a4dd8b2d6a419c662e17e7af"
     },
     {
       "id": "omgivelsesavhengighet",
-      "revision": 2,
-      "content_hash": "4b852eb948264ea2e0ccd08caca6c0ce30ccbdcb74ea297654cc32fcb321eac7"
+      "revision": 3,
+      "content_hash": "15ee1861b186beb6a10b5bf97cba389fa085c201f07e66f41538e22056aa4876"
     },
     {
       "id": "omgivelsesusikkerhet",
-      "revision": 2,
-      "content_hash": "2885b31e8c38d4bc03a66a1a860305dc06f9b6f903bfe53014c71185ee19a47c"
+      "revision": 3,
+      "content_hash": "61582d778663a542ca82493f2b4044b12d19826467e5fb7220c1e759bdf786c4"
     },
     {
       "id": "organisasjon",
-      "revision": 2,
-      "content_hash": "cb6c08c1ad039366475fed26b00f89494e7f7ad3631df5e01ff4bbf753a17e4b"
+      "revision": 3,
+      "content_hash": "11c29516236c649aa450c5f4117df7b1b5edf88cc174fe0a711557ec20d8629a"
     },
     {
       "id": "organisasjonsatferd",
-      "revision": 2,
-      "content_hash": "29b311feb4644861f619958dc7568b6f363f13e6ca90a6cbf6517944869a7a10"
+      "revision": 3,
+      "content_hash": "f7aafccd97ff682b1e38084235bc9a3e654c8a42991a5628655d57332df56b78"
     },
     {
       "id": "organisasjonskultur",
-      "revision": 2,
-      "content_hash": "2dd8bf5351a44fa2de6e58a820a8023198ea517f90c2f21a7d496ad08e7104f8"
+      "revision": 3,
+      "content_hash": "19451197aeb0e994122028c2791e7cb231689f62ed8ad14cd7f652184095eb4f"
     },
     {
       "id": "organisatorisk-laering",
-      "revision": 2,
-      "content_hash": "e0326db6dd6e231d2f691dc3bc3094464f96746a364b9412e1d7a7b7dfe932d3"
+      "revision": 3,
+      "content_hash": "fb31c89c2b971850419fb4a5f1dfe5bce70a64b0f072fed627d8b516255971f9"
     },
     {
       "id": "organisatorisk-rettferdighet",
-      "revision": 1,
-      "content_hash": "ff33f4ecb914b7b85180ab7834db3b8961fcbdc6bd021cecee7217ddf66f993c"
+      "revision": 2,
+      "content_hash": "40e1e2632b24cc56fbbd51399478a15914b2e483e9f89320f2579260604b9ff0"
     },
     {
       "id": "organisatorisk-tilknytning",
-      "revision": 2,
-      "content_hash": "d78c4f19069c3debde5e2faa68bfb3a4c61e0968c7202076af663ec68bf4ec6a"
+      "revision": 3,
+      "content_hash": "9e24c3e33949a2ad356720071b1649cac283971ccd56cec3763a82887298f9a6"
     },
     {
       "id": "organisert-anarki",
-      "revision": 2,
-      "content_hash": "e02ed59d41461c101bc03594691922b61ecfb8fbab47f14c75c2bda6fdd21808"
+      "revision": 3,
+      "content_hash": "df28b69a5123064bda377ec1c1669d09fa90e658a99862dab07d57ca62642a7e"
     },
     {
       "id": "perfekt-rasjonalitet",
-      "revision": 2,
-      "content_hash": "152ffeb1d235f8e0f09a0dfe072e7ad72df93e821b126e4ff05d9c3097d3257b"
+      "revision": 3,
+      "content_hash": "e6496021a71e9b22bf97a45e1eb87447e49af448ebf15f1ca74c41c1dfc56442"
     },
     {
       "id": "pliktetikk",
@@ -759,8 +759,8 @@
     },
     {
       "id": "porter-generiske-strategier",
-      "revision": 2,
-      "content_hash": "c656412e1f2dfcdb06c2d2536deb7e4bf888a2d57bc5578772d330ad41a7fdd4"
+      "revision": 3,
+      "content_hash": "291b00fa1271b705d51ac84d455b1ebf00978094dccf327f213342192ee50bba"
     },
     {
       "id": "porter-verdikjede",
@@ -769,33 +769,33 @@
     },
     {
       "id": "produksjonssystem",
-      "revision": 2,
-      "content_hash": "196e9429a100a1bfdd3547c58cbf2549a937aab6cc0e816dc4d39ffe3407ea14"
+      "revision": 3,
+      "content_hash": "143a4bee93b27e6d2a8166bee950af7810d07358c72d2aa83a88207ab645772d"
     },
     {
       "id": "produktivitet-effektivitet",
-      "revision": 2,
-      "content_hash": "2c046cfa15b964ac384163b4ce8c479a6340c4bec0893d6c7c6e1edb902dd8e4"
+      "revision": 3,
+      "content_hash": "865561b5d51729fa5c6c22c59335bff06ed3a52049bd980695ef84ab239e0143"
     },
     {
       "id": "profesjonell-autoritet",
-      "revision": 2,
-      "content_hash": "403a5210b8a04e3e6f2566ee89f193db20a1376d0e4f335802e20899852dd018"
+      "revision": 3,
+      "content_hash": "2f43f33d385abc7883f994d7621fa35ab3225e6b54a207807760540b9c66f6dc"
     },
     {
       "id": "profesjonelt-byraakrati",
-      "revision": 2,
-      "content_hash": "0c3f91093e1a1b5e00da3882cb654b9cadae442f5893ec8fc862c779d201f2fa"
+      "revision": 3,
+      "content_hash": "d2acdb9453f28135f05b6a7bd47731ff5f402c0224b9fb3dd6e2370718487227"
     },
     {
       "id": "prosjektorganisering",
-      "revision": 2,
-      "content_hash": "a66690d823609c5bfa03e71d069618247df0028661b31cc4f421b72dbb88927c"
+      "revision": 3,
+      "content_hash": "c1d6759028fdcf647b2ddd43b89a21593969e7bb08a70f9a896104df2237622a"
     },
     {
       "id": "prososial-motivasjon",
-      "revision": 1,
-      "content_hash": "adefde651640a90075b5b6298d5893796dffbdcaca80c75a447bab8090ef9bd4"
+      "revision": 2,
+      "content_hash": "1b9211f09f19f6cecd935f5d8a33137ed5ffbdd246a3d46f5bdeb0711e1075c0"
     },
     {
       "id": "psykologisk-kapital",
@@ -804,8 +804,8 @@
     },
     {
       "id": "psykologisk-kontrakt",
-      "revision": 1,
-      "content_hash": "65f19b509ee57e00fcfc1d6fe20319ea6b1454a6b109a7580dceaf8ecc3974b6"
+      "revision": 2,
+      "content_hash": "04381b77f9add401768c06fbd45c4d3a69eaf1285534c1dbe8bab8911da5192f"
     },
     {
       "id": "psykososialt-arbeidsmiljo",
@@ -814,13 +814,13 @@
     },
     {
       "id": "rasjonell-organisasjon",
-      "revision": 2,
-      "content_hash": "2780927f0b2d8066173da33abe76ef2c8d5165d3bee2a797a398efb7b28d4b7a"
+      "revision": 3,
+      "content_hash": "24f89759e08ed15168e2302e98203556c4ededb4abd7dbbc76f7e94533ba44e4"
     },
     {
       "id": "regelmodellen",
-      "revision": 2,
-      "content_hash": "be6072c38d4022b8a89eca1ab6c3f61857e76abfb88a332d3efa2baef84c5b4d"
+      "revision": 3,
+      "content_hash": "25a4b7154959bf9f26b3f6fd15c6ec5d315a5255a8e8edf61fceaf5822b0b2a1"
     },
     {
       "id": "regulatorisk-fokus",
@@ -829,133 +829,133 @@
     },
     {
       "id": "ressursbasert-strategi",
-      "revision": 2,
-      "content_hash": "d5180fcd3f50c5e2e8bb251eaf9a8385535f480e94484cde586508ba96bf1643"
+      "revision": 3,
+      "content_hash": "cd45ec41dccbd928f0a238747ce67ecc4e5747667e275791fbd2a4986f3651f8"
     },
     {
       "id": "samfunnsansvar",
-      "revision": 1,
-      "content_hash": "90abe5f54d233a90c70fdfdfe6f496b9975b42c3ab7f0eb65a37ca2684405e22"
+      "revision": 2,
+      "content_hash": "0948d4ca45392aad54df8a25c3e2a1a26de74d965ade7b44b21e9d6f67a2f38e"
     },
     {
       "id": "schein-kulturnivaaer",
-      "revision": 3,
-      "content_hash": "00659246c3ef8171ed22c4eb9b37e37657301cdd7a05de3dd309d4df41ca9c4b"
+      "revision": 4,
+      "content_hash": "c89b9185157b9420a09796136a0419f217ddf28b45cecaba8f545098d1ff9cc2"
     },
     {
       "id": "selvbestemmelsesteori",
-      "revision": 2,
-      "content_hash": "67d92a4413dfb5012c5790c3a27f9f1c43d9c5aa71fa122b2a66d16b3bc63e65"
+      "revision": 3,
+      "content_hash": "b467f499e4d606b767364ef2f448a0d9c34a6c1c52577ab26537699bf421a42f"
     },
     {
       "id": "selznick-verdibasert-ledelse",
-      "revision": 2,
-      "content_hash": "6f74f7c03013ec5f26fb7c9ade66df409a8710b5241cff145b608effdd1c95ae"
+      "revision": 3,
+      "content_hash": "44669ce4fe1bef46c7c3dfa4081c3af3e3d73ecd782960f779788209c10ad19e"
     },
     {
       "id": "sentralisering",
-      "revision": 2,
-      "content_hash": "37126d9cb4e5dc6345987396fd2267dac215d9104fb93d7ae4942197daed4599"
+      "revision": 3,
+      "content_hash": "08f8dba9ce18d7e7a030b841e67a66024d83052ad5aac6f3367ef225b499c2c2"
     },
     {
       "id": "sosial-laering",
-      "revision": 2,
-      "content_hash": "def899a9ddfcef5d375368fba773743da9568bd2683f738211e8db221b31f701"
+      "revision": 3,
+      "content_hash": "ee194ebdb8f8288c7afba11c70494985dedc3d3eeb7832b9af38b83cd8c9ba2d"
     },
     {
       "id": "stiavhengighet",
-      "revision": 2,
-      "content_hash": "695b723e6c5fa3419085346557cf39029b25d92d3ab266c6c5adddc1992b03b6"
+      "revision": 3,
+      "content_hash": "d84ccb75e917424c62a5bd3b62d2e5adb18b3fdb055d48e7e13abaf9ed30e389"
     },
     {
       "id": "strukturelle-hull",
-      "revision": 2,
-      "content_hash": "0532cd187ac309f400aac59c8b699b8f95a553e2911d34625810af620f8cfa75"
+      "revision": 3,
+      "content_hash": "2ae2672bb7445ae9f5e2f286c441211b71454c0c3b412a49f73713431af784b8"
     },
     {
       "id": "styringsmekanismer",
-      "revision": 2,
-      "content_hash": "48a27aa3be0c05ce3d05f4bdcc290bc59bcaca4bf51260c8580fdd40e5fc5b93"
+      "revision": 3,
+      "content_hash": "207bc6261344b5507daa01b2a106d9b2e9598034a79001a8061877300ad169b7"
     },
     {
       "id": "suksessfellen",
-      "revision": 2,
-      "content_hash": "4e10548be8d762fe65e322595f0e88468a4a6097f056ec5d604e31c17dfa44a3"
+      "revision": 3,
+      "content_hash": "333cb97d69ec3e2786187c5d545791abd3d33ce5018eb98f75373a62fa9fbc08"
     },
     {
       "id": "swot",
-      "revision": 2,
-      "content_hash": "3cdcc10ea8455a049547853ab0ca69dd463462a2093a74fa90de00d15dcff700"
+      "revision": 3,
+      "content_hash": "38feae6db34059cbe0986469f2420dfa183f4d3d9693c575bd78e8c7beb59db5"
     },
     {
       "id": "symbolske-beslutninger",
-      "revision": 2,
-      "content_hash": "02362c98739f908105a1bcf096eec471ee8bf697ea45d09cb44265144d414e2b"
+      "revision": 3,
+      "content_hash": "e1dbec58e840628016a7108fae6bfec524889e00413a5858fe69ba3fc867d22c"
     },
     {
       "id": "taylor-arbeidsdeling",
-      "revision": 2,
-      "content_hash": "4be4649350775c5ee76fa1e2d76853cb35678c95f24517cae82d2a03f66f7f29"
+      "revision": 3,
+      "content_hash": "22c6848806f48a5ac12450c6e3f8db3b49c9cb4b2f28b4ba753e816e8f352ccd"
     },
     {
       "id": "teknisk-institusjonelt-samspill",
-      "revision": 2,
-      "content_hash": "264bc9ad9d81764dd4be43a588172d4fda1b26cf784f24ebc3911fbbde5ce5be"
+      "revision": 3,
+      "content_hash": "e7477390b74d8ed917db2a54a60b5faeffea1a0d130bae05e4e3e66e4ce41e5b"
     },
     {
       "id": "tekniske-omgivelser",
-      "revision": 2,
-      "content_hash": "f50e9e0118570f50952fd5684c6733731f992673d4d2d70f50dd4a55e22372f0"
+      "revision": 3,
+      "content_hash": "b6d87462ebf90d98b692b4d2b8885bb1eea127c8ae5efdba0c77ab555e5e4e83"
     },
     {
       "id": "thorsrud-jobbkrav",
-      "revision": 1,
-      "content_hash": "6447da0b745e3a5018e82e85807a3ce063cf7fc83a46f10b3bcf9c740a7e4917"
+      "revision": 2,
+      "content_hash": "2eb4a4ecaf16bd432f8800f37f96aae2e8a24c1393ef7f9e21ddc06fa2511e08"
     },
     {
       "id": "tjenende-ledelse",
-      "revision": 1,
-      "content_hash": "bfb8df91b1768c0bc46b693f092e3720f10fc409eb4c0ca64e62e0ccc966c480"
+      "revision": 2,
+      "content_hash": "982bf4373f11d9af6759dfa5c0b0735e79e7aa864e9835a28e12c4000a9c0fd2"
     },
     {
       "id": "toyota-hvorfor",
-      "revision": 2,
-      "content_hash": "b47a24ffa23e8801b6dda856dab317b88549c66d8ad2af26c3c0e9dab6e820ba"
+      "revision": 3,
+      "content_hash": "0f611705fab1b78a82f06205c33b722e19148a8e3d5cca634d58d0801ba4dd4e"
     },
     {
       "id": "transaksjonskostnader",
-      "revision": 1,
-      "content_hash": "a7c09072d89dc7cc7f2ea7f41faa14e62bbb05905d8755bd426e72f421bb7e5f"
+      "revision": 2,
+      "content_hash": "05a6b3d521e0b179969f47be398a2f89e8ef8514934fff7575f0b05a1d4e3a45"
     },
     {
       "id": "transaksjonsledelse",
-      "revision": 2,
-      "content_hash": "0aa38b12b2b71a8d3f16c38430b1b4f46532bf227d956a3dee0a9e6490866e17"
+      "revision": 3,
+      "content_hash": "e748f74d9158668e39042d0350fc5ee017448cc0fd67d28e93b6b6e53f4b8a4d"
     },
     {
       "id": "transformasjonsledelse",
-      "revision": 2,
-      "content_hash": "b28aa7faa8eead9030dd796d90ef7f98facdbf836e33306a975f0c037e85cad2"
+      "revision": 3,
+      "content_hash": "3789f4d76036c4d5885bc672c5497713c39e9d3c4a8ec4366c0a83aa06ccf806"
     },
     {
       "id": "uplanlagt-endring",
-      "revision": 2,
-      "content_hash": "a9ea2a7f18e7b0417f420c6783ff30d08b9c5453cf93f4c6fd5b0a81bcd96361"
+      "revision": 3,
+      "content_hash": "aa4932635e144300541333e5f6fde4d28833512e4360ef642dc60e4364bb0e67"
     },
     {
       "id": "varer-tjenester",
-      "revision": 2,
-      "content_hash": "3e5c45a32aea238bb4b494525c4059a2a67a919e6805ce81370ae59b93f6cee0"
+      "revision": 3,
+      "content_hash": "6330ee203a74faef4da5835b1f97f008aaa52058f0ef0731b1a5a3d9f991a6d4"
     },
     {
       "id": "vertikal-horisontal-kommunikasjon",
-      "revision": 2,
-      "content_hash": "3c268b74f90e2ef3923e6f4bbdcd80073ba49523e72d04418a150c2de64729d2"
+      "revision": 3,
+      "content_hash": "b1e9cb2d7efc12fc3869d7568daff4f00fd7dcd7d13bd7f8fc71e3c726ed8b64"
     },
     {
       "id": "weber-autoritet",
-      "revision": 2,
-      "content_hash": "c5339cf7c8a346834c8c0686879a26c688bb52c32ce2f088869bdd87a5b7b4c3"
+      "revision": 3,
+      "content_hash": "dcb131aacf7a756fbf8ac97b3d42249d8d8b0db7d42d36d30a869e9bfcb2ba2a"
     }
   ],
   "diagonal": null,
