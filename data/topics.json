@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
   "dataset_id": "organisasjon-ledelse-etikk",
-  "dataset_revision": 6,
+  "dataset_revision": 7,
   "language": "nb",
   "created_at": "2026-09-25",
   "course": {
@@ -362,6 +362,11 @@
       "id": "ledelse",
       "title": "Ledelse i organisasjoner",
       "order": 12
+    },
+    {
+      "id": "jobbholdninger-arbeidsmiljo",
+      "title": "Jobbholdninger og psykososialt arbeidsmiljø",
+      "order": 13
     }
   ],
   "relationship_contract": {
@@ -21185,13 +21190,13 @@
     },
     {
       "id": "stereotypier-fordommer-diskriminering",
-      "revision": 1,
+      "revision": 2,
       "title": "Stereotypier, fordommer og diskriminering",
       "short_label": "Stereotypier og fordommer",
       "kind": "concept",
       "aliases": [],
       "attribution": [],
-      "category_id": "motivasjon",
+      "category_id": "jobbholdninger-arbeidsmiljo",
       "parent_topic_id": null,
       "granularity": "topic",
       "tags": [
@@ -21335,17 +21340,17 @@
           "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
         ]
       },
-      "content_hash": "c1800bf88f3c3addda8ca6e11fcaa2732a1b7338228b15e3a85bcc70be4eb032"
+      "content_hash": "58ea28c6dc22e6966e9dc5f7ceb50f308a4e56ba539dc4e685410bbd82192d4d"
     },
     {
       "id": "karasek-krav-kontroll",
-      "revision": 1,
+      "revision": 2,
       "title": "Karaseks krav–kontroll-modell",
       "short_label": "Krav–kontroll",
       "kind": "concept",
       "aliases": [],
       "attribution": [],
-      "category_id": "motivasjon",
+      "category_id": "jobbholdninger-arbeidsmiljo",
       "parent_topic_id": null,
       "granularity": "topic",
       "tags": [
@@ -21489,17 +21494,17 @@
           "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
         ]
       },
-      "content_hash": "30ecf7390eb45deeba947806fb12eb1470a36ae94218349519736925df1c9697"
+      "content_hash": "e532c48553e1bca487aea6f40c2cd5e7b88fa5328b83212fac1536f1312fb71f"
     },
     {
       "id": "utbrenthet",
-      "revision": 1,
+      "revision": 2,
       "title": "Utbrenthet",
       "short_label": "Utbrenthet",
       "kind": "concept",
       "aliases": [],
       "attribution": [],
-      "category_id": "motivasjon",
+      "category_id": "jobbholdninger-arbeidsmiljo",
       "parent_topic_id": null,
       "granularity": "topic",
       "tags": [
@@ -21646,17 +21651,17 @@
           "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
         ]
       },
-      "content_hash": "6c84cc4fa8c0f4a739d0241bbf600a8c2d8c7362d6246146ac84e46eb11e4ece"
+      "content_hash": "0e17a3e601131d5b5c6068c6b2ebd5f5050860fb62688c644e5f3db913ca612c"
     },
     {
       "id": "sosial-stotte",
-      "revision": 1,
+      "revision": 2,
       "title": "Sosial støtte i arbeidet",
       "short_label": "Sosial støtte i arbeidet",
       "kind": "concept",
       "aliases": [],
       "attribution": [],
-      "category_id": "motivasjon",
+      "category_id": "jobbholdninger-arbeidsmiljo",
       "parent_topic_id": null,
       "granularity": "topic",
       "tags": [
@@ -21805,17 +21810,17 @@
           "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
         ]
       },
-      "content_hash": "23c51be40e87055f75144a427d3fd83b694eddf1e44e456e2cd49267b4972f19"
+      "content_hash": "beae79a427a64bb8145f40651d08989bbe8a781ce680e6df2c487afe0edd2092"
     },
     {
       "id": "thomas-konfliktprosess",
-      "revision": 1,
+      "revision": 2,
       "title": "Thomas: konflikt som prosess",
       "short_label": "Thomas: konflikt som prosess",
       "kind": "concept",
       "aliases": [],
       "attribution": [],
-      "category_id": "makt",
+      "category_id": "jobbholdninger-arbeidsmiljo",
       "parent_topic_id": null,
       "granularity": "topic",
       "tags": [
@@ -21963,17 +21968,17 @@
           "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
         ]
       },
-      "content_hash": "d2095cda08e6cf2e05d7fe2348606a7ca05cc04eabd3dd97c9c6a69f48dd65d7"
+      "content_hash": "fe12e268b9b1d12b19243c29e628af98c61188431f0e6c92461869fefe3df3c7"
     },
     {
       "id": "konfliktarsaker",
-      "revision": 1,
+      "revision": 2,
       "title": "Årsaker til jobbkonflikter",
       "short_label": "Årsaker til jobbkonflikter",
       "kind": "concept",
       "aliases": [],
       "attribution": [],
-      "category_id": "makt",
+      "category_id": "jobbholdninger-arbeidsmiljo",
       "parent_topic_id": null,
       "granularity": "topic",
       "tags": [
@@ -22120,17 +22125,17 @@
           "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
         ]
       },
-      "content_hash": "149de3292e653a01b6637fccb76da2d8a147759f1df688ea3df40029efa0b304"
+      "content_hash": "0426e9caa2663710e2d6b3bbc025e698291683743c805b380db0fce64b872e34"
     },
     {
       "id": "konstruktiv-destruktiv-konflikt",
-      "revision": 1,
+      "revision": 2,
       "title": "Konstruktiv og destruktiv konflikt",
       "short_label": "Konflikttyper",
       "kind": "concept",
       "aliases": [],
       "attribution": [],
-      "category_id": "makt",
+      "category_id": "jobbholdninger-arbeidsmiljo",
       "parent_topic_id": null,
       "granularity": "topic",
       "tags": [
@@ -22274,17 +22279,17 @@
           "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
         ]
       },
-      "content_hash": "57cee813469bdcce7c9be0f553be91adca93b9b1c598bd5b12b31b322438f50b"
+      "content_hash": "3aa624d11ffbc55495f9662f5f48661c0fa5de307835428bc545c36f16c330db"
     },
     {
       "id": "konflikthaandtering",
-      "revision": 1,
+      "revision": 2,
       "title": "Konflikthåndtering",
       "short_label": "Konflikthåndtering",
       "kind": "concept",
       "aliases": [],
       "attribution": [],
-      "category_id": "makt",
+      "category_id": "jobbholdninger-arbeidsmiljo",
       "parent_topic_id": null,
       "granularity": "topic",
       "tags": [
@@ -22431,17 +22436,17 @@
           "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
         ]
       },
-      "content_hash": "93ee9003932d5e8ebfdf842181b42c9755bce5a21f72acc6f2744f937acf2629"
+      "content_hash": "f198b7a7dc68ae3720a7bbec24e77a02ba2cdb68fddc791865d3176e87855c24"
     },
     {
       "id": "mobbing-trakassering",
-      "revision": 1,
+      "revision": 2,
       "title": "Mobbing og trakassering",
       "short_label": "Mobbing/trakassering",
       "kind": "concept",
       "aliases": [],
       "attribution": [],
-      "category_id": "makt",
+      "category_id": "jobbholdninger-arbeidsmiljo",
       "parent_topic_id": null,
       "granularity": "topic",
       "tags": [
@@ -22589,17 +22594,17 @@
           "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
         ]
       },
-      "content_hash": "042cfc4d268d95b0e570cf7f56163924e9bf2144fd995aae96d83c14acdf6507"
+      "content_hash": "691b5826d7a398471b6299767a915dacca07af4c5a5fc856c2be2eb10d448868"
     },
     {
       "id": "varsling",
-      "revision": 1,
+      "revision": 2,
       "title": "Varsling i organisasjoner",
       "short_label": "Varsling i organisasjoner",
       "kind": "concept",
       "aliases": [],
       "attribution": [],
-      "category_id": "makt",
+      "category_id": "jobbholdninger-arbeidsmiljo",
       "parent_topic_id": null,
       "granularity": "topic",
       "tags": [
@@ -22741,17 +22746,17 @@
           "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
         ]
       },
-      "content_hash": "d65e0d8d152abf742474ce7dcae0b8b51a804723c2484935d7ddb16d27a83d5b"
+      "content_hash": "3ef891d0e25546e399e7ecd8da791f3a9a34a7b7a41d66f42c942b283e9f37cc"
     },
     {
       "id": "progresjonsprinsippet",
-      "revision": 1,
+      "revision": 2,
       "title": "Amabile og Kramer: progresjon",
       "short_label": "Progresjonsprinsippet",
       "kind": "concept",
       "aliases": [],
       "attribution": [],
-      "category_id": "motivasjon",
+      "category_id": "jobbholdninger-arbeidsmiljo",
       "parent_topic_id": null,
       "granularity": "topic",
       "tags": [
@@ -22898,7 +22903,7 @@
           "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
         ]
       },
-      "content_hash": "c0fca39247628c061ff922d51e3e723eafc509f255f26dbc0e034a5d83511f2c"
+      "content_hash": "eea3aae558a523955fc20619611267efcef69010755c365d52d7b823fa46b370"
     }
   ],
   "figure_registry": [

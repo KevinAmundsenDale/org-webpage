@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "dataset_id": "organisasjon-ledelse-etikk",
-  "dataset_revision": 6,
+  "dataset_revision": 7,
   "relationship_revision": 4,
   "rubric_version": "1.2.0",
-  "topics_fingerprint": "ab905df96288c428e9545ac31742d05c773df192b315cd7b4b6fb6fe57d22f11",
+  "topics_fingerprint": "efc14c486f4b236becae4f5cba5e7b274a5401aba7e4054f43bca26ce8d3f2fa",
   "semantic_profiles_fingerprint": "4525366e27c56875363aeb2aa9de5614cfd9e7eac0dda8171568ad8b0b5519ce",
   "pair_reviews_fingerprint": "df1dc36ecd5a67e72e8689e7cd75018b2d62dc398932badffc82ceb9cc234cdd",
   "weight_semantics": "Faglig nærhet og naturlig overgang i en kursdrøfting; ikke statistisk korrelasjon, sannsynlighet eller kausal effekt.",
@@ -500,8 +500,8 @@
     },
     {
       "id": "karasek-krav-kontroll",
-      "revision": 1,
-      "content_hash": "30ecf7390eb45deeba947806fb12eb1470a36ae94218349519736925df1c9697"
+      "revision": 2,
+      "content_hash": "e532c48553e1bca487aea6f40c2cd5e7b88fa5328b83212fac1536f1312fb71f"
     },
     {
       "id": "karismatisk-ledelse",
@@ -555,13 +555,13 @@
     },
     {
       "id": "konfliktarsaker",
-      "revision": 1,
-      "content_hash": "149de3292e653a01b6637fccb76da2d8a147759f1df688ea3df40029efa0b304"
+      "revision": 2,
+      "content_hash": "0426e9caa2663710e2d6b3bbc025e698291683743c805b380db0fce64b872e34"
     },
     {
       "id": "konflikthaandtering",
-      "revision": 1,
-      "content_hash": "93ee9003932d5e8ebfdf842181b42c9755bce5a21f72acc6f2744f937acf2629"
+      "revision": 2,
+      "content_hash": "f198b7a7dc68ae3720a7bbec24e77a02ba2cdb68fddc791865d3176e87855c24"
     },
     {
       "id": "konsekvensetikk",
@@ -570,8 +570,8 @@
     },
     {
       "id": "konstruktiv-destruktiv-konflikt",
-      "revision": 1,
-      "content_hash": "57cee813469bdcce7c9be0f553be91adca93b9b1c598bd5b12b31b322438f50b"
+      "revision": 2,
+      "content_hash": "3aa624d11ffbc55495f9662f5f48661c0fa5de307835428bc545c36f16c330db"
     },
     {
       "id": "koordinering",
@@ -720,8 +720,8 @@
     },
     {
       "id": "mobbing-trakassering",
-      "revision": 1,
-      "content_hash": "042cfc4d268d95b0e570cf7f56163924e9bf2144fd995aae96d83c14acdf6507"
+      "revision": 2,
+      "content_hash": "691b5826d7a398471b6299767a915dacca07af4c5a5fc856c2be2eb10d448868"
     },
     {
       "id": "navigasjonshjulet",
@@ -825,8 +825,8 @@
     },
     {
       "id": "progresjonsprinsippet",
-      "revision": 1,
-      "content_hash": "c0fca39247628c061ff922d51e3e723eafc509f255f26dbc0e034a5d83511f2c"
+      "revision": 2,
+      "content_hash": "eea3aae558a523955fc20619611267efcef69010755c365d52d7b823fa46b370"
     },
     {
       "id": "prosjektorganisering",
@@ -905,13 +905,13 @@
     },
     {
       "id": "sosial-stotte",
-      "revision": 1,
-      "content_hash": "23c51be40e87055f75144a427d3fd83b694eddf1e44e456e2cd49267b4972f19"
+      "revision": 2,
+      "content_hash": "beae79a427a64bb8145f40651d08989bbe8a781ce680e6df2c487afe0edd2092"
     },
     {
       "id": "stereotypier-fordommer-diskriminering",
-      "revision": 1,
-      "content_hash": "c1800bf88f3c3addda8ca6e11fcaa2732a1b7338228b15e3a85bcc70be4eb032"
+      "revision": 2,
+      "content_hash": "58ea28c6dc22e6966e9dc5f7ceb50f308a4e56ba539dc4e685410bbd82192d4d"
     },
     {
       "id": "stiavhengighet",
@@ -960,8 +960,8 @@
     },
     {
       "id": "thomas-konfliktprosess",
-      "revision": 1,
-      "content_hash": "d2095cda08e6cf2e05d7fe2348606a7ca05cc04eabd3dd97c9c6a69f48dd65d7"
+      "revision": 2,
+      "content_hash": "fe12e268b9b1d12b19243c29e628af98c61188431f0e6c92461869fefe3df3c7"
     },
     {
       "id": "thorsrud-jobbkrav",
@@ -1000,8 +1000,8 @@
     },
     {
       "id": "utbrenthet",
-      "revision": 1,
-      "content_hash": "6c84cc4fa8c0f4a739d0241bbf600a8c2d8c7362d6246146ac84e46eb11e4ece"
+      "revision": 2,
+      "content_hash": "0e17a3e601131d5b5c6068c6b2ebd5f5050860fb62688c644e5f3db913ca612c"
     },
     {
       "id": "varer-tjenester",
@@ -1010,8 +1010,8 @@
     },
     {
       "id": "varsling",
-      "revision": 1,
-      "content_hash": "d65e0d8d152abf742474ce7dcae0b8b51a804723c2484935d7ddb16d27a83d5b"
+      "revision": 2,
+      "content_hash": "3ef891d0e25546e399e7ecd8da791f3a9a34a7b7a41d66f42c942b283e9f37cc"
     },
     {
       "id": "vertikal-horisontal-kommunikasjon",
