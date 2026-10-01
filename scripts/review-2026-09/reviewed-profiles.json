@@ -1,5 +1,5 @@
 {
-  "profile_version": "1.1.0",
+  "profile_version": "1.2.0",
   "basis": "Editorial coding from topic definitions, explanations, mechanisms and writing uses; not keyword counts or embeddings.",
   "strength_scale": {
     "1": "secondary",
@@ -134,128 +134,128 @@
   },
   "specificity_weights": {
     "concepts": {
-      "system": 4.676300671907076,
-      "value": 3.49764567556543,
-      "resources": 2.7667581670226378,
-      "technology": 4.116684883971653,
-      "goals": 2.5968591302272404,
-      "strategy": 3.2293816889707507,
-      "market": 3.5776883832389665,
-      "metrics": 3.5776883832389665,
-      "design": 2.6613976513648114,
-      "specialization": 3.9831534913471307,
-      "coordination": 2.884541202679021,
-      "hierarchy": 3.5776883832389665,
-      "autonomy": 3.354544831924757,
-      "rules": 3.5776883832389665,
-      "culture": 2.971552579668651,
-      "norms": 3.066862759472976,
-      "identity": 3.49764567556543,
-      "meaning": 3.118156053860526,
-      "power": 2.6952992030404928,
-      "dependence": 3.423537703411708,
-      "legitimacy": 3.49764567556543,
-      "conflict": 3.354544831924757,
-      "participation": 3.2293816889707507,
-      "uncertainty": 3.2900063107871858,
-      "motivation": 2.6952992030404928,
-      "rewards": 3.2900063107871858,
-      "competence": 2.971552579668651,
-      "jobs": 3.1722232751308024,
-      "needs": 3.9831534913471307,
-      "trust": 3.066862759472976,
-      "attachment": 4.116684883971653,
-      "communication": 2.971552579668651,
-      "information": 3.2900063107871858,
-      "interpretation": 3.2293816889707507,
-      "networks": 3.8653704556907473,
-      "rationality": 3.5776883832389665,
-      "decisions": 2.8044984950054848,
-      "implementation": 3.6646997602285962,
-      "learning": 2.8044984950054848,
-      "knowledge": 4.116684883971653,
-      "tacit": 5.3694478524670215,
-      "innovation": 3.760009940032921,
-      "exploration": 4.2708355637989115,
-      "inertia": 4.2708355637989115,
-      "change": 2.843719208158766,
-      "leadership": 2.730390522851763,
-      "ethics": 3.354544831924757,
-      "contingency": 4.2708355637989115,
-      "dignity": 4.453157120592866,
-      "consequences": 4.963982744358857,
-      "strain": 4.116684883971653,
-      "attitude": 4.2708355637989115,
-      "expectations": 4.676300671907076,
-      "engagement": 4.676300671907076,
-      "psychological_resources": 5.3694478524670215,
-      "fairness": 4.116684883971653
+      "system": 4.743604353803183,
+      "value": 3.5649493574615367,
+      "resources": 2.7626028849365993,
+      "technology": 4.18398856586776,
+      "goals": 2.6333911534565932,
+      "strategy": 3.2966853708668573,
+      "market": 3.644992065135073,
+      "metrics": 3.644992065135073,
+      "design": 2.7287013332609185,
+      "specialization": 4.050457173243237,
+      "coordination": 2.9110228900548725,
+      "hierarchy": 3.644992065135073,
+      "autonomy": 3.3573099926832923,
+      "rules": 3.644992065135073,
+      "culture": 3.0388562615647574,
+      "norms": 3.134166441369082,
+      "identity": 3.4908413853078146,
+      "meaning": 3.0853762771996505,
+      "power": 2.664162812123347,
+      "dependence": 3.4908413853078146,
+      "legitimacy": 3.5649493574615367,
+      "conflict": 3.134166441369082,
+      "participation": 3.239526957026909,
+      "uncertainty": 3.3573099926832923,
+      "motivation": 2.7287013332609185,
+      "rewards": 3.3573099926832923,
+      "competence": 3.0388562615647574,
+      "jobs": 3.0388562615647574,
+      "needs": 4.050457173243237,
+      "trust": 2.9110228900548725,
+      "attachment": 4.18398856586776,
+      "communication": 2.9110228900548725,
+      "information": 3.2966853708668573,
+      "interpretation": 3.185459735756633,
+      "networks": 3.9326741375868544,
+      "rationality": 3.644992065135073,
+      "decisions": 2.7976942047478692,
+      "implementation": 3.732003442124703,
+      "learning": 2.8340618489187444,
+      "knowledge": 4.18398856586776,
+      "tacit": 5.436751534363128,
+      "innovation": 3.8273136219290276,
+      "exploration": 4.338139245695018,
+      "inertia": 4.338139245695018,
+      "change": 2.8718021769015913,
+      "leadership": 2.7626028849365993,
+      "ethics": 3.3573099926832923,
+      "contingency": 4.338139245695018,
+      "dignity": 4.050457173243237,
+      "consequences": 5.0312864262549635,
+      "strain": 3.644992065135073,
+      "attitude": 4.18398856586776,
+      "expectations": 4.743604353803183,
+      "engagement": 4.338139245695018,
+      "psychological_resources": 5.0312864262549635,
+      "fairness": 3.9326741375868544
     },
     "mechanisms": {
-      "resource_exchange": 3.066862759472976,
-      "goal_translation": 3.118156053860526,
-      "incentives": 3.49764567556543,
-      "standardization": 3.49764567556543,
-      "specialization_mechanism": 3.6646997602285962,
-      "integration": 2.7667581670226378,
-      "delegation": 3.2900063107871858,
-      "socialization": 2.927100817097817,
-      "legitimacy_pressure": 3.49764567556543,
-      "sensemaking": 2.927100817097817,
-      "filtering": 3.354544831924757,
-      "brokerage": 4.2708355637989115,
-      "dialogue": 3.2293816889707507,
-      "bounded_search": 3.8653704556907473,
-      "rule_matching": 4.116684883971653,
-      "negotiation": 3.6646997602285962,
-      "stream_coupling": 4.2708355637989115,
-      "feedback": 3.066862759472976,
-      "reinforcement": 3.9831534913471307,
-      "knowledge_conversion": 3.8653704556907473,
-      "observation": 4.2708355637989115,
-      "path_lock": 4.2708355637989115,
-      "exploration_balance": 3.760009940032921,
-      "mobilization": 3.118156053860526,
-      "resistance": 4.676300671907076,
-      "role_modelling": 3.760009940032921,
-      "relationship_exchange": 3.423537703411708,
-      "situational_fit": 3.066862759472976,
-      "task_design": 3.2900063107871858,
-      "system_interaction": 3.760009940032921,
-      "cognitive_learning": 4.2708355637989115,
-      "principled_judgment": 3.9831534913471307,
-      "consequence_evaluation": 4.2708355637989115,
-      "domination": 4.963982744358857,
-      "expectation_comparison": 4.116684883971653,
-      "support_systems": 4.453157120592866,
-      "appraisal": 4.2708355637989115,
-      "self_efficacy": 5.3694478524670215,
-      "fair_comparison": 4.453157120592866,
-      "need_fulfilment": 4.453157120592866,
-      "goal_framing": 5.3694478524670215,
-      "beneficiary_impact": 5.3694478524670215,
-      "conformity": 5.3694478524670215
+      "resource_exchange": 3.0388562615647574,
+      "goal_translation": 3.185459735756633,
+      "incentives": 3.5649493574615367,
+      "standardization": 3.5649493574615367,
+      "specialization_mechanism": 3.732003442124703,
+      "integration": 2.8340618489187444,
+      "delegation": 3.3573099926832923,
+      "socialization": 2.994404498993924,
+      "legitimacy_pressure": 3.5649493574615367,
+      "sensemaking": 2.994404498993924,
+      "filtering": 3.2966853708668573,
+      "brokerage": 4.338139245695018,
+      "dialogue": 2.951844884575128,
+      "bounded_search": 3.9326741375868544,
+      "rule_matching": 4.18398856586776,
+      "negotiation": 3.4908413853078146,
+      "stream_coupling": 4.338139245695018,
+      "feedback": 2.951844884575128,
+      "reinforcement": 3.9326741375868544,
+      "knowledge_conversion": 3.9326741375868544,
+      "observation": 4.338139245695018,
+      "path_lock": 4.338139245695018,
+      "exploration_balance": 3.8273136219290276,
+      "mobilization": 3.134166441369082,
+      "resistance": 4.743604353803183,
+      "role_modelling": 3.8273136219290276,
+      "relationship_exchange": 3.4908413853078146,
+      "situational_fit": 2.994404498993924,
+      "task_design": 3.239526957026909,
+      "system_interaction": 3.8273136219290276,
+      "cognitive_learning": 4.338139245695018,
+      "principled_judgment": 3.8273136219290276,
+      "consequence_evaluation": 4.338139245695018,
+      "domination": 4.520460802488973,
+      "expectation_comparison": 4.18398856586776,
+      "support_systems": 4.050457173243237,
+      "appraisal": 3.644992065135073,
+      "self_efficacy": 5.436751534363128,
+      "fair_comparison": 4.520460802488973,
+      "need_fulfilment": 4.520460802488973,
+      "goal_framing": 5.436751534363128,
+      "beneficiary_impact": 5.436751534363128,
+      "conformity": 5.436751534363128
     },
     "applications": {
-      "diagnosis": 2.730390522851763,
-      "operations": 3.066862759472976,
-      "external_adaptation": 2.7667581670226378,
-      "performance": 2.927100817097817,
-      "strategy_choice": 2.6952992030404928,
-      "restructuring": 2.884541202679021,
-      "coordination_work": 2.479076094570857,
-      "change_process": 2.451677120382742,
-      "innovation_work": 3.354544831924757,
-      "conflict_work": 3.066862759472976,
-      "recruiting": 3.2900063107871858,
-      "motivation_work": 2.3737155789130306,
-      "leadership_work": 2.2784053991087054,
-      "knowledge_work": 3.018072595303544,
-      "collective_decisions": 2.3990333868973206,
-      "acceptance": 3.423537703411708,
-      "ethical_deliberation": 3.2900063107871858,
-      "work_environment": 3.066862759472976,
-      "learning_work": 5.3694478524670215
+      "diagnosis": 2.695911510437927,
+      "operations": 3.134166441369082,
+      "external_adaptation": 2.8340618489187444,
+      "performance": 2.951844884575128,
+      "strategy_choice": 2.7626028849365993,
+      "restructuring": 2.8718021769015913,
+      "coordination_work": 2.5463797764669636,
+      "change_process": 2.492312555196688,
+      "innovation_work": 3.4218485138208634,
+      "conflict_work": 2.9110228900548725,
+      "recruiting": 3.2966853708668573,
+      "motivation_work": 2.4163266482187655,
+      "leadership_work": 2.1980730821987478,
+      "knowledge_work": 3.0853762771996505,
+      "collective_decisions": 2.4163266482187655,
+      "acceptance": 3.4908413853078146,
+      "ethical_deliberation": 3.185459735756633,
+      "work_environment": 2.7976942047478692,
+      "learning_work": 5.436751534363128
     }
   },
   "profiles": [
@@ -1483,6 +1483,25 @@
       }
     },
     {
+      "topic_id": "karasek-krav-kontroll",
+      "concepts": {
+        "strain": 3,
+        "jobs": 3,
+        "autonomy": 3,
+        "participation": 2
+      },
+      "mechanisms": {
+        "appraisal": 3,
+        "situational_fit": 3,
+        "task_design": 2
+      },
+      "applications": {
+        "work_environment": 3,
+        "restructuring": 2,
+        "diagnosis": 3
+      }
+    },
+    {
       "topic_id": "karismatisk-ledelse",
       "concepts": {
         "leadership": 3,
@@ -1677,6 +1696,48 @@
       }
     },
     {
+      "topic_id": "konfliktarsaker",
+      "concepts": {
+        "conflict": 3,
+        "resources": 3,
+        "coordination": 2,
+        "fairness": 2,
+        "interpretation": 2
+      },
+      "mechanisms": {
+        "appraisal": 2,
+        "resource_exchange": 2,
+        "dialogue": 2,
+        "situational_fit": 2
+      },
+      "applications": {
+        "conflict_work": 3,
+        "restructuring": 2,
+        "diagnosis": 2
+      }
+    },
+    {
+      "topic_id": "konflikthaandtering",
+      "concepts": {
+        "conflict": 3,
+        "leadership": 2,
+        "communication": 2,
+        "trust": 2,
+        "change": 1
+      },
+      "mechanisms": {
+        "dialogue": 3,
+        "negotiation": 3,
+        "appraisal": 2,
+        "feedback": 2
+      },
+      "applications": {
+        "conflict_work": 3,
+        "leadership_work": 3,
+        "work_environment": 2
+      }
+    },
+    {
       "topic_id": "konsekvensetikk",
       "concepts": {
         "ethics": 3,
@@ -1692,6 +1753,27 @@
         "ethical_deliberation": 3,
         "collective_decisions": 3,
         "strategy_choice": 2
+      }
+    },
+    {
+      "topic_id": "konstruktiv-destruktiv-konflikt",
+      "concepts": {
+        "conflict": 3,
+        "learning": 2,
+        "strain": 2,
+        "decisions": 2,
+        "trust": 2
+      },
+      "mechanisms": {
+        "dialogue": 3,
+        "feedback": 2,
+        "negotiation": 2,
+        "situational_fit": 2
+      },
+      "applications": {
+        "conflict_work": 3,
+        "collective_decisions": 3,
+        "work_environment": 2
       }
     },
     {
@@ -2255,6 +2337,27 @@
       }
     },
     {
+      "topic_id": "mobbing-trakassering",
+      "concepts": {
+        "dignity": 3,
+        "strain": 3,
+        "power": 3,
+        "conflict": 2,
+        "trust": 2
+      },
+      "mechanisms": {
+        "domination": 3,
+        "support_systems": 2,
+        "dialogue": 1
+      },
+      "applications": {
+        "work_environment": 3,
+        "leadership_work": 3,
+        "conflict_work": 2,
+        "ethical_deliberation": 2
+      }
+    },
+    {
       "topic_id": "navigasjonshjulet",
       "concepts": {
         "ethics": 3,
@@ -2634,6 +2737,26 @@
       }
     },
     {
+      "topic_id": "progresjonsprinsippet",
+      "concepts": {
+        "engagement": 3,
+        "motivation": 3,
+        "meaning": 3,
+        "goals": 2,
+        "jobs": 2
+      },
+      "mechanisms": {
+        "feedback": 3,
+        "reinforcement": 2,
+        "mobilization": 2
+      },
+      "applications": {
+        "motivation_work": 3,
+        "leadership_work": 2,
+        "performance": 2
+      }
+    },
+    {
       "topic_id": "prosjektorganisering",
       "concepts": {
         "design": 3,
@@ -2928,6 +3051,46 @@
       }
     },
     {
+      "topic_id": "sosial-stotte",
+      "concepts": {
+        "trust": 3,
+        "resources": 3,
+        "strain": 3,
+        "communication": 2,
+        "jobs": 2
+      },
+      "mechanisms": {
+        "support_systems": 3,
+        "dialogue": 2,
+        "resource_exchange": 2
+      },
+      "applications": {
+        "work_environment": 3,
+        "leadership_work": 2,
+        "change_process": 2
+      }
+    },
+    {
+      "topic_id": "stereotypier-fordommer-diskriminering",
+      "concepts": {
+        "attitude": 3,
+        "fairness": 3,
+        "dignity": 3,
+        "identity": 2,
+        "power": 2
+      },
+      "mechanisms": {
+        "appraisal": 2,
+        "filtering": 3,
+        "principled_judgment": 2
+      },
+      "applications": {
+        "recruiting": 3,
+        "work_environment": 2,
+        "ethical_deliberation": 2
+      }
+    },
+    {
       "topic_id": "stiavhengighet",
       "concepts": {
         "inertia": 3,
@@ -3099,6 +3262,26 @@
       }
     },
     {
+      "topic_id": "thomas-konfliktprosess",
+      "concepts": {
+        "conflict": 3,
+        "interpretation": 3,
+        "communication": 2,
+        "decisions": 2
+      },
+      "mechanisms": {
+        "appraisal": 3,
+        "dialogue": 3,
+        "feedback": 2,
+        "negotiation": 2
+      },
+      "applications": {
+        "conflict_work": 3,
+        "collective_decisions": 2,
+        "leadership_work": 2
+      }
+    },
+    {
       "topic_id": "thorsrud-jobbkrav",
       "concepts": {
         "jobs": 3,
@@ -3233,6 +3416,26 @@
       }
     },
     {
+      "topic_id": "utbrenthet",
+      "concepts": {
+        "strain": 3,
+        "jobs": 3,
+        "meaning": 2,
+        "engagement": 2,
+        "psychological_resources": 1
+      },
+      "mechanisms": {
+        "appraisal": 2,
+        "support_systems": 3,
+        "task_design": 2
+      },
+      "applications": {
+        "work_environment": 3,
+        "diagnosis": 3,
+        "leadership_work": 2
+      }
+    },
+    {
       "topic_id": "varer-tjenester",
       "concepts": {
         "value": 3,
@@ -3248,6 +3451,27 @@
       "applications": {
         "operations": 3,
         "coordination_work": 2
+      }
+    },
+    {
+      "topic_id": "varsling",
+      "concepts": {
+        "ethics": 3,
+        "power": 3,
+        "dignity": 2,
+        "information": 2,
+        "trust": 2
+      },
+      "mechanisms": {
+        "filtering": 2,
+        "dialogue": 2,
+        "principled_judgment": 2,
+        "domination": 1
+      },
+      "applications": {
+        "ethical_deliberation": 3,
+        "leadership_work": 3,
+        "work_environment": 2
       }
     },
     {

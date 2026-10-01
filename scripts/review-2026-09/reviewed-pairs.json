@@ -1,5 +1,5 @@
 {
-  "review_version": "1.1.0",
+  "review_version": "1.2.0",
   "reviews": [
     {
       "source": "adaptiv-ledelse",
@@ -1165,6 +1165,13 @@
     },
     {
       "source": "destruktiv-ledelse",
+      "target": "mobbing-trakassering",
+      "weight": 0.91,
+      "reason": "Lederes posisjon kan muliggjøre eller forebygge krenkende handlinger.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "destruktiv-ledelse",
       "target": "psykososialt-arbeidsmiljo",
       "weight": 0.92,
       "reason": "Skadelig lederatferd inngår i belastningsperspektivet.",
@@ -1857,6 +1864,13 @@
       "basis": "course_material_editorial_pair_review"
     },
     {
+      "source": "etisk-ledelse",
+      "target": "varsling",
+      "weight": 0.9,
+      "reason": "Etisk ledelse påvirker om kritiske opplysninger blir hørt og fulgt opp.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
       "source": "fiedler",
       "target": "hersey-blanchard",
       "weight": 0.88,
@@ -2236,6 +2250,13 @@
     },
     {
       "source": "gruppetenkning",
+      "target": "konstruktiv-destruktiv-konflikt",
+      "weight": 0.88,
+      "reason": "Åpen uenighet kan motvirke press mot enighet.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "gruppetenkning",
       "target": "kulturell-aapenhet",
       "weight": 0.93,
       "reason": "Åpen kritikk og deling er en direkte kontrast til konformitet og selvsensur.",
@@ -2331,6 +2352,13 @@
       "weight": 0.91,
       "reason": "Meningsfulle oppgaver, autonomi og tilbakemelding gir en naturlig forklaring på engasjement.",
       "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "hackman-oldham",
+      "target": "karasek-krav-kontroll",
+      "weight": 0.79,
+      "reason": "Begge perspektiver undersøker autonomi, men med ulike utfall i fokus.",
+      "basis": "chapter9_editorial_pair_review"
     },
     {
       "source": "hackman-oldham",
@@ -2611,6 +2639,13 @@
       "weight": 0.91,
       "reason": "Rekruttering og utvikling kan bygge kompetansen som strategien tar utgangspunkt i.",
       "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "hrm",
+      "target": "stereotypier-fordommer-diskriminering",
+      "weight": 0.85,
+      "reason": "Rekrutteringsvalg er en praktisk arena for urettferdig forskjellsbehandling.",
+      "basis": "chapter9_editorial_pair_review"
     },
     {
       "source": "hrm",
@@ -2964,6 +2999,13 @@
     },
     {
       "source": "jobbengasjement",
+      "target": "progresjonsprinsippet",
+      "weight": 0.94,
+      "reason": "Progresjon kan bidra til energi og dedikasjon i arbeidet.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "jobbengasjement",
       "target": "psykologisk-kapital",
       "weight": 0.93,
       "reason": "Psykologiske ressurser kan støtte energi, dedikasjon og konsentrasjon.",
@@ -2975,6 +3017,13 @@
       "weight": 0.92,
       "reason": "Berikelsesperspektivet undersøker ressurser og meningsfulle arbeidsbetingelser.",
       "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "jobbengasjement",
+      "target": "utbrenthet",
+      "weight": 0.92,
+      "reason": "Energi og tilknytning til arbeidet gir en nyttig kontrast, uten å være en enkel motpol.",
+      "basis": "chapter9_editorial_pair_review"
     },
     {
       "source": "jobbholdninger",
@@ -2991,6 +3040,27 @@
       "basis": "course_material_editorial_pair_review"
     },
     {
+      "source": "jobbholdninger",
+      "target": "stereotypier-fordommer-diskriminering",
+      "weight": 0.95,
+      "reason": "ABC-modellen skiller tanker, følelser og handlinger som fenomenene knyttes til.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "jobbstress",
+      "target": "karasek-krav-kontroll",
+      "weight": 0.96,
+      "reason": "Krav og kontroll konkretiserer et sentralt forhold i stressvurderingen.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "jobbstress",
+      "target": "progresjonsprinsippet",
+      "weight": 0.76,
+      "reason": "Fremgang kan påvirke opplevelsen av belastning, men fjerner ikke nødvendigvis stressorer.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
       "source": "jobbstress",
       "target": "psykologisk-kapital",
       "weight": 0.82,
@@ -3005,6 +3075,20 @@
       "basis": "course_material_editorial_pair_review"
     },
     {
+      "source": "jobbstress",
+      "target": "sosial-stotte",
+      "weight": 0.95,
+      "reason": "Støtte kan påvirke hvordan belastning håndteres.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "jobbstress",
+      "target": "utbrenthet",
+      "weight": 0.96,
+      "reason": "Langvarig belastning er en sentral kontekst for utbrenthet.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
       "source": "jobbtilfredshet",
       "target": "organisatorisk-tilknytning",
       "weight": 0.88,
@@ -3017,6 +3101,20 @@
       "weight": 0.76,
       "reason": "Forholdet mellom tilfredshet og ytelse må drøftes uten enkel kausal slutning.",
       "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "karasek-krav-kontroll",
+      "target": "psykososialt-arbeidsmiljo",
+      "weight": 0.94,
+      "reason": "Modellen knytter arbeidsorganisering til opplevd belastning.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "karasek-krav-kontroll",
+      "target": "sentralisering",
+      "weight": 0.83,
+      "reason": "Fordeling av beslutningsmyndighet påvirker de ansattes handlingsrom.",
+      "basis": "chapter9_editorial_pair_review"
     },
     {
       "source": "karismatisk-ledelse",
@@ -3160,6 +3258,13 @@
     },
     {
       "source": "kommunikasjonskanaler",
+      "target": "sosial-stotte",
+      "weight": 0.75,
+      "reason": "Informasjonsstøtte krever at informasjon når frem.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "kommunikasjonskanaler",
       "target": "vertikal-horisontal-kommunikasjon",
       "weight": 0.86,
       "reason": "Valg av kanal og organisering av kommunikasjonsretning er to nært beslektede sider ved informasjonsflyt.",
@@ -3178,6 +3283,13 @@
       "weight": 0.81,
       "reason": "Kommunikasjon binder sammen holdninger, fortolkning og samhandling i organisasjonen.",
       "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "kommunikasjonsprosess",
+      "target": "thomas-konfliktprosess",
+      "weight": 0.84,
+      "reason": "Budskap og fortolkning kan endre partenes reaksjoner.",
+      "basis": "chapter9_editorial_pair_review"
     },
     {
       "source": "kommunikasjonsprosess",
@@ -3230,6 +3342,13 @@
     },
     {
       "source": "konflikt-beslutningskvalitet",
+      "target": "konstruktiv-destruktiv-konflikt",
+      "weight": 0.96,
+      "reason": "Saklig meningsbrytning kan bidra til bedre vurderinger.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "konflikt-beslutningskvalitet",
       "target": "ledelse",
       "weight": 0.81,
       "reason": "Ledere må kunne håndtere meningsbrytning slik at den belyser saken uten å ødelegge samhandlingen.",
@@ -3257,6 +3376,69 @@
       "basis": "course_material_editorial_pair_review"
     },
     {
+      "source": "konflikt-beslutningskvalitet",
+      "target": "thomas-konfliktprosess",
+      "weight": 0.94,
+      "reason": "Konfliktens forløp avgjør om uenighet blir saklig eller ødeleggende.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "konfliktarsaker",
+      "target": "koordinering",
+      "weight": 0.8,
+      "reason": "Gjensidig avhengige oppgaver krever tydelig samordning.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "konfliktarsaker",
+      "target": "maktbaser",
+      "weight": 0.77,
+      "reason": "Ressurskamp og posisjoner påvirker konflikter.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "konfliktarsaker",
+      "target": "organisatorisk-rettferdighet",
+      "weight": 0.86,
+      "reason": "Urettferdig fordeling og prosedyrer kan være konfliktkilder.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "konfliktarsaker",
+      "target": "thomas-konfliktprosess",
+      "weight": 0.91,
+      "reason": "Årsaker blir viktige når partene tolker en motsetning.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "konflikthaandtering",
+      "target": "konstruktiv-destruktiv-konflikt",
+      "weight": 0.93,
+      "reason": "Håndtering sikter mot å bevare læring og begrense skade.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "konflikthaandtering",
+      "target": "ledelse",
+      "weight": 0.84,
+      "reason": "Lederen har ansvar for å ta tak i konfliktens rammer.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "konflikthaandtering",
+      "target": "mobbing-trakassering",
+      "weight": 0.83,
+      "reason": "Alvorlige negative handlinger krever mer enn ordinær saklig konfliktmegling.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "konflikthaandtering",
+      "target": "thomas-konfliktprosess",
+      "weight": 0.96,
+      "reason": "Inngrep kan rette seg mot ulike trinn i prosessen.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
       "source": "konsekvensetikk",
       "target": "march-konsekvenslogikk",
       "weight": 0.89,
@@ -3276,6 +3458,13 @@
       "weight": 0.95,
       "reason": "En sentral etisk kontrast mellom konsekvenser og prinsipielle grenser.",
       "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "konstruktiv-destruktiv-konflikt",
+      "target": "psykososialt-arbeidsmiljo",
+      "weight": 0.85,
+      "reason": "Personkonflikter kan forringe arbeidsmiljøet.",
+      "basis": "chapter9_editorial_pair_review"
     },
     {
       "source": "koordinering",
@@ -3412,10 +3601,24 @@
     },
     {
       "source": "ledelse",
+      "target": "progresjonsprinsippet",
+      "weight": 0.75,
+      "reason": "Ledelsen kan fjerne hindre og synliggjøre faktisk utvikling.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "ledelse",
       "target": "selznick-verdibasert-ledelse",
       "weight": 0.91,
       "reason": "Verdibasert ledelse forklarer påvirkning gjennom mening og normer fremfor bare direkte instrukser.",
       "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "ledelse",
+      "target": "sosial-stotte",
+      "weight": 0.72,
+      "reason": "Ledere kan gjøre støtte og ressurser tilgjengelige.",
+      "basis": "chapter9_editorial_pair_review"
     },
     {
       "source": "ledelse",
@@ -3685,6 +3888,13 @@
     },
     {
       "source": "maalsettingsteori",
+      "target": "progresjonsprinsippet",
+      "weight": 0.81,
+      "reason": "Konkrete delmål gjør fremgang lettere å merke.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "maalsettingsteori",
       "target": "psykologisk-kapital",
       "weight": 0.88,
       "reason": "Mestringstro og alternative målveier er relevante for målrettet innsats.",
@@ -3720,6 +3930,13 @@
     },
     {
       "source": "maktbaser",
+      "target": "stereotypier-fordommer-diskriminering",
+      "weight": 0.7,
+      "reason": "Beslutningsmakt avgjør om en fordom kan få konsekvenser for andre.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "maktbaser",
       "target": "strukturelle-hull",
       "weight": 0.94,
       "reason": "Nettverksposisjoner kan gi kontroll over informasjon og dermed innflytelse.",
@@ -3738,6 +3955,20 @@
       "weight": 0.87,
       "reason": "Ekstern avhengighet gir aktører muligheter til å utøve makt over organisasjonens valg.",
       "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "maktformer",
+      "target": "thomas-konfliktprosess",
+      "weight": 0.78,
+      "reason": "Maktbruk kan eskalere eller dempe motsetninger.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "maktformer",
+      "target": "varsling",
+      "weight": 0.87,
+      "reason": "Maktforhold påvirker både rapportering og mottak.",
+      "basis": "chapter9_editorial_pair_review"
     },
     {
       "source": "march-konsekvenslogikk",
@@ -4041,6 +4272,20 @@
       "basis": "retained_editorial_pair_review"
     },
     {
+      "source": "mobbing-trakassering",
+      "target": "psykososialt-arbeidsmiljo",
+      "weight": 0.96,
+      "reason": "Negative handlinger er en sentral arbeidsmiljøbelastning.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
+      "source": "mobbing-trakassering",
+      "target": "varsling",
+      "weight": 0.84,
+      "reason": "Meldinger om kritikkverdige forhold kan gjelde trakassering.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
       "source": "navigasjonshjulet",
       "target": "omdoemme",
       "weight": 0.87,
@@ -4181,6 +4426,13 @@
       "basis": "retained_editorial_pair_review"
     },
     {
+      "source": "organisasjonskultur",
+      "target": "varsling",
+      "weight": 0.8,
+      "reason": "Åpenhetsnormer kan gjøre det lettere eller vanskeligere å si fra.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
       "source": "organisatorisk-laering",
       "target": "sosial-laering",
       "weight": 0.91,
@@ -4193,6 +4445,13 @@
       "weight": 0.9,
       "reason": "Opplevd brudd på gjensidige løfter og urettferdig behandling kan sammen svekke tillit.",
       "basis": "course_material_editorial_pair_review"
+    },
+    {
+      "source": "organisatorisk-rettferdighet",
+      "target": "stereotypier-fordommer-diskriminering",
+      "weight": 0.91,
+      "reason": "Rettferdige vurderinger krever kriterier som ikke bygger på gruppestereotypier.",
+      "basis": "chapter9_editorial_pair_review"
     },
     {
       "source": "organisatorisk-tilknytning",
@@ -4363,6 +4622,13 @@
       "basis": "course_material_editorial_pair_review"
     },
     {
+      "source": "psykososialt-arbeidsmiljo",
+      "target": "utbrenthet",
+      "weight": 0.92,
+      "reason": "Arbeidsmiljøet kan inneholde både belastninger og beskyttende ressurser.",
+      "basis": "chapter9_editorial_pair_review"
+    },
+    {
       "source": "rasjonell-organisasjon",
       "target": "stiavhengighet",
       "weight": 0.71,
@@ -4417,6 +4683,13 @@
       "weight": 0.82,
       "reason": "Verdibasert ledelse kan undersøkes sammen med hvilke grunner medarbeidere har for å akseptere lederens påvirkning.",
       "basis": "retained_editorial_pair_review"
+    },
+    {
+      "source": "sosial-stotte",
+      "target": "utbrenthet",
+      "weight": 0.88,
+      "reason": "Støtte kan inngå i forebygging og håndtering av belastninger.",
+      "basis": "chapter9_editorial_pair_review"
     },
     {
       "source": "stiavhengighet",

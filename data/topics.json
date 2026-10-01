@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
   "dataset_id": "organisasjon-ledelse-etikk",
-  "dataset_revision": 5,
+  "dataset_revision": 6,
   "language": "nb",
   "created_at": "2026-09-25",
   "course": {
@@ -387,7 +387,7 @@
   },
   "editorial_policy": {
     "language": "Norske forklaringer og etiketter; engelske feltnavn for programvare.",
-    "source_scope": "Brukerens opprinnelige sammendrag med figurer, 13 leverte forelesningsfiler og to bokutdrag. Supplerende PDF-er er private; kun parafraser og kildemetadata distribueres. Kapittel 5 i filnavnet er ikke levert.",
+    "source_scope": "Brukerens opprinnelige sammendrag med figurer, 13 leverte forelesningsfiler og to bokutdrag. Supplerende PDF-er er private; kun parafraser og kildemetadata distribueres. Kapittel 5 i filnavnet er ikke levert. Kapittel 9 er gjennomgått på nytt i oktober 2026; nye temaer om arbeidsmiljø og konflikt er lagt til som parafraser.",
     "analysis_scope": "Spørsmål, mekanismer, skrivebruk, forbehold og de fleste koblinger er redaksjonelle tolkninger. Praksiseksemplene er konstruerte redaksjonelle illustrasjoner, ikke hendelser fra kildene eller forskningsfunn. Kildene under noden støtter teorigrunnlaget.",
     "attribution_scope": "Navn beholdes på det detaljnivået kilden gir; ingen automatisk tilskrivning av teorier.",
     "sparse_sections": "Beholdt med status needs_source_expansion eller limited_source.",
@@ -21182,6 +21182,1723 @@
         ]
       },
       "content_hash": "74d6a22c36deebecf14a67bc5690b0076a4e685cfaaa6d7722cc939006e692c2"
+    },
+    {
+      "id": "stereotypier-fordommer-diskriminering",
+      "revision": 1,
+      "title": "Stereotypier, fordommer og diskriminering",
+      "short_label": "Stereotypier og fordommer",
+      "kind": "concept",
+      "aliases": [],
+      "attribution": [],
+      "category_id": "motivasjon",
+      "parent_topic_id": null,
+      "granularity": "topic",
+      "tags": [
+        "stereotypier",
+        "fordommer",
+        "diskriminering"
+      ],
+      "content": {
+        "short_definition": "Stereotypier er unyanserte gruppeoppfatninger, fordommer negative vurderinger og diskriminering forskjellsbehandling i handling.",
+        "explanation": "Kapittel 9 knytter de tre fenomenene til holdningers kognitive, følelsesmessige og handlingsmessige side. En generell antakelse om en søker kan bli fulgt av negative følelser og et urettferdig avslag. Ledd mellom tanke og handling må undersøkes konkret: en stereotypi fører ikke automatisk til diskriminering. En vurdering av arbeidsmiljø og rekruttering bør også se på rutiner og muligheten til å korrigere beslutninger.",
+        "key_points": [
+          "Stereotypi: forenklet og generalisert antakelse om en gruppe.",
+          "Fordom: negativ vurdering og ofte negativ følelsesmessig reaksjon.",
+          "Diskriminering: negativ forskjellsbehandling i faktisk handling.",
+          "Undersøk både individuelle holdninger og organisatoriske beslutningsrutiner."
+        ],
+        "examples": [
+          {
+            "title": "Konstruert praksiseksempel",
+            "text": "Et kommunalt kontor skal ansette en systemutvikler. Under første gjennomgang sier en leder at en eldre søker trolig ikke vil mestre den nye plattformen. Dette er en stereotyp antakelse om en gruppe, ikke en vurdering av søkeren. Lederen kjenner samtidig motvilje mot å bruke tid på tilrettelegging; følelsen må skilles fra den faktiske kvalifikasjonsvurderingen. Dersom gruppen velger bort søkeren uten å undersøke kompetanse og arbeidskrav, kan beslutningen bli diskriminerende. HR-avdelingen innfører derfor samme faglige oppgave og dokumenterte kriterier for alle. Eksemplet viser forbindelsen mellom holdning og handling, men også at en rutine kan hindre at en fordom avgjør utfallet.",
+            "basis": "editorial_example",
+            "source_refs": []
+          }
+        ],
+        "expressions": []
+      },
+      "analysis": {
+        "basis": "editorial_inference",
+        "central_questions": [
+          "Hvordan kan stereotypier, fordommer og diskriminering brukes til å forstå en konkret organisasjonssituasjon?"
+        ],
+        "mechanisms": [
+          "Stereotypi: forenklet og generalisert antakelse om en gruppe.",
+          "Fordom: negativ vurdering og ofte negativ følelsesmessig reaksjon.",
+          "Diskriminering: negativ forskjellsbehandling i faktisk handling."
+        ],
+        "level_of_analysis": [
+          "individual",
+          "group",
+          "organization"
+        ],
+        "writing_uses": [
+          "Bruk Stereotypier, fordommer og diskriminering til å undersøke et konkret forløp og drøft alternative forklaringer.",
+          "ABC-modellen skiller tanker, følelser og handlinger som fenomenene knyttes til.",
+          "Rekrutteringsvalg er en praktisk arena for urettferdig forskjellsbehandling."
+        ],
+        "limitations_and_tensions": [
+          "Pensumutdraget gir en avgrenset fremstilling. Bruk ikke figuren eller eksemplet som bevis for en bestemt årsakssammenheng."
+        ]
+      },
+      "connection_hints": [
+        {
+          "target_topic_id": "jobbholdninger",
+          "relationship_type": "related_to",
+          "bridge": "ABC-modellen skiller tanker, følelser og handlinger som fenomenene knyttes til.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 4 (bokside 317)",
+              "paragraph_start": 4,
+              "paragraph_end": 4,
+              "pages": [
+                317
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "hrm",
+          "relationship_type": "related_to",
+          "bridge": "Rekrutteringsvalg er en praktisk arena for urettferdig forskjellsbehandling.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 4 (bokside 317)",
+              "paragraph_start": 4,
+              "paragraph_end": 4,
+              "pages": [
+                317
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "organisatorisk-rettferdighet",
+          "relationship_type": "related_to",
+          "bridge": "Rettferdige vurderinger krever kriterier som ikke bygger på gruppestereotypier.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 4 (bokside 317)",
+              "paragraph_start": 4,
+              "paragraph_end": 4,
+              "pages": [
+                317
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "maktbaser",
+          "relationship_type": "related_to",
+          "bridge": "Beslutningsmakt avgjør om en fordom kan få konsekvenser for andre.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 4 (bokside 317)",
+              "paragraph_start": 4,
+              "paragraph_end": 4,
+              "pages": [
+                317
+              ]
+            }
+          ]
+        }
+      ],
+      "figures": [],
+      "source_refs": [
+        {
+          "source_id": "course-2026-14",
+          "locator": "PDF-side 4 (bokside 317)",
+          "paragraph_start": 4,
+          "paragraph_end": 4,
+          "pages": [
+            317
+          ]
+        }
+      ],
+      "provenance": {
+        "content_basis": "source_paraphrase",
+        "analysis_basis": "editorial_inference",
+        "external_verification": false
+      },
+      "review": {
+        "status": "source_checked",
+        "notes": [
+          "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
+        ]
+      },
+      "content_hash": "c1800bf88f3c3addda8ca6e11fcaa2732a1b7338228b15e3a85bcc70be4eb032"
+    },
+    {
+      "id": "karasek-krav-kontroll",
+      "revision": 1,
+      "title": "Karaseks krav–kontroll-modell",
+      "short_label": "Krav–kontroll",
+      "kind": "concept",
+      "aliases": [],
+      "attribution": [],
+      "category_id": "motivasjon",
+      "parent_topic_id": null,
+      "granularity": "topic",
+      "tags": [
+        "karasek",
+        "krav",
+        "kontroll"
+      ],
+      "content": {
+        "short_definition": "Belastning i arbeid vurderes i lys av både kravene som stilles og handlingsrommet den ansatte har til å møte dem.",
+        "explanation": "Kapittel 9 nevner Karaseks krav–kontroll-modell når individuelle og organisatoriske stresskilder drøftes. Samme mengde arbeid kan oppleves forskjellig når en person kan prioritere, påvirke tempo eller velge fremgangsmåte. Modellen er en inngang til å undersøke krav og kontroll sammen; den gjør ikke enhver krevende jobb skadelig og erstatter ikke vurdering av sosial støtte og øvrige forhold.",
+        "key_points": [
+          "Kartlegg krav som tempo, kompleksitet, ansvar og rollekonflikter.",
+          "Kartlegg kontroll som påvirkning på prioritering og arbeidsmåte.",
+          "Høye krav kombinert med lite handlingsrom er et særlig relevant belastningsmønster.",
+          "Sosial støtte og individuelle forskjeller må vurderes i tillegg."
+        ],
+        "examples": [
+          {
+            "title": "Konstruert praksiseksempel",
+            "text": "På et servicesenter øker antall henvendelser kraftig. To team har like mange saker, men det ene kan omfordele arbeid, velge rekkefølge og be om støtte når en sak blir komplisert. Det andre må følge en fast kø og får ikke endre arbeidsmåten selv når ventetiden øker. En analyse etter krav–kontroll-modellen sammenligner både belastning og handlingsrom, ikke bare sakstall. Ledelsen prøver en ordning der medarbeiderne kan prioritere hastesaker og ta korte avklaringsmøter. Den følger også med på kvalitet, tid og opplevd press. Dersom en medarbeider fortsatt er overbelastet, må man undersøke rollekrav og ressurser særskilt.",
+            "basis": "editorial_example",
+            "source_refs": []
+          }
+        ],
+        "expressions": []
+      },
+      "analysis": {
+        "basis": "editorial_inference",
+        "central_questions": [
+          "Hvordan kan karaseks krav–kontroll-modell brukes til å forstå en konkret organisasjonssituasjon?"
+        ],
+        "mechanisms": [
+          "Kartlegg krav som tempo, kompleksitet, ansvar og rollekonflikter.",
+          "Kartlegg kontroll som påvirkning på prioritering og arbeidsmåte.",
+          "Høye krav kombinert med lite handlingsrom er et særlig relevant belastningsmønster."
+        ],
+        "level_of_analysis": [
+          "individual",
+          "group",
+          "organization"
+        ],
+        "writing_uses": [
+          "Bruk Karaseks krav–kontroll-modell til å undersøke et konkret forløp og drøft alternative forklaringer.",
+          "Krav og kontroll konkretiserer et sentralt forhold i stressvurderingen.",
+          "Modellen knytter arbeidsorganisering til opplevd belastning."
+        ],
+        "limitations_and_tensions": [
+          "Pensumutdraget gir en avgrenset fremstilling. Bruk ikke figuren eller eksemplet som bevis for en bestemt årsakssammenheng."
+        ]
+      },
+      "connection_hints": [
+        {
+          "target_topic_id": "jobbstress",
+          "relationship_type": "related_to",
+          "bridge": "Krav og kontroll konkretiserer et sentralt forhold i stressvurderingen.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 19 (bokside 332)",
+              "paragraph_start": 19,
+              "paragraph_end": 19,
+              "pages": [
+                332
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "psykososialt-arbeidsmiljo",
+          "relationship_type": "related_to",
+          "bridge": "Modellen knytter arbeidsorganisering til opplevd belastning.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 19 (bokside 332)",
+              "paragraph_start": 19,
+              "paragraph_end": 19,
+              "pages": [
+                332
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "sentralisering",
+          "relationship_type": "related_to",
+          "bridge": "Fordeling av beslutningsmyndighet påvirker de ansattes handlingsrom.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 19 (bokside 332)",
+              "paragraph_start": 19,
+              "paragraph_end": 19,
+              "pages": [
+                332
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "hackman-oldham",
+          "relationship_type": "related_to",
+          "bridge": "Begge perspektiver undersøker autonomi, men med ulike utfall i fokus.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 19 (bokside 332)",
+              "paragraph_start": 19,
+              "paragraph_end": 19,
+              "pages": [
+                332
+              ]
+            }
+          ]
+        }
+      ],
+      "figures": [],
+      "source_refs": [
+        {
+          "source_id": "course-2026-14",
+          "locator": "PDF-side 19 (bokside 332)",
+          "paragraph_start": 19,
+          "paragraph_end": 19,
+          "pages": [
+            332
+          ]
+        }
+      ],
+      "provenance": {
+        "content_basis": "source_paraphrase",
+        "analysis_basis": "editorial_inference",
+        "external_verification": false
+      },
+      "review": {
+        "status": "source_checked",
+        "notes": [
+          "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
+        ]
+      },
+      "content_hash": "30ecf7390eb45deeba947806fb12eb1470a36ae94218349519736925df1c9697"
+    },
+    {
+      "id": "utbrenthet",
+      "revision": 1,
+      "title": "Utbrenthet",
+      "short_label": "Utbrenthet",
+      "kind": "concept",
+      "aliases": [],
+      "attribution": [],
+      "category_id": "motivasjon",
+      "parent_topic_id": null,
+      "granularity": "topic",
+      "tags": [
+        "utbrenthet"
+      ],
+      "content": {
+        "short_definition": "Utbrenthet beskriver arbeidsrelatert utmattelse og økende avstand til arbeidet, ofte sammen med svekket opplevelse av mening og effektivitet.",
+        "explanation": "Kapittel 9 beskriver fysisk, mental og følelsesmessig utmattelse, svekket energi og avstand til jobb eller mennesker i arbeidet. Det skiller også mellom depersonalisering rettet mot andre og en mer generell kynisk holdning til arbeidet. Boken omtaler utbrenthet som et yrkesfenomen, ikke en medisinsk diagnose. Stress kan bidra, men enkeltpersoners symptomer bør ikke diagnostiseres fra et organisasjonskart.",
+        "key_points": [
+          "Utmattelse kan ha fysisk, mental og følelsesmessig side.",
+          "Distansering kan gjelde arbeidet generelt eller personer en arbeider med.",
+          "Mening, initiativ og arbeidsevne kan svekkes.",
+          "Vurder arbeidskrav, støtte og organisatoriske forhold uten å trekke kliniske slutninger."
+        ],
+        "examples": [
+          {
+            "title": "Konstruert praksiseksempel",
+            "text": "En erfaren saksbehandler i en helsetjeneste tar stadig ekstravakter. Hun beskriver vedvarende utmattelse, mindre overskudd til brukerne og en voksende følelse av at arbeidet ikke nytter. Lederen behandler dette som signaler om arbeidsrelatert belastning, uten å sette en diagnose. De ser på vaktplan, saksmengde, mulighet til pauser og støtte fra kolleger. Teamet fordeler krevende saker og følger opp om tiltakene faktisk gir mer kapasitet og bedre kvalitet. Dersom plagene er alvorlige, må personen få passende profesjonell hjelp. Eksemplet viser at fenomenet må forstås gjennom både arbeidsbetingelser og personens opplevelse, ikke gjennom en antakelse om svak motivasjon.",
+            "basis": "editorial_example",
+            "source_refs": []
+          }
+        ],
+        "expressions": []
+      },
+      "analysis": {
+        "basis": "editorial_inference",
+        "central_questions": [
+          "Hvordan kan utbrenthet brukes til å forstå en konkret organisasjonssituasjon?"
+        ],
+        "mechanisms": [
+          "Utmattelse kan ha fysisk, mental og følelsesmessig side.",
+          "Distansering kan gjelde arbeidet generelt eller personer en arbeider med.",
+          "Mening, initiativ og arbeidsevne kan svekkes."
+        ],
+        "level_of_analysis": [
+          "individual",
+          "group",
+          "organization"
+        ],
+        "writing_uses": [
+          "Bruk Utbrenthet til å undersøke et konkret forløp og drøft alternative forklaringer.",
+          "Langvarig belastning er en sentral kontekst for utbrenthet.",
+          "Energi og tilknytning til arbeidet gir en nyttig kontrast, uten å være en enkel motpol."
+        ],
+        "limitations_and_tensions": [
+          "Pensumutdraget gir en avgrenset fremstilling. Bruk ikke figuren eller eksemplet som bevis for en bestemt årsakssammenheng."
+        ]
+      },
+      "connection_hints": [
+        {
+          "target_topic_id": "jobbstress",
+          "relationship_type": "related_to",
+          "bridge": "Langvarig belastning er en sentral kontekst for utbrenthet.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 17–18 (bokside 330–331)",
+              "paragraph_start": 17,
+              "paragraph_end": 18,
+              "pages": [
+                330,
+                331
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "jobbengasjement",
+          "relationship_type": "related_to",
+          "bridge": "Energi og tilknytning til arbeidet gir en nyttig kontrast, uten å være en enkel motpol.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 17–18 (bokside 330–331)",
+              "paragraph_start": 17,
+              "paragraph_end": 18,
+              "pages": [
+                330,
+                331
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "psykososialt-arbeidsmiljo",
+          "relationship_type": "related_to",
+          "bridge": "Arbeidsmiljøet kan inneholde både belastninger og beskyttende ressurser.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 17–18 (bokside 330–331)",
+              "paragraph_start": 17,
+              "paragraph_end": 18,
+              "pages": [
+                330,
+                331
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "sosial-stotte",
+          "relationship_type": "related_to",
+          "bridge": "Støtte kan inngå i forebygging og håndtering av belastninger.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 17–18 (bokside 330–331)",
+              "paragraph_start": 17,
+              "paragraph_end": 18,
+              "pages": [
+                330,
+                331
+              ]
+            }
+          ]
+        }
+      ],
+      "figures": [],
+      "source_refs": [
+        {
+          "source_id": "course-2026-14",
+          "locator": "PDF-side 17–18 (bokside 330–331)",
+          "paragraph_start": 17,
+          "paragraph_end": 18,
+          "pages": [
+            330,
+            331
+          ]
+        }
+      ],
+      "provenance": {
+        "content_basis": "source_paraphrase",
+        "analysis_basis": "editorial_inference",
+        "external_verification": false
+      },
+      "review": {
+        "status": "source_checked",
+        "notes": [
+          "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
+        ]
+      },
+      "content_hash": "6c84cc4fa8c0f4a739d0241bbf600a8c2d8c7362d6246146ac84e46eb11e4ece"
+    },
+    {
+      "id": "sosial-stotte",
+      "revision": 1,
+      "title": "Sosial støtte i arbeidet",
+      "short_label": "Sosial støtte i arbeidet",
+      "kind": "concept",
+      "aliases": [],
+      "attribution": [],
+      "category_id": "motivasjon",
+      "parent_topic_id": null,
+      "granularity": "topic",
+      "tags": [
+        "sosial",
+        "stotte"
+      ],
+      "content": {
+        "short_definition": "Sosial støtte er hjelp og bekreftelse fra andre som kan gi ressurser til å håndtere belastninger i arbeidet.",
+        "explanation": "Kapittel 9 skiller følelsesmessig støtte, oppgavestøtte, informasjonsstøtte og praktisk støtte. Den beskriver både direkte positive følger av støtte og en mulig buffervirkning ved stress. Formen må passe behovet: informasjon kan hjelpe ved usikkerhet, mens avlastning kan være nødvendig når tiden faktisk ikke strekker til. Støtte erstatter ikke tiltak mot selve belastningskilden.",
+        "key_points": [
+          "Følelsesmessig støtte: interesse, omsorg og anerkjennelse.",
+          "Oppgavestøtte: hjelp til å avklare og løse arbeidsproblemer.",
+          "Informasjonsstøtte: tydelige opplysninger i usikre situasjoner.",
+          "Praktisk støtte: tid, ressurser og konkret hjelp.",
+          "Skille mellom direkte nytte og mulig buffer mot stress."
+        ],
+        "examples": [
+          {
+            "title": "Konstruert praksiseksempel",
+            "text": "Et prosjektteam får beskjed om en større omorganisering. En kollega er redd for å miste tilhørigheten, en annen forstår ikke nye oppgaver, og en tredje har for mange saker til å lære systemet. Lederen bruker derfor ulike former for støtte: hun lytter til bekymringen, setter opp en faglig gjennomgang, gir tydelig informasjon om det som er bestemt, og frigjør tid til opplæring. Teamet følger opp om dette faktisk reduserer belastningen. Hvis arbeidsmengden fortsatt er for høy, hjelper det lite med flere oppmuntrende ord alene. Eksemplet viser hvorfor sosial støtte både må være relevant for behovet og kobles til reelle arbeidsressurser.",
+            "basis": "editorial_example",
+            "source_refs": []
+          }
+        ],
+        "expressions": []
+      },
+      "analysis": {
+        "basis": "editorial_inference",
+        "central_questions": [
+          "Hvordan kan sosial støtte i arbeidet brukes til å forstå en konkret organisasjonssituasjon?"
+        ],
+        "mechanisms": [
+          "Følelsesmessig støtte: interesse, omsorg og anerkjennelse.",
+          "Oppgavestøtte: hjelp til å avklare og løse arbeidsproblemer.",
+          "Informasjonsstøtte: tydelige opplysninger i usikre situasjoner."
+        ],
+        "level_of_analysis": [
+          "individual",
+          "group",
+          "organization"
+        ],
+        "writing_uses": [
+          "Bruk Sosial støtte i arbeidet til å undersøke et konkret forløp og drøft alternative forklaringer.",
+          "Støtte kan påvirke hvordan belastning håndteres.",
+          "Støtte kan inngå i forebyggende tiltak."
+        ],
+        "limitations_and_tensions": [
+          "Pensumutdraget gir en avgrenset fremstilling. Bruk ikke figuren eller eksemplet som bevis for en bestemt årsakssammenheng."
+        ]
+      },
+      "connection_hints": [
+        {
+          "target_topic_id": "jobbstress",
+          "relationship_type": "related_to",
+          "bridge": "Støtte kan påvirke hvordan belastning håndteres.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 19–20 (bokside 332–333)",
+              "paragraph_start": 19,
+              "paragraph_end": 20,
+              "pages": [
+                332,
+                333
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "utbrenthet",
+          "relationship_type": "related_to",
+          "bridge": "Støtte kan inngå i forebyggende tiltak.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 19–20 (bokside 332–333)",
+              "paragraph_start": 19,
+              "paragraph_end": 20,
+              "pages": [
+                332,
+                333
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "kommunikasjonskanaler",
+          "relationship_type": "related_to",
+          "bridge": "Informasjonsstøtte krever at informasjon når frem.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 19–20 (bokside 332–333)",
+              "paragraph_start": 19,
+              "paragraph_end": 20,
+              "pages": [
+                332,
+                333
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "ledelse",
+          "relationship_type": "related_to",
+          "bridge": "Ledere kan gjøre støtte og ressurser tilgjengelige.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 19–20 (bokside 332–333)",
+              "paragraph_start": 19,
+              "paragraph_end": 20,
+              "pages": [
+                332,
+                333
+              ]
+            }
+          ]
+        }
+      ],
+      "figures": [],
+      "source_refs": [
+        {
+          "source_id": "course-2026-14",
+          "locator": "PDF-side 19–20 (bokside 332–333)",
+          "paragraph_start": 19,
+          "paragraph_end": 20,
+          "pages": [
+            332,
+            333
+          ]
+        }
+      ],
+      "provenance": {
+        "content_basis": "source_paraphrase",
+        "analysis_basis": "editorial_inference",
+        "external_verification": false
+      },
+      "review": {
+        "status": "source_checked",
+        "notes": [
+          "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
+        ]
+      },
+      "content_hash": "23c51be40e87055f75144a427d3fd83b694eddf1e44e456e2cd49267b4972f19"
+    },
+    {
+      "id": "thomas-konfliktprosess",
+      "revision": 1,
+      "title": "Thomas: konflikt som prosess",
+      "short_label": "Thomas: konflikt som prosess",
+      "kind": "concept",
+      "aliases": [],
+      "attribution": [],
+      "category_id": "makt",
+      "parent_topic_id": null,
+      "granularity": "topic",
+      "tags": [
+        "thomas",
+        "konfliktprosess"
+      ],
+      "content": {
+        "short_definition": "Thomas beskriver konflikt som et forløp fra oppfattet motsetning via reaksjoner og hensikter til handling og motpartens svar.",
+        "explanation": "Kapittel 9 fremstiller fire analytiske trinn: erkjennelse av konflikt, tanker og følelser, intensjoner eller valg av strategi, og konfliktutløst handling. Motpartens reaksjon virker tilbake og kan endre forløpet. Modellen hjelper en skribent å skille en faktisk interessemotsetning fra partenes tolkning av den, og å undersøke hvor en eskalering kan avbrytes.",
+        "key_points": [
+          "Erkjennelse: en eller begge parter oppfatter en motsetning.",
+          "Reaksjon: tanker og følelser påvirker situasjonsforståelsen.",
+          "Intensjon: parten velger eller vurderer en handlingsmåte.",
+          "Handling og svar: partenes atferd skaper neste runde i prosessen."
+        ],
+        "examples": [
+          {
+            "title": "Konstruert praksiseksempel",
+            "text": "To avdelinger er uenige om hvem som skal rette feil i en felles tjeneste. Begge oppfatter den andre som lite samarbeidsvillig. En leder bruker Thomas’ prosessperspektiv og spør først hva partene mener uenigheten gjelder. Deretter får de beskrive hvilke tanker og følelser som preger situasjonen, før de sier hva de ønsker å gjøre. Den ene vil sende en formell klage, den andre vil trekke seg fra samarbeidet. Et felles møte endrer intensjonene: de avtaler en ansvarsfordeling og en prøveperiode. Når den ene avdelingen gir tilbakemelding etter en uke, ser man at konflikten utvikles gjennom handlinger og svar, ikke bare gjennom den opprinnelige uenigheten.",
+            "basis": "editorial_example",
+            "source_refs": []
+          }
+        ],
+        "expressions": []
+      },
+      "analysis": {
+        "basis": "editorial_inference",
+        "central_questions": [
+          "Hvordan kan thomas: konflikt som prosess brukes til å forstå en konkret organisasjonssituasjon?"
+        ],
+        "mechanisms": [
+          "Erkjennelse: en eller begge parter oppfatter en motsetning.",
+          "Reaksjon: tanker og følelser påvirker situasjonsforståelsen.",
+          "Intensjon: parten velger eller vurderer en handlingsmåte."
+        ],
+        "level_of_analysis": [
+          "individual",
+          "group",
+          "organization"
+        ],
+        "writing_uses": [
+          "Bruk Thomas: konflikt som prosess til å undersøke et konkret forløp og drøft alternative forklaringer.",
+          "Konfliktens forløp avgjør om uenighet blir saklig eller ødeleggende.",
+          "Inngrep kan rette seg mot ulike trinn i prosessen."
+        ],
+        "limitations_and_tensions": [
+          "Pensumutdraget gir en avgrenset fremstilling. Bruk ikke figuren eller eksemplet som bevis for en bestemt årsakssammenheng."
+        ]
+      },
+      "connection_hints": [
+        {
+          "target_topic_id": "konflikt-beslutningskvalitet",
+          "relationship_type": "related_to",
+          "bridge": "Konfliktens forløp avgjør om uenighet blir saklig eller ødeleggende.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 22–23 (bokside 335–336)",
+              "paragraph_start": 22,
+              "paragraph_end": 23,
+              "pages": [
+                335,
+                336
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "konflikthaandtering",
+          "relationship_type": "related_to",
+          "bridge": "Inngrep kan rette seg mot ulike trinn i prosessen.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 22–23 (bokside 335–336)",
+              "paragraph_start": 22,
+              "paragraph_end": 23,
+              "pages": [
+                335,
+                336
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "kommunikasjonsprosess",
+          "relationship_type": "related_to",
+          "bridge": "Budskap og fortolkning kan endre partenes reaksjoner.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 22–23 (bokside 335–336)",
+              "paragraph_start": 22,
+              "paragraph_end": 23,
+              "pages": [
+                335,
+                336
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "maktformer",
+          "relationship_type": "related_to",
+          "bridge": "Maktbruk kan eskalere eller dempe motsetninger.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 22–23 (bokside 335–336)",
+              "paragraph_start": 22,
+              "paragraph_end": 23,
+              "pages": [
+                335,
+                336
+              ]
+            }
+          ]
+        }
+      ],
+      "figures": [],
+      "source_refs": [
+        {
+          "source_id": "course-2026-14",
+          "locator": "PDF-side 22–23 (bokside 335–336)",
+          "paragraph_start": 22,
+          "paragraph_end": 23,
+          "pages": [
+            335,
+            336
+          ]
+        }
+      ],
+      "provenance": {
+        "content_basis": "source_paraphrase",
+        "analysis_basis": "editorial_inference",
+        "external_verification": false
+      },
+      "review": {
+        "status": "source_checked",
+        "notes": [
+          "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
+        ]
+      },
+      "content_hash": "d2095cda08e6cf2e05d7fe2348606a7ca05cc04eabd3dd97c9c6a69f48dd65d7"
+    },
+    {
+      "id": "konfliktarsaker",
+      "revision": 1,
+      "title": "Årsaker til jobbkonflikter",
+      "short_label": "Årsaker til jobbkonflikter",
+      "kind": "concept",
+      "aliases": [],
+      "attribution": [],
+      "category_id": "makt",
+      "parent_topic_id": null,
+      "granularity": "topic",
+      "tags": [
+        "konfliktarsaker"
+      ],
+      "content": {
+        "short_definition": "Jobbkonflikter kan springe ut av både organisatoriske ordninger og hvordan mennesker tolker og møter hverandre.",
+        "explanation": "Kapittel 9 nevner knapphet på ressurser, uklart ansvar, gjensidig avhengige arbeidsoppgaver og opplevd urettferdig belønning som strukturelle kilder. Feilattribusjon, uklare budskap og destruktiv kritikk kan forsterke en konflikt mellom personer. En analyse bør undersøke både struktur og samspill før den plasserer skylden hos enkeltpersoners egenskaper.",
+        "key_points": [
+          "Knapphet, uklare roller og avhengighet kan skape motsetninger.",
+          "Belønning som oppleves urettferdig kan øke konfliktnivået.",
+          "Feilattribusjon og uklar kommunikasjon kan forsterke motsetningen.",
+          "Personforklaringer alene kan skjule organisatoriske årsaker."
+        ],
+        "examples": [
+          {
+            "title": "Konstruert praksiseksempel",
+            "text": "I en virksomhet skal to team dele et begrenset budsjett og samtidig levere til samme kunde. Ansvarsfordelingen er uklar, og hvert team mener at det andre forsinker arbeidet med vilje. En første samtale blir personlig og lite produktiv. Lederen kartlegger derfor budsjettkriteriene, arbeidsflyten og hvem som faktisk har beslutningsmyndighet. Det viser seg at begge teamene venter på en godkjenning ingen har fått ansvar for. De avklarer rollen, lager en felles tidsplan og lar partene beskrive hvordan de tidligere misforsto hverandre. Eksemplet viser at både knapphet og feiltolkninger bidro; å kalle én medarbeider «vanskelig» ville ikke løst den organisatoriske årsaken.",
+            "basis": "editorial_example",
+            "source_refs": []
+          }
+        ],
+        "expressions": []
+      },
+      "analysis": {
+        "basis": "editorial_inference",
+        "central_questions": [
+          "Hvordan kan årsaker til jobbkonflikter brukes til å forstå en konkret organisasjonssituasjon?"
+        ],
+        "mechanisms": [
+          "Knapphet, uklare roller og avhengighet kan skape motsetninger.",
+          "Belønning som oppleves urettferdig kan øke konfliktnivået.",
+          "Feilattribusjon og uklar kommunikasjon kan forsterke motsetningen."
+        ],
+        "level_of_analysis": [
+          "individual",
+          "group",
+          "organization"
+        ],
+        "writing_uses": [
+          "Bruk Årsaker til jobbkonflikter til å undersøke et konkret forløp og drøft alternative forklaringer.",
+          "Årsaker blir viktige når partene tolker en motsetning.",
+          "Urettferdig fordeling og prosedyrer kan være konfliktkilder."
+        ],
+        "limitations_and_tensions": [
+          "Pensumutdraget gir en avgrenset fremstilling. Bruk ikke figuren eller eksemplet som bevis for en bestemt årsakssammenheng."
+        ]
+      },
+      "connection_hints": [
+        {
+          "target_topic_id": "thomas-konfliktprosess",
+          "relationship_type": "related_to",
+          "bridge": "Årsaker blir viktige når partene tolker en motsetning.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 24–25 (bokside 337–338)",
+              "paragraph_start": 24,
+              "paragraph_end": 25,
+              "pages": [
+                337,
+                338
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "organisatorisk-rettferdighet",
+          "relationship_type": "related_to",
+          "bridge": "Urettferdig fordeling og prosedyrer kan være konfliktkilder.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 24–25 (bokside 337–338)",
+              "paragraph_start": 24,
+              "paragraph_end": 25,
+              "pages": [
+                337,
+                338
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "koordinering",
+          "relationship_type": "related_to",
+          "bridge": "Gjensidig avhengige oppgaver krever tydelig samordning.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 24–25 (bokside 337–338)",
+              "paragraph_start": 24,
+              "paragraph_end": 25,
+              "pages": [
+                337,
+                338
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "maktbaser",
+          "relationship_type": "related_to",
+          "bridge": "Ressurskamp og posisjoner påvirker konflikter.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 24–25 (bokside 337–338)",
+              "paragraph_start": 24,
+              "paragraph_end": 25,
+              "pages": [
+                337,
+                338
+              ]
+            }
+          ]
+        }
+      ],
+      "figures": [],
+      "source_refs": [
+        {
+          "source_id": "course-2026-14",
+          "locator": "PDF-side 24–25 (bokside 337–338)",
+          "paragraph_start": 24,
+          "paragraph_end": 25,
+          "pages": [
+            337,
+            338
+          ]
+        }
+      ],
+      "provenance": {
+        "content_basis": "source_paraphrase",
+        "analysis_basis": "editorial_inference",
+        "external_verification": false
+      },
+      "review": {
+        "status": "source_checked",
+        "notes": [
+          "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
+        ]
+      },
+      "content_hash": "149de3292e653a01b6637fccb76da2d8a147759f1df688ea3df40029efa0b304"
+    },
+    {
+      "id": "konstruktiv-destruktiv-konflikt",
+      "revision": 1,
+      "title": "Konstruktiv og destruktiv konflikt",
+      "short_label": "Konflikttyper",
+      "kind": "concept",
+      "aliases": [],
+      "attribution": [],
+      "category_id": "makt",
+      "parent_topic_id": null,
+      "granularity": "topic",
+      "tags": [
+        "konstruktiv",
+        "destruktiv",
+        "konflikt"
+      ],
+      "content": {
+        "short_definition": "Saklig uenighet kan utvikle løsninger, mens fastlåste personkonflikter kan skade samarbeid, helse og ytelse.",
+        "explanation": "Kapittel 9 skiller særlig mellom sakskonflikter og personkonflikter, og mellom mobiliserende og nedbrytende forløp. Konstruktiv konflikt kan gi læring, kreativitet og bedre alternativer når det finnes trygge rammer for å undersøke saken. Destruktiv konflikt kan gi emosjonell belastning, fiendebilder og avgang. Det er prosess, tema og situasjon som avgjør; et middels konfliktnivå er ikke en universell oppskrift.",
+        "key_points": [
+          "Sakskonflikt kan synliggjøre alternative løsninger.",
+          "Personkonflikt kan bli langvarig og belastende.",
+          "Konstruktiv virkning krever åpenhet og respekt for partene.",
+          "Destruktive forløp kan skade både mennesker og oppgaveløsning."
+        ],
+        "examples": [
+          {
+            "title": "Konstruert praksiseksempel",
+            "text": "En ledergruppe diskuterer om en tjeneste skal digitaliseres raskt eller gradvis. To fagpersoner er sterkt uenige, men de begrunner synspunktene med erfaringer og lar den andre stille spørsmål. Uenigheten gir en bedre plan med en begrenset pilot. Senere begynner én deltaker å beskrive motparten som udugelig og holder tilbake informasjon. Da flyttes oppmerksomheten fra sak til person, og samarbeidet blir vanskeligere. Lederen stopper karakteristikken, avklarer hvilke faglige påstander som må prøves, og avtaler regler for tilbakemeldinger. Eksemplet viser at samme sak kan gi konstruktiv læring eller et destruktivt forløp avhengig av hvordan partene handler.",
+            "basis": "editorial_example",
+            "source_refs": []
+          }
+        ],
+        "expressions": []
+      },
+      "analysis": {
+        "basis": "editorial_inference",
+        "central_questions": [
+          "Hvordan kan konstruktiv og destruktiv konflikt brukes til å forstå en konkret organisasjonssituasjon?"
+        ],
+        "mechanisms": [
+          "Sakskonflikt kan synliggjøre alternative løsninger.",
+          "Personkonflikt kan bli langvarig og belastende.",
+          "Konstruktiv virkning krever åpenhet og respekt for partene."
+        ],
+        "level_of_analysis": [
+          "individual",
+          "group",
+          "organization"
+        ],
+        "writing_uses": [
+          "Bruk Konstruktiv og destruktiv konflikt til å undersøke et konkret forløp og drøft alternative forklaringer.",
+          "Saklig meningsbrytning kan bidra til bedre vurderinger.",
+          "Åpen uenighet kan motvirke press mot enighet."
+        ],
+        "limitations_and_tensions": [
+          "Pensumutdraget gir en avgrenset fremstilling. Bruk ikke figuren eller eksemplet som bevis for en bestemt årsakssammenheng."
+        ]
+      },
+      "connection_hints": [
+        {
+          "target_topic_id": "konflikt-beslutningskvalitet",
+          "relationship_type": "related_to",
+          "bridge": "Saklig meningsbrytning kan bidra til bedre vurderinger.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 26 (bokside 339)",
+              "paragraph_start": 26,
+              "paragraph_end": 26,
+              "pages": [
+                339
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "gruppetenkning",
+          "relationship_type": "related_to",
+          "bridge": "Åpen uenighet kan motvirke press mot enighet.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 26 (bokside 339)",
+              "paragraph_start": 26,
+              "paragraph_end": 26,
+              "pages": [
+                339
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "psykososialt-arbeidsmiljo",
+          "relationship_type": "related_to",
+          "bridge": "Personkonflikter kan forringe arbeidsmiljøet.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 26 (bokside 339)",
+              "paragraph_start": 26,
+              "paragraph_end": 26,
+              "pages": [
+                339
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "konflikthaandtering",
+          "relationship_type": "related_to",
+          "bridge": "Håndtering sikter mot å bevare læring og begrense skade.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 26 (bokside 339)",
+              "paragraph_start": 26,
+              "paragraph_end": 26,
+              "pages": [
+                339
+              ]
+            }
+          ]
+        }
+      ],
+      "figures": [],
+      "source_refs": [
+        {
+          "source_id": "course-2026-14",
+          "locator": "PDF-side 26 (bokside 339)",
+          "paragraph_start": 26,
+          "paragraph_end": 26,
+          "pages": [
+            339
+          ]
+        }
+      ],
+      "provenance": {
+        "content_basis": "source_paraphrase",
+        "analysis_basis": "editorial_inference",
+        "external_verification": false
+      },
+      "review": {
+        "status": "source_checked",
+        "notes": [
+          "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
+        ]
+      },
+      "content_hash": "57cee813469bdcce7c9be0f553be91adca93b9b1c598bd5b12b31b322438f50b"
+    },
+    {
+      "id": "konflikthaandtering",
+      "revision": 1,
+      "title": "Konflikthåndtering",
+      "short_label": "Konflikthåndtering",
+      "kind": "concept",
+      "aliases": [],
+      "attribution": [],
+      "category_id": "makt",
+      "parent_topic_id": null,
+      "granularity": "topic",
+      "tags": [
+        "konflikthaandtering"
+      ],
+      "content": {
+        "short_definition": "Konflikthåndtering innebærer å avklare motsetninger og velge tiltak som begrenser skade og kan gjøre saklig uenighet produktiv.",
+        "explanation": "Kapittel 9 beskriver både konfliktløsning og forsiktig stimulering av saklig uenighet. Ledere bør undersøke hvordan partene definerer situasjonen, synliggjøre relevante årsaker og åpne for kommunikasjon. Konfrontasjon er ikke alltid riktig tidspunkt, særlig hvis en person er i krise. Å stimulere konflikter krever varsomhet fordi sterke følelser raskt kan forverre situasjonen.",
+        "key_points": [
+          "Avklar hva partene mener konflikten gjelder.",
+          "Undersøk både sak, relasjoner og organisatoriske rammer.",
+          "Velg samtale, megling, endring av ordninger eller midlertidig skjerming etter situasjonen.",
+          "Vær varsom med å skape mer konflikt i en allerede presset situasjon."
+        ],
+        "examples": [
+          {
+            "title": "Konstruert praksiseksempel",
+            "text": "I et fagteam har to medarbeidere sluttet å dele informasjon etter en uenighet om ansvarsfordeling. Lederen starter med separate samtaler for å forstå hva hver part oppfatter som problemet. Begge beskriver ikke bare den opprinnelige saken, men også tidligere uklare beskjeder. Lederen samler dem når situasjonen er roligere, tydeliggjør ansvaret og ber dem avtale hvordan avvik meldes. De følger opp etter to uker. Samtidig sørger lederen for at en medarbeider som akkurat har opplevd en privat krise, ikke presses inn i et konfronterende møte samme dag. Eksemplet viser at håndtering både gjelder struktur, kommunikasjon, timing og trygghet.",
+            "basis": "editorial_example",
+            "source_refs": []
+          }
+        ],
+        "expressions": []
+      },
+      "analysis": {
+        "basis": "editorial_inference",
+        "central_questions": [
+          "Hvordan kan konflikthåndtering brukes til å forstå en konkret organisasjonssituasjon?"
+        ],
+        "mechanisms": [
+          "Avklar hva partene mener konflikten gjelder.",
+          "Undersøk både sak, relasjoner og organisatoriske rammer.",
+          "Velg samtale, megling, endring av ordninger eller midlertidig skjerming etter situasjonen."
+        ],
+        "level_of_analysis": [
+          "individual",
+          "group",
+          "organization"
+        ],
+        "writing_uses": [
+          "Bruk Konflikthåndtering til å undersøke et konkret forløp og drøft alternative forklaringer.",
+          "Prosessmodellen viser hvor håndtering kan påvirke forløpet.",
+          "Målet er å bevare nyttig saklig uenighet uten skadelig eskalering."
+        ],
+        "limitations_and_tensions": [
+          "Pensumutdraget gir en avgrenset fremstilling. Bruk ikke figuren eller eksemplet som bevis for en bestemt årsakssammenheng."
+        ]
+      },
+      "connection_hints": [
+        {
+          "target_topic_id": "thomas-konfliktprosess",
+          "relationship_type": "related_to",
+          "bridge": "Prosessmodellen viser hvor håndtering kan påvirke forløpet.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 27–28 (bokside 340–341)",
+              "paragraph_start": 27,
+              "paragraph_end": 28,
+              "pages": [
+                340,
+                341
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "konstruktiv-destruktiv-konflikt",
+          "relationship_type": "related_to",
+          "bridge": "Målet er å bevare nyttig saklig uenighet uten skadelig eskalering.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 27–28 (bokside 340–341)",
+              "paragraph_start": 27,
+              "paragraph_end": 28,
+              "pages": [
+                340,
+                341
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "ledelse",
+          "relationship_type": "related_to",
+          "bridge": "Lederen har ansvar for å ta tak i konfliktens rammer.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 27–28 (bokside 340–341)",
+              "paragraph_start": 27,
+              "paragraph_end": 28,
+              "pages": [
+                340,
+                341
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "mobbing-trakassering",
+          "relationship_type": "related_to",
+          "bridge": "Alvorlige negative handlinger krever mer enn ordinær saklig konfliktmegling.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 27–28 (bokside 340–341)",
+              "paragraph_start": 27,
+              "paragraph_end": 28,
+              "pages": [
+                340,
+                341
+              ]
+            }
+          ]
+        }
+      ],
+      "figures": [],
+      "source_refs": [
+        {
+          "source_id": "course-2026-14",
+          "locator": "PDF-side 27–28 (bokside 340–341)",
+          "paragraph_start": 27,
+          "paragraph_end": 28,
+          "pages": [
+            340,
+            341
+          ]
+        }
+      ],
+      "provenance": {
+        "content_basis": "source_paraphrase",
+        "analysis_basis": "editorial_inference",
+        "external_verification": false
+      },
+      "review": {
+        "status": "source_checked",
+        "notes": [
+          "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
+        ]
+      },
+      "content_hash": "93ee9003932d5e8ebfdf842181b42c9755bce5a21f72acc6f2744f937acf2629"
+    },
+    {
+      "id": "mobbing-trakassering",
+      "revision": 1,
+      "title": "Mobbing og trakassering",
+      "short_label": "Mobbing/trakassering",
+      "kind": "concept",
+      "aliases": [],
+      "attribution": [],
+      "category_id": "makt",
+      "parent_topic_id": null,
+      "granularity": "topic",
+      "tags": [
+        "mobbing",
+        "trakassering"
+      ],
+      "content": {
+        "short_definition": "Mobbing er gjentatte negative handlinger over tid der den rammede vanskelig kan forsvare seg; trakassering er et videre begrep.",
+        "explanation": "Kapittel 9 fremhever varighet, gjentakelse og ubalanse i styrkeforholdet ved mobbing. Trakassering kan også omfatte alvorlige enkelthendelser og uønsket krenkende atferd. Direkte former omfatter utskjelling og trusler; indirekte former kan være utfrysing, ryktespredning eller å hindre noen i å gjøre arbeidet. Boken drøfter både person- og situasjonsforklaringer. Her brukes begrepene som faglige analyseverktøy, uten å avgjøre juridiske spørsmål.",
+        "key_points": [
+          "Mobbing: gjentakelse over tid og ubalanse i styrkeforhold.",
+          "Trakassering er videre og kan også omfatte alvorlige enkelthendelser.",
+          "Handlingene kan være åpne eller indirekte og skjulte.",
+          "Vurder ledelse, rollekonflikt, kultur og støtte, ikke bare personlighet hos partene."
+        ],
+        "examples": [
+          {
+            "title": "Konstruert praksiseksempel",
+            "text": "En ny medarbeider blir over flere måneder holdt utenfor planleggingsmøter. En kollega sprer negative rykter og hindrer at vedkommende får nødvendig informasjon. Medarbeideren opplever at hun ikke kan si imot uten å risikere nye sanksjoner. Lederen undersøker hendelser, tidsforløp, relasjoner og arbeidsfordeling, og sørger for en trygg kanal for å bli hørt. En enkelt opphetet diskusjon om fag er noe annet enn det gjentatte mønsteret. Dersom det også kommer frem en alvorlig krenkende enkelthendelse, må den vurderes på egne premisser. Eksemplet viser forskjellen mellom mobbing, bredere trakassering og ordinær saklig uenighet.",
+            "basis": "editorial_example",
+            "source_refs": []
+          }
+        ],
+        "expressions": []
+      },
+      "analysis": {
+        "basis": "editorial_inference",
+        "central_questions": [
+          "Hvordan kan mobbing og trakassering brukes til å forstå en konkret organisasjonssituasjon?"
+        ],
+        "mechanisms": [
+          "Mobbing: gjentakelse over tid og ubalanse i styrkeforhold.",
+          "Trakassering er videre og kan også omfatte alvorlige enkelthendelser.",
+          "Handlingene kan være åpne eller indirekte og skjulte."
+        ],
+        "level_of_analysis": [
+          "individual",
+          "group",
+          "organization"
+        ],
+        "writing_uses": [
+          "Bruk Mobbing og trakassering til å undersøke et konkret forløp og drøft alternative forklaringer.",
+          "Negative handlinger er en sentral arbeidsmiljøbelastning.",
+          "Lederes posisjon kan muliggjøre eller forebygge krenkende handlinger."
+        ],
+        "limitations_and_tensions": [
+          "Pensumutdraget gir en avgrenset fremstilling. Bruk ikke figuren eller eksemplet som bevis for en bestemt årsakssammenheng."
+        ]
+      },
+      "connection_hints": [
+        {
+          "target_topic_id": "psykososialt-arbeidsmiljo",
+          "relationship_type": "related_to",
+          "bridge": "Negative handlinger er en sentral arbeidsmiljøbelastning.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 29–30 (bokside 342–343)",
+              "paragraph_start": 29,
+              "paragraph_end": 30,
+              "pages": [
+                342,
+                343
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "destruktiv-ledelse",
+          "relationship_type": "related_to",
+          "bridge": "Lederes posisjon kan muliggjøre eller forebygge krenkende handlinger.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 29–30 (bokside 342–343)",
+              "paragraph_start": 29,
+              "paragraph_end": 30,
+              "pages": [
+                342,
+                343
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "konflikthaandtering",
+          "relationship_type": "related_to",
+          "bridge": "En alvorlig ubalanse krever mer enn vanlig håndtering av saklig uenighet.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 29–30 (bokside 342–343)",
+              "paragraph_start": 29,
+              "paragraph_end": 30,
+              "pages": [
+                342,
+                343
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "varsling",
+          "relationship_type": "related_to",
+          "bridge": "Meldinger om kritikkverdige forhold kan gjelde trakassering.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 29–30 (bokside 342–343)",
+              "paragraph_start": 29,
+              "paragraph_end": 30,
+              "pages": [
+                342,
+                343
+              ]
+            }
+          ]
+        }
+      ],
+      "figures": [],
+      "source_refs": [
+        {
+          "source_id": "course-2026-14",
+          "locator": "PDF-side 29–30 (bokside 342–343)",
+          "paragraph_start": 29,
+          "paragraph_end": 30,
+          "pages": [
+            342,
+            343
+          ]
+        }
+      ],
+      "provenance": {
+        "content_basis": "source_paraphrase",
+        "analysis_basis": "editorial_inference",
+        "external_verification": false
+      },
+      "review": {
+        "status": "source_checked",
+        "notes": [
+          "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
+        ]
+      },
+      "content_hash": "042cfc4d268d95b0e570cf7f56163924e9bf2144fd995aae96d83c14acdf6507"
+    },
+    {
+      "id": "varsling",
+      "revision": 1,
+      "title": "Varsling i organisasjoner",
+      "short_label": "Varsling i organisasjoner",
+      "kind": "concept",
+      "aliases": [],
+      "attribution": [],
+      "category_id": "makt",
+      "parent_topic_id": null,
+      "granularity": "topic",
+      "tags": [
+        "varsling"
+      ],
+      "content": {
+        "short_definition": "Varsling innebærer at ansatte gjør kritikkverdige forhold i virksomheten kjent for noen som kan undersøke eller endre dem.",
+        "explanation": "Kapittel 9 drøfter varsling som en prosess der flere ytringer og mottakere kan være involvert over tid. Eksemplene omfatter økonomiske misligheter, mobbing og trakassering. Varsleren kan møte både positive og negative reaksjoner. En organisasjonsfaglig analyse bør se på mottak, undersøkelse, maktforhold og vern mot gjengjeldelse. Konkrete rettsregler og vurdering av en virkelig sak krever oppdatert juridisk kilde.",
+        "key_points": [
+          "Gjelder forhold som kan skade andre, organisasjonen eller samfunnet.",
+          "Flere mottakere og hendelser kan inngå over tid.",
+          "Undersøk hvordan organisasjonen tar imot og følger opp informasjon.",
+          "Makt og risiko for gjengjeldelse kan påvirke om noen sier fra."
+        ],
+        "examples": [
+          {
+            "title": "Konstruert praksiseksempel",
+            "text": "En økonomimedarbeider oppdager at leverandørfakturaer kan være ført feil og tar opp funnet med nærmeste leder. Lederen ber om dokumentasjon og sender saken til en uavhengig intern funksjon. Senere forteller en kollega at vedkommende er redd for at kritiske spørsmål vil påvirke arbeidsoppgavene hennes. Virksomheten gjør derfor prosessen tydelig: hvem som tar imot opplysninger, hvordan de undersøkes, og hvordan berørte personer ivaretas. Etter undersøkelsen retter de en svak kontrollrutine. Eksemplet viser varsling som en prosess med informasjon, makt og oppfølging. Det avgjør ikke om en bestemt juridisk varslingsregel er oppfylt.",
+            "basis": "editorial_example",
+            "source_refs": []
+          }
+        ],
+        "expressions": []
+      },
+      "analysis": {
+        "basis": "editorial_inference",
+        "central_questions": [
+          "Hvordan kan varsling i organisasjoner brukes til å forstå en konkret organisasjonssituasjon?"
+        ],
+        "mechanisms": [
+          "Gjelder forhold som kan skade andre, organisasjonen eller samfunnet.",
+          "Flere mottakere og hendelser kan inngå over tid.",
+          "Undersøk hvordan organisasjonen tar imot og følger opp informasjon."
+        ],
+        "level_of_analysis": [
+          "individual",
+          "group",
+          "organization"
+        ],
+        "writing_uses": [
+          "Bruk Varsling i organisasjoner til å undersøke et konkret forløp og drøft alternative forklaringer.",
+          "Etisk ledelse påvirker om kritiske opplysninger blir hørt og fulgt opp.",
+          "Trakassering kan være et forhold ansatte varsler om."
+        ],
+        "limitations_and_tensions": [
+          "Pensumutdraget gir en avgrenset fremstilling. Bruk ikke figuren eller eksemplet som bevis for en bestemt årsakssammenheng."
+        ]
+      },
+      "connection_hints": [
+        {
+          "target_topic_id": "etisk-ledelse",
+          "relationship_type": "related_to",
+          "bridge": "Etisk ledelse påvirker om kritiske opplysninger blir hørt og fulgt opp.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 31 (bokside 344)",
+              "paragraph_start": 31,
+              "paragraph_end": 31,
+              "pages": [
+                344
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "mobbing-trakassering",
+          "relationship_type": "related_to",
+          "bridge": "Trakassering kan være et forhold ansatte varsler om.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 31 (bokside 344)",
+              "paragraph_start": 31,
+              "paragraph_end": 31,
+              "pages": [
+                344
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "maktformer",
+          "relationship_type": "related_to",
+          "bridge": "Maktforhold påvirker både rapportering og mottak.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 31 (bokside 344)",
+              "paragraph_start": 31,
+              "paragraph_end": 31,
+              "pages": [
+                344
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "organisasjonskultur",
+          "relationship_type": "related_to",
+          "bridge": "Åpenhetsnormer kan gjøre det lettere eller vanskeligere å si fra.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 31 (bokside 344)",
+              "paragraph_start": 31,
+              "paragraph_end": 31,
+              "pages": [
+                344
+              ]
+            }
+          ]
+        }
+      ],
+      "figures": [],
+      "source_refs": [
+        {
+          "source_id": "course-2026-14",
+          "locator": "PDF-side 31 (bokside 344)",
+          "paragraph_start": 31,
+          "paragraph_end": 31,
+          "pages": [
+            344
+          ]
+        }
+      ],
+      "provenance": {
+        "content_basis": "source_paraphrase",
+        "analysis_basis": "editorial_inference",
+        "external_verification": false
+      },
+      "review": {
+        "status": "source_checked",
+        "notes": [
+          "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
+        ]
+      },
+      "content_hash": "d65e0d8d152abf742474ce7dcae0b8b51a804723c2484935d7ddb16d27a83d5b"
+    },
+    {
+      "id": "progresjonsprinsippet",
+      "revision": 1,
+      "title": "Amabile og Kramer: progresjon",
+      "short_label": "Progresjonsprinsippet",
+      "kind": "concept",
+      "aliases": [],
+      "attribution": [],
+      "category_id": "motivasjon",
+      "parent_topic_id": null,
+      "granularity": "topic",
+      "tags": [
+        "progresjonsprinsippet"
+      ],
+      "content": {
+        "short_definition": "Små, merkbare fremskritt i meningsfullt arbeid kan bidra til positivt indre arbeidsliv og jobbengasjement.",
+        "explanation": "Kapittel 9 omtaler Amabile og Kramers dagbokstudier og progresjonsprinsippet. Et menneskes indre arbeidsliv omfatter hvordan en oppfatter, føler og motiveres av arbeidet. Opplevd fremgang, også i små steg, kan gi bedre opplevelse av arbeidet. Lederens oppgave blir blant annet å fjerne hindre og gjøre faktisk fremgang synlig. Modellen bør ikke brukes til å kreve at ansatte viser entusiasme når grunnleggende ressurser mangler.",
+        "key_points": [
+          "Indre arbeidsliv omfatter oppfatninger, følelser og motivasjon.",
+          "Små fremskritt kan gi mening og energi.",
+          "Synlige delmål og færre hindringer kan støtte fremgang.",
+          "Vurder fremdrift sammen med krav og tilgjengelige ressurser."
+        ],
+        "examples": [
+          {
+            "title": "Konstruert praksiseksempel",
+            "text": "Et team utvikler en ny tjeneste, men prosjektet føles stillestående fordi sluttdatoen er langt unna. Lederen deler arbeidet i små, men reelle leveranser: første brukersamtale, test av skjema og forbedring av en vanskelig rutine. Hver uke ser teamet hva de lærte og hvilke hindringer som fortsatt finnes. Når en test gir en liten forbedring, merker medarbeiderne at innsatsen faktisk bringer arbeidet videre. De får samtidig tid og hjelp til å løse problemer som stopper fremdriften. Eksemplet viser progresjonsprinsippet i praksis: små seire kan støtte motivasjon, men må være knyttet til meningsfullt arbeid og ordentlige ressurser.",
+            "basis": "editorial_example",
+            "source_refs": []
+          }
+        ],
+        "expressions": []
+      },
+      "analysis": {
+        "basis": "editorial_inference",
+        "central_questions": [
+          "Hvordan kan amabile og kramer: progresjon brukes til å forstå en konkret organisasjonssituasjon?"
+        ],
+        "mechanisms": [
+          "Indre arbeidsliv omfatter oppfatninger, følelser og motivasjon.",
+          "Små fremskritt kan gi mening og energi.",
+          "Synlige delmål og færre hindringer kan støtte fremgang."
+        ],
+        "level_of_analysis": [
+          "individual",
+          "group",
+          "organization"
+        ],
+        "writing_uses": [
+          "Bruk Amabile og Kramer: progresjon til å undersøke et konkret forløp og drøft alternative forklaringer.",
+          "Progresjon kan bidra til energi og dedikasjon i arbeidet.",
+          "Konkrete delmål gjør fremgang lettere å merke."
+        ],
+        "limitations_and_tensions": [
+          "Pensumutdraget gir en avgrenset fremstilling. Bruk ikke figuren eller eksemplet som bevis for en bestemt årsakssammenheng."
+        ]
+      },
+      "connection_hints": [
+        {
+          "target_topic_id": "jobbengasjement",
+          "relationship_type": "related_to",
+          "bridge": "Progresjon kan bidra til energi og dedikasjon i arbeidet.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 34–35 (bokside 347–348)",
+              "paragraph_start": 34,
+              "paragraph_end": 35,
+              "pages": [
+                347,
+                348
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "maalsettingsteori",
+          "relationship_type": "related_to",
+          "bridge": "Konkrete delmål gjør fremgang lettere å merke.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 34–35 (bokside 347–348)",
+              "paragraph_start": 34,
+              "paragraph_end": 35,
+              "pages": [
+                347,
+                348
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "jobbstress",
+          "relationship_type": "related_to",
+          "bridge": "Fremgang kan påvirke opplevelsen av belastning, men fjerner ikke nødvendigvis stressorer.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 34–35 (bokside 347–348)",
+              "paragraph_start": 34,
+              "paragraph_end": 35,
+              "pages": [
+                347,
+                348
+              ]
+            }
+          ]
+        },
+        {
+          "target_topic_id": "ledelse",
+          "relationship_type": "related_to",
+          "bridge": "Ledelsen kan fjerne hindre og synliggjøre faktisk utvikling.",
+          "basis": "editorial_inference",
+          "source_refs": [
+            {
+              "source_id": "course-2026-14",
+              "locator": "PDF-side 34–35 (bokside 347–348)",
+              "paragraph_start": 34,
+              "paragraph_end": 35,
+              "pages": [
+                347,
+                348
+              ]
+            }
+          ]
+        }
+      ],
+      "figures": [],
+      "source_refs": [
+        {
+          "source_id": "course-2026-14",
+          "locator": "PDF-side 34–35 (bokside 347–348)",
+          "paragraph_start": 34,
+          "paragraph_end": 35,
+          "pages": [
+            347,
+            348
+          ]
+        }
+      ],
+      "provenance": {
+        "content_basis": "source_paraphrase",
+        "analysis_basis": "editorial_inference",
+        "external_verification": false
+      },
+      "review": {
+        "status": "source_checked",
+        "notes": [
+          "Parafrase av brukerlevert bokutdrag, kapittel 9, trykte sider angitt under Kilder. Praksiseksemplet og relasjonsvektene er redaksjonelle."
+        ]
+      },
+      "content_hash": "c0fca39247628c061ff922d51e3e723eafc509f255f26dbc0e034a5d83511f2c"
     }
   ],
   "figure_registry": [

@@ -1,0 +1,98 @@
+{
+  "source": "course-2026-14",
+  "printed_pages": "315–350",
+  "added_nodes": [
+    {
+      "id": "stereotypier-fordommer-diskriminering",
+      "title": "Stereotypier, fordommer og diskriminering",
+      "pages": [
+        317
+      ]
+    },
+    {
+      "id": "karasek-krav-kontroll",
+      "title": "Karaseks krav–kontroll-modell",
+      "pages": [
+        332
+      ]
+    },
+    {
+      "id": "utbrenthet",
+      "title": "Utbrenthet",
+      "pages": [
+        330,
+        331
+      ]
+    },
+    {
+      "id": "sosial-stotte",
+      "title": "Sosial støtte i arbeidet",
+      "pages": [
+        332,
+        333
+      ]
+    },
+    {
+      "id": "thomas-konfliktprosess",
+      "title": "Thomas: konflikt som prosess",
+      "pages": [
+        335,
+        336
+      ]
+    },
+    {
+      "id": "konfliktarsaker",
+      "title": "Årsaker til jobbkonflikter",
+      "pages": [
+        337,
+        338
+      ]
+    },
+    {
+      "id": "konstruktiv-destruktiv-konflikt",
+      "title": "Konstruktiv og destruktiv konflikt",
+      "pages": [
+        339
+      ]
+    },
+    {
+      "id": "konflikthaandtering",
+      "title": "Konflikthåndtering",
+      "pages": [
+        340,
+        341
+      ]
+    },
+    {
+      "id": "mobbing-trakassering",
+      "title": "Mobbing og trakassering",
+      "pages": [
+        342,
+        343
+      ]
+    },
+    {
+      "id": "varsling",
+      "title": "Varsling i organisasjoner",
+      "pages": [
+        344
+      ]
+    },
+    {
+      "id": "progresjonsprinsippet",
+      "title": "Amabile og Kramer: progresjon",
+      "pages": [
+        347,
+        348
+      ]
+    }
+  ],
+  "new_direct_pair_reviews": 39,
+  "existing_weights_changed": 421,
+  "edges": 14028,
+  "notes": [
+    "Kilde-PDF distribueres ikke; nye tekster og eksempler er redaksjonelle parafraser.",
+    "Alle ulike par har positiv symmetrisk vekt. Direkte parvurderinger er skilt fra profil- og stiestimater.",
+    "Eksisterende direkte vurderinger er beholdt. Avledede scorer er beregnet på nytt for hele kartet."
+  ]
+}

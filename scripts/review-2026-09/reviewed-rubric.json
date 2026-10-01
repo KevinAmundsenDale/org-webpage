@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "scope": "Naturlig og faglig nyttig sambruk i en kursdrøfting. Symmetrisk, positiv relevans mellom alle forskjellige temaer.",
   "dimensions_for_editorial_review": [
     "conceptual_overlap",
@@ -65,7 +65,7 @@
     "tie_break": "Lexicographically first normalized path for equal rounded route weights."
   },
   "pair_reviews": {
-    "count": 638,
+    "count": 677,
     "selection": "Tidligere direkte vurderinger beholdt etter semantisk gjennomgang; supplerende teori gir nye direkte par og presiseringer. Alle øvrige par beregnes på nytt fra reviderte profiler og korte skriveveier.",
     "precedence": "Explicit pair review replaces profile/path estimates and may raise or lower the score.",
     "judgment": "Holistic assessment across the five editorial dimensions. No invented per-dimension manual numeric ratings."
@@ -82,7 +82,8 @@
     "A lower-scored pair may become more relevant for a particular assignment.",
     "Differences of one or two hundredths should not be treated as objective precision.",
     "The source document has not been independently fact-checked against the complete book.",
-    "2026-09: Vurdert mot leverte forelesninger og bokutdrag, ikke fullstendig ekstern fagkontroll. Eksemplenes felles kontekst inngår ikke i skåringen."
+    "2026-09: Vurdert mot leverte forelesninger og bokutdrag, ikke fullstendig ekstern fagkontroll. Eksemplenes felles kontekst inngår ikke i skåringen.",
+    "2026-10: Nye par fra Kaufmann kapittel 9 er faglige og redaksjonelle vurderinger; ureviewerte par er fortsatt estimater."
   ],
   "update_rule": "Changing topic profiles, adding topics or changing pair reviews can change specificity weights and writing paths for other pairs. Regenerate all derived estimates and diagnostics; review direct judgments whose source content changed. Version and compare releases rather than silently reusing stale scores."
 }
